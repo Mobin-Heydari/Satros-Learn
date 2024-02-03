@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <!-- dashboard menu -->
+      <div class="dashboard-menu">
+        <div class="logo">
+          <img src="assets/img/white-logo.png" />
+          <h1>Satros Web</h1>
+        </div>
+        <div class="menu">
+          <div>
+            <i class="fa-solid fa-table-columns d-none d-md-inline-block"></i>
+            <a class="active" href="dashboard.html">پیشخوان</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-user d-none d-md-inline-block"></i>
+            <a href="user-info.html">اطلاعات کاربری</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-graduation-cap d-none d-md-inline-block"></i>
+            <a href="user-courses.html">دوره های من</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-receipt d-none d-md-inline-block"></i>
+            <a href="recipts.html">مشاهده فاکتور ها</a>
+          </div>
+        </div>
+        <div class="logout">
+          <h3>پرهام رحیمی</h3>
+          <p>satrosweb@gmail.com</p>
+          <button>خروج از حساب</button>
+        </div>
+      </div>
+      <!-- dashboard-page -->
+      <div class="dashboard-page">
+        <!-- welcome -->
+        <div class="welcome">
+          <p>پرهام رحیمی عزیز خوش آمدی!</p>
+          <div class="nav-links">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <button onclick="showMenu()" class="burger d-inline-block d-md-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <!-- courses -->
+        <div class="courses">
+          <div class="courses-card">
+            <i class="fa-solid fa-play"></i>
+            <div>
+              <h3>دوره های ثبت نام</h3>
+              <p><span>07</span> دوره</p>
+            </div>
+          </div>
+          <div class="courses-card">
+            <i class="fa-solid fa-book-open"></i>
+            <div>
+              <h3>دوره های رایگان</h3>
+              <p><span>07</span> دوره</p>
+            </div>
+          </div>
+          <div class="courses-card">
+            <i class="fa-solid fa-book"></i>
+            <div>
+              <h3>در انتظار پرداخت</h3>
+              <p><span>01</span> دوره</p>
+            </div>
+          </div>
+          <div class="courses-card">
+            <i class="fa-solid fa-list"></i>
+            <div>
+              <h3>دوره های موجود</h3>
+              <p><span>223</span> دوره</p>
+            </div>
+          </div>
+        </div>
+        <!-- alerts -->
+        <div class="alerts">
+            <h3>اطلاعیه ها</h3>
+            <div class="alert-title">
+                <i class="fa-solid fa-bell"></i>
+                <p><span>03</span> اطلاعیه در دسترس است</p>
+            </div>
+            <div class="alert" id="alert-1">
+                <span>01</span>
+                <div>
+                    <p>لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم</p>
+                    <p>1402/09/03</p>
+                    <button onclick="deletAlert1()" class="delet"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            <div class="alert" id="alert-2">
+                <span>02</span>
+                <div>
+                    <p>لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم</p>
+                    <p>1402/09/03</p>
+                    <button onclick="deletAlert2()" class="delet"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            <div class="alert" id="alert-3">
+                <span>03</span>
+                <div>
+                    <p>لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم</p>
+                    <p>1402/09/03</p>
+                    <button onclick="deletAlert3()" class="delet"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- essays -->
+        <div class="essays"></div>
+      </div>
+    </section>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/dashboard.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,676 @@
+@font-face {
+  font-family: lalezar;
+  src: url(fonts/Lalezar-Regular.woff);
+}
+@font-face {
+  font-family: vazir;
+  src: url(fonts/Vazir-Regular.woff);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 300px) {
+  section {
+    text-align: right;
+    width: 90%;
+    margin: 50px auto;
+    font-family: vazir;
+  }
+  section p.sign-in {
+    font-size: 3vw;
+  }
+  section p.sign-in a {
+    text-decoration: none;
+    color: #F9A135;
+  }
+  section form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  section form div.information {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  section form div.information h2 {
+    font-weight: 900;
+    font-size: 3.3vw;
+  }
+  section form div.information p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 3vw;
+  }
+  section form div.information p span {
+    color: red;
+  }
+  section form div.information p span.optiobal {
+    color: gray;
+  }
+  section form div.information input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  section form div.information input:focus {
+    outline: 1px solid #F9A135;
+  }
+  section form div.information textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+  }
+  section form div.order {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid lightgray;
+    text-align: right;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  section form div.order h2 {
+    font-size: 3.3vw;
+    font-weight: 800;
+    text-align: center;
+    margin: 15px auto;
+  }
+  section form div.order div.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid lightgray;
+  }
+  section form div.order div.price p {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  section form div.order h5 {
+    font-size: 3.2vw;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  section form div.order h3 {
+    font-size: 3vw;
+    color: gray;
+  }
+  section form div.order h4 {
+    font-size: 3.1vw;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  section form div.order div.radio-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section form div.order div.radio-button input {
+    width: 5%;
+    margin: 5px;
+  }
+  section form div.order div.radio-button h6 {
+    font-size: 3vw;
+    color: gray;
+    margin-top: 5px;
+  }
+  section form div.order button {
+    font-size: 3.3vw;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F9A135;
+    padding: 20px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+  }
+  section form div.order button:hover {
+    background-color: white;
+    color: #F9A135;
+  }
+}
+@media screen and (min-width: 576px) {
+  section {
+    text-align: right;
+    width: 90%;
+    margin: 50px auto;
+    font-family: vazir;
+  }
+  section p.sign-in {
+    font-size: 2vw;
+  }
+  section p.sign-in a {
+    text-decoration: none;
+    color: #F9A135;
+  }
+  section form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  section form div.information {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  section form div.information h2 {
+    font-weight: 900;
+    font-size: 2.3vw;
+  }
+  section form div.information p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 2vw;
+  }
+  section form div.information p span {
+    color: red;
+  }
+  section form div.information p span.optiobal {
+    color: gray;
+  }
+  section form div.information input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  section form div.information input:focus {
+    outline: 1px solid #F9A135;
+  }
+  section form div.information textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+  }
+  section form div.order {
+    width: 100%;
+    border: 1px solid lightgray;
+    text-align: right;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  section form div.order h2 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    text-align: center;
+    margin: 15px auto;
+  }
+  section form div.order div.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid lightgray;
+  }
+  section form div.order div.price p {
+    font-size: 2vw;
+    font-weight: 900;
+  }
+  section form div.order h5 {
+    font-size: 2.2vw;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  section form div.order h3 {
+    font-size: 2vw;
+    color: gray;
+  }
+  section form div.order h4 {
+    font-size: 2.1vw;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  section form div.order div.radio-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section form div.order div.radio-button input {
+    width: 5%;
+    margin: 5px;
+  }
+  section form div.order div.radio-button h6 {
+    font-size: 2vw;
+    color: gray;
+    margin-top: 5px;
+  }
+  section form div.order button {
+    font-size: 2.3vw;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F9A135;
+    padding: 20px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+  }
+  section form div.order button:hover {
+    background-color: white;
+    color: #F9A135;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    text-align: right;
+    width: 90%;
+    margin: 50px auto;
+    font-family: vazir;
+  }
+  section p.sign-in {
+    font-size: 1vw;
+  }
+  section p.sign-in a {
+    text-decoration: none;
+    color: #F9A135;
+  }
+  section form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  section form div.information {
+    padding: 20px;
+    width: 67%;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  section form div.information h2 {
+    font-weight: 900;
+    font-size: 1.3vw;
+  }
+  section form div.information p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1vw;
+  }
+  section form div.information p span {
+    color: red;
+  }
+  section form div.information p span.optiobal {
+    color: gray;
+  }
+  section form div.information input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  section form div.information input:focus {
+    outline: 1px solid #F9A135;
+  }
+  section form div.information textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+  }
+  section form div.order {
+    width: 29%;
+    margin-top: 0;
+    border: 1px solid lightgray;
+    text-align: right;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  section form div.order h2 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    text-align: center;
+    margin: 15px auto;
+  }
+  section form div.order div.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid lightgray;
+  }
+  section form div.order div.price p {
+    font-size: 1vw;
+    font-weight: 900;
+  }
+  section form div.order h5 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  section form div.order h3 {
+    font-size: 1vw;
+    color: gray;
+  }
+  section form div.order h4 {
+    font-size: 1.1vw;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  section form div.order div.radio-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section form div.order div.radio-button input {
+    width: 5%;
+    margin: 5px;
+  }
+  section form div.order div.radio-button h6 {
+    font-size: 1vw;
+    color: gray;
+    margin-top: 5px;
+  }
+  section form div.order button {
+    font-size: 1.3vw;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F9A135;
+    padding: 20px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+  }
+  section form div.order button:hover {
+    background-color: white;
+    color: #F9A135;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section {
+    text-align: right;
+    width: 90%;
+    margin: 50px auto;
+    font-family: vazir;
+  }
+  section p.sign-in {
+    font-size: 1vw;
+  }
+  section p.sign-in a {
+    text-decoration: none;
+    color: #F9A135;
+  }
+  section form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  section form div.information {
+    padding: 20px;
+    width: 67%;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  section form div.information h2 {
+    font-weight: 900;
+    font-size: 1.3vw;
+  }
+  section form div.information p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1vw;
+  }
+  section form div.information p span {
+    color: red;
+  }
+  section form div.information p span.optiobal {
+    color: gray;
+  }
+  section form div.information input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  section form div.information input:focus {
+    outline: 1px solid #F9A135;
+  }
+  section form div.information textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+  }
+  section form div.order {
+    width: 29%;
+    border: 1px solid lightgray;
+    text-align: right;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  section form div.order h2 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    text-align: center;
+    margin: 15px auto;
+  }
+  section form div.order div.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid lightgray;
+  }
+  section form div.order div.price p {
+    font-size: 1vw;
+    font-weight: 900;
+  }
+  section form div.order h5 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  section form div.order h3 {
+    font-size: 1vw;
+    color: gray;
+  }
+  section form div.order h4 {
+    font-size: 1.1vw;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  section form div.order div.radio-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section form div.order div.radio-button input {
+    width: 5%;
+    margin: 5px;
+  }
+  section form div.order div.radio-button h6 {
+    font-size: 1vw;
+    color: gray;
+    margin-top: 5px;
+  }
+  section form div.order button {
+    font-size: 1.3vw;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F9A135;
+    padding: 20px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+  }
+  section form div.order button:hover {
+    background-color: white;
+    color: #F9A135;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    text-align: right;
+    width: 90%;
+    margin: 50px auto;
+    font-family: vazir;
+  }
+  section p.sign-in {
+    font-size: 1vw;
+  }
+  section p.sign-in a {
+    text-decoration: none;
+    color: #F9A135;
+  }
+  section form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  section form div.information {
+    padding: 20px;
+    width: 67%;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  section form div.information h2 {
+    font-weight: 900;
+    font-size: 1.3vw;
+  }
+  section form div.information p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1vw;
+  }
+  section form div.information p span {
+    color: red;
+  }
+  section form div.information p span.optiobal {
+    color: gray;
+  }
+  section form div.information input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  section form div.information input:focus {
+    outline: 1px solid #F9A135;
+  }
+  section form div.information textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+  }
+  section form div.order {
+    width: 29%;
+    border: 1px solid lightgray;
+    text-align: right;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  section form div.order h2 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    text-align: center;
+    margin: 15px auto;
+  }
+  section form div.order div.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid lightgray;
+  }
+  section form div.order div.price p {
+    font-size: 1vw;
+    font-weight: 900;
+  }
+  section form div.order h5 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  section form div.order h3 {
+    font-size: 1vw;
+    color: gray;
+  }
+  section form div.order h4 {
+    font-size: 1.1vw;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  section form div.order div.radio-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section form div.order div.radio-button input {
+    width: 5%;
+    margin: 5px;
+  }
+  section form div.order div.radio-button h6 {
+    font-size: 1vw;
+    color: gray;
+    margin-top: 5px;
+  }
+  section form div.order button {
+    font-size: 1.3vw;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F9A135;
+    padding: 20px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+  }
+  section form div.order button:hover {
+    background-color: white;
+    color: #F9A135;
+  }
+}/*# sourceMappingURL=order.css.map */

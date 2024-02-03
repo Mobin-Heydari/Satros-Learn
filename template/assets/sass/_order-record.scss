@@ -1,0 +1,667 @@
+
+@media screen and (min-width: 300px) {
+    section {
+      text-align: right;
+      width: 90%;
+      margin: 50px auto;
+      font-family: vazir;
+      p.sign-in {
+        font-size: 3vw;
+        a {
+          text-decoration: none;
+          color: $main;
+        }
+      }
+      form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        div.information {
+          padding: 20px;
+          width: 100%;
+          box-sizing: border-box;
+          border: 1px solid lightgray;
+          border-radius: 10px;
+          h2 {
+            font-weight: 900;
+            font-size: 3.3vw;
+          }
+          p {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 3vw;
+            span {
+              color: red;
+            }
+            span.optiobal {
+              color: gray;
+            }
+          }
+          input {
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px;
+          }
+          input:focus {
+            outline: 1px solid $main;
+          }
+          textarea {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+            padding: 10px;
+          }
+        }
+        div.order {
+          width: 100%;
+          margin-top: 20px;
+          border: 1px solid lightgray;
+          text-align: right;
+          border-radius: 10px;
+          padding: 15px;
+          box-sizing: border-box;
+          h2 {
+            font-size: 3.3vw;
+            font-weight: 800;
+            text-align: center;
+            margin: 15px auto;
+          }
+          div.price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            border-bottom: 1px solid lightgray;
+            p {
+              font-size: 3vw;
+              font-weight: 900;
+            }
+          }
+          h5 {
+            font-size: 3.2vw;
+            font-weight: 600;
+            margin-top: 15px;
+          }
+          h3 {
+            font-size: 3vw;
+            color: gray;
+          }
+          h4 {
+            font-size: 3.1vw;
+            font-weight: 600;
+            margin: 20px 0;
+          }
+          div.radio-button {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            input {
+              width: 5%;
+              margin: 5px;
+            }
+            h6 {
+              font-size: 3vw;
+              color: gray;
+              margin-top: 5px;
+            }
+          }
+          button {
+            font-size: 3.3vw;
+            color: white;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+            background-color: $main;
+            padding: 20px;
+            font-family: vazir;
+            border: 1px solid $main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 500ms;
+          }
+          button:hover {
+            background-color: white;
+            color: $main;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 576px) {
+    section {
+      text-align: right;
+      width: 90%;
+      margin: 50px auto;
+      font-family: vazir;
+      p.sign-in {
+        font-size: 2vw;
+        a {
+          text-decoration: none;
+          color: $main;
+        }
+      }
+      form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        div.information {
+          padding: 20px;
+          width: 100%;
+          box-sizing: border-box;
+          border: 1px solid lightgray;
+          border-radius: 10px;
+          h2 {
+            font-weight: 900;
+            font-size: 2.3vw;
+          }
+          p {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 2vw;
+            span {
+              color: red;
+            }
+            span.optiobal {
+              color: gray;
+            }
+          }
+          input {
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px;
+          }
+          input:focus {
+            outline: 1px solid $main;
+          }
+          textarea {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+            padding: 10px;
+          }
+        }
+        div.order {
+          width: 100%;
+          border: 1px solid lightgray;
+          text-align: right;
+          border-radius: 10px;
+          padding: 15px;
+          box-sizing: border-box;
+          h2 {
+            font-size: 2.3vw;
+            font-weight: 800;
+            text-align: center;
+            margin: 15px auto;
+          }
+          div.price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            border-bottom: 1px solid lightgray;
+            p {
+              font-size: 2vw;
+              font-weight: 900;
+            }
+          }
+          h5 {
+            font-size: 2.2vw;
+            font-weight: 600;
+            margin-top: 15px;
+          }
+          h3 {
+            font-size: 2vw;
+            color: gray;
+          }
+          h4 {
+            font-size: 2.1vw;
+            font-weight: 600;
+            margin: 20px 0;
+          }
+          div.radio-button {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            input {
+              width: 5%;
+              margin: 5px;
+            }
+            h6 {
+              font-size: 2vw;
+              color: gray;
+              margin-top: 5px;
+            }
+          }
+          button {
+            font-size: 2.3vw;
+            color: white;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+            background-color: $main;
+            padding: 20px;
+            font-family: vazir;
+            border: 1px solid $main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 500ms;
+          }
+          button:hover {
+            background-color: white;
+            color: $main;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 768px) {
+    section {
+      text-align: right;
+      width: 90%;
+      margin: 50px auto;
+      font-family: vazir;
+      p.sign-in {
+        font-size: 1vw;
+        a {
+          text-decoration: none;
+          color: $main;
+        }
+      }
+      form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        div.information {
+          padding: 20px;
+          width: 67%;
+          box-sizing: border-box;
+          border: 1px solid lightgray;
+          border-radius: 10px;
+          h2 {
+            font-weight: 900;
+            font-size: 1.3vw;
+          }
+          p {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 1vw;
+            span {
+              color: red;
+            }
+            span.optiobal {
+              color: gray;
+            }
+          }
+          input {
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px;
+          }
+          input:focus {
+            outline: 1px solid $main;
+          }
+          textarea {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+            padding: 10px;
+          }
+        }
+        div.order {
+          width: 29%;
+          margin-top: 0;
+          border: 1px solid lightgray;
+          text-align: right;
+          border-radius: 10px;
+          padding: 15px;
+          box-sizing: border-box;
+          h2 {
+            font-size: 1.3vw;
+            font-weight: 800;
+            text-align: center;
+            margin: 15px auto;
+          }
+          div.price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            border-bottom: 1px solid lightgray;
+            p {
+              font-size: 1vw;
+              font-weight: 900;
+            }
+          }
+          h5 {
+            font-size: 1.2vw;
+            font-weight: 600;
+            margin-top: 15px;
+          }
+          h3 {
+            font-size: 1vw;
+            color: gray;
+          }
+          h4 {
+            font-size: 1.1vw;
+            font-weight: 600;
+            margin: 20px 0;
+          }
+          div.radio-button {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            input {
+              width: 5%;
+              margin: 5px;
+            }
+            h6 {
+              font-size: 1vw;
+              color: gray;
+              margin-top: 5px;
+            }
+          }
+          button {
+            font-size: 1.3vw;
+            color: white;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+            background-color: $main;
+            padding: 20px;
+            font-family: vazir;
+            border: 1px solid $main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 500ms;
+          }
+          button:hover {
+            background-color: white;
+            color: $main;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 1024px) {
+    section {
+      text-align: right;
+      width: 90%;
+      margin: 50px auto;
+      font-family: vazir;
+      p.sign-in {
+        font-size: 1vw;
+        a {
+          text-decoration: none;
+          color: $main;
+        }
+      }
+      form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        div.information {
+          padding: 20px;
+          width: 67%;
+          box-sizing: border-box;
+          border: 1px solid lightgray;
+          border-radius: 10px;
+          h2 {
+            font-weight: 900;
+            font-size: 1.3vw;
+          }
+          p {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 1vw;
+            span {
+              color: red;
+            }
+            span.optiobal {
+              color: gray;
+            }
+          }
+          input {
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px;
+          }
+          input:focus {
+            outline: 1px solid $main;
+          }
+          textarea {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+            padding: 10px;
+          }
+        }
+        div.order {
+          width: 29%;
+          border: 1px solid lightgray;
+          text-align: right;
+          border-radius: 10px;
+          padding: 15px;
+          box-sizing: border-box;
+          h2 {
+            font-size: 1.3vw;
+            font-weight: 800;
+            text-align: center;
+            margin: 15px auto;
+          }
+          div.price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            border-bottom: 1px solid lightgray;
+            p {
+              font-size: 1vw;
+              font-weight: 900;
+            }
+          }
+          h5 {
+            font-size: 1.2vw;
+            font-weight: 600;
+            margin-top: 15px;
+          }
+          h3 {
+            font-size: 1vw;
+            color: gray;
+          }
+          h4 {
+            font-size: 1.1vw;
+            font-weight: 600;
+            margin: 20px 0;
+          }
+          div.radio-button {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            input {
+              width: 5%;
+              margin: 5px;
+            }
+            h6 {
+              font-size: 1vw;
+              color: gray;
+              margin-top: 5px;
+            }
+          }
+          button {
+            font-size: 1.3vw;
+            color: white;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+            background-color: $main;
+            padding: 20px;
+            font-family: vazir;
+            border: 1px solid $main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 500ms;
+          }
+          button:hover {
+            background-color: white;
+            color: $main;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 1200px) {
+  section {
+    text-align: right;
+    width: 90%;
+    margin: 50px auto;
+    font-family: vazir;
+    p.sign-in {
+      font-size: 1vw;
+      a {
+        text-decoration: none;
+        color: $main;
+      }
+    }
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      div.information {
+        padding: 20px;
+        width: 67%;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        h2 {
+          font-weight: 900;
+          font-size: 1.3vw;
+        }
+        p {
+          margin-top: 20px;
+          margin-bottom: 5px;
+          font-weight: 600;
+          font-size: 1vw;
+          span {
+            color: red;
+          }
+          span.optiobal {
+            color: gray;
+          }
+        }
+        input {
+          width: 100%;
+          border-radius: 5px;
+          padding: 5px;
+        }
+        input:focus {
+          outline: 1px solid $main;
+        }
+        textarea {
+          width: 100%;
+          border-radius: 10px;
+          border: 1px solid lightgray;
+          padding: 10px;
+        }
+      }
+      div.order {
+        width: 29%;
+        border: 1px solid lightgray;
+        text-align: right;
+        border-radius: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+        h2 {
+          font-size: 1.3vw;
+          font-weight: 800;
+          text-align: center;
+          margin: 15px auto;
+        }
+        div.price {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+          box-sizing: border-box;
+          border-bottom: 1px solid lightgray;
+          p {
+            font-size: 1vw;
+            font-weight: 900;
+          }
+        }
+        h5 {
+          font-size: 1.2vw;
+          font-weight: 600;
+          margin-top: 15px;
+        }
+        h3 {
+          font-size: 1vw;
+          color: gray;
+        }
+        h4 {
+          font-size: 1.1vw;
+          font-weight: 600;
+          margin: 20px 0;
+        }
+        div.radio-button {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          input {
+            width: 5%;
+            margin: 5px;
+          }
+          h6 {
+            font-size: 1vw;
+            color: gray;
+            margin-top: 5px;
+          }
+        }
+        button {
+          font-size: 1.3vw;
+          color: white;
+          width: 100%;
+          text-align: center;
+          border-radius: 5px;
+          background-color: $main;
+          padding: 20px;
+          font-family: vazir;
+          border: 1px solid $main;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 500ms;
+        }
+        button:hover {
+          background-color: white;
+          color: $main;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+div.essay-search{
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    font-family: vazir;
+    h1{
+        font-family: lalezar;
+        color: $secondary;
+        font-size: 3vw;
+    }
+    p{
+        width: 80%;
+        margin: auto;
+        font-size: 1vw;
+    }
+    div{
+        width: 50%;
+        margin: auto;
+        position: relative;
+        margin-top: 30px;
+        input{
+            width: 100%;
+            padding: 15px;
+            border-radius: 7px;
+            border: 1px solid lightgray;
+        }
+        button.search-btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            padding: 10px 15px;
+            background-color: $main;
+            border: 0;
+            border-radius: 7px;
+            i{
+                color: white;
+            }
+        }
+    }
+}

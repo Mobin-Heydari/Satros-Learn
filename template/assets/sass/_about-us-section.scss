@@ -1,0 +1,507 @@
+
+@media screen and (min-width:300px) {
+    section{
+        font-family: vazir;
+        width: 100%;
+        padding: 0;
+        h1{
+            font-size: 5vw;
+            text-align: center;
+            margin: 40px auto 60px auto;
+            font-weight: 900;
+        }
+        div.success-step{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            position: relative;
+            img{
+                width: 90%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+                margin-left: 0;
+                margin-top: 0;
+            }
+            div.seccess-step-details{
+                text-align: center;
+                padding: 15px;
+                box-sizing: border-box;
+                width: 90%;
+                margin-top: 25px;
+                h2{
+                    font-size: 4vw;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 3.5vw;
+                    text-align: justify;
+                }
+            }
+        }
+        div.introduce{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin: 70px auto;
+            position: relative;
+            div.introduce-details{
+                text-align: center;
+                padding: 15px;
+                box-sizing: border-box;
+                width: 90%;
+                order: 2;
+                margin-top: 25px;
+                h2{
+                    font-size: 4vw;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 3.5vw;
+                    text-align: justify;
+                }
+            }
+            img{
+                width: 90%;
+                order: 1;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+                margin-right: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media screen and (min-width:576px) {
+    section{
+        font-family: vazir;
+        width: 100%;
+        padding: 0;
+        h1{
+            font-size: 3vw;
+            text-align: center;
+            margin: 40px auto 60px auto;
+            font-weight: 900;
+        }
+        div.success-step{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            position: relative;
+            img{
+                width: 90%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            div.seccess-step-details{
+                text-align: center;
+                padding: 15px;
+                box-sizing: border-box;
+                width: 90%;
+                h2{
+                    font-size: 3vw;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 2.5vw;
+                    text-align: justify;
+                }
+            }
+        }
+        div.introduce{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin: 70px 0;
+            position: relative;
+            div.introduce-details{
+                text-align: center;
+                padding: 15px;
+                box-sizing: border-box;
+                width: 90%;
+                h2{
+                    font-size: 3vw;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 2.5vw;
+                    text-align: justify;
+                }
+            }
+            img{
+                width: 90%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+                margin-right: 0;
+                margin-top: 20px;
+            }
+            div.four{
+                background-color: $main;
+                width: 60px;
+                height: 130px;
+                position: absolute;
+                left: 0;
+                bottom: 5%;
+                border-radius: 0 5px 5px 0;
+            }
+            div.five{
+                background-color: $main;
+                width: 90px;
+                height: 60px;
+                position: absolute;
+                left: 0;
+                bottom: 55%;
+                border-radius: 0 5px 5px 0;
+            }
+            div.six{
+                background-color: $main;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                left: 0;
+                bottom: 85%;
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    section{
+        font-family: vazir;
+        width: 100%;
+        padding: 0;
+        h1{
+            font-size: 3vw;
+            text-align: center;
+            margin: 40px auto 60px auto;
+            font-weight: 900;
+        }
+        div.success-step{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 30px 0;
+            position: relative;
+            img{
+                width: 21%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+                margin-left: 25px;
+                margin-top: 20px;
+            }
+            div.seccess-step-details{
+                text-align: right;
+                padding: 15px;
+                box-sizing: border-box;
+                width: 60%;
+                margin-top: 0;
+                h2{
+                    font-size: 2vw;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 1.5vw;
+                }
+            }
+        }
+        div.introduce{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 40px 0;
+            position: relative;
+            div.introduce-details{
+                text-align: right;
+                padding: 15px;
+                box-sizing: border-box;
+                width: 60%;
+                order: 1;
+                margin-top: 0;
+                h2{
+                    font-size: 2vw;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 1.5vw;
+                }
+            }
+            img{
+                width: 21%;
+                order: 2;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+                margin-right: 25px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    section{
+        font-family: vazir;
+        width: 100%;
+        padding: 0;
+        h1{
+            font-size: 3vw;
+            text-align: center;
+            margin: 40px auto 60px auto;
+            font-weight: 900;
+        }
+        div.success-step{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 30px 0;
+            position: relative;
+            img{
+                width: 21%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+                margin-left: 25px;
+                margin-top: 20px;
+            }
+            div.seccess-step-details{
+                text-align: right;
+                padding: 15px;
+                box-sizing: border-box;
+                width: 60%;
+                h2{
+                    font-size: 2vw;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 1.5vw;
+                }
+            }
+            div.one{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                right: 0;
+                bottom: 5%;
+                background-color: $main;
+                border-radius: 5px 0 0 5px;
+            }
+            div.two{
+                position: absolute;
+                width: 90px;
+                height: 60px;
+                right: 0;
+                bottom: 35%;
+                background-color: $main;
+                border-radius: 5px 0 0 5px;
+            }
+            div.three{
+                position: absolute;
+                width: 60px;
+                height: 130px;
+                right: 0;
+                bottom: 65%;
+                background-color: $main;
+                border-radius: 5px 0 0 5px;
+            }
+        }
+        div.introduce{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 70px 0;
+            position: relative;
+            div.introduce-details{
+                text-align: right;
+                padding: 15px;
+                box-sizing: border-box;
+                width: 60%;
+                h2{
+                    font-size: 2vw;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 1.5vw;
+                }
+            }
+            img{
+                width: 21%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+                margin-right: 25px;
+                margin-top: 20px;
+            }
+            div.four{
+                background-color: $main;
+                width: 60px;
+                height: 130px;
+                position: absolute;
+                left: 0;
+                bottom: 5%;
+                border-radius: 0 5px 5px 0;
+            }
+            div.five{
+                background-color: $main;
+                width: 90px;
+                height: 60px;
+                position: absolute;
+                left: 0;
+                bottom: 55%;
+                border-radius: 0 5px 5px 0;
+            }
+            div.six{
+                background-color: $main;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                left: 0;
+                bottom: 85%;
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    section{
+        font-family: vazir;
+        width: 100%;
+        padding: 0;
+        h1{
+            font-size: 3vw;
+            text-align: center;
+            margin: 40px auto 60px auto;
+            font-weight: 900;
+        }
+        div.success-step{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 30px 0;
+            position: relative;
+            img{
+                width: 21%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+                margin-left: 25px;
+                margin-top: 20px;
+            }
+            div.seccess-step-details{
+                text-align: right;
+                padding: 15px;
+                box-sizing: border-box;
+                width: 60%;
+                h2{
+                    font-size: 2vw;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 1.5vw;
+                }
+            }
+            div.one{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                right: 0;
+                bottom: 5%;
+                background-color: $main;
+                border-radius: 5px 0 0 5px;
+            }
+            div.two{
+                position: absolute;
+                width: 90px;
+                height: 60px;
+                right: 0;
+                bottom: 35%;
+                background-color: $main;
+                border-radius: 5px 0 0 5px;
+            }
+            div.three{
+                position: absolute;
+                width: 60px;
+                height: 130px;
+                right: 0;
+                bottom: 65%;
+                background-color: $main;
+                border-radius: 5px 0 0 5px;
+            }
+        }
+        div.introduce{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 70px 0;
+            position: relative;
+            div.introduce-details{
+                text-align: right;
+                padding: 15px;
+                box-sizing: border-box;
+                width: 60%;
+                h2{
+                    font-size: 2vw;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 1.5vw;
+                }
+            }
+            img{
+                width: 21%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+                margin-right: 25px;
+                margin-top: 20px;
+            }
+            div.four{
+                background-color: $main;
+                width: 60px;
+                height: 130px;
+                position: absolute;
+                left: 0;
+                bottom: 5%;
+                border-radius: 0 5px 5px 0;
+            }
+            div.five{
+                background-color: $main;
+                width: 90px;
+                height: 60px;
+                position: absolute;
+                left: 0;
+                bottom: 55%;
+                border-radius: 0 5px 5px 0;
+            }
+            div.six{
+                background-color: $main;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                left: 0;
+                bottom: 85%;
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+}

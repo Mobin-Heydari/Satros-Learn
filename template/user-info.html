@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user info</title>
+    <link rel="stylesheet" href="assets/css/user-info.css" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <!-- dashboard menu -->
+      <div class="dashboard-menu">
+        <div class="logo">
+          <img src="assets/img/white-logo.png" />
+          <h1>Satros Web</h1>
+        </div>
+        <div class="menu">
+          <div>
+            <i class="fa-solid fa-table-columns d-none d-md-inline-block"></i>
+            <a href="dashboard.html">پیشخوان</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-user d-none d-md-inline-block"></i>
+            <a class="active" href="user-info.html">اطلاعات کاربری</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-graduation-cap d-none d-md-inline-block"></i>
+            <a href="user-courses.html">دوره های من</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-receipt d-none d-md-inline-block"></i>
+            <a href="factors.html">مشاهده فاکتور ها</a>
+          </div>
+        </div>
+        <div class="logout">
+          <h3>پرهام رحیمی</h3>
+          <p>satrosweb@gmail.com</p>
+          <button>خروج از حساب</button>
+        </div>
+      </div>
+      <!-- user info page -->
+      <div class="user-info-page">
+        <!-- welcome -->
+        <div class="welcome">
+          <p>پرهام رحیمی عزیز خوش آمدی!</p>
+          <div class="nav-links">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="cart-basket.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+              <button
+              onclick="showMenu()"
+              class="burger d-inline-block d-md-none"
+              >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <!-- person info -->
+        <div class="person-info">
+          <div class="person-info-title">
+            <i class="fa-solid fa-user"></i>
+            <h3>اطلاعات فردی</h3>
+            </div>
+            <form class="person-info-container">
+                <div>
+                  <p>نام <span>(ضروری)</span></p>
+                  <input type="text" placeholder="نام خود را وارد نمایید">
+                </div>
+                <div>
+                  <p>نام خانوادگی <span>(ضروری)</span></p>
+                  <input type="text" placeholder="نام خانوادگی خود را وارد نمایید">
+                </div>
+                <div>
+                  <p>تاریخ تولد</p>
+                  <input type="date" placeholder="0000/00/00">
+                </div>
+                <div>
+                  <p>تلفن همراه <span>(ضروری)</span></p>
+                  <input type="tel" placeholder="+989121234567">
+                </div>
+                <div>
+                  <p>ایمیل <span>(ضروری)</span></p>
+                  <input type="email" placeholder="@gmail.com">
+                </div>
+                <div>
+                  <p>جنسیت</p>
+                  <select>
+                        <option value="مرد">مرد</option>
+                        <option value="زن">زن</option>
+                      </select>
+                    </div>
+                    <div>
+                      <p>کد ملی</p>
+                      <input type="text" placeholder="0311111111">
+                    </div>
+                    <button type="submit">اعمال تغییرات</button>
+                  </form>
+                </div>
+                <!-- change password -->
+                <div class="change-password">
+                  <div class="change-password-title">
+                    <i class="fa-solid fa-shield"></i>
+                    <h3>تغییر رمز عبور</h3>
+                  </div>
+                  <form class="change-password-container">
+                    <div>
+                      <p>رمز عبور فعلی</p>
+                      <input type="password">
+                    </div>
+                    <div>
+                      <p>رمز عبور فعلی</p>
+                      <input type="password">
+                    </div>
+                    <div>
+                    <p>رمز عبور فعلی</p>
+                    <input type="password">
+                  </div>
+                  <button type="submit">اعمال تغییرات</button>
+            </form>
+          </div>
+      </div>
+    </section>
+    
+    <script src="assets/js/dashboard.js" defer></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

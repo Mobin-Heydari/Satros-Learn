@@ -1,0 +1,6332 @@
+/* imports */
+@import url(about-us.css);
+@import url(cart-basket.css);
+@import url(contact-us.css);
+@import url(course.css);
+@import url(courses.css);
+@import url(dashboard.css);
+@import url(essays.css);
+@import url(my-courses.css);
+@import url(order.css);
+@import url(podcast.css);
+@import url(podcasts.css);
+@import url(recipts.css);
+@import url(rules.css);
+@import url(sign-in.css);
+@import url(sign-up.css);
+@import url(user-info.css);
+
+
+
+@font-face {
+  font-family: lalezar;
+  src: url(fonts/Lalezar-Regular.woff);
+}
+@font-face {
+  font-family: vazir;
+  src: url(fonts/Vazir-Regular.woff);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 300px) {
+  div.discount-alert {
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(img/discount-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.discount-alert div.discount-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  div.discount-alert div.discount-title button.dsicount-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 0;
+    cursor: pointer;
+  }
+  div.discount-alert div.discount-title p {
+    margin-right: 15px;
+    margin-top: 15px;
+    color: white;
+    font-family: vazir;
+    font-size: 2vw;
+  }
+  div.discount-alert div.discount-title button.dsicount-btn:focus {
+    outline: none;
+  }
+  div.discount-alert div.discount-link a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    padding: 5px 15px;
+    font-family: vazir;
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 576px) {
+  div.discount-alert {
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(img/discount-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.discount-alert div.discount-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  div.discount-alert div.discount-title button.dsicount-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 0;
+    cursor: pointer;
+  }
+  div.discount-alert div.discount-title p {
+    margin-right: 15px;
+    margin-top: 15px;
+    color: white;
+    font-family: vazir;
+    font-size: 1.8vw;
+  }
+  div.discount-alert div.discount-title button.dsicount-btn:focus {
+    outline: none;
+  }
+  div.discount-alert div.discount-link a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    padding: 5px 15px;
+    font-family: vazir;
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.discount-alert {
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(img/discount-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.discount-alert div.discount-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  div.discount-alert div.discount-title button.dsicount-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 0;
+    cursor: pointer;
+  }
+  div.discount-alert div.discount-title p {
+    margin-right: 15px;
+    margin-top: 15px;
+    color: white;
+    font-family: vazir;
+    font-size: 2vw;
+  }
+  div.discount-alert div.discount-title button.dsicount-btn:focus {
+    outline: none;
+  }
+  div.discount-alert div.discount-link a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    padding: 5px 15px;
+    font-family: vazir;
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.discount-alert {
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(img/discount-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.discount-alert div.discount-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  div.discount-alert div.discount-title button.dsicount-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 0;
+    cursor: pointer;
+  }
+  div.discount-alert div.discount-title p {
+    margin-right: 15px;
+    margin-top: 15px;
+    color: white;
+    font-family: vazir;
+    font-size: 1.2vw;
+  }
+  div.discount-alert div.discount-title button.dsicount-btn:focus {
+    outline: none;
+  }
+  div.discount-alert div.discount-link a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    padding: 5px 15px;
+    font-family: vazir;
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.discount-alert {
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(img/discount-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.discount-alert div.discount-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  div.discount-alert div.discount-title button.dsicount-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 0;
+    cursor: pointer;
+  }
+  div.discount-alert div.discount-title p {
+    margin-right: 15px;
+    margin-top: 15px;
+    color: white;
+    font-family: vazir;
+    font-size: 1.2vw;
+  }
+  div.discount-alert div.discount-title button.dsicount-btn:focus {
+    outline: none;
+  }
+  div.discount-alert div.discount-link a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    padding: 5px 15px;
+    font-family: vazir;
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 300px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vazir;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0;
+  }
+  header div.logo {
+    width: 35px;
+    margin-right: 20px;
+  }
+  header div.logo img {
+    width: 100%;
+  }
+  header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #575757;
+    transition: 500ms;
+    border-radius: 7px;
+    font-size: 1.5vw;
+  }
+  header nav a:hover {
+    color: #F9A135;
+  }
+  header nav div.header-item {
+    position: relative;
+  }
+  header nav div.header-item a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  header nav div.header-item a i {
+    font-size: 1vw;
+  }
+  header nav div.header-item div.drop-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: absolute;
+    top: 150%;
+    right: 20%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #F9A135;
+    transition: 500ms;
+    width: 100%;
+    animation-name: show-dropdown;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  header nav div.header-item div.drop-menu a {
+    font-size: 1vw;
+    padding: 15px;
+    display: block;
+    border-radius: 0;
+  }
+  @keyframes show-dropdown {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  header div.login-icons {
+    margin-left: 13px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  header div.login-icons a {
+    text-decoration: none;
+    margin: 5px;
+  }
+  header div.login-icons a.cart-icon {
+    color: #575757;
+    border-radius: 5px;
+    background-color: rgb(238, 236, 236);
+    padding: 10px 15px;
+    transition: 500ms;
+  }
+  header div.login-icons a.cart-icon i {
+    transition: 500ms;
+  }
+  header div.login-icons a.cart-icon:hover {
+    background-color: white;
+  }
+  header div.login-icons a.cart-icon:hover i {
+    color: #F9A135;
+  }
+  header div.login-icons a.search-icon {
+    background-color: #F9A135;
+    border-radius: 4px;
+    padding: 10px 15px 10px 11px;
+    transition: 500ms;
+    color: white;
+  }
+  header div.login-icons a.search-icon:hover {
+    background-color: rgb(238, 236, 236);
+    color: black;
+  }
+  header div.login-icons a.login-link {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  header div.login-icons a.login-link i {
+    color: white;
+    margin: 5px;
+    transition: 500ms;
+  }
+  header div.login-icons a.login-link p {
+    display: inline-block;
+  }
+  header div.burger-menu button {
+    background-color: #F9A135;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-left: 15px;
+    transition: 500ms;
+  }
+  header div.burger-menu button i {
+    color: white;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vazir;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0;
+  }
+  header div.logo {
+    width: 35px;
+    margin-right: 20px;
+  }
+  header div.logo img {
+    width: 100%;
+  }
+  header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #575757;
+    transition: 500ms;
+    border-radius: 7px;
+    font-size: 1.5vw;
+  }
+  header nav a:hover {
+    color: #F9A135;
+  }
+  header nav div.header-item {
+    position: relative;
+  }
+  header nav div.header-item a {
+    text-decoration: none;
+  }
+  header nav div.header-item a i {
+    font-size: 1vw;
+  }
+  header nav div.header-item div.drop-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: absolute;
+    top: 150%;
+    right: 20%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #F9A135;
+    transition: 500ms;
+    width: 100%;
+    animation-name: show-dropdown;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  header nav div.header-item div.drop-menu a {
+    font-size: 1vw;
+    padding: 15px;
+    display: block;
+    border-radius: 0;
+  }
+  @keyframes show-dropdown {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  header div.login-icons {
+    margin-left: 13px;
+    margin-top: 15px;
+    text-align: left;
+  }
+  header div.login-icons a {
+    text-decoration: none;
+    font-size: 1.2vw;
+    margin: 5px;
+  }
+  header div.login-icons a i {
+    font-size: 1.2vw;
+  }
+  header div.login-icons a.cart-icon {
+    color: #575757;
+    border-radius: 5px;
+    background-color: rgb(238, 236, 236);
+    padding: 10px 15px;
+    transition: 500ms;
+  }
+  header div.login-icons a.cart-icon i {
+    transition: 500ms;
+  }
+  header div.login-icons a.cart-icon:hover {
+    background-color: white;
+  }
+  header div.login-icons a.cart-icon:hover i {
+    color: #F9A135;
+  }
+  header div.login-icons a.search-icon {
+    background-color: #F9A135;
+    border-radius: 4px;
+    padding: 10px 15px 10px 12px;
+    transition: 500ms;
+    color: white;
+  }
+  header div.login-icons a.search-icon:hover {
+    background-color: rgb(238, 236, 236);
+    color: black;
+  }
+  header div.login-icons a.login-link {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  header div.login-icons a.login-link i {
+    color: white;
+    margin: 5px;
+    transition: 500ms;
+  }
+  header div.login-icons a.login-link p {
+    display: inline-block;
+  }
+  header div.burger-menu button {
+    background-color: #F9A135;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-left: 15px;
+    transition: 500ms;
+  }
+  header div.burger-menu button i {
+    color: white;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid #F9A135;
+    transition: 500ms;
+  }
+  div.mobile-menu div.logo {
+    width: 20%;
+    margin-top: 20px;
+  }
+  div.mobile-menu div.logo img {
+    width: 100%;
+  }
+  div.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.mobile-menu nav a {
+    padding: 20px 5px;
+    font-size: 2.5vw;
+    font-weight: 600;
+    font-family: vazir;
+    color: #575757;
+  }
+  div.mobile-menu nav div.nav-item ul li a {
+    padding: 10px;
+  }
+  div.search-page {
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border-right: 4px solid #F9A135;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.search-page div.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  div.search-page div.search-container img {
+    background-color: #F9A135;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  div.search-page div.search-container h3 {
+    font-size: 3vw;
+    margin: 20px;
+    font-family: lalezar;
+  }
+  div.search-page div.search-container div.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+  }
+  div.search-page div.search-container div.search-input input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    width: 40%;
+    font-family: vazir;
+    width: 80%;
+  }
+  div.search-page div.search-container div.search-input input:focus {
+    outline: none;
+  }
+  div.search-page div.search-container div.search-input button.search-click {
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    background-color: #F9A135;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  div.search-page div.search-container button.search-close-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid #F9A135;
+    transition: 500ms;
+  }
+  div.mobile-menu div.logo {
+    width: 20%;
+    margin-top: 20px;
+  }
+  div.mobile-menu div.logo img {
+    width: 100%;
+  }
+  div.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.mobile-menu nav a {
+    padding: 20px 5px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: vazir;
+    color: #575757;
+  }
+  div.mobile-menu nav div.nav-item ul li a {
+    padding: 10px;
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border-right: 4px solid #F9A135;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.search-page div.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  div.search-page div.search-container img {
+    background-color: #F9A135;
+    padding: 15px;
+    width: 25%;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  div.search-page div.search-container h3 {
+    font-size: 3vw;
+    margin: 20px;
+    font-family: lalezar;
+  }
+  div.search-page div.search-container div.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+    width: 100%;
+  }
+  div.search-page div.search-container div.search-input input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    width: 40%;
+    font-family: vazir;
+    width: 50%;
+  }
+  div.search-page div.search-container div.search-input input:focus {
+    outline: none;
+  }
+  div.search-page div.search-container div.search-input button.search-click {
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    background-color: #F9A135;
+    color: white;
+    font-weight: 600;
+    margin-top: 0;
+  }
+  div.search-page div.search-container button.search-close-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid #F9A135;
+    transition: 500ms;
+  }
+  div.mobile-menu div.logo {
+    width: 20%;
+    margin-top: 20px;
+  }
+  div.mobile-menu div.logo img {
+    width: 100%;
+  }
+  div.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.mobile-menu nav a {
+    padding: 20px 5px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: vazir;
+    color: #575757;
+  }
+  div.mobile-menu nav div.nav-item ul li a {
+    padding: 10px;
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-right: 4px solid #F9A135;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.search-page div.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  div.search-page div.search-container img {
+    background-color: #F9A135;
+    padding: 15px;
+    width: 20%;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  div.search-page div.search-container h3 {
+    font-size: 3vw;
+    margin: 20px;
+    font-family: lalezar;
+  }
+  div.search-page div.search-container div.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+  }
+  div.search-page div.search-container div.search-input input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    width: 40%;
+    font-family: vazir;
+    width: 50%;
+  }
+  div.search-page div.search-container div.search-input input:focus {
+    outline: none;
+  }
+  div.search-page div.search-container div.search-input button.search-click {
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    background-color: #F9A135;
+    color: white;
+    font-weight: 600;
+  }
+  div.search-page div.search-container button.search-close-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid #F9A135;
+    transition: 500ms;
+  }
+  div.mobile-menu div.logo {
+    width: 20%;
+    margin-top: 20px;
+  }
+  div.mobile-menu div.logo img {
+    width: 100%;
+  }
+  div.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.mobile-menu nav a {
+    padding: 20px 5px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: vazir;
+    color: #575757;
+  }
+  div.mobile-menu nav div.nav-item ul li a {
+    padding: 10px;
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-right: 4px solid #F9A135;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.search-page div.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  div.search-page div.search-container img {
+    background-color: #F9A135;
+    padding: 15px;
+    width: 15%;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  div.search-page div.search-container h3 {
+    font-size: 3vw;
+    margin: 20px;
+    font-family: lalezar;
+  }
+  div.search-page div.search-container div.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+  }
+  div.search-page div.search-container div.search-input input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    width: 40%;
+    font-family: vazir;
+    width: 50%;
+  }
+  div.search-page div.search-container div.search-input input:focus {
+    outline: none;
+  }
+  div.search-page div.search-container div.search-input button.search-click {
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    background-color: #F9A135;
+    color: white;
+    font-weight: 600;
+  }
+  div.search-page div.search-container button.search-close-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid #F9A135;
+    transition: 500ms;
+  }
+  div.mobile-menu div.logo {
+    width: 20%;
+    margin-top: 20px;
+  }
+  div.mobile-menu div.logo img {
+    width: 100%;
+  }
+  div.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.mobile-menu nav a {
+    padding: 20px 5px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: vazir;
+    color: #575757;
+  }
+  div.mobile-menu nav div.nav-item ul li a {
+    padding: 10px;
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-right: 4px solid #F9A135;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.search-page div.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  div.search-page div.search-container img {
+    background-color: #F9A135;
+    padding: 15px;
+    width: 15%;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  div.search-page div.search-container h3 {
+    font-size: 3vw;
+    margin: 20px;
+    font-family: lalezar;
+  }
+  div.search-page div.search-container div.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+  }
+  div.search-page div.search-container div.search-input input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    width: 40%;
+    font-family: vazir;
+    width: 50%;
+  }
+  div.search-page div.search-container div.search-input input:focus {
+    outline: none;
+  }
+  div.search-page div.search-container div.search-input button.search-click {
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    background-color: #F9A135;
+    color: white;
+    font-weight: 600;
+  }
+  div.search-page div.search-container button.search-close-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 300px) {
+  div.login-page {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    animation-name: open-login;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.login-page div.login-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 85%;
+    height: auto;
+    font-family: vazir;
+    position: relative;
+    animation-name: open-login-card;
+    animation-iteration-count: 1;
+    animation-duration: 1000ms;
+  }
+  div.login-page div.login-card img {
+    width: 80%;
+    margin: 25px auto;
+  }
+  div.login-page div.login-card div.login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  div.login-page div.login-card div.login-link i {
+    background-color: #F9A135;
+    font-size: 3.3vw;
+    border-radius: 4px;
+    color: white;
+    padding: 15px;
+    margin-left: -15px;
+    z-index: 4;
+  }
+  div.login-page div.login-card div.login-link a.login {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    padding: 20px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    font-size: 3.3vw;
+    font-weight: 900;
+    z-index: 3;
+    border-radius: 8px;
+  }
+  div.login-page div.login-card div.sign-up-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  div.login-page div.login-card div.sign-up-link i {
+    background-color: #F9A135;
+    font-size: 3.3vw;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 18px;
+    margin-left: -15px;
+    z-index: 4;
+  }
+  div.login-page div.login-card div.sign-up-link a.sign-up {
+    color: white;
+    border: 0;
+    padding: 20px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    font-size: 3.3vw;
+    font-weight: 900;
+    z-index: 3;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+  }
+  div.login-page div.login-card button.login-close {
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  div.login-page div.login-card button.login-close i {
+    color: black;
+    font-size: 3.5vw;
+  }
+  @keyframes open-login-card {
+    from {
+      top: -100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  @keyframes open-login {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  div.login-page {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    animation-name: open-login;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.login-page div.login-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 55%;
+    height: auto;
+    font-family: vazir;
+    position: relative;
+    animation-name: open-login-card;
+    animation-iteration-count: 1;
+    animation-duration: 1000ms;
+  }
+  div.login-page div.login-card img {
+    width: 80%;
+    margin: 25px auto;
+  }
+  div.login-page div.login-card div.login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  div.login-page div.login-card div.login-link i {
+    background-color: #F9A135;
+    font-size: 2.3vw;
+    border-radius: 4px;
+    color: white;
+    padding: 15px;
+    margin-left: -15px;
+    z-index: 4;
+  }
+  div.login-page div.login-card div.login-link a.login {
+    color: white;
+    border: 0;
+    padding: 20px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    font-size: 2.3vw;
+    font-weight: 900;
+    z-index: 3;
+    border-radius: 8px;
+  }
+  div.login-page div.login-card div.sign-up-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  div.login-page div.login-card div.sign-up-link i {
+    background-color: #F9A135;
+    font-size: 2.3vw;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 18px;
+    margin-left: -15px;
+    z-index: 4;
+  }
+  div.login-page div.login-card div.sign-up-link a.sign-up {
+    color: white;
+    border: 0;
+    padding: 20px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    font-size: 2.3vw;
+    font-weight: 900;
+    z-index: 3;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+  }
+  div.login-page div.login-card button.login-close {
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  div.login-page div.login-card button.login-close i {
+    color: black;
+    font-size: 2.5vw;
+  }
+  @keyframes open-login-card {
+    from {
+      top: -100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  @keyframes open-login {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  div.login-page {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    animation-name: open-login;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.login-page div.login-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 35%;
+    height: auto;
+    font-family: vazir;
+    position: relative;
+    animation-name: open-login-card;
+    animation-iteration-count: 1;
+    animation-duration: 1000ms;
+  }
+  div.login-page div.login-card img {
+    width: 80%;
+    margin: 25px auto;
+  }
+  div.login-page div.login-card div.login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  div.login-page div.login-card div.login-link i {
+    background-color: #F9A135;
+    font-size: 1.3vw;
+    border-radius: 4px;
+    color: white;
+    padding: 15px;
+    margin-left: -15px;
+    z-index: 4;
+  }
+  div.login-page div.login-card div.login-link a.login {
+    color: white;
+    border: 0;
+    padding: 20px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    font-size: 1.3vw;
+    font-weight: 900;
+    z-index: 3;
+    border-radius: 8px;
+  }
+  div.login-page div.login-card div.sign-up-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  div.login-page div.login-card div.sign-up-link i {
+    background-color: #F9A135;
+    font-size: 1.3vw;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 18px;
+    margin-left: -15px;
+    z-index: 4;
+  }
+  div.login-page div.login-card div.sign-up-link a.sign-up {
+    color: white;
+    border: 0;
+    padding: 20px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    font-size: 1.3vw;
+    font-weight: 900;
+    z-index: 3;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+  }
+  div.login-page div.login-card button.login-close {
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  div.login-page div.login-card button.login-close i {
+    color: black;
+    font-size: 1.5vw;
+  }
+  @keyframes open-login-card {
+    from {
+      top: -100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  @keyframes open-login {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.login-page {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    animation-name: open-login;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.login-page div.login-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 35%;
+    height: auto;
+    font-family: vazir;
+    position: relative;
+    animation-name: open-login-card;
+    animation-iteration-count: 1;
+    animation-duration: 1000ms;
+  }
+  div.login-page div.login-card img {
+    width: 80%;
+    margin: 25px auto;
+  }
+  div.login-page div.login-card div.login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  div.login-page div.login-card div.login-link i {
+    background-color: #F9A135;
+    font-size: 1.3vw;
+    border-radius: 4px;
+    color: white;
+    padding: 15px;
+    margin-left: -15px;
+    z-index: 4;
+  }
+  div.login-page div.login-card div.login-link a.login {
+    color: white;
+    border: 0;
+    padding: 20px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    font-size: 1.3vw;
+    font-weight: 900;
+    z-index: 3;
+    border-radius: 8px;
+  }
+  div.login-page div.login-card div.sign-up-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  div.login-page div.login-card div.sign-up-link i {
+    background-color: #F9A135;
+    font-size: 1.3vw;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 18px;
+    margin-left: -15px;
+    z-index: 4;
+  }
+  div.login-page div.login-card div.sign-up-link a.sign-up {
+    color: white;
+    border: 0;
+    padding: 20px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    font-size: 1.3vw;
+    font-weight: 900;
+    z-index: 3;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+  }
+  div.login-page div.login-card button.login-close {
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  div.login-page div.login-card button.login-close i {
+    color: black;
+    font-size: 1.5vw;
+  }
+  @keyframes open-login-card {
+    from {
+      top: -100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  @keyframes open-login {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.login-page {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    animation-name: open-login;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.login-page div.login-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 35%;
+    height: auto;
+    font-family: vazir;
+    position: relative;
+    animation-name: open-login-card;
+    animation-iteration-count: 1;
+    animation-duration: 1000ms;
+  }
+  div.login-page div.login-card img {
+    width: 80%;
+    margin: 25px auto;
+  }
+  div.login-page div.login-card div.login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  div.login-page div.login-card div.login-link i {
+    background-color: #F9A135;
+    font-size: 1.3vw;
+    border-radius: 4px;
+    color: white;
+    padding: 15px;
+    margin-left: -15px;
+    z-index: 4;
+  }
+  div.login-page div.login-card div.login-link a.login {
+    color: white;
+    border: 0;
+    padding: 20px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    font-size: 1.3vw;
+    font-weight: 900;
+    z-index: 3;
+    border-radius: 8px;
+  }
+  div.login-page div.login-card div.sign-up-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  div.login-page div.login-card div.sign-up-link i {
+    background-color: #F9A135;
+    font-size: 1.3vw;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 18px;
+    margin-left: -15px;
+    z-index: 4;
+  }
+  div.login-page div.login-card div.sign-up-link a.sign-up {
+    color: white;
+    border: 0;
+    padding: 20px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    font-size: 1.3vw;
+    font-weight: 900;
+    z-index: 3;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+  }
+  div.login-page div.login-card button.login-close {
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  div.login-page div.login-card button.login-close i {
+    color: black;
+    font-size: 1.5vw;
+  }
+  @keyframes open-login-card {
+    from {
+      top: -100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  @keyframes open-login {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 300px) {
+  div.sign-in-page {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #F9A135;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.sign-in-page div.sign-in-card {
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: vazir;
+    text-align: center;
+  }
+  div.sign-in-page div.sign-in-card img {
+    width: 80%;
+    margin: auto;
+  }
+  div.sign-in-page div.sign-in-card h3 {
+    font-size: 3.5vw;
+    font-weight: 900;
+    margin: auto;
+    color: #575757;
+  }
+  div.sign-in-page div.sign-in-card p {
+    font-size: 3.2vw;
+    color: gray;
+    margin: 10px auto;
+  }
+  div.sign-in-page div.sign-in-card form {
+    width: 80%;
+    margin: auto;
+  }
+  div.sign-in-page div.sign-in-card form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.sign-in-page div.sign-in-card form div input {
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    text-align: center;
+  }
+  div.sign-in-page div.sign-in-card form div input:focus {
+    outline: 1px solid #F9A135;
+  }
+  div.sign-in-page div.sign-in-card form a.sending-code {
+    margin: 20px auto;
+    font-size: 3vw;
+    display: block;
+    color: #F9A135;
+    text-align: center;
+    transition: 500ms;
+  }
+  div.sign-in-page div.sign-in-card form a.sending-code:hover {
+    transform: scale(1.1);
+  }
+  div.sign-in-page div.sign-in-card form h6 {
+    font-size: 1vw;
+    color: gray;
+    margin: 10px auto;
+  }
+  div.sign-in-page div.sign-in-card form button.continue {
+    border: 1px solid #F9A135;
+    padding: 10px 15px;
+    background-color: #F9A135;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-family: vazir;
+    font-weight: 900;
+    transition: 500ms;
+    font-size: 3.3vw;
+  }
+  div.sign-in-page div.sign-in-card form button.continue:hover {
+    background-color: white;
+    color: #F9A135;
+  }
+  div.sign-in-page div.sign-in-card button.change-phone {
+    border: 0;
+    background-color: transparent;
+    color: #F9A135;
+    margin: 10px auto;
+    font-size: 3.2vw;
+  }
+  div.sign-in-page div.sign-in-card button.change-phone i {
+    margin: 20px 15px 0 15px;
+    color: black;
+    font-size: 3.3vw;
+  }
+}
+@media screen and (min-width: 576px) {
+  div.sign-in-page {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #F9A135;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.sign-in-page div.sign-in-card {
+    width: 70%;
+    height: auto;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: vazir;
+    text-align: center;
+  }
+  div.sign-in-page div.sign-in-card img {
+    width: 80%;
+    margin: auto;
+  }
+  div.sign-in-page div.sign-in-card h3 {
+    font-size: 2.5vw;
+    font-weight: 900;
+    margin: auto;
+    color: #575757;
+  }
+  div.sign-in-page div.sign-in-card p {
+    font-size: 2.2vw;
+    color: gray;
+    margin: 10px auto;
+  }
+  div.sign-in-page div.sign-in-card form {
+    width: 80%;
+    margin: auto;
+  }
+  div.sign-in-page div.sign-in-card form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.sign-in-page div.sign-in-card form div input {
+    margin: 15px;
+    width: 50px;
+    border: 1px solid lightgray;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  div.sign-in-page div.sign-in-card form div input:focus {
+    outline: 1px solid #F9A135;
+  }
+  div.sign-in-page div.sign-in-card form a.sending-code {
+    margin: 20px auto;
+    font-size: 2vw;
+    display: block;
+    color: #F9A135;
+    text-align: center;
+    transition: 500ms;
+  }
+  div.sign-in-page div.sign-in-card form a.sending-code:hover {
+    transform: scale(1.1);
+  }
+  div.sign-in-page div.sign-in-card form h6 {
+    font-size: 1vw;
+    color: gray;
+    margin: 10px auto;
+  }
+  div.sign-in-page div.sign-in-card form button.continue {
+    border: 1px solid #F9A135;
+    padding: 10px 15px;
+    background-color: #F9A135;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-family: vazir;
+    font-weight: 900;
+    transition: 500ms;
+    font-size: 2.3vw;
+  }
+  div.sign-in-page div.sign-in-card form button.continue:hover {
+    background-color: white;
+    color: #F9A135;
+  }
+  div.sign-in-page div.sign-in-card button.change-phone {
+    border: 0;
+    background-color: transparent;
+    color: #F9A135;
+    margin: 10px auto;
+    font-size: 2.2vw;
+  }
+  div.sign-in-page div.sign-in-card button.change-phone i {
+    margin: 20px 15px 0 15px;
+    color: black;
+    font-size: 1.3vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.sign-in-page {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #F9A135;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.sign-in-page div.sign-in-card {
+    width: 50%;
+    height: auto;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: vazir;
+    text-align: center;
+  }
+  div.sign-in-page div.sign-in-card img {
+    width: 80%;
+    margin: auto;
+  }
+  div.sign-in-page div.sign-in-card h3 {
+    font-size: 1.5vw;
+    font-weight: 900;
+    margin: auto;
+    color: #575757;
+  }
+  div.sign-in-page div.sign-in-card p {
+    font-size: 1.2vw;
+    color: gray;
+    margin: 10px auto;
+  }
+  div.sign-in-page div.sign-in-card form {
+    width: 80%;
+    margin: auto;
+  }
+  div.sign-in-page div.sign-in-card form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.sign-in-page div.sign-in-card form div input {
+    margin: 15px;
+    width: 50px;
+    border: 1px solid lightgray;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  div.sign-in-page div.sign-in-card form div input:focus {
+    outline: 1px solid #F9A135;
+  }
+  div.sign-in-page div.sign-in-card form a.sending-code {
+    margin: 20px auto;
+    font-size: 1vw;
+    display: block;
+    color: #F9A135;
+    text-align: center;
+    transition: 500ms;
+  }
+  div.sign-in-page div.sign-in-card form a.sending-code:hover {
+    transform: scale(1.1);
+  }
+  div.sign-in-page div.sign-in-card form h6 {
+    font-size: 1vw;
+    color: gray;
+    margin: 10px auto;
+  }
+  div.sign-in-page div.sign-in-card form button.continue {
+    border: 1px solid #F9A135;
+    padding: 10px 15px;
+    background-color: #F9A135;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-family: vazir;
+    font-weight: 900;
+    transition: 500ms;
+    font-size: 1.3vw;
+  }
+  div.sign-in-page div.sign-in-card form button.continue:hover {
+    background-color: white;
+    color: #F9A135;
+  }
+  div.sign-in-page div.sign-in-card button.change-phone {
+    border: 0;
+    background-color: transparent;
+    color: #F9A135;
+    margin: 10px auto;
+    font-size: 1.2vw;
+  }
+  div.sign-in-page div.sign-in-card button.change-phone i {
+    margin: 20px 15px 0 15px;
+    color: black;
+    font-size: 1.3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.sign-in-page {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #F9A135;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.sign-in-page div.sign-in-card {
+    width: 35%;
+    height: auto;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: vazir;
+    text-align: center;
+  }
+  div.sign-in-page div.sign-in-card img {
+    width: 80%;
+    margin: auto;
+  }
+  div.sign-in-page div.sign-in-card h3 {
+    font-size: 1.5vw;
+    font-weight: 900;
+    margin: auto;
+    color: #575757;
+  }
+  div.sign-in-page div.sign-in-card p {
+    font-size: 1.2vw;
+    color: gray;
+    margin: 10px auto;
+  }
+  div.sign-in-page div.sign-in-card form {
+    width: 80%;
+    margin: auto;
+  }
+  div.sign-in-page div.sign-in-card form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.sign-in-page div.sign-in-card form div input {
+    margin: 15px;
+    width: 50px;
+    border: 1px solid lightgray;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  div.sign-in-page div.sign-in-card form div input:focus {
+    outline: 1px solid #F9A135;
+  }
+  div.sign-in-page div.sign-in-card form a.sending-code {
+    margin: 20px auto;
+    font-size: 1vw;
+    display: block;
+    color: #F9A135;
+    text-align: center;
+    transition: 500ms;
+  }
+  div.sign-in-page div.sign-in-card form a.sending-code:hover {
+    transform: scale(1.1);
+  }
+  div.sign-in-page div.sign-in-card form h6 {
+    font-size: 1vw;
+    color: gray;
+    margin: 10px auto;
+  }
+  div.sign-in-page div.sign-in-card form button.continue {
+    border: 1px solid #F9A135;
+    padding: 10px 15px;
+    background-color: #F9A135;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-family: vazir;
+    font-weight: 900;
+    transition: 500ms;
+    font-size: 1.3vw;
+  }
+  div.sign-in-page div.sign-in-card form button.continue:hover {
+    background-color: white;
+    color: #F9A135;
+  }
+  div.sign-in-page div.sign-in-card button.change-phone {
+    border: 0;
+    background-color: transparent;
+    color: #F9A135;
+    margin: 10px auto;
+    font-size: 1.2vw;
+  }
+  div.sign-in-page div.sign-in-card button.change-phone i {
+    margin: 20px 15px 0 15px;
+    color: black;
+    font-size: 1.3vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.sign-in-page {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #F9A135;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.sign-in-page div.sign-in-card {
+    width: 35%;
+    height: auto;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: vazir;
+    text-align: center;
+  }
+  div.sign-in-page div.sign-in-card img {
+    width: 80%;
+    margin: auto;
+  }
+  div.sign-in-page div.sign-in-card h3 {
+    font-size: 1.5vw;
+    font-weight: 900;
+    margin: auto;
+    color: #575757;
+  }
+  div.sign-in-page div.sign-in-card p {
+    font-size: 1.2vw;
+    color: gray;
+    margin: 10px auto;
+  }
+  div.sign-in-page div.sign-in-card form {
+    width: 80%;
+    margin: auto;
+  }
+  div.sign-in-page div.sign-in-card form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.sign-in-page div.sign-in-card form div input {
+    margin: 15px;
+    width: 50px;
+    border: 1px solid lightgray;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  div.sign-in-page div.sign-in-card form div input:focus {
+    outline: 1px solid #F9A135;
+  }
+  div.sign-in-page div.sign-in-card form a.sending-code {
+    margin: 20px auto;
+    font-size: 1vw;
+    display: block;
+    color: #F9A135;
+    text-align: center;
+    transition: 500ms;
+  }
+  div.sign-in-page div.sign-in-card form h6 {
+    font-size: 1vw;
+    color: gray;
+    margin: 10px auto;
+  }
+  div.sign-in-page div.sign-in-card form a.sending-code:hover {
+    transform: scale(1.1);
+  }
+  div.sign-in-page div.sign-in-card form button.continue {
+    border: 1px solid #F9A135;
+    padding: 10px 15px;
+    background-color: #F9A135;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-family: vazir;
+    font-weight: 900;
+    transition: 500ms;
+    font-size: 1.3vw;
+  }
+  div.sign-in-page div.sign-in-card form button.continue:hover {
+    background-color: white;
+    color: #F9A135;
+  }
+  div.sign-in-page div.sign-in-card button.change-phone {
+    border: 0;
+    background-color: transparent;
+    color: #F9A135;
+    margin: 10px auto;
+    font-size: 1.2vw;
+  }
+  div.sign-in-page div.sign-in-card button.change-phone i {
+    margin: 20px 15px 0 15px;
+    color: black;
+    font-size: 1.3vw;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.home-about-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+  }
+  div.home-about-us div.home-about-us-right {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+  div.home-about-us div.home-about-us-right h2 {
+    color: #575757;
+    font-size: 5vw;
+    font-family: lalezar;
+  }
+  div.home-about-us div.home-about-us-right p {
+    color: gray;
+    font-family: vazir;
+    text-align: center;
+    font-size: 3vw;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-family: vazir;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search input:focus {
+    outline: none;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search button {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F9A135;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 15px;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search button i {
+    width: 100%;
+    color: white;
+  }
+  div.home-about-us div.home-about-us-left {
+    width: 100%;
+  }
+  div.home-about-us div.home-about-us-left img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  div.home-about-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  div.home-about-us div.home-about-us-right {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+  div.home-about-us div.home-about-us-right h2 {
+    color: #575757;
+    font-size: 5vw;
+    font-family: lalezar;
+  }
+  div.home-about-us div.home-about-us-right p {
+    color: gray;
+    font-family: vazir;
+    text-align: center;
+    font-size: 2.5vw;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-family: vazir;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search input:focus {
+    outline: none;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search button {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F9A135;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 15px;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search button i {
+    width: 100%;
+    color: white;
+  }
+  div.home-about-us div.home-about-us-left {
+    width: 100%;
+  }
+  div.home-about-us div.home-about-us-left img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.home-about-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+  }
+  div.home-about-us div.home-about-us-right {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 40%;
+    text-align: right;
+  }
+  div.home-about-us div.home-about-us-right h2 {
+    color: #575757;
+    font-size: 3vw;
+    font-family: lalezar;
+  }
+  div.home-about-us div.home-about-us-right p {
+    color: gray;
+    font-family: vazir;
+    text-align: justify;
+    font-size: 1.5vw;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-family: vazir;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search input:focus {
+    outline: none;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search button {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F9A135;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 15px;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search button i {
+    width: 100%;
+    color: white;
+  }
+  div.home-about-us div.home-about-us-left {
+    width: 57%;
+  }
+  div.home-about-us div.home-about-us-left img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.home-about-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  div.home-about-us div.home-about-us-right {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 40%;
+    text-align: right;
+  }
+  div.home-about-us div.home-about-us-right h2 {
+    color: #575757;
+    font-size: 3vw;
+    font-family: lalezar;
+  }
+  div.home-about-us div.home-about-us-right p {
+    color: gray;
+    font-family: vazir;
+    text-align: justify;
+    font-size: 1.5vw;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-family: vazir;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search input:focus {
+    outline: none;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search button {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F9A135;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 15px;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search button img {
+    width: 70%;
+  }
+  div.home-about-us div.home-about-us-left {
+    width: 57%;
+  }
+  div.home-about-us div.home-about-us-left img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.home-about-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  div.home-about-us div.home-about-us-right {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 40%;
+    text-align: right;
+  }
+  div.home-about-us div.home-about-us-right h2 {
+    color: #575757;
+    font-size: 3vw;
+    font-family: lalezar;
+  }
+  div.home-about-us div.home-about-us-right p {
+    color: gray;
+    font-family: vazir;
+    text-align: justify;
+    font-size: 1.5vw;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-family: vazir;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search input:focus {
+    outline: none;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search button {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F9A135;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 15px;
+  }
+  div.home-about-us div.home-about-us-right div.about-us-search button img {
+    width: 70%;
+  }
+  div.home-about-us div.home-about-us-left {
+    width: 57%;
+  }
+  div.home-about-us div.home-about-us-left img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.home-courses {
+    text-align: center;
+    margin-top: 100px;
+  }
+  div.home-courses h2.home-courses-title {
+    color: #575757;
+    font-size: 4vw;
+    font-family: vazir;
+    font-weight: 800;
+  }
+  div.home-courses div.home-courses-languages {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+  }
+  div.home-courses div.home-courses-languages button {
+    padding: 10px 30px;
+    font-size: 2vw;
+    font-weight: 800;
+    color: #575757;
+    border: 0;
+    background-color: transparent;
+    font-family: vazir;
+    transition: 500ms;
+    border-radius: 8px;
+  }
+  div.home-courses div.home-courses-languages button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+  div.home-courses div.home-courses-languages div {
+    width: 2px;
+    height: 30px;
+    background-color: #F9A135;
+  }
+  div.home-courses div.home-courses-see-all {
+    margin: 40px 0;
+  }
+  div.home-courses div.home-courses-see-all a.home-courses-see-all {
+    background-color: rgb(226, 225, 225);
+    color: #575757;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: vazir;
+    border-radius: 8px;
+    font-size: 3.3vw;
+    transition: 500ms;
+    font-weight: 800;
+  }
+  div.home-courses div.home-courses-see-all a.home-courses-see-all:hover {
+    color: #F9A135;
+    background-color: white;
+  }
+  div.home-courses div.home-courses-cards-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    animation-name: show-language;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card {
+    width: 95%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    font-family: vazir;
+    box-sizing: border-box;
+    padding: 15px 15px 0 15px;
+    margin-top: 30px;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card h2 {
+    color: #575757;
+    font-size: 3.5vw;
+    text-align: right;
+    margin: 20px 0;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div p {
+    font-size: 3vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div p i {
+    font-size: 3vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card {
+    border-top: 1px dashed gray;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a {
+    color: #575757;
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 3.2vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a i {
+    font-size: 2vw;
+    transition: 500ms;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a:hover {
+    color: #F9A135;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a:hover i {
+    transform: translateX(-4px);
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card p {
+    background-color: #F9A135;
+    font-size: 3.1vw;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  @keyframes show-language {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  div.home-courses {
+    text-align: center;
+    margin-top: 100px;
+  }
+  div.home-courses h2.home-courses-title {
+    color: #575757;
+    font-size: 4vw;
+    font-family: vazir;
+    font-weight: 800;
+  }
+  div.home-courses div.home-courses-languages {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+  }
+  div.home-courses div.home-courses-languages button {
+    padding: 10px 30px;
+    font-size: 2vw;
+    font-weight: 800;
+    color: #575757;
+    border: 0;
+    background-color: transparent;
+    font-family: vazir;
+    transition: 500ms;
+    border-radius: 8px;
+  }
+  div.home-courses div.home-courses-languages button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+  div.home-courses div.home-courses-languages div {
+    width: 2px;
+    height: 30px;
+    background-color: #F9A135;
+  }
+  div.home-courses div.home-courses-see-all {
+    margin: 40px 0;
+  }
+  div.home-courses div.home-courses-see-all a.home-courses-see-all {
+    background-color: rgb(226, 225, 225);
+    color: #575757;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: vazir;
+    border-radius: 8px;
+    font-size: 2.3vw;
+    transition: 500ms;
+    font-weight: 800;
+  }
+  div.home-courses div.home-courses-see-all a.home-courses-see-all:hover {
+    color: #F9A135;
+    background-color: white;
+  }
+  div.home-courses div.home-courses-cards-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    animation-name: show-language;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card {
+    width: 47%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    font-family: vazir;
+    box-sizing: border-box;
+    padding: 15px 15px 0 15px;
+    margin-top: 30px;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card h2 {
+    color: #575757;
+    font-size: 2.5vw;
+    text-align: right;
+    margin: 20px 0;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div p {
+    font-size: 2vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div p i {
+    font-size: 2vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card {
+    border-top: 1px dashed gray;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a {
+    color: #575757;
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 2.2vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a i {
+    font-size: 1.4vw;
+    transition: 500ms;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a:hover {
+    color: #F9A135;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a:hover i {
+    transform: translateX(-4px);
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card p {
+    background-color: #F9A135;
+    font-size: 2.1vw;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  @keyframes show-language {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  div.home-courses {
+    text-align: center;
+    margin-top: 100px;
+  }
+  div.home-courses h2.home-courses-title {
+    color: #575757;
+    font-size: 4vw;
+    font-family: vazir;
+    font-weight: 800;
+  }
+  div.home-courses div.home-courses-languages {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+  }
+  div.home-courses div.home-courses-languages button {
+    padding: 10px 30px;
+    font-size: 2vw;
+    font-weight: 800;
+    color: #575757;
+    border: 0;
+    background-color: transparent;
+    font-family: vazir;
+    transition: 500ms;
+    border-radius: 8px;
+  }
+  div.home-courses div.home-courses-languages button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+  div.home-courses div.home-courses-languages div {
+    width: 2px;
+    height: 30px;
+    background-color: #F9A135;
+  }
+  div.home-courses div.home-courses-see-all {
+    margin: 40px 0;
+  }
+  div.home-courses div.home-courses-see-all a.home-courses-see-all {
+    background-color: rgb(226, 225, 225);
+    color: #575757;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: vazir;
+    border-radius: 8px;
+    font-size: 1.3vw;
+    transition: 500ms;
+    font-weight: 800;
+  }
+  div.home-courses div.home-courses-see-all a.home-courses-see-all:hover {
+    color: #F9A135;
+    background-color: white;
+  }
+  div.home-courses div.home-courses-cards-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    animation-name: show-language;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card {
+    width: 47%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    font-family: vazir;
+    box-sizing: border-box;
+    padding: 15px 15px 0 15px;
+    margin-top: 30px;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card h2 {
+    color: #575757;
+    font-size: 2.5vw;
+    text-align: right;
+    margin: 20px 0;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div p {
+    font-size: 2vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div p i {
+    font-size: 2vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card {
+    border-top: 1px dashed gray;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a {
+    color: #575757;
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 2.2vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a i {
+    font-size: 1.4vw;
+    transition: 500ms;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a:hover {
+    color: #F9A135;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a:hover i {
+    transform: translateX(-4px);
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card p {
+    background-color: #F9A135;
+    font-size: 2.1vw;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  @keyframes show-language {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.home-courses {
+    text-align: center;
+    margin-top: 100px;
+  }
+  div.home-courses h2.home-courses-title {
+    color: #575757;
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+  }
+  div.home-courses div.home-courses-languages {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    margin: 20px auto;
+  }
+  div.home-courses div.home-courses-languages button {
+    padding: 10px 30px;
+    font-size: 1.3vw;
+    font-weight: 800;
+    color: #575757;
+    border: 0;
+    background-color: transparent;
+    font-family: vazir;
+    transition: 500ms;
+    border-radius: 8px;
+  }
+  div.home-courses div.home-courses-languages button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+  div.home-courses div.home-courses-languages div {
+    width: 2px;
+    height: 30px;
+    background-color: #F9A135;
+  }
+  div.home-courses div.home-courses-see-all {
+    margin: 40px 0;
+  }
+  div.home-courses div.home-courses-see-all a.home-courses-see-all {
+    background-color: rgb(226, 225, 225);
+    color: #575757;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: vazir;
+    border-radius: 8px;
+    font-size: 1.3vw;
+    transition: 500ms;
+    font-weight: 800;
+  }
+  div.home-courses div.home-courses-see-all a.home-courses-see-all:hover {
+    color: #F9A135;
+    background-color: white;
+  }
+  div.home-courses div.home-courses-cards-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    animation-name: show-language;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card {
+    width: 29%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    font-family: vazir;
+    box-sizing: border-box;
+    padding: 15px 15px 0 15px;
+    margin-top: 30px;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card h2 {
+    color: #575757;
+    font-size: 1.5vw;
+    text-align: right;
+    margin: 20px 0;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div p {
+    font-size: 1vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div p i {
+    font-size: 1vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card {
+    border-top: 1px dashed gray;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a {
+    color: #575757;
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 1.2vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a i {
+    font-size: 0.7vw;
+    transition: 500ms;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a:hover {
+    color: #F9A135;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a:hover i {
+    transform: translateX(-4px);
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card p {
+    background-color: #F9A135;
+    font-size: 1.1vw;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  @keyframes show-language {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.home-courses {
+    text-align: center;
+    margin-top: 100px;
+  }
+  div.home-courses h2.home-courses-title {
+    color: #575757;
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+  }
+  div.home-courses div.home-courses-languages {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    margin: 20px auto;
+  }
+  div.home-courses div.home-courses-languages button {
+    padding: 10px 30px;
+    font-size: 1.3vw;
+    font-weight: 800;
+    color: #575757;
+    border: 0;
+    background-color: transparent;
+    font-family: vazir;
+    transition: 500ms;
+    border-radius: 8px;
+  }
+  div.home-courses div.home-courses-languages button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+  div.home-courses div.home-courses-languages div {
+    width: 2px;
+    height: 30px;
+    background-color: #F9A135;
+  }
+  div.home-courses div.home-courses-see-all {
+    margin: 40px 0;
+  }
+  div.home-courses div.home-courses-see-all a.home-courses-see-all {
+    background-color: rgb(226, 225, 225);
+    color: #575757;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: vazir;
+    border-radius: 8px;
+    font-size: 1.3vw;
+    transition: 500ms;
+    font-weight: 800;
+  }
+  div.home-courses div.home-courses-see-all a.home-courses-see-all:hover {
+    color: #F9A135;
+    background-color: white;
+  }
+  div.home-courses div.home-courses-cards-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    animation-name: show-language;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card {
+    width: 29%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    font-family: vazir;
+    box-sizing: border-box;
+    padding: 15px 15px 0 15px;
+    margin-top: 30px;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card h2 {
+    color: #575757;
+    font-size: 1.5vw;
+    text-align: right;
+    margin: 20px 0;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div p {
+    font-size: 1vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div p i {
+    font-size: 1vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card {
+    border-top: 1px dashed gray;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a {
+    color: #575757;
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 1.2vw;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a i {
+    font-size: 0.7vw;
+    transition: 500ms;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a:hover {
+    color: #F9A135;
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card a:hover i {
+    transform: translateX(-4px);
+  }
+  div.home-courses div.home-courses-cards-container div.home-courses-card div.price-card p {
+    background-color: #F9A135;
+    font-size: 1.1vw;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  @keyframes show-language {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 300px) {
+  div.discount-courses-slider-container {
+    width: 100%;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    background-color: #F9A135;
+    position: relative;
+    margin-top: 30px;
+  }
+  div.discount-courses-slider-container div.swiper-button-next {
+    position: absolute;
+    right: 20px;
+    color: black;
+  }
+  div.discount-courses-slider-container div.swiper-button-next::after {
+    font-size: 1.8vw;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  div.discount-courses-slider-container div.swiper-button-prev {
+    position: absolute;
+    left: 20px;
+    color: black;
+  }
+  div.discount-courses-slider-container div.swiper-button-prev::after {
+    font-size: 1.8vw;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide img {
+    width: 37%;
+    border-radius: 10px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: vazir;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side {
+    width: 100%;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side h2 {
+    font-size: 3.5vw;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side div p {
+    font-size: 2.5vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side {
+    margin: 25px;
+    width: 100%;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div {
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div p {
+    font-size: 2.5vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div span {
+    font-size: 2.5vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div span#day-title {
+    color: red;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div p#day {
+    color: red;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-top: 4px dashed gray;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn button {
+    background-color: green;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    margin: 0 15px;
+    font-size: 2.5vw;
+    cursor: pointer;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.price-after-discount {
+    background-color: #F9A135;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    margin: 0 15px;
+    font-size: 2.5vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.price-before-discount {
+    background-color: rgb(66, 66, 66);
+    border-radius: 8px;
+    color: white;
+    font-weight: 100;
+    text-decoration: line-through;
+    padding: 10px 20px;
+    margin: 10px 15px;
+    font-size: 2.5vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.discount-number {
+    font-size: 3.3vw;
+    color: red;
+  }
+}
+@media screen and (min-width: 576px) {
+  div.discount-courses-slider-container {
+    width: 100%;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    background-color: #F9A135;
+    position: relative;
+  }
+  div.discount-courses-slider-container div.swiper-button-next {
+    position: absolute;
+    right: 20px;
+    color: black;
+  }
+  div.discount-courses-slider-container div.swiper-button-next::after {
+    font-size: 1.8vw;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  div.discount-courses-slider-container div.swiper-button-prev {
+    position: absolute;
+    left: 20px;
+    color: black;
+  }
+  div.discount-courses-slider-container div.swiper-button-prev::after {
+    font-size: 1.8vw;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide img {
+    width: 37%;
+    border-radius: 10px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: vazir;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side {
+    width: 100%;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side h2 {
+    font-size: 2.7vw;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side div p {
+    font-size: 1.9vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side {
+    margin: 0;
+    width: 100%;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div {
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div p {
+    font-size: 1.9vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div span {
+    font-size: 1.9vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div span#day-title {
+    color: red;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div p#day {
+    color: red;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-top: 4px dashed gray;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn button {
+    background-color: green;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    margin: 0 15px;
+    font-size: 1.9vw;
+    cursor: pointer;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.price-after-discount {
+    background-color: #F9A135;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    margin: 0 15px;
+    font-size: 1.9vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.price-before-discount {
+    background-color: rgb(66, 66, 66);
+    border-radius: 8px;
+    color: white;
+    font-weight: 100;
+    text-decoration: line-through;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 1.9vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.discount-number {
+    font-size: 2.3vw;
+    color: red;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.discount-courses-slider-container {
+    width: 100%;
+    padding: 50px 70px;
+    box-sizing: border-box;
+    background-color: #F9A135;
+    position: relative;
+  }
+  div.discount-courses-slider-container div.swiper-button-next {
+    position: absolute;
+    right: 20px;
+    color: black;
+  }
+  div.discount-courses-slider-container div.swiper-button-next::after {
+    font-size: 1.8vw;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  div.discount-courses-slider-container div.swiper-button-prev {
+    position: absolute;
+    left: 20px;
+    color: black;
+  }
+  div.discount-courses-slider-container div.swiper-button-prev::after {
+    font-size: 1.8vw;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide img {
+    width: 37%;
+    border-radius: 10px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 61%;
+    font-family: vazir;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side {
+    width: 100%;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side h2 {
+    font-size: 2vw;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side div p {
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side {
+    margin: auto;
+    width: 100%;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div {
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div p {
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div span {
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div span#day-title {
+    color: red;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div p#day {
+    color: red;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-top: 4px dashed gray;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn button {
+    background-color: green;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    margin: 0 15px;
+    font-size: 1.2vw;
+    cursor: pointer;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.price-after-discount {
+    background-color: #F9A135;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    margin: 0 15px;
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.price-before-discount {
+    background-color: rgb(66, 66, 66);
+    border-radius: 8px;
+    color: white;
+    font-weight: 100;
+    text-decoration: line-through;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.discount-number {
+    font-size: 1.3vw;
+    color: red;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.discount-courses-slider-container {
+    width: 100%;
+    padding: 50px 70px;
+    box-sizing: border-box;
+    background-color: #F9A135;
+    position: relative;
+  }
+  div.discount-courses-slider-container div.swiper-button-next {
+    position: absolute;
+    right: 20px;
+    color: black;
+  }
+  div.discount-courses-slider-container div.swiper-button-next::after {
+    font-size: 1.8vw;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  div.discount-courses-slider-container div.swiper-button-prev {
+    position: absolute;
+    left: 20px;
+    color: black;
+  }
+  div.discount-courses-slider-container div.swiper-button-prev::after {
+    font-size: 1.8vw;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide img {
+    width: 37%;
+    border-radius: 10px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 61%;
+    font-family: vazir;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 10px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side {
+    width: 55%;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side h2 {
+    font-size: 2vw;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side div p {
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side {
+    margin: 10px;
+    width: 40%;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div {
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div p {
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div span {
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div span#day-title {
+    color: red;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div p#day {
+    color: red;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-top: 4px dashed gray;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn button {
+    background-color: green;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    margin: 0 15px;
+    font-size: 1.2vw;
+    cursor: pointer;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.price-after-discount {
+    background-color: #F9A135;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    margin: 0 15px;
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.price-before-discount {
+    background-color: rgb(66, 66, 66);
+    border-radius: 8px;
+    color: white;
+    font-weight: 100;
+    text-decoration: line-through;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.discount-number {
+    font-size: 1.3vw;
+    color: red;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.discount-courses-slider-container {
+    width: 100%;
+    padding: 50px 70px;
+    box-sizing: border-box;
+    background-color: #F9A135;
+    position: relative;
+  }
+  div.discount-courses-slider-container div.swiper-button-next {
+    position: absolute;
+    right: 20px;
+    color: black;
+  }
+  div.discount-courses-slider-container div.swiper-button-next::after {
+    font-size: 1.5vw;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 7px;
+    font-weight: 900;
+  }
+  div.discount-courses-slider-container div.swiper-button-prev {
+    position: absolute;
+    left: 20px;
+    color: black;
+  }
+  div.discount-courses-slider-container div.swiper-button-prev::after {
+    font-size: 1.5vw;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 7px;
+    font-weight: 900;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide img {
+    width: 37%;
+    border-radius: 10px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 61%;
+    font-family: vazir;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side {
+    width: 55%;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side h2 {
+    font-size: 2vw;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-right-side div p {
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side {
+    margin: 25px;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div {
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div p {
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div span {
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div span#day-title {
+    color: red;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-sides div.discount-courses-left-side div.launch-time div p#day {
+    color: red;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-top: 4px dashed gray;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn button {
+    background-color: green;
+    border: 0;
+    padding: 10px 40px;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    margin: 0 15px;
+    font-size: 1.2vw;
+    cursor: pointer;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.price-after-discount {
+    background-color: #F9A135;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    margin: 0 15px;
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.price-before-discount {
+    background-color: rgb(66, 66, 66);
+    border-radius: 8px;
+    color: white;
+    font-weight: 100;
+    text-decoration: line-through;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 1.2vw;
+  }
+  div.discount-courses-slider-container div.discount-courses-slider div.swiper-wrapper div.swiper-slide div.discount-courses-details div.discount-courses-cart-btn span.discount-number {
+    font-size: 1.3vw;
+    color: red;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.satros-benefits {
+    margin-top: 40px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: vazir;
+  }
+  div.satros-benefits h2 {
+    color: #575757;
+    font-size: 5vw;
+    font-family: vazir;
+    font-weight: 800;
+    margin: 30px 0;
+  }
+  div.satros-benefits div.satros-benefits-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card {
+    width: 48%;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    transition: 500ms;
+    border: 4px solid white;
+    margin-top: 15px;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card h4 {
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 2.5vw;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card img {
+    width: 20%;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card p {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 576px) {
+  div.satros-benefits {
+    margin-top: 40px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: vazir;
+  }
+  div.satros-benefits h2 {
+    color: #575757;
+    font-size: 4vw;
+    font-family: vazir;
+    font-weight: 800;
+    margin: 30px 0;
+  }
+  div.satros-benefits div.satros-benefits-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card {
+    width: 47%;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    transition: 500ms;
+    border: 4px solid white;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card h4 {
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 2.5vw;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card img {
+    width: 25%;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card p {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.satros-benefits {
+    margin-top: 40px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: vazir;
+  }
+  div.satros-benefits h2 {
+    color: #575757;
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+    margin: 30px 0;
+  }
+  div.satros-benefits div.satros-benefits-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card {
+    width: 22%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    transition: 500ms;
+    border: 4px solid white;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card h4 {
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 2vw;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card img {
+    width: 30%;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card p {
+    font-size: 1.5vw;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card:hover {
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.satros-benefits {
+    margin-top: 40px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: vazir;
+  }
+  div.satros-benefits h2 {
+    color: #575757;
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+    margin: 30px 0;
+  }
+  div.satros-benefits div.satros-benefits-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card {
+    width: 22%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    transition: 500ms;
+    border: 4px solid white;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card h4 {
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 1.5vw;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card img {
+    width: 25%;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card p {
+    font-size: 1vw;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card:hover {
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.satros-benefits {
+    margin-top: 40px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: vazir;
+  }
+  div.satros-benefits h2 {
+    color: #575757;
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+    margin: 30px 0;
+  }
+  div.satros-benefits div.satros-benefits-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card {
+    width: 22%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    transition: 500ms;
+    border: 4px solid white;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card h4 {
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 1.5vw;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card img {
+    width: 25%;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card p {
+    font-size: 1vw;
+  }
+  div.satros-benefits div.satros-benefits-container div.satros-benefits-card:hover {
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 300px) {
+  div.home-podcast-slider {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: vazir;
+    text-align: center;
+    position: relative;
+  }
+  div.home-podcast-slider h2 {
+    font-size: 5vw;
+    font-family: vazir;
+    font-weight: 800;
+    color: #575757;
+    margin: 20px 0;
+  }
+  div.home-podcast-slider p.podcast-slider-paragraph {
+    font-size: 3vw;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container {
+    width: 100%;
+    padding: 0;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper {
+    box-sizing: border-box;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-prev {
+    color: #F9A135;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-prev::after {
+    font-size: 2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-next {
+    color: #F9A135;
+    margin-left: 25px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-next::after {
+    font-size: 2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 30px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side {
+    width: 100%;
+    text-align: right;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side h3 {
+    color: #F9A135;
+    font-size: 4vw;
+    margin: 25px 0;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side p {
+    text-align: justify;
+    font-size: 2.8vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side audio {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-left-side {
+    width: 100%;
+    margin-top: 15px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-left-side img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #F9A135;
+    border: 15px solid white;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 576px) {
+  div.home-podcast-slider {
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: vazir;
+    text-align: center;
+    position: relative;
+  }
+  div.home-podcast-slider h2 {
+    font-size: 4vw;
+    font-family: vazir;
+    font-weight: 800;
+    color: #575757;
+    margin: 20px 0;
+  }
+  div.home-podcast-slider p.podcast-slider-paragraph {
+    font-size: 2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper {
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-prev {
+    color: #F9A135;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-prev::after {
+    font-size: 2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-next {
+    color: #F9A135;
+    margin-left: 25px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-next::after {
+    font-size: 2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side {
+    width: 100%;
+    text-align: right;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side h3 {
+    color: #F9A135;
+    font-size: 3vw;
+    margin: 25px 0;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side p {
+    text-align: justify;
+    font-size: 2.2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side audio {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-left-side {
+    width: 100%;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-left-side img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #F9A135;
+    border: 15px solid white;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.home-podcast-slider {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: vazir;
+    text-align: center;
+    position: relative;
+  }
+  div.home-podcast-slider h2 {
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+    color: #575757;
+    margin: 20px 0;
+  }
+  div.home-podcast-slider p.podcast-slider-paragraph {
+    font-size: 1.2vw;
+  }
+  div.home-podcast-slider div#yek {
+    height: 80px;
+    width: 40px;
+    background-color: #F9A135;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+  }
+  div.home-podcast-slider div#do {
+    height: 80px;
+    width: 70px;
+    background-color: #F9A135;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 45%;
+  }
+  div.home-podcast-slider div#se {
+    height: 110px;
+    width: 50px;
+    background-color: #F9A135;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+  }
+  div.home-podcast-slider div#chahar {
+    height: 110px;
+    width: 50px;
+    background-color: #F9A135;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+  }
+  div.home-podcast-slider div#panj {
+    height: 80px;
+    width: 40px;
+    background-color: #F9A135;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 45%;
+  }
+  div.home-podcast-slider div#shesh {
+    height: 80px;
+    width: 70px;
+    background-color: #F9A135;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 65%;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-prev {
+    color: #F9A135;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-prev::after {
+    font-size: 2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-next {
+    color: #F9A135;
+    margin-left: 25px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-next::after {
+    font-size: 2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side {
+    width: 49%;
+    text-align: right;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side h3 {
+    color: #F9A135;
+    font-size: 2vw;
+    margin: 25px 0;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side p {
+    text-align: justify;
+    font-size: 1.2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side audio {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-left-side {
+    width: 48%;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-left-side img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #F9A135;
+    border: 15px solid white;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.home-podcast-slider {
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: vazir;
+    text-align: center;
+    position: relative;
+  }
+  div.home-podcast-slider h2 {
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+    color: #575757;
+    margin: 20px 0;
+  }
+  div.home-podcast-slider p.podcast-slider-paragraph {
+    font-size: 1.2vw;
+  }
+  div.home-podcast-slider div#yek {
+    height: 80px;
+    width: 40px;
+    background-color: #F9A135;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+  }
+  div.home-podcast-slider div#do {
+    height: 80px;
+    width: 70px;
+    background-color: #F9A135;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 45%;
+  }
+  div.home-podcast-slider div#se {
+    height: 110px;
+    width: 50px;
+    background-color: #F9A135;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+  }
+  div.home-podcast-slider div#chahar {
+    height: 110px;
+    width: 50px;
+    background-color: #F9A135;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+  }
+  div.home-podcast-slider div#panj {
+    height: 80px;
+    width: 40px;
+    background-color: #F9A135;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 45%;
+  }
+  div.home-podcast-slider div#shesh {
+    height: 80px;
+    width: 70px;
+    background-color: #F9A135;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 65%;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper {
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-prev {
+    color: #F9A135;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-prev::after {
+    font-size: 2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-next {
+    color: #F9A135;
+    margin-left: 25px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-next::after {
+    font-size: 2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side {
+    width: 49%;
+    text-align: right;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side h3 {
+    color: #F9A135;
+    font-size: 2vw;
+    margin: 25px 0;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side p {
+    text-align: justify;
+    font-size: 1.2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side audio {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-left-side {
+    width: 48%;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-left-side img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #F9A135;
+    border: 15px solid white;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.home-podcast-slider {
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: vazir;
+    text-align: center;
+    position: relative;
+  }
+  div.home-podcast-slider h2 {
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+    color: #575757;
+    margin: 20px 0;
+  }
+  div.home-podcast-slider p.podcast-slider-paragraph {
+    font-size: 1.2vw;
+  }
+  div.home-podcast-slider div#yek {
+    height: 80px;
+    width: 40px;
+    background-color: #F9A135;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+  }
+  div.home-podcast-slider div#do {
+    height: 80px;
+    width: 70px;
+    background-color: #F9A135;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+  }
+  div.home-podcast-slider div#se {
+    height: 110px;
+    width: 50px;
+    background-color: #F9A135;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+  }
+  div.home-podcast-slider div#chahar {
+    height: 110px;
+    width: 50px;
+    background-color: #F9A135;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+  }
+  div.home-podcast-slider div#panj {
+    height: 80px;
+    width: 40px;
+    background-color: #F9A135;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 45%;
+  }
+  div.home-podcast-slider div#shesh {
+    height: 80px;
+    width: 70px;
+    background-color: #F9A135;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 65%;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper {
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-prev {
+    color: #F9A135;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-prev::after {
+    font-size: 2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-next {
+    color: #F9A135;
+    margin-left: 25px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-button-next::after {
+    font-size: 2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side {
+    width: 49%;
+    text-align: right;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side h3 {
+    color: #F9A135;
+    font-size: 2vw;
+    margin: 25px 0;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side p {
+    text-align: justify;
+    font-size: 1.2vw;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-right-side audio {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-left-side {
+    width: 48%;
+  }
+  div.home-podcast-slider div.home-podcast-slider-container div.swiper div.swiper-wrapper div.swiper-slide div.home-podcast-left-side img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #F9A135;
+    border: 15px solid white;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.students-comments-home {
+    text-align: center;
+    margin-top: 40px;
+  }
+  div.students-comments-home h2 {
+    font-size: 5vw;
+    font-family: vazir;
+    font-weight: 800;
+    color: #575757;
+  }
+  div.students-comments-home p.student-comments-title {
+    font-size: 3vw;
+    width: 80%;
+    margin: auto;
+  }
+  div.students-comments-home div.students-comments-container {
+    background-color: #F9A135;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    position: relative;
+  }
+  div.students-comments-home div.students-comments-container .students-comments {
+    width: 100%;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-family: vazir;
+    width: 90%;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide img {
+    width: 30%;
+    border-radius: 50%;
+    border: 3px solid #F9A135;
+    margin: 20px auto;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide h4 {
+    font-size: 4vw;
+    color: #575757;
+    font-weight: 600;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide h5 {
+    color: #F9A135;
+    font-size: 3.5vw;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide p {
+    font-size: 3vw;
+    margin: 15px 0;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-next {
+    color: white;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-next::after {
+    font-size: 1.8vw;
+    font-weight: 900;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-prev {
+    color: white;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-prev::after {
+    font-size: 1.8vw;
+    font-weight: 900;
+  }
+}
+@media screen and (min-width: 576px) {
+  div.students-comments-home {
+    text-align: center;
+    margin-top: 40px;
+  }
+  div.students-comments-home h2 {
+    font-size: 4vw;
+    font-family: vazir;
+    font-weight: 800;
+    color: #575757;
+  }
+  div.students-comments-home p.student-comments-title {
+    font-size: 2.3vw;
+    width: 80%;
+    margin: auto;
+  }
+  div.students-comments-home div.students-comments-container {
+    background-color: #F9A135;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    position: relative;
+  }
+  div.students-comments-home div.students-comments-container .students-comments {
+    width: 100%;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-family: vazir;
+    width: 90%;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide img {
+    width: 30%;
+    border-radius: 50%;
+    border: 3px solid #F9A135;
+    margin: 20px auto;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide h4 {
+    font-size: 3.5vw;
+    color: #575757;
+    font-weight: 600;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide h5 {
+    color: #F9A135;
+    font-size: 3vw;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide p {
+    font-size: 2.5vw;
+    margin: 15px 0;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-next {
+    color: white;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-next::after {
+    font-size: 1.8vw;
+    font-weight: 900;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-prev {
+    color: white;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-prev::after {
+    font-size: 1.8vw;
+    font-weight: 900;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.students-comments-home {
+    text-align: center;
+    margin-top: 40px;
+  }
+  div.students-comments-home h2 {
+    font-size: 4vw;
+    font-family: vazir;
+    font-weight: 800;
+    color: #575757;
+  }
+  div.students-comments-home p.student-comments-title {
+    font-size: 1.8vw;
+    width: 80%;
+    margin: auto;
+  }
+  div.students-comments-home div.students-comments-container {
+    background-color: #F9A135;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    position: relative;
+  }
+  div.students-comments-home div.students-comments-container .students-comments {
+    width: 100%;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-family: vazir;
+    width: 90%;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide img {
+    width: 30%;
+    border-radius: 50%;
+    border: 3px solid #F9A135;
+    margin: 20px auto;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide h4 {
+    font-size: 3vw;
+    color: #575757;
+    font-weight: 600;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide h5 {
+    color: #F9A135;
+    font-size: 2.5vw;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide p {
+    font-size: 2vw;
+    margin: 15px 0;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-next {
+    color: white;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-next::after {
+    font-size: 1.8vw;
+    font-weight: 900;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-prev {
+    color: white;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-prev::after {
+    font-size: 1.8vw;
+    font-weight: 900;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.students-comments-home {
+    text-align: center;
+    margin-top: 40px;
+  }
+  div.students-comments-home h2 {
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+    color: #575757;
+  }
+  div.students-comments-home p.student-comments-title {
+    font-size: 1.3vw;
+    width: 80%;
+    margin: auto;
+  }
+  div.students-comments-home div.students-comments-container {
+    background-color: #F9A135;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    position: relative;
+  }
+  div.students-comments-home div.students-comments-container .students-comments {
+    width: 100%;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-family: vazir;
+    width: 90%;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide img {
+    width: 30%;
+    border-radius: 50%;
+    border: 3px solid #F9A135;
+    margin: 20px auto;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide h4 {
+    font-size: 2vw;
+    color: #575757;
+    font-weight: 600;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide h5 {
+    color: #F9A135;
+    font-size: 1.5vw;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide p {
+    font-size: 1vw;
+    margin: 15px 0;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-next {
+    color: white;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-next::after {
+    font-size: 1.8vw;
+    font-weight: 900;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-prev {
+    color: white;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-prev::after {
+    font-size: 1.8vw;
+    font-weight: 900;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.students-comments-home {
+    text-align: center;
+    margin-top: 40px;
+  }
+  div.students-comments-home h2 {
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+    color: #575757;
+  }
+  div.students-comments-home p.student-comments-title {
+    font-size: 1.3vw;
+    width: 80%;
+    margin: auto;
+  }
+  div.students-comments-home div.students-comments-container {
+    background-color: #F9A135;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    position: relative;
+  }
+  div.students-comments-home div.students-comments-container .students-comments {
+    width: 100%;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-family: vazir;
+    width: 90%;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide img {
+    width: 30%;
+    border-radius: 50%;
+    border: 3px solid #F9A135;
+    margin: 20px auto;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide h4 {
+    font-size: 2vw;
+    color: #575757;
+    font-weight: 600;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide h5 {
+    color: #F9A135;
+    font-size: 1.5vw;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+  }
+  div.students-comments-home div.students-comments-container .students-comments .swiper-wrapper .swiper-slide p {
+    font-size: 1vw;
+    margin: 15px 0;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-next {
+    color: white;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-next::after {
+    font-size: 1.8vw;
+    font-weight: 900;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-prev {
+    color: white;
+  }
+  div.students-comments-home div.students-comments-container div.swiper-button-prev::after {
+    font-size: 1.8vw;
+    font-weight: 900;
+  }
+}
+@media screen and (min-width: 576px) {
+  div.home-essays {
+    width: 100%;
+    margin-top: 40px;
+  }
+  div.home-essays div.home-essay-title {
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vazir;
+  }
+  div.home-essays div.home-essay-title h2 {
+    color: #575757;
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+  }
+  div.home-essays div.home-essay-title a {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #F9A135;
+    text-decoration: none;
+    font-size: 1.2vw;
+  }
+  div.home-essays div.home-essays-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card {
+    width: 47%;
+    border-radius: 8px;
+    font-family: vazir;
+    margin-top: 20px;
+    height: auto;
+    overflow: hidden;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card img {
+    width: 100%;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card h3 {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 3vw;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card p {
+    font-size: 2vw;
+    padding: 0 15px;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more {
+    display: block;
+    text-align: left;
+    margin: 15px 10px;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more a {
+    color: #F9A135;
+    padding: 5px 10px;
+    border: 2px solid #F9A135;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 2vw;
+    transition: 500ms;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more a:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.home-essays {
+    width: 100%;
+    margin-top: 40px;
+  }
+  div.home-essays div.home-essay-title {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vazir;
+  }
+  div.home-essays div.home-essay-title h2 {
+    color: #575757;
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+  }
+  div.home-essays div.home-essay-title a {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #F9A135;
+    text-decoration: none;
+    font-size: 1.2vw;
+  }
+  div.home-essays div.home-essays-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card {
+    width: 30%;
+    border-radius: 8px;
+    font-family: vazir;
+    margin-top: 40px;
+    height: auto;
+    overflow: hidden;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card img {
+    width: 100%;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card h3 {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 2vw;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card p {
+    font-size: 1.5vw;
+    padding: 0 15px;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more {
+    display: block;
+    text-align: left;
+    margin: 15px 10px;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more a {
+    color: #F9A135;
+    padding: 5px 10px;
+    border: 2px solid #F9A135;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.5vw;
+    transition: 500ms;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more a:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.home-essays {
+    width: 100%;
+    margin-top: 40px;
+  }
+  div.home-essays div.home-essay-title {
+    padding: 35px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vazir;
+  }
+  div.home-essays div.home-essay-title h2 {
+    color: #575757;
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+  }
+  div.home-essays div.home-essay-title a {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #F9A135;
+    text-decoration: none;
+    font-size: 1.2vw;
+  }
+  div.home-essays div.home-essays-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card {
+    width: 30%;
+    border-radius: 8px;
+    font-family: vazir;
+    margin-top: 40px;
+    height: auto;
+    overflow: hidden;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card img {
+    width: 100%;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card h3 {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1.5vw;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card p {
+    font-size: 1vw;
+    padding: 0 15px;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more {
+    display: block;
+    text-align: left;
+    margin: 15px 10px;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more a {
+    color: #F9A135;
+    padding: 5px 10px;
+    border: 2px solid #F9A135;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1vw;
+    transition: 500ms;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more a:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.home-essays {
+    width: 100%;
+    margin-top: 40px;
+  }
+  div.home-essays div.home-essay-title {
+    padding: 35px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vazir;
+  }
+  div.home-essays div.home-essay-title h2 {
+    color: #575757;
+    font-size: 3vw;
+    font-family: vazir;
+    font-weight: 800;
+  }
+  div.home-essays div.home-essay-title a {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #F9A135;
+    text-decoration: none;
+    font-size: 1.2vw;
+  }
+  div.home-essays div.home-essays-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card {
+    width: 30%;
+    border-radius: 8px;
+    font-family: vazir;
+    margin-top: 40px;
+    height: auto;
+    overflow: hidden;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card img {
+    width: 100%;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card h3 {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1.5vw;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card p {
+    font-size: 1vw;
+    padding: 0 15px;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more {
+    display: block;
+    text-align: left;
+    margin: 15px 10px;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more a {
+    color: #F9A135;
+    padding: 5px 10px;
+    border: 2px solid #F9A135;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1vw;
+    transition: 500ms;
+  }
+  div.home-essays div.home-essays-container div.home-essay-card div.read-more a:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+}
+@media screen and (min-width: 300px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    margin-top: 10px;
+    background-color: rgb(238, 238, 238);
+  }
+  footer div.footer-about-satros {
+    width: 100%;
+    text-align: center;
+  }
+  footer div.footer-about-satros h3 {
+    color: #F9A135;
+    font-size: 4vw;
+    margin: 15px 0;
+  }
+  footer div.footer-about-satros p {
+    font-size: 3vw;
+    color: gray;
+    text-align: center;
+  }
+  footer div.footer-about-satros div.footer-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.footer-about-satros div.footer-social-media a {
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+  }
+  footer div.footer-about-satros div.footer-social-media i {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #F9A135;
+    font-size: 3vw;
+  }
+  footer div.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer div.footer-links div {
+    width: 47%;
+    margin: 5px;
+  }
+  footer div.footer-links div h3 {
+    font-weight: 900;
+    font-size: 3.2vw;
+  }
+  footer div.footer-links div ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 2.8vw;
+  }
+  footer div.footer-links div.contact-info {
+    width: 47%;
+  }
+  footer div.footer-logo {
+    width: 100%;
+    text-align: left;
+  }
+  footer div.footer-logo div.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  footer div.footer-logo div.logo div.logo-details h2 {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo div.logo-details h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo img {
+    width: 25%;
+    padding: 15px;
+    background-color: #F9A135;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.trust-logo {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.trust-logo img {
+    width: 25%;
+  }
+  footer div.footer-logo div.send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.send-email input {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.send-email input:focus {
+    outline: none;
+  }
+  footer div.footer-logo div.send-email button {
+    border: 0;
+    background-color: #F9A135;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 576px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    margin-top: 40px;
+  }
+  footer div.footer-about-satros {
+    width: 100%;
+    text-align: center;
+  }
+  footer div.footer-about-satros h3 {
+    color: #F9A135;
+    font-size: 3vw;
+    margin: 15px 0;
+  }
+  footer div.footer-about-satros p {
+    font-size: 2vw;
+    color: gray;
+    text-align: center;
+  }
+  footer div.footer-about-satros div.footer-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.footer-about-satros div.footer-social-media a {
+    text-decoration: none;
+    color: white;
+  }
+  footer div.footer-about-satros div.footer-social-media i {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #F9A135;
+    font-size: 3vw;
+  }
+  footer div.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer div.footer-links div {
+    width: 20%;
+    margin: 5px;
+  }
+  footer div.footer-links div h3 {
+    font-weight: 900;
+    font-size: 2.2vw;
+  }
+  footer div.footer-links div ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.8vw;
+  }
+  footer div.footer-links div.contact-info {
+    width: 20%;
+  }
+  footer div.footer-logo {
+    width: 100%;
+    text-align: left;
+  }
+  footer div.footer-logo div.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  footer div.footer-logo div.logo div.logo-details h2 {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo div.logo-details h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo img {
+    width: 25%;
+    padding: 15px;
+    background-color: #F9A135;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.trust-logo {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.trust-logo img {
+    width: 25%;
+  }
+  footer div.footer-logo div.send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.send-email input {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.send-email input:focus {
+    outline: none;
+  }
+  footer div.footer-logo div.send-email button {
+    border: 0;
+    background-color: #F9A135;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    margin-top: 40px;
+  }
+  footer div.footer-about-satros {
+    width: 100%;
+    text-align: center;
+  }
+  footer div.footer-about-satros h3 {
+    color: #F9A135;
+    font-size: 3vw;
+    margin: 15px 0;
+  }
+  footer div.footer-about-satros p {
+    font-size: 2vw;
+    color: gray;
+    text-align: center;
+  }
+  footer div.footer-about-satros div.footer-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.footer-about-satros div.footer-social-media a {
+    text-decoration: none;
+    color: white;
+  }
+  footer div.footer-about-satros div.footer-social-media i {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #F9A135;
+    font-size: 2.5vw;
+  }
+  footer div.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer div.footer-links div {
+    width: 20%;
+    margin: 5px;
+  }
+  footer div.footer-links div h3 {
+    font-weight: 900;
+    font-size: 2.2vw;
+  }
+  footer div.footer-links div ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.8vw;
+  }
+  footer div.footer-links div.contact-info {
+    width: 20%;
+  }
+  footer div.footer-logo {
+    width: 100%;
+    text-align: left;
+  }
+  footer div.footer-logo div.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  footer div.footer-logo div.logo div.logo-details h2 {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo div.logo-details h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo img {
+    width: 25%;
+    padding: 15px;
+    background-color: #F9A135;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.trust-logo {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.trust-logo img {
+    width: 25%;
+  }
+  footer div.footer-logo div.send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.send-email input {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.send-email input:focus {
+    outline: none;
+  }
+  footer div.footer-logo div.send-email button {
+    border: 0;
+    background-color: #F9A135;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    margin-top: 40px;
+  }
+  footer div.footer-about-satros {
+    width: 30%;
+  }
+  footer div.footer-about-satros h3 {
+    color: #F9A135;
+    font-size: 1.5vw;
+    margin: 15px 0;
+  }
+  footer div.footer-about-satros p {
+    font-size: 1vw;
+    color: gray;
+    text-align: justify;
+  }
+  footer div.footer-about-satros div.footer-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.footer-about-satros div.footer-social-media a {
+    text-decoration: none;
+    color: white;
+  }
+  footer div.footer-about-satros div.footer-social-media i {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #F9A135;
+    font-size: 1.5vw;
+  }
+  footer div.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 35%;
+  }
+  footer div.footer-links div {
+    width: 28%;
+    margin: 5px;
+  }
+  footer div.footer-links div h3 {
+    font-weight: 900;
+    font-size: 1.2vw;
+  }
+  footer div.footer-links div ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1vw;
+  }
+  footer div.footer-links div.contact-info {
+    width: 80%;
+  }
+  footer div.footer-logo {
+    width: 27%;
+    text-align: left;
+  }
+  footer div.footer-logo div.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  footer div.footer-logo div.logo div.logo-details h2 {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo div.logo-details h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo img {
+    width: 25%;
+    padding: 15px;
+    background-color: #F9A135;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.trust-logo {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.trust-logo img {
+    width: 25%;
+  }
+  footer div.footer-logo div.send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.send-email p {
+    font-size: 1vw;
+  }
+  footer div.footer-logo div.send-email input {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.send-email input:focus {
+    outline: none;
+  }
+  footer div.footer-logo div.send-email button {
+    border: 0;
+    background-color: #F9A135;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    margin-top: 40px;
+  }
+  footer div.footer-about-satros {
+    width: 30%;
+  }
+  footer div.footer-about-satros h3 {
+    color: #F9A135;
+    font-size: 1.5vw;
+    margin: 15px 0;
+  }
+  footer div.footer-about-satros p {
+    font-size: 1vw;
+    color: gray;
+    text-align: justify;
+  }
+  footer div.footer-about-satros div.footer-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.footer-about-satros div.footer-social-media a {
+    text-decoration: none;
+    color: white;
+  }
+  footer div.footer-about-satros div.footer-social-media i {
+    margin: 5px;
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    background-color: #F9A135;
+    font-size: 1.5vw;
+  }
+  footer div.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 35%;
+  }
+  footer div.footer-links div {
+    width: 28%;
+    margin: 5px;
+  }
+  footer div.footer-links div h3 {
+    font-weight: 900;
+    font-size: 1.2vw;
+  }
+  footer div.footer-links div ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1vw;
+  }
+  footer div.footer-links div ul li a:hover {
+    color: #F9A135;
+  }
+  footer div.footer-links div.contact-info {
+    width: 80%;
+  }
+  footer div.footer-logo {
+    width: 27%;
+    text-align: left;
+  }
+  footer div.footer-logo div.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  footer div.footer-logo div.logo div.logo-details h2 {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo div.logo-details h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo img {
+    width: 25%;
+    padding: 15px;
+    background-color: #F9A135;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.trust-logo {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.trust-logo img {
+    width: 25%;
+  }
+  footer div.footer-logo div.send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.send-email p {
+    font-size: 1vw;
+  }
+  footer div.footer-logo div.send-email input {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.send-email input:focus {
+    outline: none;
+  }
+  footer div.footer-logo div.send-email button {
+    border: 0;
+    background-color: #F9A135;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
+div.home-essays-mobile {
+  width: 100%;
+  margin-top: 40px;
+}
+div.home-essays-mobile div.home-essays-mobile-title {
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: vazir;
+}
+div.home-essays-mobile div.home-essays-mobile-title h2 {
+  color: #575757;
+  font-size: 5vw;
+  font-family: vazir;
+  font-weight: 800;
+}
+div.home-essays-mobile div.home-essays-mobile-title a {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #F9A135;
+  text-decoration: none;
+  font-size: 3.2vw;
+}
+div.home-essays-mobile div.home-essays-mobile-container {
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin-top: -40px;
+}
+div.home-essays-mobile div.home-essays-mobile-container div.home-essays-mobile-slider div.swiper-wrapper div.swiper-slide {
+  width: 100%;
+  border-radius: 8px;
+  font-family: vazir;
+  margin-top: 40px;
+  height: auto;
+  overflow: hidden;
+}
+div.home-essays-mobile div.home-essays-mobile-container div.home-essays-mobile-slider div.swiper-wrapper div.swiper-slide img {
+  width: 100%;
+}
+div.home-essays-mobile div.home-essays-mobile-container div.home-essays-mobile-slider div.swiper-wrapper div.swiper-slide h3 {
+  padding: 15px;
+  font-weight: 600;
+  font-size: 4vw;
+}
+div.home-essays-mobile div.home-essays-mobile-container div.home-essays-mobile-slider div.swiper-wrapper div.swiper-slide p {
+  font-size: 3vw;
+  padding: 0 15px;
+}
+div.home-essays-mobile div.home-essays-mobile-container div.home-essays-mobile-slider div.swiper-wrapper div.swiper-slide div.read-more {
+  display: block;
+  text-align: left;
+  margin: 15px 10px;
+}
+div.home-essays-mobile div.home-essays-mobile-container div.home-essays-mobile-slider div.swiper-wrapper div.swiper-slide div.read-more a {
+  color: #F9A135;
+  padding: 5px 10px;
+  border: 2px solid #F9A135;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 2.5vw;
+  transition: 500ms;
+}
+div.home-essays-mobile div.home-essays-mobile-container div.home-essays-mobile-slider div.swiper-wrapper div.swiper-slide div.read-more a:hover {
+  background-color: #F9A135;
+  color: white;
+}
+
+@media screen and (min-width: 300px) {
+  div.copy-right {
+    background-color: white;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.copy-right a.phone {
+    background-color: #F9A135;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  div.copy-right a.phone i {
+    font-size: 3.5vw;
+  }
+  div.copy-right div {
+    text-align: center;
+    font-family: vazir;
+  }
+  div.copy-right div h6 {
+    font-weight: 800;
+    font-size: 3.3vw;
+  }
+  div.copy-right div p {
+    font-size: 3vw;
+    color: #F9A135;
+  }
+  div.copy-right a.refresh {
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(209, 209, 209);
+  }
+  div.copy-right a.refresh i {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (min-width: 576px) {
+  div.copy-right {
+    background-color: white;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.copy-right a.phone {
+    background-color: #F9A135;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  div.copy-right a.phone i {
+    font-size: 2.5vw;
+  }
+  div.copy-right div {
+    text-align: center;
+    font-family: vazir;
+  }
+  div.copy-right div h6 {
+    font-weight: 800;
+    font-size: 2.3vw;
+  }
+  div.copy-right div p {
+    font-size: 2vw;
+    color: #F9A135;
+  }
+  div.copy-right a.refresh {
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(209, 209, 209);
+  }
+  div.copy-right a.refresh i {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.copy-right {
+    background-color: white;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.copy-right a.phone {
+    background-color: #F9A135;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  div.copy-right a.phone i {
+    font-size: 1.5vw;
+  }
+  div.copy-right div {
+    text-align: center;
+    font-family: vazir;
+  }
+  div.copy-right div h6 {
+    font-weight: 800;
+    font-size: 1.3vw;
+  }
+  div.copy-right div p {
+    font-size: 1vw;
+    color: #F9A135;
+  }
+  div.copy-right a.refresh {
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(209, 209, 209);
+  }
+  div.copy-right a.refresh i {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.copy-right {
+    background-color: white;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.copy-right a.phone {
+    background-color: #F9A135;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  div.copy-right a.phone i {
+    font-size: 1.5vw;
+  }
+  div.copy-right div {
+    text-align: center;
+    font-family: vazir;
+  }
+  div.copy-right div h6 {
+    font-weight: 800;
+    font-size: 1.3vw;
+  }
+  div.copy-right div p {
+    font-size: 1vw;
+    color: #F9A135;
+  }
+  div.copy-right a.refresh {
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(209, 209, 209);
+  }
+  div.copy-right a.refresh i {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.copy-right {
+    background-color: white;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.copy-right a.phone {
+    background-color: #F9A135;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  div.copy-right a.phone i {
+    font-size: 1.5vw;
+  }
+  div.copy-right div {
+    text-align: center;
+    font-family: vazir;
+  }
+  div.copy-right div h6 {
+    font-weight: 800;
+    font-size: 1.3vw;
+  }
+  div.copy-right div p {
+    font-size: 1vw;
+    color: #F9A135;
+  }
+  div.copy-right a.refresh {
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(209, 209, 209);
+  }
+  div.copy-right a.refresh i {
+    font-size: 1.5vw;
+  }
+}/*# sourceMappingURL=main.css.map */

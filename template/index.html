@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>satros learn</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="shadow-lg">
+      <div class="logo">
+        <img src="assets/img/Logo.png" alt="logo" />
+      </div>
+      <nav class="d-none d-lg-flex">
+        <a href="index.html">صفحه اصلی</a>
+        <a href="course-list.html">دوره های آموزشی</a>
+        <a href="podcasts-list.html">پادکست های ویژه</a>
+        <div class="header-item">
+          <a class="dropdown-btn"
+            >راه های ارتباطی با ما <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <div class="drop-menu shadow-lg d-none" class="d-none">
+            <a href="about-us.html">درباره ما</a>
+            <a href="contact-us.html">تماس با ما</a>
+            <a href="rules.html">قوانین و مقررات</a>
+          </div>
+        </div>
+      </nav>
+      <div class="login-icons">
+        <a href="#" class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="cart.html" class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a class="login-link" onclick="openLogin()">
+          <i class="fa-solid fa-user"></i>
+          <p class="d-none d-lg-inline-block">ورود به حساب</p>
+        </a>
+      </div>
+      <div class="burger-menu d-inline-block d-lg-none">
+        <button onclick="showMenu()" class="burger-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- mobile menu -->
+    <div class="mobile-menu shadow-lg">
+      <div class="logo">
+        <img src="assets/img/Logo.png" alt="logo" />
+      </div>
+      <nav class="navbar">
+        <a class="nav-link" aria-current="page" href="index.html">صفحه اصلی</a>
+        <a class="nav-link" href="course-list.html">دوره های آموزشی</a>
+        <a class="nav-link" href="podcasts-list.html">پادکست های ویژه</a>
+        <div class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            راه ارتباطی با ما
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about-us.html">درباره ما</a></li>
+            <li><a class="dropdown-item" href="contact-us.html">تماس با ما</a></li>
+            <li><a class="dropdown-item" href="rules.html">قوانین و مقررات</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- login page -->
+    <div class="login-page d-none">
+      <div class="login-card">
+        <img src="assets/img/login-pic.png">
+        <div class="login-link">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <a href="sign-in.html" class="login">ورود به حساب کاربری</a>
+        </div>
+        <div class="sign-up-link">
+          <i class="fa-solid fa-user-plus"></i>
+          <a href="sign-up.html" class="sign-up">ثبت نام در ساتروس لرن</a>
+        </div>
+        <button onclick="closeLogin()" class="login-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+    <!-- search page -->
+    <div class="search-page d-none">
+      <div class="search-container">
+        <button class="search-close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img src="assets/img/white-logo.png" />
+        <h3>Sators Learn</h3>
+        <div class="search-input">
+          <input type="text" placeholder="جستجو" />
+          <button class="search-click">جستجو</button>
+        </div>
+      </div>
+    </div>
+    <!-- home about us -->
+    <div class="home-about-us">
+      <div class="home-about-us-right">
+        <h2>با ما بهترین هارو تجربه کنید</h2>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+          سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+          متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+          درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد
+        </p>
+        <div class="about-us-search">
+          <input type="text" placeholder="دنبال جه آموزشی میگردی؟" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+      <div class="home-about-us-left">
+        <img src="assets/img/about-us.png" />
+      </div>
+    </div>
+    <!-- home courses -->
+    <div class="home-courses">
+      <h2 class="home-courses-title">انواع دوره های زبان خارجه</h2>
+      <div class="home-courses-languages shadow-sm">
+        <button onclick="showEnglish()">زبان انگلیسی</button>
+        <div></div>
+        <button onclick="showGerman()">زبان آلمانی</button>
+        <div></div>
+        <button onclick="showSpanish()">زبان اسپانیایی</button>
+        <div></div>
+        <button onclick="showFrench()">زبان فرانسوی</button>
+      </div>
+      <!-- english -->
+      <div class="home-courses-cards-container english">
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+      </div>
+      <!-- german -->
+      <div class="home-courses-cards-container german d-none">
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+      </div>
+      <!-- spanish -->
+      <div class="home-courses-cards-container spanish d-none">
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+      </div>
+      <!-- french -->
+      <div class="home-courses-cards-container french d-none">
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+        <div class="home-courses-card shadow-sm">
+          <img src="assets/img/home-course-card.jpg" />
+          <h2>آموزش زبان انگلیسی سطح B1</h2>
+          <div>
+            <p><i class="fa-regular fa-user"></i> مدرس</p>
+            <p>علیرضا رسولی پور</p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+            <p>156 ساعت</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+            <p>1340</p>
+          </div>
+          <div class="price-card">
+            <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+            <p class="price">3,000,000</p>
+          </div>
+        </div>
+      </div>
+      <div class="home-courses-see-all">
+        <a class="home-courses-see-all" href="course-detail.html">مشاهده همه</a>
+      </div>
+    </div>
+
+    <!-- discount courses slider -->
+    <div class="discount-courses-slider-container">
+      <div class="swiper mySwiper discount-courses-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="assets/img/discount-courses-slider.png"
+              class="d-none d-md-inline-block"
+            />
+            <div class="discount-courses-details">
+              <div class="discount-courses-sides">
+                <div class="discount-courses-right-side">
+                  <h2>دوره زبان انگلیسی writing pro</h2>
+                  <div>
+                    <p>مدرس دوره:</p>
+                    <p>حسین خاکیان</p>
+                  </div>
+                  <div>
+                    <p>زمان دوزه:</p>
+                    <p><span>3</span> ساعت و <span>42</span> دقیقه</p>
+                  </div>
+                  <div>
+                    <p>دانشجو:</p>
+                    <p><span>352</span> نفر</p>
+                  </div>
+                  <div>
+                    <p>دسته بندی:</p>
+                    <p>دوره های تخفیف</p>
+                  </div>
+                </div>
+                <!-- timer of discount -->
+                <div class="discount-courses-left-side">
+                  <div class="launch-time">
+                    <div>
+                      <p id="second"></p>
+                      <span>ثانیه</span>
+                    </div>
+                    <div>
+                      <p id="minute"></p>
+                      <span>دقیقه</span>
+                    </div>
+                    <div>
+                      <p id="hour"></p>
+                      <span>ساعت</span>
+                    </div>
+                    <div>
+                      <p id="day"></p>
+                      <span id="day-title">روز</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="discount-courses-cart-btn">
+                <button>افزودن به سبد خرید</button>
+                <span class="price-after-discount">1,710,000</span>
+                <span class="discount-number">74%</span>
+                <span class="price-before-discount">4,350,000</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/discount-courses-slider.png"
+              class="d-none d-md-inline-block"
+            />
+            <div class="discount-courses-details">
+              <div class="discount-courses-sides">
+                <div class="discount-courses-right-side">
+                  <h2>دوره زبان انگلیسی writing pro</h2>
+                  <div>
+                    <p>مدرس دوره:</p>
+                    <p>حسین خاکیان</p>
+                  </div>
+                  <div>
+                    <p>زمان دوزه:</p>
+                    <p><span>3</span> ساعت و <span>42</span> دقیقه</p>
+                  </div>
+                  <div>
+                    <p>دانشجو:</p>
+                    <p><span>352</span> نفر</p>
+                  </div>
+                  <div>
+                    <p>دسته بندی:</p>
+                    <p>دوره های تخفیف</p>
+                  </div>
+                </div>
+                <!-- timer of discount -->
+                <div class="discount-courses-left-side">
+                  <div class="launch-time">
+                    <div>
+                      <p id="second"></p>
+                      <span>ثانیه</span>
+                    </div>
+                    <div>
+                      <p id="minute"></p>
+                      <span>دقیقه</span>
+                    </div>
+                    <div>
+                      <p id="hour"></p>
+                      <span>ساعت</span>
+                    </div>
+                    <div>
+                      <p id="day"></p>
+                      <span id="day-title">روز</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="discount-courses-cart-btn">
+                <button>افزودن به سبد خرید</button>
+                <span class="price-after-discount">1,710,000</span>
+                <span class="discount-number">74%</span>
+                <span class="price-before-discount">4,350,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next d-none d-md-inline-block"></div>
+      <div class="swiper-button-prev d-none d-md-inline-block"></div>
+    </div>
+
+    <!-- benefits of satros learn -->
+    <div class="satros-benefits">
+      <h2 class="satros-benefits-title">چرا باید ساتروس لرن را انتخاب کنم؟</h2>
+      <div class="satros-benefits-container">
+        <div class="satros-benefits-card shadow-lg">
+          <img src="assets/img/benefits-1.png" />
+          <h4>هزاران دانشجو</h4>
+          <p>
+            لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم
+            لورم لورم لورم لورم لورم لورم
+          </p>
+        </div>
+        <div class="satros-benefits-card shadow-lg">
+          <img src="assets/img/benefits-2.png" />
+          <h4>تضمین کیفیت</h4>
+          <p>
+            لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم
+            لورم لورم لورم لورم لورم لورم
+          </p>
+        </div>
+        <div class="satros-benefits-card shadow-lg">
+          <img src="assets/img/benefits-3.png" />
+          <h4>ضمانت بازگشت وجه</h4>
+          <p>
+            لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم
+            لورم لورم لورم لورم لورم لورم
+          </p>
+        </div>
+        <div class="satros-benefits-card shadow-lg">
+          <img src="assets/img/benefits-1.png" />
+          <h4>دسترسی همیشگی</h4>
+          <p>
+            لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم
+            لورم لورم لورم لورم لورم لورم
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- home podcast slider -->
+    <div class="home-podcast-slider">
+      <h2>برترین پادکست های زبان خارجه</h2>
+      <p class="podcast-slider-paragraph">
+        پادکست های زبان انگلیسی یکی از مهمترین و اساسی ترین بخش آموزشی ساتروس
+        لرن است. از دست ندید حتما گوش کنید.
+      </p>
+      <div id="yek" class="d-none d-md-inline-block"></div>
+      <div id="do" class="d-none d-md-inline-block"></div>
+      <div id="se" class="d-none d-md-inline-block"></div>
+      <div id="chahar" class="d-none d-md-inline-block"></div>
+      <div id="panj" class="d-none d-md-inline-block"></div>
+      <div id="shesh" class="d-none d-md-inline-block"></div>
+      <div class="home-podcast-slider-container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="home-podcast-right-side">
+                <h3>پادکست speaking زبان انگلیسی</h3>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                  آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </p>
+                <audio
+                  src="assets/img/A_Tribe_Called_Red_SILA_Ft_Tanya.mp3"
+                  controls
+                ></audio>
+              </div>
+              <div class="home-podcast-left-side d-none d-md-inline-block">
+                <img src="assets/img/home-course-card.jpg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="home-podcast-right-side">
+                <h3>پادکست speaking زبان انگلیسی</h3>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                  آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </p>
+                <audio
+                  src="assets/img/A_Tribe_Called_Red_SILA_Ft_Tanya.mp3"
+                  controls
+                ></audio>
+              </div>
+              <div class="home-podcast-left-side d-none d-md-inline-block">
+                <img src="assets/img/home-course-card.jpg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="home-podcast-right-side">
+                <h3>پادکست speaking زبان انگلیسی</h3>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                  آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </p>
+                <audio
+                  src="assets/img/A_Tribe_Called_Red_SILA_Ft_Tanya.mp3"
+                  controls
+                ></audio>
+              </div>
+              <div class="home-podcast-left-side d-none d-md-inline-block">
+                <img src="assets/img/home-course-card.jpg" />
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev d-none d-lg-inline-block"></div>
+          <div class="swiper-button-next d-none d-lg-inline-block"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- comments of students -->
+    <div class="students-comments-home">
+      <h2>نظرات شرکت کنندگان</h2>
+      <p class="student-comments-title">
+        نظر و محبت بچه ها نسبت به تجربه ای که در طی دوره آموزشی داشتن. برای دیدن
+        نظرات ورق بزن
+      </p>
+      <div class="students-comments-container">
+        <div class="swiper mySwiper students-comments">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/students-comments.jpg" />
+              <h4>پرهام رحیمی</h4>
+              <h5>دانشجوی دوره زبان انگلیسی</h5>
+              <p>
+                لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لومر لورم لورم
+                لورم لورم لورم
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/students-comments.jpg" />
+              <h4>پرهام رحیمی</h4>
+              <h5>دانشجوی دوره زبان انگلیسی</h5>
+              <p>
+                لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لومر لورم لورم
+                لورم لورم لورم
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/students-comments.jpg" />
+              <h4>پرهام رحیمی</h4>
+              <h5>دانشجوی دوره زبان انگلیسی</h5>
+              <p>
+                لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لومر لورم لورم
+                لورم لورم لورم
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/students-comments.jpg" />
+              <h4>پرهام رحیمی</h4>
+              <h5>دانشجوی دوره زبان انگلیسی</h5>
+              <p>
+                لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لومر لورم لورم
+                لورم لورم لورم
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/students-comments.jpg" />
+              <h4>پرهام رحیمی</h4>
+              <h5>دانشجوی دوره زبان انگلیسی</h5>
+              <p>
+                لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لومر لورم لورم
+                لورم لورم لورم
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/students-comments.jpg" />
+              <h4>پرهام رحیمی</h4>
+              <h5>دانشجوی دوره زبان انگلیسی</h5>
+              <p>
+                لورم لورم لورم لورم لورم لورم لورم لورم لورم لورم لومر لورم لورم
+                لورم لورم لورم
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next d-none d-md-inline-block"></div>
+        <div class="swiper-button-prev d-none d-md-inline-block"></div>
+      </div>
+    </div>
+
+    <!-- home essays mobile -->
+
+    <div class="home-essays-mobile d-block d-sm-none">
+      <div class="home-essays-mobile-title">
+        <h2>برترین و محبوب ترین مقالات</h2>
+        <a href="#">مشاهده همه</a>
+      </div>
+      <div class="home-essays-mobile-container">
+        <div class="swiper mySwiper home-essays-mobile-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/discount-courses-slider.png" />
+              <h3>دوره آیلتس کجا برگزار میشود؟</h3>
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است
+              </p>
+              <div class="read-more">
+                <a href="#">مطالعه بیشتر</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/discount-courses-slider.png" />
+              <h3>دوره آیلتس کجا برگزار میشود؟</h3>
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است
+              </p>
+              <div class="read-more">
+                <a href="#">مطالعه بیشتر</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/discount-courses-slider.png" />
+              <h3>دوره آیلتس کجا برگزار میشود؟</h3>
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است
+              </p>
+              <div class="read-more">
+                <a href="#">مطالعه بیشتر</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- home articles -->
+
+    <div class="home-essays d-none d-sm-block">
+      <div class="home-essay-title">
+        <h2>برترین و محبوب ترین مقالات</h2>
+        <a href="articles.html">مشاهده همه</a>
+      </div>
+      <div class="home-essays-container">
+        <div class="home-essay-card shadow-sm">
+          <img src="assets/img/home-essay.png" />
+          <h3>دوره آیلتس کجا برگزار میشود؟</h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است
+          </p>
+          <div class="read-more">
+            <a href="#">مطالعه بیشتر</a>
+          </div>
+        </div>
+        <div class="home-essay-card shadow-sm">
+          <img src="assets/img/home-essay.png" />
+          <h3>دوره آیلتس کجا برگزار میشود؟</h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است
+          </p>
+          <div class="read-more">
+            <a href="#">مطالعه بیشتر</a>
+          </div>
+        </div>
+        <div class="home-essay-card shadow-sm">
+          <img src="assets/img/home-essay.png" />
+          <h3>دوره آیلتس کجا برگزار میشود؟</h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است
+          </p>
+          <div class="read-more">
+            <a href="#">مطالعه بیشتر</a>
+          </div>
+        </div>
+        <div class="home-essay-card shadow-sm">
+          <img src="assets/img/home-essay.png" />
+          <h3>دوره آیلتس کجا برگزار میشود؟</h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است
+          </p>
+          <div class="read-more">
+            <a href="#">مطالعه بیشتر</a>
+          </div>
+        </div>
+        <div class="home-essay-card shadow-sm">
+          <img src="assets/img/home-essay.png" />
+          <h3>دوره آیلتس کجا برگزار میشود؟</h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است
+          </p>
+          <div class="read-more">
+            <a href="#">مطالعه بیشتر</a>
+          </div>
+        </div>
+        <div class="home-essay-card shadow-sm">
+          <img src="assets/img/home-essay.png" />
+          <h3>دوره آیلتس کجا برگزار میشود؟</h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است
+          </p>
+          <div class="read-more">
+            <a href="#">مطالعه بیشتر</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="d-flex">
+      <div class="footer-about-satros">
+        <h3>درباره ساتروس وب</h3>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+          سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+          متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+        </p>
+        <div class="footer-social-media">
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h3>معرفی سایت</h3>
+          <ul>
+            <li><a href="about-us.html">درباره ساتروس وب</a></li>
+            <li><a href="#">فرصت همکاری</a></li>
+            <li><a href="contact-us.html">اطلاعات تماس</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>خدمات شرکت</h3>
+          <ul>
+            <li><a href="#">پشتیبانی سریع</a></li>
+            <li><a href="#">ضمانت بازگشت وجه</a></li>
+            <li><a href="#">اطلاعات تماس</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>دسترسی سریع</h3>
+          <ul>
+            <li><a href="#">آموزش رایگان</a></li>
+            <li><a href="#">محصولات ویژه</a></li>
+            <li><a href="#">نظرات دانشجویان</a></li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h3>اطلاعات تماس</h3>
+          <ul>
+            <li><a href="#">تماس: 0217785545</a></li>
+            <li><a href="#">ایمیل: satrosweb@gmail.com</a></li>
+            <li>
+              <a href="#"
+                >آدرس: تهران زعفرانیه نرسیده به خیابان بهشتی، رو به روی بانک
+                پاسارگاد</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <div class="logo d-none d-lg-flex">
+          <div class="logo-details">
+            <h2>Satros Learn</h2>
+            <h3>Company</h3>
+          </div>
+          <img src="assets/img/white-logo.png" />
+        </div>
+        <div class="trust-logo d-none d-lg-inline-block">
+          <img src="assets/img/trust-logo.jpg" />
+        </div>
+        <div class="send-email">
+          <p>از اطلاع رسانی تخفیف دوره ها خبردار شو...</p>
+          <input type="text" placeholder="ایمیل خود را وارد کنید" />
+          <button>ارسال</button>
+        </div>
+      </div>
+    </footer>
+    <!-- copy-right -->
+    <div class="copy-right">
+      <a class="phone" href="#"><i class="fa-solid fa-phone"></i></a>
+      <div>
+        <h6>تمامی حقوق برای تیم ساتروس وب محفوظ میباشد.</h6>
+        <p>طراحی شده توسط تیم ساتروس وب</p>
+      </div>
+      <a class="refresh" href="#"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+    
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>

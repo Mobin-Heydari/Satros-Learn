@@ -1,0 +1,811 @@
+
+@media screen and (min-width:300px) {
+    // satros services
+div.satros-services{
+    font-family: vazir;
+    h2{
+        font-size: 5vw;
+        font-weight: 900;
+        margin: 40px auto 15px auto;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 3vw;
+        width: 81%;
+        margin: auto;
+    }
+    div.services{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 81%;
+        margin: 30px auto;
+        div.services-details{
+            width: 100%;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            div{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 18px 0;
+                i{
+                    font-size: 4vw;
+                    padding: 20px 23px;
+                    color: white;
+                    border-radius: 10px;
+                    background-color: $main;
+                    margin-left: -60px;
+                    z-index: 3;
+                }
+                p{
+                    font-size: 3.5vw;
+                    padding: 30px 30px;
+                    border-radius: 10px;
+                    z-index: 2;
+                    color: white;
+                    background-color: rgb(49, 49, 49);
+                }
+            }
+        }
+        div.services-img{
+            width: 46%;
+            text-align: left;
+            img{
+                width: 80%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+// Explanation
+div.explanations{
+    width: 81%;
+    margin: 60px auto;
+    font-family: vazir;
+    div.container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span{
+            padding: 10px 12px;
+            font-size: 3.3vw;
+            background-color: $main;
+            border-radius: 8px;
+            color: white;
+            font-weight: 900;
+            margin: 0 15px;
+            margin-top: 18px;
+            box-shadow: 0 0 7px $main;
+        }
+        div{
+            margin-top: 30px;
+            h3{
+                font-weight: 900;
+                font-size: 3.3vw;
+            }
+            p{
+                font-size: 3vw;
+                text-align: justify;
+            }
+        }
+    }
+}
+// common questions
+div.common-questions {
+    margin: 30px auto;
+    width: 81%;
+    div.common-questions-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: vazir;
+      i {
+        color: white;
+        background-color: $main;
+        padding: 10px 13px;
+        margin: 0 20px;
+        border-radius: 4px;
+      }
+      h3 {
+        font-size: 3.3vw;
+        font-weight: 800;
+        margin-top: 10px;
+      }
+    }
+    div.common-questions-details {
+      div.accordion {
+        div.accordion-item {
+          margin: 15px 0;
+          div.accordion-header {
+            div.accordion-button {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              color: black;
+              background-color: white;
+              border: 1px solid lightgray;
+              padding: 5px 15px;
+              font-family: vazir;
+              i {
+                font-size: 3.2vw;
+                font-weight: 800;
+                margin: 0 15px;
+              }
+              p {
+                font-size: 3.2vw;
+                font-weight: 800;
+                margin-top: 13px;
+              }
+            }
+          }
+          div.accordion-collapse {
+            div.accordion-body {
+              font-family: vazir;
+              p {
+                font-size: 3vw;
+                text-align: justify;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:576px) {
+    // satros services
+div.satros-services{
+    font-family: vazir;
+    h2{
+        font-size: 4vw;
+        font-weight: 900;
+        margin: 40px auto 15px auto;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 2vw;
+        width: 81%;
+        margin: auto;
+    }
+    div.services{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 81%;
+        margin: 30px auto;
+        div.services-details{
+            width: 100%;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            div{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 18px 0;
+                i{
+                    font-size: 3vw;
+                    padding: 20px 23px;
+                    color: white;
+                    border-radius: 10px;
+                    background-color: $main;
+                    margin-left: -90px;
+                    z-index: 3;
+                }
+                p{
+                    font-size: 2.5vw;
+                    padding: 30px 30px;
+                    border-radius: 10px;
+                    z-index: 2;
+                    color: white;
+                    background-color: rgb(49, 49, 49);
+                }
+            }
+        }
+        div.services-img{
+            width: 46%;
+            text-align: left;
+            img{
+                width: 80%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+// Explanation
+div.explanations{
+    width: 81%;
+    margin: 60px auto;
+    font-family: vazir;
+    div.container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span{
+            padding: 10px 13px;
+            font-size: 3vw;
+            background-color: $main;
+            border-radius: 8px;
+            color: white;
+            font-weight: 900;
+            margin: 0 15px;
+            margin-top: 18px;
+            box-shadow: 0 0 7px $main;
+        }
+        div{
+            margin-top: 30px;
+            h3{
+                font-weight: 900;
+                font-size: 3vw;
+            }
+            p{
+                font-size: 2.5vw;
+                text-align: justify;
+            }
+        }
+    }
+}
+// common questions
+div.common-questions {
+    margin: 30px auto;
+    width: 81%;
+    div.common-questions-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: vazir;
+      i {
+        color: white;
+        background-color: $main;
+        padding: 10px 13px;
+        margin: 0 20px;
+        border-radius: 4px;
+      }
+      h3 {
+        font-size: 3.3vw;
+        font-weight: 800;
+        margin-top: 10px;
+      }
+    }
+    div.common-questions-details {
+      div.accordion {
+        div.accordion-item {
+          margin: 15px 0;
+          div.accordion-header {
+            div.accordion-button {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              color: black;
+              background-color: white;
+              border: 1px solid lightgray;
+              padding: 5px 15px;
+              font-family: vazir;
+              i {
+                font-size: 3vw;
+                font-weight: 800;
+                margin: 0 15px;
+              }
+              p {
+                font-size: 2.5vw;
+                font-weight: 800;
+                margin-top: 13px;
+              }
+            }
+          }
+          div.accordion-collapse {
+            div.accordion-body {
+              font-family: vazir;
+              p {
+                font-size: 2.5vw;
+                text-align: justify;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:768px) {
+    // satros services
+div.satros-services{
+    font-family: vazir;
+    h2{
+        font-size: 3vw;
+        font-weight: 900;
+        margin: 40px auto 15px auto;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1.5vw;
+        width: 81%;
+        margin: auto;
+    }
+    div.services{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 81%;
+        margin: 30px auto;
+        div.services-details{
+            width: 42%;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            div{
+                width: 90%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 18px 0;
+                i{
+                    font-size: 2vw;
+                    padding: 20px 23px;
+                    color: white;
+                    border-radius: 10px;
+                    background-color: $main;
+                    margin-left: -60px;
+                    z-index: 3;
+                }
+                p{
+                    font-size: 1.5vw;
+                    padding: 30px 30px;
+                    border-radius: 10px;
+                    z-index: 2;
+                    color: white;
+                    background-color: rgb(49, 49, 49);
+                }
+            }
+        }
+        div.services-img{
+            width: 55%;
+            text-align: left;
+            img{
+                width: 100%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+// Explanation
+div.explanations{
+    width: 81%;
+    margin: 60px auto;
+    font-family: vazir;
+    div.container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span{
+            padding: 10px 13px;
+            font-size: 2vw;
+            background-color: $main;
+            border-radius: 8px;
+            color: white;
+            font-weight: 900;
+            margin: 0 15px;
+            margin-top: 18px;
+            box-shadow: 0 0 7px $main;
+        }
+        div{
+            margin-top: 30px;
+            h3{
+                font-weight: 900;
+                font-size: 2.3vw;
+            }
+            p{
+                font-size: 2vw;
+                text-align: justify;
+            }
+        }
+    }
+}
+// common questions
+div.common-questions {
+    margin: 30px auto;
+    width: 81%;
+    div.common-questions-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: vazir;
+      i {
+        color: white;
+        background-color: $main;
+        padding: 10px 13px;
+        margin: 0 20px;
+        border-radius: 4px;
+      }
+      h3 {
+        font-size: 2.3vw;
+        font-weight: 800;
+        margin-top: 10px;
+      }
+    }
+    div.common-questions-details {
+      div.accordion {
+        div.accordion-item {
+          margin: 15px 0;
+          div.accordion-header {
+            div.accordion-button {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              color: black;
+              background-color: white;
+              border: 1px solid lightgray;
+              padding: 5px 15px;
+              font-family: vazir;
+              i {
+                font-size: 2.2vw;
+                font-weight: 800;
+                margin: 0 15px;
+              }
+              p {
+                font-size: 2.2vw;
+                font-weight: 800;
+                margin-top: 13px;
+              }
+            }
+          }
+          div.accordion-collapse {
+            div.accordion-body {
+              font-family: vazir;
+              p {
+                font-size: 2vw;
+                text-align: justify;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:1024px) {
+    // satros services
+div.satros-services{
+    font-family: vazir;
+    h2{
+        font-size: 3vw;
+        font-weight: 900;
+        margin: 40px auto 15px auto;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1.5vw;
+        width: 81%;
+        margin: auto;
+    }
+    div.services{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 81%;
+        margin: 30px auto;
+        div.services-details{
+            width: 46%;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            div{
+                width: 90%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 18px 0;
+                i{
+                    font-size: 2vw;
+                    padding: 20px 23px;
+                    color: white;
+                    border-radius: 10px;
+                    background-color: $main;
+                    margin-left: -90px;
+                    z-index: 3;
+                }
+                p{
+                    font-size: 1.5vw;
+                    padding: 30px 30px;
+                    border-radius: 10px;
+                    z-index: 2;
+                    color: white;
+                    background-color: rgb(49, 49, 49);
+                }
+            }
+        }
+        div.services-img{
+            width: 54%;
+            text-align: left;
+            img{
+                width: 80%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+// Explanation
+div.explanations{
+    width: 81%;
+    margin: 60px auto;
+    font-family: vazir;
+    div.container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span{
+            padding: 10px 13px;
+            font-size: 1.5vw;
+            background-color: $main;
+            border-radius: 8px;
+            color: white;
+            font-weight: 900;
+            margin: 0 15px;
+            margin-top: 18px;
+            box-shadow: 0 0 7px $main;
+        }
+        div{
+            margin-top: 30px;
+            h3{
+                font-weight: 900;
+                font-size: 2vw;
+            }
+            p{
+                font-size: 1.5vw;
+                text-align: justify;
+            }
+        }
+    }
+}
+// common questions
+div.common-questions {
+    margin: 30px auto;
+    width: 81%;
+    div.common-questions-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: vazir;
+      i {
+        color: white;
+        background-color: $main;
+        padding: 10px 13px;
+        margin: 0 20px;
+        border-radius: 4px;
+      }
+      h3 {
+        font-size: 2vw;
+        font-weight: 800;
+        margin-top: 10px;
+      }
+    }
+    div.common-questions-details {
+      div.accordion {
+        div.accordion-item {
+          margin: 15px 0;
+          div.accordion-header {
+            div.accordion-button {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              color: black;
+              background-color: white;
+              border: 1px solid lightgray;
+              padding: 5px 15px;
+              font-family: vazir;
+              i {
+                font-size: 2vw;
+                font-weight: 800;
+                margin: 0 15px;
+              }
+              p {
+                font-size: 2vw;
+                font-weight: 800;
+                margin-top: 13px;
+              }
+            }
+          }
+          div.accordion-collapse {
+            div.accordion-body {
+              font-family: vazir;
+              p {
+                font-size: 1.8vw;
+                text-align: justify;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:1200px) {
+    // satros services
+div.satros-services{
+    font-family: vazir;
+    h2{
+        font-size: 3vw;
+        font-weight: 900;
+        margin: 40px auto 15px auto;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        width: 81%;
+        margin: auto;
+    }
+    div.services{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 81%;
+        margin: 30px auto;
+        div.services-details{
+            width: 46%;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            div{
+                width: 90%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 18px 0;
+                i{
+                    font-size: 2vw;
+                    padding: 20px 23px;
+                    color: white;
+                    border-radius: 10px;
+                    background-color: $main;
+                    margin-left: -90px;
+                    z-index: 3;
+                }
+                p{
+                    font-size: 1.5vw;
+                    padding: 30px 30px;
+                    border-radius: 10px;
+                    z-index: 2;
+                    color: white;
+                    background-color: rgb(49, 49, 49);
+                }
+            }
+        }
+        div.services-img{
+            width: 46%;
+            text-align: left;
+            img{
+                width: 80%;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+// Explanation
+div.explanations{
+    width: 81%;
+    margin: 60px auto;
+    font-family: vazir;
+    div.container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span{
+            padding: 10px 13px;
+            font-size: 1.3vw;
+            background-color: $main;
+            border-radius: 8px;
+            color: white;
+            font-weight: 900;
+            margin: 0 15px;
+            margin-top: 18px;
+            box-shadow: 0 0 7px $main;
+        }
+        div{
+            margin-top: 30px;
+            h3{
+                font-weight: 900;
+                font-size: 1.8vw;
+            }
+            p{
+                font-size: 1.5vw;
+                text-align: justify;
+            }
+        }
+    }
+}
+// common questions
+div.common-questions {
+    margin: 30px auto;
+    width: 81%;
+    div.common-questions-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: vazir;
+      i {
+        color: white;
+        background-color: $main;
+        padding: 10px 13px;
+        margin: 0 20px;
+        font-size: 2vw;
+        border-radius: 4px;
+      }
+      h3 {
+        font-size: 2vw;
+        font-weight: 800;
+        margin-top: 10px;
+      }
+    }
+    div.common-questions-details {
+      div.accordion {
+        div.accordion-item {
+          margin: 15px 0;
+          div.accordion-header {
+            div.accordion-button {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              color: black;
+              background-color: white;
+              border: 1px solid lightgray;
+              padding: 5px 15px;
+              font-family: vazir;
+              i {
+                font-size: 1.2vw;
+                font-weight: 800;
+                margin: 0 15px;
+              }
+              p {
+                font-size: 1.2vw;
+                font-weight: 800;
+                margin-top: 13px;
+              }
+            }
+          }
+          div.accordion-collapse {
+            div.accordion-body {
+              font-family: vazir;
+              p {
+                font-size: 1vw;
+                text-align: justify;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1281 @@
+@media screen and (min-width:300px) {
+    section{
+        div.podcast-title{
+            font-family: vazir;
+            text-align: center;
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            h1{
+                font-size: 5vw;
+                font-weight: 800;
+    
+            }
+        }
+        div.podcast-pic{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-sizing: border-box;
+            position: relative;
+            img{
+                width: 100%;
+                border-radius: 10px;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+            }
+        }
+        div.audio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 80%;
+            h3{
+                font-weight: 600;
+                margin: 20px 0;
+                font-size: 4vw;
+            }
+            audio{
+                width: 100%;
+            }
+            a{
+                margin: 20px 0;
+                color: white;
+                background-color: $main;
+                padding: 15px 40px;
+                border-radius: 40px;
+                font-size: 3.5vw;
+                font-weight: 600;
+                text-decoration: none;
+                font-family: vazir;
+                border: 2px solid $main;
+                transition: 250ms;
+                i{
+                    margin: 0 15px;
+                    font-size: 4vw;
+                }
+            }
+            a:hover{
+                background-color: white;
+                color: $main;
+            }
+        }
+        div.english-story{
+            margin: auto;
+            padding: 30px 20px;
+            box-sizing: border-box;
+            border: 4px solid $main;
+            text-align: left;
+            width: 90%;
+            border-radius: 10px;
+            margin-top: 30px;
+            h3{
+                font-size: 3.5vw;
+                font-weight: 800;
+            }
+            p{
+                font-size: 3.2vw;
+            }
+        }
+        div.farsi-story{
+            margin: auto;
+            padding: 30px 20px;
+            box-sizing: border-box;
+            border: 4px solid $main;
+            text-align: right;
+            width: 90%;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-family: vazir;
+            h3{
+                font-size: 3.5vw;
+                font-weight: 800;
+            }
+            p{
+                font-size: 3.2vw;
+            }
+        }
+        //   students comments
+        div.students-comments {
+          width: 100%;
+          margin-top: 40px;
+          text-align: right;
+          direction: rtl;
+          div.students-comments-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: vazir;
+            i {
+              color: white;
+              background-color: $main;
+              font-size: 3.3vw;
+              padding: 10px;
+              margin: 0 20px;
+              border-radius: 4px;
+            }
+            h3 {
+              font-size: 3.3vw;
+              font-weight: 800;
+              margin-top: 10px;
+            }
+          }
+          div.students-comments-accordion {
+            margin-top: 30px;
+            width: 90%;
+            margin-right: 25px;
+            div.accordion {
+              div.accordion-item {
+                div.accordion-header {
+                  div.accordion-button {
+                    background-color: white;
+                    border-radius: 8px;
+                    font-family: vazir;
+                    border: 1px solid lightgray;
+                    i {
+                      display: inline-block;
+                      color: black;
+                      font-size: 3vw;
+                      margin: 0 15px;
+                    }
+                    p {
+                      display: inline-block;
+                      margin-top: 14px;
+                      font-size: 3.5vw;
+                      color: $main;
+                      font-weight: 800;
+                      margin: 0 15px;
+                    }
+                    h6 {
+                      display: block;
+                      margin-top: 8px;
+                      color: black;
+                      font-size: 3.5vw;
+                    }
+                  }
+                }
+                div.accordion-collapse {
+                  div.accordion-body {
+                    font-family: vazir;
+                    margin-top: 15px;
+                    h4{
+                        font-size: 3.5vw;
+                    }
+                    p {
+                        font-size: 3vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        //   sending comment
+        div.comments-inputs {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-top: 30px;
+          font-family: vazir;
+          direction: rtl;
+          div.inputs {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            input {
+              padding: 15px;
+              font-size: 3vw;
+              border-radius: 7px;
+              margin: 15px 0;
+              border: 1px solid lightgray;
+            }
+            input:focus {
+              outline: none;
+            }
+            input.name {
+              width: 29%;
+            }
+            input.email {
+              width: 68%;
+            }
+            input.comment {
+              width: 98%;
+            }
+          }
+          div.send-comment {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+              color: $main;
+              background-color: white;
+              padding: 5px 15px;
+              border: 1px solid $main;
+              transition: 250ms;
+              border-radius: 7px;
+            }
+            button:hover {
+              background-color: $main;
+              color: white;
+            }
+          }
+        }
+    }
+}
+@media screen and (min-width:576px) {
+    section{
+        div.podcast-title{
+            font-family: vazir;
+            text-align: center;
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            h1{
+                font-size: 5vw;
+                font-weight: 800;
+    
+            }
+        }
+        div.podcast-pic{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-sizing: border-box;
+            position: relative;
+            img{
+                width: 100%;
+                border-radius: 10px;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+            }
+        }
+        div.audio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 80%;
+            h3{
+                font-weight: 600;
+                margin: 20px 0;
+                font-size: 3vw;
+            }
+            audio{
+                width: 100%;
+            }
+            a{
+                margin: 20px 0;
+                color: white;
+                background-color: $main;
+                padding: 15px 40px;
+                border-radius: 40px;
+                font-size: 2.5vw;
+                font-weight: 600;
+                text-decoration: none;
+                font-family: vazir;
+                border: 2px solid $main;
+                transition: 250ms;
+                i{
+                    margin: 0 15px;
+                    font-size: 2.5vw;
+                }
+            }
+            a:hover{
+                background-color: white;
+                color: $main;
+            }
+        }
+        div.english-story{
+            margin: auto;
+            padding: 30px 30px;
+            box-sizing: border-box;
+            border: 4px solid $main;
+            text-align: left;
+            width: 90%;
+            border-radius: 10px;
+            margin-top: 30px;
+            h3{
+                font-size: 3vw;
+                font-weight: 800;
+            }
+            p{
+                font-size: 2.5vw;
+            }
+        }
+        div.farsi-story{
+            margin: auto;
+            padding: 30px 30px;
+            box-sizing: border-box;
+            border: 4px solid $main;
+            text-align: right;
+            width: 90%;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-family: vazir;
+            h3{
+                font-size: 3vw;
+                font-weight: 800;
+            }
+            p{
+                font-size: 2.5vw;
+            }
+        }
+        //   students comments
+        div.students-comments {
+          width: 100%;
+          margin-top: 40px;
+          text-align: right;
+          direction: rtl;
+          div.students-comments-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: vazir;
+            i {
+              color: white;
+              background-color: $main;
+              font-size: 2vw;
+              padding: 10px;
+              margin: 0 20px;
+              border-radius: 4px;
+            }
+            h3 {
+              font-size: 2.3vw;
+              font-weight: 800;
+              margin-top: 10px;
+            }
+          }
+          div.students-comments-accordion {
+            margin-top: 30px;
+            width: 90%;
+            margin-right: 25px;
+            div.accordion {
+              div.accordion-item {
+                div.accordion-header {
+                  div.accordion-button {
+                    background-color: white;
+                    border-radius: 8px;
+                    font-family: vazir;
+                    border: 1px solid lightgray;
+                    i {
+                      display: inline-block;
+                      color: black;
+                      font-size: 2.5vw;
+                      margin: 0 15px;
+                    }
+                    p {
+                      display: inline-block;
+                      font-size: 2.5vw;
+                      margin-top: 14px;
+                      color: $main;
+                      font-weight: 800;
+                      margin: 0 15px;
+                    }
+                    h6 {
+                      display: block;
+                      font-size: 2.5vw;
+                      margin-top: 8px;
+                      color: black;
+                    }
+                  }
+                }
+                div.accordion-collapse {
+                  div.accordion-body {
+                    font-family: vazir;
+                    margin-top: 15px;
+                    h4{
+                        font-size: 3vw;
+                    }
+                    p{
+                        font-size: 2.5vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        //   sending comment
+        div.comments-inputs {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-top: 30px;
+          font-family: vazir;
+          direction: rtl;
+          div.inputs {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            input {
+              padding: 15px;
+              font-size: 2.5vw;
+              border-radius: 7px;
+              margin: 15px 0;
+              border: 1px solid lightgray;
+            }
+            input:focus {
+              outline: none;
+            }
+            input.name {
+              width: 29%;
+            }
+            input.email {
+              width: 68%;
+            }
+            input.comment {
+              width: 98%;
+            }
+          }
+          div.send-comment {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            button {
+              color: $main;
+              background-color: white;
+              padding: 5px 15px;
+              border: 1px solid $main;
+              transition: 250ms;
+              border-radius: 7px;
+            }
+            button:hover {
+              background-color: $main;
+              color: white;
+            }
+          }
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    section{
+        div.podcast-title{
+            font-family: vazir;
+            text-align: center;
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            h1{
+                font-size: 4vw;
+                font-weight: 800;
+    
+            }
+        }
+        div.podcast-pic{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-sizing: border-box;
+            position: relative;
+            img{
+                width: 100%;
+                border-radius: 10px;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+            }
+        }
+        div.audio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 100%;
+            h3{
+                font-weight: 600;
+                margin: 20px 0;
+                font-size: 2.5vw;
+            }
+            audio{
+                width: 95%;
+            }
+            a{
+                margin: 20px 0;
+                color: white;
+                background-color: $main;
+                padding: 15px 40px;
+                border-radius: 40px;
+                font-size: 2.5vw;
+                font-weight: 600;
+                text-decoration: none;
+                font-family: vazir;
+                border: 2px solid $main;
+                transition: 250ms;
+                i{
+                    margin: 0 15px;
+                    font-size: 2.5vw;
+                }
+            }
+            a:hover{
+                background-color: white;
+                color: $main;
+            }
+        }
+        div.english-story{
+            margin: auto;
+            padding: 30px 50px;
+            box-sizing: border-box;
+            border: 4px solid $main;
+            text-align: left;
+            width: 77%;
+            border-radius: 10px;
+            margin-top: 30px;
+            h3{
+                font-size: 2.5vw;
+                font-weight: 800;
+            }
+            p{
+                font-size: 2.2vw;
+            }
+        }
+        div.farsi-story{
+            margin: auto;
+            padding: 30px 50px;
+            box-sizing: border-box;
+            border: 4px solid $main;
+            text-align: right;
+            width: 77%;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-family: vazir;
+            h3{
+                font-size: 2.5vw;
+                font-weight: 800;
+            }
+            p{
+                font-size: 2.2vw;
+            }
+        }
+        //   students comments
+        div.students-comments {
+          width: 100%;
+          margin-top: 40px;
+          text-align: right;
+          direction: rtl;
+          div.students-comments-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: vazir;
+            i {
+              color: white;
+              background-color: $main;
+              padding: 10px;
+              font-size: 2.5vw;
+              margin: 0 20px;
+              border-radius: 4px;
+            }
+            h3 {
+              font-size: 2.3vw;
+              font-weight: 800;
+              margin-top: 10px;
+            }
+          }
+          div.students-comments-accordion {
+            margin-top: 30px;
+            width: 90%;
+            margin-right: 25px;
+            div.accordion {
+              div.accordion-item {
+                div.accordion-header {
+                  div.accordion-button {
+                    background-color: white;
+                    border-radius: 8px;
+                    font-family: vazir;
+                    border: 1px solid lightgray;
+                    i {
+                      display: inline-block;
+                      color: black;
+                      font-size: 2.5vw;
+                      margin: 0 15px;
+                    }
+                    p {
+                      display: inline-block;
+                      margin-top: 14px;
+                      color: $main;
+                      font-weight: 800;
+                      margin: 0 15px;
+                      font-size: 2.5vw;
+                    }
+                    h6 {
+                      display: block;
+                      margin-top: 8px;
+                      color: black;
+                      font-size: 2.5vw;
+                    }
+                  }
+                }
+                div.accordion-collapse {
+                  div.accordion-body {
+                    font-family: vazir;
+                    margin-top: 15px;
+                    h4{
+                        font-size: 2.5vw;
+                    }
+                    p{
+                        font-size: 2vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        //   sending comment
+        div.comments-inputs {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+          font-family: vazir;
+          direction: rtl;
+          div.inputs {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+            input {
+              padding: 15px;
+              font-size: 2vw;
+              border-radius: 7px;
+              margin: 15px 0;
+              border: 1px solid lightgray;
+            }
+            input:focus {
+              outline: none;
+            }
+            input.name {
+              width: 29%;
+            }
+            input.email {
+              width: 68%;
+            }
+            input.comment {
+              width: 98%;
+            }
+          }
+          div.send-comment {
+            width: 18%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+              color: $main;
+              background-color: white;
+              padding: 5px 15px;
+              border: 1px solid $main;
+              transition: 250ms;
+              border-radius: 7px;
+            }
+            button:hover {
+              background-color: $main;
+              color: white;
+            }
+          }
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    section{
+        div.podcast-title{
+            font-family: vazir;
+            text-align: center;
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            h1{
+                font-size: 3vw;
+                font-weight: 800;
+    
+            }
+        }
+        div.podcast-pic{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-sizing: border-box;
+            position: relative;
+            img{
+                width: 80%;
+                border-radius: 10px;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+            }
+            div.one{
+                position: absolute;
+                width: 60px;
+                height: 120px;
+                left: 0;
+                bottom: 0;
+                background-color: $main;
+                border-radius: 0 10px 10px 0;
+            }
+            div.two{
+                position: absolute;
+                width: 120px;
+                height: 60px;
+                left: 0;
+                bottom: 31%;
+                background-color: $main;
+                border-radius: 0 10px 10px 0;
+            }
+            div.three{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                left: 0;
+                bottom: 50%;
+                background-color: $main;
+                border-radius: 0 10px 10px 0;
+            }
+            div.four{
+                position: absolute;
+                width: 60px;
+                height: 120px;
+                right: 0;
+                top: 0;
+                background-color: $main;
+                border-radius: 10px 0 0 10px;
+            }
+            div.five{
+                position: absolute;
+                width: 120px;
+                height: 60px;
+                right: 0;
+                top: 31%;
+                background-color: $main;
+                border-radius: 10px 0 0 10px;
+            }
+            div.six{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                right: 0;
+                top: 50%;
+                background-color: $main;
+                border-radius: 10px 0 0 10px;
+            }
+        }
+        div.audio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 80%;
+            h3{
+                font-weight: 600;
+                margin: 20px 0;
+            }
+            audio{
+                width: 95%;
+            }
+            a{
+                margin: 20px 0;
+                color: white;
+                background-color: $main;
+                padding: 15px 40px;
+                border-radius: 40px;
+                font-size: 1.5vw;
+                font-weight: 600;
+                text-decoration: none;
+                font-family: vazir;
+                border: 2px solid $main;
+                transition: 250ms;
+                i{
+                    margin: 0 15px;
+                }
+            }
+            a:hover{
+                background-color: white;
+                color: $main;
+            }
+        }
+        div.english-story{
+            margin: auto;
+            padding: 30px 50px;
+            box-sizing: border-box;
+            border: 4px solid $main;
+            text-align: left;
+            width: 77%;
+            border-radius: 10px;
+            margin-top: 30px;
+            h3{
+                font-size: 2.2vw;
+                font-weight: 800;
+            }
+            p{
+                font-size: 2vw;
+            }
+        }
+        div.farsi-story{
+            margin: auto;
+            padding: 30px 50px;
+            box-sizing: border-box;
+            border: 4px solid $main;
+            text-align: right;
+            width: 77%;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-family: vazir;
+            h3{
+                font-size: 2.2vw;
+                font-weight: 800;
+            }
+            p{
+                font-size: 2vw;
+            }
+        }
+        //   students comments
+        div.students-comments {
+          width: 100%;
+          margin-top: 40px;
+          text-align: right;
+          direction: rtl;
+          div.students-comments-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: vazir;
+            i {
+              color: white;
+              background-color: $main;
+              padding: 10px;
+              font-size: 2.5vw;
+              margin: 0 20px;
+              border-radius: 4px;
+            }
+            h3 {
+              font-size: 2.3vw;
+              font-weight: 800;
+              margin-top: 10px;
+            }
+          }
+          div.students-comments-accordion {
+            margin-top: 30px;
+            width: 90%;
+            margin-right: 25px;
+            div.accordion {
+              div.accordion-item {
+                div.accordion-header {
+                  div.accordion-button {
+                    background-color: white;
+                    border-radius: 8px;
+                    font-family: vazir;
+                    border: 1px solid lightgray;
+                    i {
+                      display: inline-block;
+                      color: black;
+                      font-size: 2vw;
+                      margin: 0 15px;
+                    }
+                    p {
+                      display: inline-block;
+                      margin-top: 14px;
+                      font-size: 2vw;
+                      color: $main;
+                      font-weight: 800;
+                      margin: 0 15px;
+                    }
+                    h6 {
+                      display: block;
+                      font-size: 2vw;
+                      margin-top: 8px;
+                      color: black;
+                    }
+                  }
+                }
+                div.accordion-collapse {
+                  div.accordion-body {
+                    font-family: vazir;
+                    margin-top: 15px;
+                    h4{
+                        font-size: 2vw;
+                    }
+                    p{
+                        font-size: 1.5vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        //   sending comment
+        div.comments-inputs {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+          font-family: vazir;
+          direction: rtl;
+          div.inputs {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+            input {
+              padding: 15px;
+              font-size: 2vw;
+              border-radius: 7px;
+              margin: 15px 0;
+              border: 1px solid lightgray;
+            }
+            input:focus {
+              outline: none;
+            }
+            input.name {
+              width: 29%;
+            }
+            input.email {
+              width: 68%;
+            }
+            input.comment {
+              width: 98%;
+            }
+          }
+          div.send-comment {
+            width: 18%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+              color: $main;
+              background-color: white;
+              padding: 5px 15px;
+              border: 1px solid $main;
+              transition: 250ms;
+              border-radius: 7px;
+            }
+            button:hover {
+              background-color: $main;
+              color: white;
+            }
+          }
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    section{
+        div.podcast-title{
+            font-family: vazir;
+            text-align: center;
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            h1{
+                font-size: 3vw;
+                font-weight: 800;
+    
+            }
+        }
+        div.podcast-pic{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-sizing: border-box;
+            position: relative;
+            img{
+                width: 80%;
+                border-radius: 10px;
+                border: 15px solid white;
+                box-shadow: 0 0 0 4px $main;
+            }
+            div.one{
+                position: absolute;
+                width: 60px;
+                height: 120px;
+                left: 0;
+                bottom: 0;
+                background-color: $main;
+                border-radius: 0 10px 10px 0;
+            }
+            div.two{
+                position: absolute;
+                width: 120px;
+                height: 60px;
+                left: 0;
+                bottom: 31%;
+                background-color: $main;
+                border-radius: 0 10px 10px 0;
+            }
+            div.three{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                left: 0;
+                bottom: 50%;
+                background-color: $main;
+                border-radius: 0 10px 10px 0;
+            }
+            div.four{
+                position: absolute;
+                width: 60px;
+                height: 120px;
+                right: 0;
+                top: 0;
+                background-color: $main;
+                border-radius: 10px 0 0 10px;
+            }
+            div.five{
+                position: absolute;
+                width: 120px;
+                height: 60px;
+                right: 0;
+                top: 31%;
+                background-color: $main;
+                border-radius: 10px 0 0 10px;
+            }
+            div.six{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                right: 0;
+                top: 50%;
+                background-color: $main;
+                border-radius: 10px 0 0 10px;
+            }
+        }
+        div.audio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 80%;
+            h3{
+                font-weight: 600;
+                margin: 20px 0;
+            }
+            audio{
+                width: 95%;
+            }
+            a{
+                margin: 20px 0;
+                color: white;
+                background-color: $main;
+                padding: 15px 40px;
+                border-radius: 40px;
+                font-size: 1.5vw;
+                font-weight: 600;
+                text-decoration: none;
+                font-family: vazir;
+                border: 2px solid $main;
+                transition: 250ms;
+                i{
+                    margin: 0 15px;
+                    font-size: 1.5vw;
+                }
+            }
+            a:hover{
+                background-color: white;
+                color: $main;
+            }
+        }
+        div.english-story{
+            margin: auto;
+            padding: 30px 50px;
+            box-sizing: border-box;
+            border: 4px solid $main;
+            text-align: left;
+            width: 77%;
+            border-radius: 10px;
+            margin-top: 30px;
+            h3{
+                font-size: 1.5vw;
+                font-weight: 800;
+            }
+            p{
+                font-size: 1.2vw;
+            }
+        }
+        div.farsi-story{
+            margin: auto;
+            padding: 30px 50px;
+            box-sizing: border-box;
+            border: 4px solid $main;
+            text-align: right;
+            width: 77%;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-family: vazir;
+            h3{
+                font-size: 1.5vw;
+                font-weight: 800;
+            }
+            p{
+                font-size: 1.2vw;
+            }
+        }
+        //   students comments
+        div.students-comments {
+          width: 100%;
+          margin-top: 40px;
+          text-align: right;
+          direction: rtl;
+          div.students-comments-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: vazir;
+            i {
+              color: white;
+              background-color: $main;
+              font-size: 1.5vw;
+              padding: 10px;
+              margin: 0 20px;
+              border-radius: 4px;
+            }
+            h3 {
+              font-size: 1.3vw;
+              font-weight: 800;
+              margin-top: 10px;
+            }
+          }
+          div.students-comments-accordion {
+            margin-top: 30px;
+            width: 90%;
+            margin: 30px auto;
+            div.accordion {
+              div.accordion-item {
+                div.accordion-header {
+                  div.accordion-button {
+                    background-color: white;
+                    border-radius: 8px;
+                    font-family: vazir;
+                    border: 1px solid lightgray;
+                    i {
+                      display: inline-block;
+                      color: black;
+                      font-size: 1.5vw;
+                      margin: 0 15px;
+                    }
+                    p {
+                      display: inline-block;
+                      margin-top: 14px;
+                      font-size: 1.2vw;
+                      color: $main;
+                      font-weight: 800;
+                      margin: 0 15px;
+                    }
+                    h6 {
+                      display: block;
+                      margin-top: 8px;
+                      font-size: 1.2vw;
+                      color: black;
+                    }
+                  }
+                }
+                div.accordion-collapse {
+                  div.accordion-body {
+                    font-family: vazir;
+                    margin-top: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        //   sending comment
+        div.comments-inputs {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+          font-family: vazir;
+          direction: rtl;
+          div.inputs {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+            input {
+              padding: 15px;
+              font-size: 1vw;
+              border-radius: 7px;
+              margin: 15px 0;
+              border: 1px solid lightgray;
+            }
+            input:focus {
+              outline: none;
+            }
+            input.name {
+              width: 29%;
+            }
+            input.email {
+              width: 68%;
+            }
+            input.comment {
+              width: 98%;
+            }
+          }
+          div.send-comment {
+            width: 18%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+              color: $main;
+              background-color: white;
+              padding: 5px 15px;
+              border: 1px solid $main;
+              transition: 250ms;
+              border-radius: 7px;
+            }
+            button:hover {
+              background-color: $main;
+              color: white;
+            }
+          }
+        }
+    }
+}

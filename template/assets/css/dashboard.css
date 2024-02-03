@@ -1,0 +1,1245 @@
+@font-face {
+  font-family: lalezar;
+  src: url(fonts/Lalezar-Regular.woff);
+}
+@font-face {
+  font-family: vazir;
+  src: url(fonts/Vazir-Regular.woff);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 300px) {
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  section div.dashboard-menu {
+    width: 50%;
+    height: 100vh;
+    background-color: #28293D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: vazir;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: 500ms ease-in-out;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: -100%;
+  }
+  section div.dashboard-menu div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section div.dashboard-menu div.logo img {
+    width: 20%;
+    margin: 10px;
+  }
+  section div.dashboard-menu div.logo h1 {
+    font-size: 3vw;
+    font-weight: 900;
+    color: #F9A135;
+    margin-top: 5px;
+  }
+  section div.dashboard-menu div.menu {
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div {
+    margin: 0px;
+    padding: 3px;
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div i {
+    font-size: 1.3vw;
+    color: white;
+    margin: 0 5px;
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div a {
+    text-decoration: none;
+    color: white;
+    font-size: 3.3vw;
+  }
+  section div.dashboard-menu div.menu div .active {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.menu div:hover a {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.menu div:hover i {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.logout {
+    text-align: center;
+    width: 90%;
+    background-color: #1D1D28;
+    border-radius: 10px;
+    margin: 0 auto 70px auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  section div.dashboard-menu div.logout h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 2.3vw;
+  }
+  section div.dashboard-menu div.logout p {
+    color: lightgray;
+    font-size: 2vw;
+  }
+  section div.dashboard-menu div.logout button {
+    color: red;
+    border: 0;
+    background-color: transparent;
+    font-size: 2.2vw;
+    font-weight: 900;
+  }
+  section div.dashboard-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #1D1D28;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    overflow: scroll;
+  }
+  section div.dashboard-page div.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #28293D;
+  }
+  section div.dashboard-page div.welcome p {
+    color: white;
+    font-weight: 900;
+    font-size: 2.5vw;
+    margin-top: 10px;
+  }
+  section div.dashboard-page div.welcome div.nav-links a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #1D1D28;
+  }
+  section div.dashboard-page div.welcome div.nav-links a:hover {
+    color: #F9A135;
+  }
+  section div.dashboard-page div.welcome div.nav-links button.burger {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1D1D28;
+  }
+  section div.dashboard-page div.courses {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  section div.dashboard-page div.courses div.courses-card {
+    width: 47%;
+    background-color: #28293D;
+    border-radius: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  section div.dashboard-page div.courses div.courses-card i {
+    color: white;
+    font-size: 2.2vw;
+    padding: 15px 18px;
+    background-color: #F9A135;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  section div.dashboard-page div.courses div.courses-card div {
+    margin-top: 15px;
+  }
+  section div.dashboard-page div.courses div.courses-card div h3 {
+    font-size: 2.2vw;
+    color: white;
+  }
+  section div.dashboard-page div.courses div.courses-card div p {
+    font-size: 2vw;
+    color: #F9A135;
+  }
+  section div.dashboard-page div.alerts {
+    margin-top: 20px;
+  }
+  section div.dashboard-page div.alerts h3 {
+    font-size: 2.2vw;
+    font-family: 900;
+    text-align: right;
+    color: white;
+  }
+  section div.dashboard-page div.alerts div.alert-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.dashboard-page div.alerts div.alert-title i {
+    color: white;
+    font-size: 2.3vw;
+    background-color: #F9A135;
+    padding: 16px 20px;
+    box-shadow: 0 0 7px #F9A135;
+    border-radius: 10px;
+  }
+  section div.dashboard-page div.alerts div.alert-title p {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2.3vw;
+    background-color: #28293D;
+    color: white;
+    width: 82%;
+    margin-top: 12px;
+  }
+  section div.dashboard-page div.alerts div.alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  section div.dashboard-page div.alerts div.alert span {
+    padding: 15px 18px;
+    font-size: 2.3vw;
+    font-weight: 900;
+    background-color: #28293D;
+    border-radius: 10px;
+    color: white;
+  }
+  section div.dashboard-page div.alerts div.alert div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #28293D;
+    width: 82%;
+    border-radius: 10px;
+  }
+  section div.dashboard-page div.alerts div.alert div p {
+    font-size: 2vw;
+    color: gray;
+    margin-top: 12px;
+  }
+  section div.dashboard-page div.alerts div.alert div button.delet {
+    border: 0;
+    background-color: transparent;
+  }
+  section div.dashboard-page div.alerts div.alert div button.delet i {
+    color: white;
+    font-size: 2.3vw;
+  }
+  section div.dashboard-page::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  section div.dashboard-menu {
+    width: 40%;
+    height: 100vh;
+    background-color: #28293D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: vazir;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: 500ms ease-in-out;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: -100%;
+  }
+  section div.dashboard-menu div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section div.dashboard-menu div.logo img {
+    width: 20%;
+    margin: 10px;
+  }
+  section div.dashboard-menu div.logo h1 {
+    font-size: 3vw;
+    font-weight: 900;
+    color: #F9A135;
+    margin-top: 5px;
+  }
+  section div.dashboard-menu div.menu {
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div {
+    margin: 0px;
+    padding: 3px;
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div i {
+    font-size: 1.3vw;
+    color: white;
+    margin: 0 5px;
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.3vw;
+  }
+  section div.dashboard-menu div.menu div .active {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.menu div:hover a {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.menu div:hover i {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.logout {
+    text-align: center;
+    width: 90%;
+    background-color: #1D1D28;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  section div.dashboard-menu div.logout h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3vw;
+  }
+  section div.dashboard-menu div.logout p {
+    color: lightgray;
+    font-size: 1vw;
+  }
+  section div.dashboard-menu div.logout button {
+    color: red;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.2vw;
+    font-weight: 900;
+  }
+  section div.dashboard-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #1D1D28;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    overflow: scroll;
+  }
+  section div.dashboard-page div.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #28293D;
+  }
+  section div.dashboard-page div.welcome p {
+    color: white;
+    font-weight: 900;
+    font-size: 2.5vw;
+    margin-top: 10px;
+  }
+  section div.dashboard-page div.welcome div.nav-links a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #1D1D28;
+  }
+  section div.dashboard-page div.welcome div.nav-links a:hover {
+    color: #F9A135;
+  }
+  section div.dashboard-page div.welcome div.nav-links button.burger {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1D1D28;
+  }
+  section div.dashboard-page div.courses {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  section div.dashboard-page div.courses div.courses-card {
+    width: 47%;
+    background-color: #28293D;
+    border-radius: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  section div.dashboard-page div.courses div.courses-card i {
+    color: white;
+    font-size: 2.2vw;
+    padding: 15px 18px;
+    background-color: #F9A135;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  section div.dashboard-page div.courses div.courses-card div {
+    margin-top: 15px;
+  }
+  section div.dashboard-page div.courses div.courses-card div h3 {
+    font-size: 2.2vw;
+    color: white;
+  }
+  section div.dashboard-page div.courses div.courses-card div p {
+    font-size: 2vw;
+    color: #F9A135;
+  }
+  section div.dashboard-page div.alerts {
+    margin-top: 20px;
+  }
+  section div.dashboard-page div.alerts h3 {
+    font-size: 2.2vw;
+    font-family: 900;
+    text-align: right;
+    color: white;
+  }
+  section div.dashboard-page div.alerts div.alert-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.dashboard-page div.alerts div.alert-title i {
+    color: white;
+    font-size: 2.3vw;
+    background-color: #F9A135;
+    padding: 16px 20px;
+    box-shadow: 0 0 7px #F9A135;
+    border-radius: 10px;
+  }
+  section div.dashboard-page div.alerts div.alert-title p {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2.3vw;
+    background-color: #28293D;
+    color: white;
+    width: 90%;
+    margin-top: 12px;
+  }
+  section div.dashboard-page div.alerts div.alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  section div.dashboard-page div.alerts div.alert span {
+    padding: 15px 18px;
+    font-size: 2.3vw;
+    font-weight: 900;
+    background-color: #28293D;
+    border-radius: 10px;
+    color: white;
+  }
+  section div.dashboard-page div.alerts div.alert div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #28293D;
+    width: 90%;
+    border-radius: 10px;
+  }
+  section div.dashboard-page div.alerts div.alert div p {
+    font-size: 2vw;
+    color: gray;
+    margin-top: 12px;
+  }
+  section div.dashboard-page div.alerts div.alert div button.delet {
+    border: 0;
+    background-color: transparent;
+  }
+  section div.dashboard-page div.alerts div.alert div button.delet i {
+    color: white;
+    font-size: 2.3vw;
+  }
+  section div.dashboard-page::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  section div.dashboard-menu {
+    width: 20%;
+    height: 100vh;
+    background-color: #28293D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: vazir;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  section div.dashboard-menu div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section div.dashboard-menu div.logo img {
+    width: 20%;
+    margin: 10px;
+  }
+  section div.dashboard-menu div.logo h1 {
+    font-size: 2vw;
+    font-weight: 900;
+    color: #F9A135;
+    margin-top: 5px;
+  }
+  section div.dashboard-menu div.menu {
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div {
+    margin: 5px;
+    padding: 5px;
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div i {
+    font-size: 1.3vw;
+    color: white;
+    margin: 0 10px;
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw;
+  }
+  section div.dashboard-menu div.menu div .active {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.menu div:hover a {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.menu div:hover i {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.logout {
+    text-align: center;
+    width: 90%;
+    background-color: #1D1D28;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  section div.dashboard-menu div.logout h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3vw;
+  }
+  section div.dashboard-menu div.logout p {
+    color: lightgray;
+    font-size: 1vw;
+  }
+  section div.dashboard-menu div.logout button {
+    color: red;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.2vw;
+    font-weight: 900;
+  }
+  section div.dashboard-page {
+    width: 80%;
+    height: 100vh;
+    background-color: #1D1D28;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    overflow: scroll;
+  }
+  section div.dashboard-page div.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #28293D;
+  }
+  section div.dashboard-page div.welcome p {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5vw;
+    margin-top: 10px;
+  }
+  section div.dashboard-page div.welcome div.nav-links a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #1D1D28;
+  }
+  section div.dashboard-page div.welcome div.nav-links a:hover {
+    color: #F9A135;
+  }
+  section div.dashboard-page div.welcome div.nav-links button.burger {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1D1D28;
+  }
+  section div.dashboard-page div.courses {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.dashboard-page div.courses div.courses-card {
+    width: 23%;
+    background-color: #28293D;
+    border-radius: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  section div.dashboard-page div.courses div.courses-card i {
+    color: white;
+    font-size: 1.2vw;
+    padding: 15px 18px;
+    background-color: #F9A135;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  section div.dashboard-page div.courses div.courses-card div {
+    margin-top: 15px;
+  }
+  section div.dashboard-page div.courses div.courses-card div h3 {
+    font-size: 1.2vw;
+    color: white;
+  }
+  section div.dashboard-page div.courses div.courses-card div p {
+    font-size: 1vw;
+    color: #F9A135;
+  }
+  section div.dashboard-page div.alerts {
+    margin-top: 20px;
+  }
+  section div.dashboard-page div.alerts h3 {
+    font-size: 1.2vw;
+    font-family: 900;
+    text-align: right;
+    color: white;
+  }
+  section div.dashboard-page div.alerts div.alert-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.dashboard-page div.alerts div.alert-title i {
+    color: white;
+    font-size: 1.3vw;
+    background-color: #F9A135;
+    padding: 16px 20px;
+    box-shadow: 0 0 7px #F9A135;
+    border-radius: 10px;
+  }
+  section div.dashboard-page div.alerts div.alert-title p {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.3vw;
+    background-color: #28293D;
+    color: white;
+    width: 90%;
+    margin-top: 12px;
+  }
+  section div.dashboard-page div.alerts div.alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  section div.dashboard-page div.alerts div.alert span {
+    padding: 15px 18px;
+    font-size: 1.3vw;
+    font-weight: 900;
+    background-color: #28293D;
+    border-radius: 10px;
+    color: white;
+  }
+  section div.dashboard-page div.alerts div.alert div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #28293D;
+    width: 90%;
+    border-radius: 10px;
+  }
+  section div.dashboard-page div.alerts div.alert div p {
+    font-size: 1vw;
+    color: gray;
+    margin-top: 12px;
+  }
+  section div.dashboard-page div.alerts div.alert div button.delet {
+    border: 0;
+    background-color: transparent;
+  }
+  section div.dashboard-page div.alerts div.alert div button.delet i {
+    color: white;
+    font-size: 1.3vw;
+  }
+  section div.dashboard-page::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  section div.dashboard-menu {
+    width: 20%;
+    height: 100vh;
+    background-color: #28293D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: vazir;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  section div.dashboard-menu div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section div.dashboard-menu div.logo img {
+    width: 20%;
+    margin: 10px;
+  }
+  section div.dashboard-menu div.logo h1 {
+    font-size: 2vw;
+    font-weight: 900;
+    color: #F9A135;
+    margin-top: 5px;
+  }
+  section div.dashboard-menu div.menu {
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div {
+    margin: 5px;
+    padding: 5px;
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div i {
+    font-size: 1.3vw;
+    color: white;
+    margin: 0 10px;
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw;
+  }
+  section div.dashboard-menu div.menu div .active {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.menu div:hover a {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.menu div:hover i {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.logout {
+    text-align: center;
+    width: 90%;
+    background-color: #1D1D28;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  section div.dashboard-menu div.logout h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3vw;
+  }
+  section div.dashboard-menu div.logout p {
+    color: lightgray;
+    font-size: 1vw;
+  }
+  section div.dashboard-menu div.logout button {
+    color: red;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.2vw;
+    font-weight: 900;
+  }
+  section div.dashboard-page {
+    width: 80%;
+    height: 100vh;
+    background-color: #1D1D28;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    overflow: scroll;
+  }
+  section div.dashboard-page div.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #28293D;
+  }
+  section div.dashboard-page div.welcome p {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5vw;
+    margin-top: 10px;
+  }
+  section div.dashboard-page div.welcome div.nav-links a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #1D1D28;
+  }
+  section div.dashboard-page div.welcome div.nav-links a:hover {
+    color: #F9A135;
+  }
+  section div.dashboard-page div.welcome div.nav-links button.burger {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1D1D28;
+  }
+  section div.dashboard-page div.courses {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.dashboard-page div.courses div.courses-card {
+    width: 23%;
+    background-color: #28293D;
+    border-radius: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  section div.dashboard-page div.courses div.courses-card i {
+    color: white;
+    font-size: 1.2vw;
+    padding: 15px 18px;
+    background-color: #F9A135;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  section div.dashboard-page div.courses div.courses-card div {
+    margin-top: 15px;
+  }
+  section div.dashboard-page div.courses div.courses-card div h3 {
+    font-size: 1.2vw;
+    color: white;
+  }
+  section div.dashboard-page div.courses div.courses-card div p {
+    font-size: 1vw;
+    color: #F9A135;
+  }
+  section div.dashboard-page div.alerts {
+    margin-top: 20px;
+  }
+  section div.dashboard-page div.alerts h3 {
+    font-size: 1.2vw;
+    font-family: 900;
+    text-align: right;
+    color: white;
+  }
+  section div.dashboard-page div.alerts div.alert-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.dashboard-page div.alerts div.alert-title i {
+    color: white;
+    font-size: 1.3vw;
+    background-color: #F9A135;
+    padding: 16px 20px;
+    box-shadow: 0 0 7px #F9A135;
+    border-radius: 10px;
+  }
+  section div.dashboard-page div.alerts div.alert-title p {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.3vw;
+    background-color: #28293D;
+    color: white;
+    width: 92%;
+    margin-top: 12px;
+  }
+  section div.dashboard-page div.alerts div.alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  section div.dashboard-page div.alerts div.alert span {
+    padding: 15px 18px;
+    font-size: 1.3vw;
+    font-weight: 900;
+    background-color: #28293D;
+    border-radius: 10px;
+    color: white;
+  }
+  section div.dashboard-page div.alerts div.alert div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #28293D;
+    width: 92%;
+    border-radius: 10px;
+  }
+  section div.dashboard-page div.alerts div.alert div p {
+    font-size: 1vw;
+    color: gray;
+    margin-top: 12px;
+  }
+  section div.dashboard-page div.alerts div.alert div button.delet {
+    border: 0;
+    background-color: transparent;
+  }
+  section div.dashboard-page div.alerts div.alert div button.delet i {
+    color: white;
+    font-size: 1.3vw;
+  }
+  section div.dashboard-page::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  section div.dashboard-menu {
+    width: 20%;
+    height: 100vh;
+    background-color: #28293D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: vazir;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  section div.dashboard-menu div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section div.dashboard-menu div.logo img {
+    width: 20%;
+    margin: 10px;
+  }
+  section div.dashboard-menu div.logo h1 {
+    font-size: 2vw;
+    font-weight: 900;
+    color: #F9A135;
+    margin-top: 5px;
+  }
+  section div.dashboard-menu div.menu {
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div {
+    margin: 5px;
+    padding: 5px;
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div i {
+    font-size: 1.3vw;
+    color: white;
+    margin: 0 10px;
+    text-align: right;
+  }
+  section div.dashboard-menu div.menu div a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw;
+  }
+  section div.dashboard-menu div.menu div .active {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.menu div:hover a {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.menu div:hover i {
+    color: #F9A135;
+  }
+  section div.dashboard-menu div.logout {
+    text-align: center;
+    width: 90%;
+    background-color: #1D1D28;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  section div.dashboard-menu div.logout h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3vw;
+  }
+  section div.dashboard-menu div.logout p {
+    color: lightgray;
+    font-size: 1vw;
+  }
+  section div.dashboard-menu div.logout button {
+    color: red;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.2vw;
+    font-weight: 900;
+  }
+  section div.dashboard-page {
+    width: 80%;
+    height: 100vh;
+    background-color: #1D1D28;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    overflow: scroll;
+  }
+  section div.dashboard-page div.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #28293D;
+  }
+  section div.dashboard-page div.welcome p {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5vw;
+    margin-top: 10px;
+  }
+  section div.dashboard-page div.welcome div.nav-links a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #1D1D28;
+  }
+  section div.dashboard-page div.welcome div.nav-links a:hover {
+    color: #F9A135;
+  }
+  section div.dashboard-page div.welcome div.nav-links button.burger {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1D1D28;
+  }
+  section div.dashboard-page div.courses {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.dashboard-page div.courses div.courses-card {
+    width: 23%;
+    background-color: #28293D;
+    border-radius: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  section div.dashboard-page div.courses div.courses-card i {
+    color: white;
+    font-size: 1.2vw;
+    padding: 15px 18px;
+    background-color: #F9A135;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  section div.dashboard-page div.courses div.courses-card div {
+    margin-top: 15px;
+  }
+  section div.dashboard-page div.courses div.courses-card div h3 {
+    font-size: 1.2vw;
+    color: white;
+  }
+  section div.dashboard-page div.courses div.courses-card div p {
+    font-size: 1vw;
+    color: #F9A135;
+  }
+  section div.dashboard-page div.alerts {
+    margin-top: 20px;
+  }
+  section div.dashboard-page div.alerts h3 {
+    font-size: 1.2vw;
+    font-family: 900;
+    text-align: right;
+    color: white;
+  }
+  section div.dashboard-page div.alerts div.alert-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.dashboard-page div.alerts div.alert-title i {
+    color: white;
+    font-size: 1.3vw;
+    background-color: #F9A135;
+    padding: 16px 20px;
+    box-shadow: 0 0 7px #F9A135;
+    border-radius: 10px;
+  }
+  section div.dashboard-page div.alerts div.alert-title p {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.3vw;
+    background-color: #28293D;
+    color: white;
+    width: 92%;
+    margin-top: 12px;
+  }
+  section div.dashboard-page div.alerts div.alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  section div.dashboard-page div.alerts div.alert span {
+    padding: 15px 18px;
+    font-size: 1.3vw;
+    font-weight: 900;
+    background-color: #28293D;
+    border-radius: 10px;
+    color: white;
+  }
+  section div.dashboard-page div.alerts div.alert div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #28293D;
+    width: 92%;
+    border-radius: 10px;
+  }
+  section div.dashboard-page div.alerts div.alert div p {
+    font-size: 1vw;
+    color: gray;
+    margin-top: 12px;
+  }
+  section div.dashboard-page div.alerts div.alert div button.delet {
+    border: 0;
+    background-color: transparent;
+  }
+  section div.dashboard-page div.alerts div.alert div button.delet i {
+    color: white;
+    font-size: 1.3vw;
+  }
+  section div.dashboard-page::-webkit-scrollbar {
+    display: none;
+  }
+}/*# sourceMappingURL=dashboard.css.map */

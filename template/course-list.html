@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>satros learn</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="shadow-lg">
+      <div class="logo">
+        <img src="assets/img/Logo.png" alt="logo" />
+      </div>
+      <nav class="d-none d-lg-flex">
+        <a href="index.html">صفحه اصلی</a>
+        <a href="course-list.html">دوره های آموزشی</a>
+        <a href="podcasts-list.html">پادکست های ویژه</a>
+        <div class="header-item">
+          <a class="dropdown-btn"
+            >راه های ارتباطی با ما <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <div class="drop-menu shadow-lg d-none" class="d-none">
+            <a href="about-us.html">درباره ما</a>
+            <a href="contact-us.html">تماس با ما</a>
+            <a href="rules.html">قوانین و مقررات</a>
+          </div>
+        </div>
+      </nav>
+      <div class="login-icons">
+        <a href="#" class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="cart.html" class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a class="login-link" onclick="openLogin()">
+          <i class="fa-solid fa-user"></i>
+          <p class="d-none d-lg-inline-block">ورود به حساب</p>
+        </a>
+      </div>
+      <div class="burger-menu d-inline-block d-lg-none">
+        <button onclick="showMenu()" class="burger-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- mobile menu -->
+    <div class="mobile-menu shadow-lg">
+      <div class="logo">
+        <img src="assets/img/Logo.png" alt="logo" />
+      </div>
+      <nav class="navbar">
+        <a class="nav-link" aria-current="page" href="index.html">صفحه اصلی</a>
+        <a class="nav-link" href="course-list.html">دوره های آموزشی</a>
+        <a class="nav-link" href="podcasts-list.html">پادکست های ویژه</a>
+        <div class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            راه ارتباطی با ما
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about-us.html">درباره ما</a></li>
+            <li><a class="dropdown-item" href="contact-us.html">تماس با ما</a></li>
+            <li><a class="dropdown-item" href="rules.html">قوانین و مقررات</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- login page -->
+    <div class="login-page d-none">
+      <div class="login-card">
+        <img src="assets/img/login-pic.png">
+        <div class="login-link">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <a href="sign-in.html" class="login">ورود به حساب کاربری</a>
+        </div>
+        <div class="sign-up-link">
+          <i class="fa-solid fa-user-plus"></i>
+          <a href="sign-up.html" class="sign-up">ثبت نام در ساتروس لرن</a>
+        </div>
+        <button onclick="closeLogin()" class="login-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+    <!-- search page -->
+    <div class="search-page d-none">
+      <div class="search-container">
+        <button class="search-close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img src="assets/img/white-logo.png" />
+        <h3>Sators Learn</h3>
+        <div class="search-input">
+          <input type="text" placeholder="جستجو" />
+          <button class="search-click">جستجو</button>
+        </div>
+      </div>
+    </div>
+    <section>
+        <div class="courses-title">
+            <h1>انواع دوره های زبان خارجه</h1>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+        </div>
+        <div class="courses-container">
+            <!-- filters -->
+            <div class="filters">
+                <div class="price-filter">
+                    <h2>فیلتر بر اساس قیمت</h2>
+                    <button>دوره های خریدنی</button>
+                    <button>دوره های رایگان</button>
+                    <button>همه دوره های زبان خارجه</button>
+                    <button>دوره های تخفیف دار</button>
+                </div>
+                <div class="category-filter">
+                    <h2>فیلتر بر اساس دسته بندی دوره ها</h2>
+                    <button>دوره زبان انگلیسی</button>
+                    <button>دوره زبان آلمانی</button>
+                    <button>دوره زبان فرانسوی</button>
+                    <button>دوره زبان اسپانیایی</button>
+                    <button>دوره زبان ترکی استانبولی</button>
+                    <button>دوره زبان عربی</button>
+                    <button>دوره زبان پرتغالی</button>
+                </div>
+                <div class="price-range">
+                    <h2>فیلتر بر اساس قیمت</h2>
+                    <div dir="ltr">
+                        <input class="range" id="min" type="range" min="0" max="500000" value="250000">
+                        <input class="range" id="max" type="range" min="500000" max="5000000" value="2500000">
+                    </div>
+                    <div dir="ltr">
+                        <p class="min-p">0</p>
+                        <p class="max-p">500000</p>
+                    </div>
+                    <button>فیلتر کن</button>
+                </div>
+            </div>
+            <!-- couirses cards -->
+            <div class="courses-cards">
+                <div class="card">
+                    <img src="assets/img/home-course-card.jpg" />
+                    <h2>آموزش زبان انگلیسی سطح B1</h2>
+                    <div>
+                      <p><i class="fa-regular fa-user"></i> مدرس</p>
+                      <p>علیرضا رسولی پور</p>
+                    </div>
+                    <div>
+                      <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+                      <p>156 ساعت</p>
+                    </div>
+                    <div>
+                      <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+                      <p>1340</p>
+                    </div>
+                    <div class="price-card">
+                      <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+                      <p class="price">3,000,000</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/img/home-course-card.jpg" />
+                    <h2>آموزش زبان انگلیسی سطح B1</h2>
+                    <div>
+                      <p><i class="fa-regular fa-user"></i> مدرس</p>
+                      <p>علیرضا رسولی پور</p>
+                    </div>
+                    <div>
+                      <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+                      <p>156 ساعت</p>
+                    </div>
+                    <div>
+                      <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+                      <p>1340</p>
+                    </div>
+                    <div class="price-card">
+                      <a href="course-deatil.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+                      <p class="price">3,000,000</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/img/home-course-card.jpg" />
+                    <h2>آموزش زبان انگلیسی سطح B1</h2>
+                    <div>
+                      <p><i class="fa-regular fa-user"></i> مدرس</p>
+                      <p>علیرضا رسولی پور</p>
+                    </div>
+                    <div>
+                      <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+                      <p>156 ساعت</p>
+                    </div>
+                    <div>
+                      <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+                      <p>1340</p>
+                    </div>
+                    <div class="price-card">
+                      <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+                      <p class="price">3,000,000</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/img/home-course-card.jpg" />
+                    <h2>آموزش زبان انگلیسی سطح B1</h2>
+                    <div>
+                      <p><i class="fa-regular fa-user"></i> مدرس</p>
+                      <p>علیرضا رسولی پور</p>
+                    </div>
+                    <div>
+                      <p><i class="fa-regular fa-clock"></i> زمان دوره</p>
+                      <p>156 ساعت</p>
+                    </div>
+                    <div>
+                      <p><i class="fa-solid fa-users"></i> تعداد دانشجو ها</p>
+                      <p>1340</p>
+                    </div>
+                    <div class="price-card">
+                      <a href="course-detail.html">مشاهده اطلاعات <i class="fa-solid fa-chevron-left"></i></a>
+                      <p class="price">3,000,000</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <i class="fa-solid fa-chevron-right"></i>
+            <button>01</button>
+            <button>02</button>
+            <button>03</button>
+            <button>04</button>
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+    </section>
+    <!-- footer -->
+    <footer class="d-flex">
+      <div class="footer-about-satros">
+        <h3>درباره ساتروس وب</h3>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+          سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+          متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+        </p>
+        <div class="footer-social-media">
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h3>معرفی سایت</h3>
+          <ul>
+            <li><a href="about-us.html">درباره ساتروس وب</a></li>
+            <li><a href="#">فرصت همکاری</a></li>
+            <li><a href="contact-us.html">اطلاعات تماس</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>خدمات شرکت</h3>
+          <ul>
+            <li><a href="#">پشتیبانی سریع</a></li>
+            <li><a href="#">ضمانت بازگشت وجه</a></li>
+            <li><a href="#">اطلاعات تماس</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>دسترسی سریع</h3>
+          <ul>
+            <li><a href="#">آموزش رایگان</a></li>
+            <li><a href="#">محصولات ویژه</a></li>
+            <li><a href="#">نظرات دانشجویان</a></li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h3>اطلاعات تماس</h3>
+          <ul>
+            <li><a href="#">تماس: 0217785545</a></li>
+            <li><a href="#">ایمیل: satrosweb@gmail.com</a></li>
+            <li>
+              <a href="#"
+                >آدرس: تهران زعفرانیه نرسیده به خیابان بهشتی، رو به روی بانک
+                پاسارگاد</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <div class="logo d-none d-lg-flex">
+          <div class="logo-details">
+            <h2>Satros Learn</h2>
+            <h3>Company</h3>
+          </div>
+          <img src="assets/img/white-logo.png" />
+        </div>
+        <div class="trust-logo d-none d-lg-inline-block">
+          <img src="assets/img/trust-logo.jpg" />
+        </div>
+        <div class="send-email">
+          <p>از اطلاع رسانی تخفیف دوره ها خبردار شو...</p>
+          <input type="text" placeholder="ایمیل خود را وارد کنید" />
+          <button>ارسال</button>
+        </div>
+      </div>
+    </footer>
+    <!-- copy-right -->
+    <div class="copy-right">
+      <a class="phone" href="#"><i class="fa-solid fa-phone"></i></a>
+      <div>
+        <h6>تمامی حقوق برای تیم ساتروس وب محفوظ میباشد.</h6>
+        <p>طراحی شده توسط تیم ساتروس وب</p>
+      </div>
+      <a class="refresh" href="#"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+    
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>

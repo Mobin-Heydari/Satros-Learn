@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>satros learn</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="shadow-lg">
+      <div class="logo">
+        <img src="assets/img/Logo.png" alt="logo" />
+      </div>
+      <nav class="d-none d-lg-flex">
+        <a href="index.html">صفحه اصلی</a>
+        <a href="course-list.html">دوره های آموزشی</a>
+        <a href="podcasts-list.html">پادکست های ویژه</a>
+        <div class="header-item">
+          <a class="dropdown-btn"
+            >راه های ارتباطی با ما <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <div class="drop-menu shadow-lg d-none" class="d-none">
+            <a href="about-us.html">درباره ما</a>
+            <a href="contact-us.html">تماس با ما</a>
+            <a href="rules.html">قوانین و مقررات</a>
+          </div>
+        </div>
+      </nav>
+      <div class="login-icons">
+        <a href="#" class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="cart.html" class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a class="login-link" onclick="openLogin()">
+          <i class="fa-solid fa-user"></i>
+          <p class="d-none d-lg-inline-block">ورود به حساب</p>
+        </a>
+      </div>
+      <div class="burger-menu d-inline-block d-lg-none">
+        <button onclick="showMenu()" class="burger-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- mobile menu -->
+    <div class="mobile-menu shadow-lg">
+      <div class="logo">
+        <img src="assets/img/Logo.png" alt="logo" />
+      </div>
+      <nav class="navbar">
+        <a class="nav-link" aria-current="page" href="index.html">صفحه اصلی</a>
+        <a class="nav-link" href="course-list.html">دوره های آموزشی</a>
+        <a class="nav-link" href="podcasts-list.html">پادکست های ویژه</a>
+        <div class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            راه ارتباطی با ما
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about-us.html">درباره ما</a></li>
+            <li><a class="dropdown-item" href="contact-us.html">تماس با ما</a></li>
+            <li><a class="dropdown-item" href="rules.html">قوانین و مقررات</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- login page -->
+    <div class="login-page d-none">
+      <div class="login-card">
+        <img src="assets/img/login-pic.png">
+        <div class="login-link">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <a href="sign-in.html" class="login">ورود به حساب کاربری</a>
+        </div>
+        <div class="sign-up-link">
+          <i class="fa-solid fa-user-plus"></i>
+          <a href="sign-up.html" class="sign-up">ثبت نام در ساتروس لرن</a>
+        </div>
+        <button onclick="closeLogin()" class="login-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+    <!-- search page -->
+    <div class="search-page d-none">
+      <div class="search-container">
+        <button class="search-close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img src="assets/img/white-logo.png" />
+        <h3>Sators Learn</h3>
+        <div class="search-input">
+          <input type="text" placeholder="جستجو" />
+          <button class="search-click">جستجو</button>
+        </div>
+      </div>
+    </div>
+    <!-- about satros learn (us) -->
+    <section>
+        <h1>درباره ساتروس لرن</h1>
+        <div class="success-step">
+            <img src="assets/img/about-us-page.png">
+            <div class="seccess-step-details">
+                <h2>گام موفقیت ساتروس لرن</h2>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+            </div>
+            <div class="one d-none d-lg-inline-block"></div>
+            <div class="two d-none d-lg-inline-block"></div>
+            <div class="three d-none d-lg-inline-block"></div>
+        </div>
+        <div class="introduce">
+            <div class="introduce-details">
+                <h2>معرفی کمپانی عظیم ساتروس لرن</h2>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+            </div>
+            <img src="assets/img/about-us-page.png">
+            <div class="four d-none d-lg-inline-block"></div>
+            <div class="five d-none d-lg-inline-block"></div>
+            <div class="six d-none d-lg-inline-block"></div>
+        </div>
+    </section>
+    <!-- satros services -->
+    <div class="satros-services">
+        <h2>خدمات ساتروس لرن</h2>
+        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز.</p>
+        <div class="services">
+            <div class="services-details">
+                <div>
+                    <i class="fa-solid fa-id-badge"></i>
+                    <p>پشتیبانی 24 ساعته</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-id-badge"></i>
+                    <p>مشاوره رایگان</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-id-badge"></i>
+                    <p>تعیین سطح زبان آنلاین</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-id-badge"></i>
+                    <p>جوایز به برترین دانشجویان</p>
+                </div>
+            </div>
+            <div class="services-img d-none d-md-inline-block">
+                <img src="img/services.png">
+            </div>
+        </div>
+    </div>
+    <!-- explanations -->
+    <div class="explanations">
+        <div class="container">
+            <span>01</span>
+            <div>
+                <h3>کار ساتروس لرن چیست؟</h3>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+            </div>
+        </div>
+        <div class="container">
+            <span>02</span>
+            <div>
+                <h3>همکاری در ساتروس لرن</h3>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+            </div>
+        </div>
+        <div class="container">
+            <span>03</span>
+            <div>
+                <h3>جذب مدرس در ساتروس لرن</h3>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+            </div>
+        </div>
+    </div>
+    <!-- common questions -->
+    <div class="common-questions">
+        <div class="common-questions-title">
+          <i class="fa-solid fa-question"></i>
+          <h3>سوالات متداول</h3>
+        </div>
+        <div class="common-questions-details">
+          <div class="accordion" id="accordionExample-3">
+            <!-- item -->
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <div class="accordion-button" type="button"           data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  <i class="fa-solid fa-plus"></i>
+                  <p>آیا پایان این دوره گواهینامه بهمون تعلق  میگیره؟</p>
+                </div>
+              </div>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <div class="accordion-button" type="button"           data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  <i class="fa-solid fa-plus"></i>
+                  <p>آیا پایان این دوره گواهینامه بهمون تعلق  میگیره؟</p>
+                </div>
+              </div>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <div class="accordion-button" type="button"           data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  <i class="fa-solid fa-plus"></i>
+                  <p>آیا پایان این دوره گواهینامه بهمون تعلق  میگیره؟</p>
+                </div>
+              </div>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <div class="accordion-button" type="button"           data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                  <i class="fa-solid fa-plus"></i>
+                  <p>آیا پایان این دوره گواهینامه بهمون تعلق  میگیره؟</p>
+                </div>
+              </div>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- footer -->
+    <footer class="d-flex">
+      <div class="footer-about-satros">
+        <h3>درباره ساتروس وب</h3>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+          سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+          متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+        </p>
+        <div class="footer-social-media">
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h3>معرفی سایت</h3>
+          <ul>
+            <li><a href="about-us.html">درباره ساتروس وب</a></li>
+            <li><a href="#">فرصت همکاری</a></li>
+            <li><a href="contact-us.html">اطلاعات تماس</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>خدمات شرکت</h3>
+          <ul>
+            <li><a href="#">پشتیبانی سریع</a></li>
+            <li><a href="#">ضمانت بازگشت وجه</a></li>
+            <li><a href="#">اطلاعات تماس</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>دسترسی سریع</h3>
+          <ul>
+            <li><a href="#">آموزش رایگان</a></li>
+            <li><a href="#">محصولات ویژه</a></li>
+            <li><a href="#">نظرات دانشجویان</a></li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h3>اطلاعات تماس</h3>
+          <ul>
+            <li><a href="#">تماس: 0217785545</a></li>
+            <li><a href="#">ایمیل: satrosweb@gmail.com</a></li>
+            <li>
+              <a href="#"
+                >آدرس: تهران زعفرانیه نرسیده به خیابان بهشتی، رو به روی بانک
+                پاسارگاد</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <div class="logo d-none d-lg-flex">
+          <div class="logo-details">
+            <h2>Satros Learn</h2>
+            <h3>Company</h3>
+          </div>
+          <img src="assets/img/white-logo.png" />
+        </div>
+        <div class="trust-logo d-none d-lg-inline-block">
+          <img src="assets/img/trust-logo.jpg" />
+        </div>
+        <div class="send-email">
+          <p>از اطلاع رسانی تخفیف دوره ها خبردار شو...</p>
+          <input type="text" placeholder="ایمیل خود را وارد کنید" />
+          <button>ارسال</button>
+        </div>
+      </div>
+    </footer>
+    <!-- copy-right -->
+    <div class="copy-right">
+      <a class="phone" href="#"><i class="fa-solid fa-phone"></i></a>
+      <div>
+        <h6>تمامی حقوق برای تیم ساتروس وب محفوظ میباشد.</h6>
+        <p>طراحی شده توسط تیم ساتروس وب</p>
+      </div>
+      <a class="refresh" href="#"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+    
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>

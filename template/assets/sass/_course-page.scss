@@ -1,0 +1,2700 @@
+@media screen and (min-width: 300px) {
+    section {
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      margin-top: 20px;
+      div.course-title {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        h1 {
+          font-family: vazir;
+          font-size: 4vw;
+          color: black;
+          font-weight: 800;
+        }
+        div.course-menu {
+          margin: 30px auto;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          border-radius: 8px;
+          border: 1px solid lightgray;
+          width: 100%;
+          button {
+            color: $secondary;
+            font-size: 3.2vw;
+            font-family: vazir;
+            border: 0;
+            background-color: transparent;
+            padding: 15px;
+            transition: 250ms;
+            font-weight: 600;
+          }
+          button:hover {
+            color: $main;
+          }
+          div {
+            width: 4px;
+            background-color: $main;
+            height: 20px;
+          }
+        }
+      }
+      // course sessions
+      div.course-sessions {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        div.course-video-player {
+          width: 100%;
+          order: 2;
+          div.video-player {
+            width: 100%;
+            margin-top: 35px;
+            .video-js{
+                width: 100% !important;
+                height: 250px;
+            }
+          }
+          div.video-links {
+            width: 100%;
+            font-family: vazir;
+            div.video-link-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              margin-top: 30px;
+              i {
+                margin: 0 20px;
+                font-size: 3vw;
+                padding: 10px 12px;
+                border-radius: 4px;
+                background-color: $main;
+                color: white;
+                box-shadow: 0 0 7px $main;
+              }
+              h3 {
+                font-size: 3.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.accordion {
+              margin-top: 30px;
+              div.accordion-item {
+                margin: 15px 0;
+                div.accordion-header {
+                  div.accordion-button {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: black;
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    padding: 5px 15px;
+                    position: relative;
+                    span {
+                      color: white;
+                      font-size: 3.2vw;
+                      padding: 7px 15px 5px 15px;
+                      border-radius: 8px;
+                      background-color: rgb(54, 54, 54);
+                    }
+                    p {
+                      font-family: vazir;
+                      font-size: 3.2vw;
+                      margin-top: 12px;
+                      margin-right: 20px;
+                      font-weight: 800;
+                    }
+                    div {
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: flex-start;
+                      position: absolute;
+                      left: 60px;
+                      i {
+                        margin-top: 15px;
+                        font-size: 3.2vw;
+                      }
+                    }
+                  }
+                }
+                div.accordion-collapse {
+                  div.accordion-body {
+                    div.session {
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      div.session-name {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        p {
+                          margin-top: 13px;
+                          margin-right: 10px;
+                          font-size: 2.5vw;
+                        }
+                        i {
+                          font-size: 2.5vw;
+                        }
+                      }
+                      div.session-time {
+                        font-size: 2.5vw;
+                      }
+                      div.session-video-link {
+                        a {
+                          color: black;
+                          padding: 5px 15px;
+                          background-color: rgb(224, 224, 224);
+                          text-decoration: none;
+                          border-radius: 4px;
+                          margin: 5px;
+                          font-size: 2.7vw;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          // session headline
+          div.session-headline {
+            margin-top: 30px;
+            width: 100%;
+            div.headline-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                font-size: 3vw;
+                background-color: $main;
+                padding: 10px;
+                margin: 0 20px;
+                border-radius: 4px;
+                box-shadow: 0 0 7px $main;
+              }
+              h3 {
+                font-size: 3.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.accordion {
+              margin-top: 30px;
+              div.accordion-item {
+                margin: 15px 0;
+                div.accordion-header {
+                  div.accordion-button {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: black;
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    padding: 5px 15px;
+                    font-family: vazir;
+                    i {
+                      margin: 0 15px;
+                      font-weight: 800;
+                      font-size: 3.2vw;
+                    }
+                    p {
+                      margin-top: 10px;
+                      font-weight: 800;
+                      font-size: 3.2vw;
+                    }
+                  }
+                }
+                div.accordion-collapse{
+                    div.accordion-body{
+                        ul{
+                            li{
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+              }
+            }
+          }
+          // about course
+          div.about-course {
+            margin-top: 30px;
+            width: 100%;
+            div.about-course-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                background-color: $main;
+                font-size: 3vw;
+                padding: 10px;
+                margin: 0 20px;
+                border-radius: 4px;
+                box-shadow: 0 0 7px $main;
+              }
+              h3 {
+                font-size: 3.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.about-course-paragraph {
+              font-family: vazir;
+              padding: 30px;
+              box-sizing: border-box;
+              border-radius: 8px;
+              border: 1px solid lightgray;
+              margin-top: 20px;
+              h3 {
+                font-size: 3.2vw;
+                color: $main;
+                font-weight: 600;
+              }
+              ul {
+                margin-top: 15px;
+                li {
+                  font-size: 3vw;
+                  text-align: justify;
+                }
+              }
+            }
+          }
+          // common questions
+          div.common-questions {
+            margin-top: 30px;
+            width: 100%;
+            div.common-questions-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                background-color: $main;
+                font-size: 3vw;
+                padding: 10px 13px;
+                margin: 0 20px;
+                border-radius: 4px;
+                box-shadow: 0 0 7px $main;
+              }
+              h3 {
+                font-size: 3.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.common-questions-details {
+              div.accordion {
+                div.accordion-item {
+                  margin: 15px 0;
+                  div.accordion-header {
+                    div.accordion-button {
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: center;
+                      color: black;
+                      background-color: white;
+                      border: 1px solid lightgray;
+                      padding: 5px 15px;
+                      font-family: vazir;
+                      i {
+                        font-size: 3.2vw;
+                        font-weight: 800;
+                        margin: 0 15px;
+                      }
+                      p {
+                        font-size: 2.8vw;
+                        font-weight: 800;
+                        margin-top: 13px;
+                      }
+                    }
+                  }
+                  div.accordion-collapse {
+                    div.accordion-body {
+                      font-family: vazir;
+                      p {
+                        font-size: 3vw;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+  
+        // course details
+  
+        div.course-details {
+          width: 100%;
+          order: 1;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          h2 {
+            font-size: 3.5vw;
+            font-family: vazir;
+            font-weight: 600;
+            padding: 15px;
+            display: block;
+            border-bottom: 2px solid $main;
+          }
+          div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            box-sizing: border-box;
+            font-family: vazir;
+            border-bottom: 1px dashed rgb(189, 189, 189);
+            p {
+              font-size: 3vw;
+              margin: 0;
+            }
+            span {
+              font-size: 3vw;
+            }
+          }
+          div.course-price {
+            margin-top: 30px;
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              text-decoration: line-through;
+              font-weight: 800;
+            }
+          }
+          div.discount-percentage {
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              color: red;
+              font-weight: 800;
+            }
+          }
+          div.final-price {
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              font-weight: 800;
+              color: green;
+            }
+          }
+          button.add-to-cart {
+            width: 100%;
+            text-align: center;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            font-weight: 800;
+            color: white;
+            background-color: $main;
+            font-size: 3.2vw;
+            margin-top: 15px;
+            border: 0;
+            font-family: vazir;
+            border-radius: 5px;
+          }
+        }
+      }
+      //   students comments
+      div.students-comments {
+        width: 100%;
+        margin-top: 40px;
+        div.students-comments-title {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-family: vazir;
+          i {
+            color: white;
+            background-color: $main;
+            padding: 10px 13px;
+            font-size: 3vw;
+            margin: 0 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 7px $main;
+          }
+          h3 {
+            font-size: 3.3vw;
+            font-weight: 800;
+            margin-top: 10px;
+          }
+        }
+        div.students-comments-accordion {
+          margin-top: 30px;
+          div.accordion {
+            div.accordion-item {
+              div.accordion-header {
+                div.accordion-button {
+                  background-color: white;
+                  border-radius: 8px;
+                  font-family: vazir;
+                  border: 1px solid lightgray;
+                  i {
+                    display: inline-block;
+                    font-size: 3vw;
+                    color: black;
+                    margin: 0 15px;
+                  }
+                  p {
+                    display: inline-block;
+                    font-size: 3.2vw;
+                    margin-top: 14px;
+                    color: $main;
+                    font-weight: 800;
+                    margin: 0 15px;
+                  }
+                  h6 {
+                    display: block;
+                    font-size: 3.2vw;
+                    margin-top: 8px;
+                    color: black;
+                  }
+                }
+              }
+              div.accordion-collapse {
+                div.accordion-body {
+                  font-family: vazir;
+                  margin-top: 15px;
+                  ul{
+                    li{
+                        h4{
+                            font-size: 3.3vw;
+                        }
+                        p{
+                            font-size: 3vw;
+                        }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      //   sending comment
+      div.comments-inputs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+        font-family: vazir;
+        div.inputs {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          input {
+            padding: 15px;
+            font-size: 3vw;
+            border-radius: 7px;
+            margin: 15px 0;
+            border: 1px solid lightgray;
+          }
+          input:focus {
+            outline: none;
+          }
+          input.name {
+            width: 29%;
+          }
+          input.email {
+            width: 68%;
+          }
+          input.comment {
+            width: 98%;
+          }
+        }
+        div.send-comment {
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          button {
+            color: $main;
+            background-color: white;
+            padding: 5px 15px;
+            border: 1px solid $main;
+            transition: 250ms;
+            border-radius: 7px;
+            font-size: 3vw;
+          }
+          button:hover {
+            background-color: $main;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+@media screen and (min-width: 576px) {
+    section {
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      margin-top: 40px;
+      div.course-title {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        h1 {
+          font-family: vazir;
+          font-size: 3vw;
+          color: black;
+          font-weight: 800;
+        }
+        div.course-menu {
+          margin: 30px auto;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          border-radius: 8px;
+          border: 1px solid lightgray;
+          width: 80%;
+          button {
+            color: $secondary;
+            font-size: 2.2vw;
+            font-family: vazir;
+            border: 0;
+            background-color: transparent;
+            padding: 15px;
+            transition: 250ms;
+            font-weight: 600;
+          }
+          button:hover {
+            color: $main;
+          }
+          div {
+            width: 2px;
+            background-color: $main;
+            height: 20px;
+          }
+        }
+      }
+      // course sessions
+      div.course-sessions {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        div.course-video-player {
+          width: 100%;
+          order: 2;
+          div.video-player {
+            width: 100%;
+            margin-top: 35px;
+            .video-js{
+                width: 100% !important;
+                height: 380px;
+            }
+          }
+          div.video-links {
+            width: 100%;
+            font-family: vazir;
+            div.video-link-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              margin-top: 30px;
+              i {
+                margin: 0 20px;
+                font-size: 2vw;
+                padding: 10px 12px;
+                border-radius: 4px;
+                background-color: $main;
+                color: white;
+              }
+              h3 {
+                font-size: 2.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.accordion {
+              margin-top: 30px;
+              div.accordion-item {
+                margin: 15px 0;
+                div.accordion-header {
+                  div.accordion-button {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: black;
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    padding: 5px 15px;
+                    position: relative;
+                    span {
+                      color: white;
+                      font-size: 2.2vw;
+                      padding: 7px 15px 5px 15px;
+                      border-radius: 8px;
+                      background-color: rgb(54, 54, 54);
+                    }
+                    p {
+                      font-family: vazir;
+                      font-size: 2.2vw;
+                      margin-top: 12px;
+                      margin-right: 20px;
+                      font-weight: 800;
+                    }
+                    div {
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: flex-start;
+                      position: absolute;
+                      left: 60px;
+                      i {
+                        margin-top: 15px;
+                        font-size: 2.2vw;
+                      }
+                    }
+                  }
+                }
+                div.accordion-collapse {
+                  div.accordion-body {
+                    div.session {
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      div.session-name {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        p {
+                          margin-top: 13px;
+                          margin-right: 10px;
+                          font-size: 2.2vw;
+                        }
+                        i {
+                          font-size: 2.2vw;
+                        }
+                      }
+                      div.session-time {
+                        font-size: 2.2vw;
+                      }
+                      div.session-video-link {
+                        a {
+                          color: black;
+                          padding: 5px 15px;
+                          background-color: rgb(224, 224, 224);
+                          text-decoration: none;
+                          border-radius: 4px;
+                          margin: 5px;
+                          font-size: 2.2vw;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          // session headline
+          div.session-headline {
+            margin-top: 30px;
+            width: 100%;
+            div.headline-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                font-size: 2vw;
+                background-color: $main;
+                padding: 10px;
+                margin: 0 20px;
+                border-radius: 4px;
+              }
+              h3 {
+                font-size: 2.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.accordion {
+              margin-top: 30px;
+              div.accordion-item {
+                margin: 15px 0;
+                div.accordion-header {
+                  div.accordion-button {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: black;
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    padding: 5px 15px;
+                    font-family: vazir;
+                    i {
+                      margin: 0 15px;
+                      font-weight: 800;
+                      font-size: 2.2vw;
+                    }
+                    p {
+                      margin-top: 10px;
+                      font-weight: 800;
+                      font-size: 2.2vw;
+                    }
+                  }
+                }
+                div.accordion-collapse{
+                    div.accordion-body{
+                        ul{
+                            li{
+                                font-size: 2vw;
+                            }
+                        }
+                    }
+                }
+              }
+            }
+          }
+          // about course
+          div.about-course {
+            margin-top: 30px;
+            width: 100%;
+            div.about-course-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                background-color: $main;
+                font-size: 2vw;
+                padding: 10px;
+                margin: 0 20px;
+                border-radius: 4px;
+              }
+              h3 {
+                font-size: 2.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.about-course-paragraph {
+              font-family: vazir;
+              padding: 30px;
+              box-sizing: border-box;
+              border-radius: 8px;
+              border: 1px solid lightgray;
+              margin-top: 20px;
+              h3 {
+                font-size: 2.2vw;
+                color: $main;
+                font-weight: 600;
+              }
+              ul {
+                margin-top: 15px;
+                li {
+                  font-size: 2vw;
+                  text-align: justify;
+                }
+              }
+            }
+          }
+          // common questions
+          div.common-questions {
+            margin-top: 30px;
+            width: 100%;
+            div.common-questions-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                background-color: $main;
+                font-size: 2vw;
+                padding: 10px 13px;
+                margin: 0 20px;
+                border-radius: 4px;
+              }
+              h3 {
+                font-size: 2.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.common-questions-details {
+              div.accordion {
+                div.accordion-item {
+                  margin: 15px 0;
+                  div.accordion-header {
+                    div.accordion-button {
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: center;
+                      color: black;
+                      background-color: white;
+                      border: 1px solid lightgray;
+                      padding: 5px 15px;
+                      font-family: vazir;
+                      i {
+                        font-size: 2.2vw;
+                        font-weight: 800;
+                        margin: 0 15px;
+                      }
+                      p {
+                        font-size: 2.2vw;
+                        font-weight: 800;
+                        margin-top: 13px;
+                      }
+                    }
+                  }
+                  div.accordion-collapse {
+                    div.accordion-body {
+                      font-family: vazir;
+                      p {
+                        font-size: 2vw;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+  
+        // course details
+  
+        div.course-details {
+          width: 100%;
+          order: 1;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          h2 {
+            font-size: 2.5vw;
+            font-family: vazir;
+            font-weight: 600;
+            padding: 15px;
+            display: block;
+            border-bottom: 2px solid $main;
+          }
+          div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            box-sizing: border-box;
+            font-family: vazir;
+            border-bottom: 1px dashed rgb(189, 189, 189);
+            p {
+              font-size: 2vw;
+              margin: 0;
+            }
+            span {
+              font-size: 2vw;
+            }
+          }
+          div.course-price {
+            margin-top: 30px;
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              text-decoration: line-through;
+              font-weight: 800;
+            }
+          }
+          div.discount-percentage {
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              color: red;
+              font-weight: 800;
+            }
+          }
+          div.final-price {
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              font-weight: 800;
+              color: green;
+            }
+          }
+          button.add-to-cart {
+            width: 100%;
+            text-align: center;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            font-weight: 800;
+            color: white;
+            background-color: $main;
+            font-size: 2.2vw;
+            margin-top: 15px;
+            border: 0;
+            font-family: vazir;
+            border-radius: 5px;
+          }
+        }
+      }
+      //   students comments
+      div.students-comments {
+        width: 100%;
+        margin-top: 40px;
+        div.students-comments-title {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-family: vazir;
+          i {
+            color: white;
+            background-color: $main;
+            padding: 10px 13px;
+            font-size: 2vw;
+            margin: 0 20px;
+            border-radius: 4px;
+          }
+          h3 {
+            font-size: 2.3vw;
+            font-weight: 800;
+            margin-top: 10px;
+          }
+        }
+        div.students-comments-accordion {
+          margin-top: 30px;
+          div.accordion {
+            div.accordion-item {
+              div.accordion-header {
+                div.accordion-button {
+                  background-color: white;
+                  border-radius: 8px;
+                  font-family: vazir;
+                  border: 1px solid lightgray;
+                  i {
+                    display: inline-block;
+                    font-size: 2vw;
+                    color: black;
+                    margin: 0 15px;
+                  }
+                  p {
+                    display: inline-block;
+                    font-size: 2.2vw;
+                    margin-top: 14px;
+                    color: $main;
+                    font-weight: 800;
+                    margin: 0 15px;
+                  }
+                  h6 {
+                    display: block;
+                    font-size: 2.2vw;
+                    margin-top: 8px;
+                    color: black;
+                  }
+                }
+              }
+              div.accordion-collapse {
+                div.accordion-body {
+                  font-family: vazir;
+                  margin-top: 15px;
+                  ul{
+                    li{
+                        h4{
+                            font-size: 2.3vw;
+                        }
+                        p{
+                            font-size: 2vw;
+                        }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      //   sending comment
+      div.comments-inputs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+        font-family: vazir;
+        div.inputs {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          input {
+            padding: 15px;
+            font-size: 2vw;
+            border-radius: 7px;
+            margin: 15px 0;
+            border: 1px solid lightgray;
+          }
+          input:focus {
+            outline: none;
+          }
+          input.name {
+            width: 29%;
+          }
+          input.email {
+            width: 68%;
+          }
+          input.comment {
+            width: 98%;
+          }
+        }
+        div.send-comment {
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          button {
+            color: $main;
+            background-color: white;
+            padding: 5px 15px;
+            border: 1px solid $main;
+            transition: 250ms;
+            border-radius: 7px;
+            font-size: 2vw;
+          }
+          button:hover {
+            background-color: $main;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+@media screen and (min-width: 768px) {
+    section {
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      margin-top: 40px;
+      div.course-title {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        h1 {
+          font-family: vazir;
+          font-size: 3vw;
+          color: black;
+          font-weight: 800;
+        }
+        div.course-menu {
+          margin: 30px auto;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          border-radius: 8px;
+          border: 1px solid lightgray;
+          width: 80%;
+          button {
+            color: $secondary;
+            font-size: 2.2vw;
+            font-family: vazir;
+            border: 0;
+            background-color: transparent;
+            padding: 15px;
+            transition: 250ms;
+            font-weight: 600;
+          }
+          button:hover {
+            color: $main;
+          }
+          div {
+            width: 2px;
+            background-color: $main;
+            height: 20px;
+          }
+        }
+      }
+      // course sessions
+      div.course-sessions {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        div.course-video-player {
+          width: 100%;
+          order: 2;
+          div.video-player {
+            width: 100%;
+            margin-top: 35px;
+            .video-js{
+                width: 100% !important;
+                height: 400px;
+            }
+          }
+          div.video-links {
+            width: 100%;
+            font-family: vazir;
+            div.video-link-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              margin-top: 30px;
+              i {
+                margin: 0 20px;
+                font-size: 2vw;
+                padding: 10px 12px;
+                border-radius: 4px;
+                background-color: $main;
+                color: white;
+              }
+              h3 {
+                font-size: 2.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.accordion {
+              margin-top: 30px;
+              div.accordion-item {
+                margin: 15px 0;
+                div.accordion-header {
+                  div.accordion-button {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: black;
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    padding: 5px 15px;
+                    position: relative;
+                    span {
+                      color: white;
+                      font-size: 2.2vw;
+                      padding: 7px 15px 5px 15px;
+                      border-radius: 8px;
+                      background-color: rgb(54, 54, 54);
+                    }
+                    p {
+                      font-family: vazir;
+                      font-size: 2.2vw;
+                      margin-top: 12px;
+                      margin-right: 20px;
+                      font-weight: 800;
+                    }
+                    div {
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: flex-start;
+                      position: absolute;
+                      left: 60px;
+                      i {
+                        margin-top: 15px;
+                        font-size: 2.2vw;
+                      }
+                    }
+                  }
+                }
+                div.accordion-collapse {
+                  div.accordion-body {
+                    div.session {
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      div.session-name {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        p {
+                          margin-top: 13px;
+                          margin-right: 10px;
+                          font-size: 2.2vw;
+                        }
+                        i {
+                          font-size: 2.2vw;
+                        }
+                      }
+                      div.session-time {
+                        font-size: 2.2vw;
+                      }
+                      div.session-video-link {
+                        a {
+                          color: black;
+                          padding: 5px 15px;
+                          background-color: rgb(224, 224, 224);
+                          text-decoration: none;
+                          border-radius: 4px;
+                          margin: 5px;
+                          font-size: 2.2vw;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          // session headline
+          div.session-headline {
+            margin-top: 30px;
+            width: 100%;
+            div.headline-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                font-size: 2vw;
+                background-color: $main;
+                padding: 10px;
+                margin: 0 20px;
+                border-radius: 4px;
+              }
+              h3 {
+                font-size: 2.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.accordion {
+              margin-top: 30px;
+              div.accordion-item {
+                margin: 15px 0;
+                div.accordion-header {
+                  div.accordion-button {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: black;
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    padding: 5px 15px;
+                    font-family: vazir;
+                    i {
+                      margin: 0 15px;
+                      font-weight: 800;
+                      font-size: 2.2vw;
+                    }
+                    p {
+                      margin-top: 10px;
+                      font-weight: 800;
+                      font-size: 2.2vw;
+                    }
+                  }
+                }
+                div.accordion-collapse{
+                    div.accordion-body{
+                        ul{
+                            li{
+                                font-size: 2vw;
+                            }
+                        }
+                    }
+                }
+              }
+            }
+          }
+          // about course
+          div.about-course {
+            margin-top: 30px;
+            width: 100%;
+            div.about-course-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                background-color: $main;
+                font-size: 2vw;
+                padding: 10px;
+                margin: 0 20px;
+                border-radius: 4px;
+              }
+              h3 {
+                font-size: 2.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.about-course-paragraph {
+              font-family: vazir;
+              padding: 30px;
+              box-sizing: border-box;
+              border-radius: 8px;
+              border: 1px solid lightgray;
+              margin-top: 20px;
+              h3 {
+                font-size: 2.2vw;
+                color: $main;
+                font-weight: 600;
+              }
+              ul {
+                margin-top: 15px;
+                li {
+                  font-size: 2vw;
+                  text-align: justify;
+                }
+              }
+            }
+          }
+          // common questions
+          div.common-questions {
+            margin-top: 30px;
+            width: 100%;
+            div.common-questions-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                background-color: $main;
+                font-size: 2vw;
+                padding: 10px 13px;
+                margin: 0 20px;
+                border-radius: 4px;
+              }
+              h3 {
+                font-size: 2.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.common-questions-details {
+              div.accordion {
+                div.accordion-item {
+                  margin: 15px 0;
+                  div.accordion-header {
+                    div.accordion-button {
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: center;
+                      color: black;
+                      background-color: white;
+                      border: 1px solid lightgray;
+                      padding: 5px 15px;
+                      font-family: vazir;
+                      i {
+                        font-size: 2.2vw;
+                        font-weight: 800;
+                        margin: 0 15px;
+                      }
+                      p {
+                        font-size: 2.2vw;
+                        font-weight: 800;
+                        margin-top: 13px;
+                      }
+                    }
+                  }
+                  div.accordion-collapse {
+                    div.accordion-body {
+                      font-family: vazir;
+                      p {
+                        font-size: 2vw;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+  
+        // course details
+  
+        div.course-details {
+          width: 100%;
+          order: 1;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          h2 {
+            font-size: 2.5vw;
+            font-family: vazir;
+            font-weight: 600;
+            padding: 15px;
+            display: block;
+            border-bottom: 2px solid $main;
+          }
+          div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            box-sizing: border-box;
+            font-family: vazir;
+            border-bottom: 1px dashed rgb(189, 189, 189);
+            p {
+              font-size: 2vw;
+              margin: 0;
+            }
+            span {
+              font-size: 2vw;
+            }
+          }
+          div.course-price {
+            margin-top: 30px;
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              text-decoration: line-through;
+              font-weight: 800;
+            }
+          }
+          div.discount-percentage {
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              color: red;
+              font-weight: 800;
+            }
+          }
+          div.final-price {
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              font-weight: 800;
+              color: green;
+            }
+          }
+          button.add-to-cart {
+            width: 100%;
+            text-align: center;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            font-weight: 800;
+            color: white;
+            background-color: $main;
+            font-size: 2.2vw;
+            margin-top: 15px;
+            border: 0;
+            font-family: vazir;
+            border-radius: 5px;
+          }
+        }
+      }
+      //   students comments
+      div.students-comments {
+        width: 100%;
+        margin-top: 40px;
+        div.students-comments-title {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-family: vazir;
+          i {
+            color: white;
+            background-color: $main;
+            padding: 10px 13px;
+            font-size: 2vw;
+            margin: 0 20px;
+            border-radius: 4px;
+          }
+          h3 {
+            font-size: 2.3vw;
+            font-weight: 800;
+            margin-top: 10px;
+          }
+        }
+        div.students-comments-accordion {
+          margin-top: 30px;
+          div.accordion {
+            div.accordion-item {
+              div.accordion-header {
+                div.accordion-button {
+                  background-color: white;
+                  border-radius: 8px;
+                  font-family: vazir;
+                  border: 1px solid lightgray;
+                  i {
+                    display: inline-block;
+                    font-size: 2vw;
+                    color: black;
+                    margin: 0 15px;
+                  }
+                  p {
+                    display: inline-block;
+                    font-size: 2.2vw;
+                    margin-top: 14px;
+                    color: $main;
+                    font-weight: 800;
+                    margin: 0 15px;
+                  }
+                  h6 {
+                    display: block;
+                    font-size: 2.2vw;
+                    margin-top: 8px;
+                    color: black;
+                  }
+                }
+              }
+              div.accordion-collapse {
+                div.accordion-body {
+                  font-family: vazir;
+                  margin-top: 15px;
+                  ul{
+                    li{
+                        h4{
+                            font-size: 2.3vw;
+                        }
+                        p{
+                            font-size: 2vw;
+                        }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      //   sending comment
+      div.comments-inputs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+        font-family: vazir;
+        div.inputs {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          input {
+            padding: 15px;
+            font-size: 2vw;
+            border-radius: 7px;
+            margin: 15px 0;
+            border: 1px solid lightgray;
+          }
+          input:focus {
+            outline: none;
+          }
+          input.name {
+            width: 29%;
+          }
+          input.email {
+            width: 68%;
+          }
+          input.comment {
+            width: 98%;
+          }
+        }
+        div.send-comment {
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          button {
+            color: $main;
+            background-color: white;
+            padding: 5px 15px;
+            border: 1px solid $main;
+            transition: 250ms;
+            border-radius: 7px;
+            font-size: 2vw;
+          }
+          button:hover {
+            background-color: $main;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 1024px) {
+    section {
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      margin-top: 40px;
+      div.course-title {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        h1 {
+          font-family: vazir;
+          font-size: 3vw;
+          color: black;
+          font-weight: 800;
+        }
+        div.course-menu {
+          margin: 30px auto;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          border-radius: 8px;
+          border: 1px solid lightgray;
+          width: 60%;
+          button {
+            color: $secondary;
+            font-size: 1.2vw;
+            font-family: vazir;
+            border: 0;
+            background-color: transparent;
+            padding: 15px;
+            transition: 250ms;
+            font-weight: 600;
+          }
+          button:hover {
+            color: $main;
+          }
+          div {
+            width: 2px;
+            background-color: $main;
+            height: 20px;
+          }
+        }
+      }
+      // course sessions
+      div.course-sessions {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        div.course-video-player {
+          width: 67%;
+          order: 1;
+          div.video-player {
+            width: 100%;
+            margin-top: 35px;
+            .video-js{
+                width: 100% !important;
+            }
+          }
+          div.video-links {
+            width: 100%;
+            font-family: vazir;
+            div.video-link-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              margin-top: 30px;
+              i {
+                margin: 0 20px;
+                padding: 10px 12px;
+                font-size: 1.2vw;
+                border-radius: 4px;
+                background-color: $main;
+                color: white;
+              }
+              h3 {
+                font-size: 1.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.accordion {
+              margin-top: 30px;
+              div.accordion-item {
+                margin: 15px 0;
+                div.accordion-header {
+                  div.accordion-button {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: black;
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    padding: 5px 15px;
+                    position: relative;
+                    span {
+                      color: white;
+                      font-size: 1.3vw;
+                      padding: 7px 15px 5px 15px;
+                      border-radius: 8px;
+                      background-color: rgb(54, 54, 54);
+                    }
+                    p {
+                      font-family: vazir;
+                      font-size: 1.3vw;
+                      margin-top: 12px;
+                      margin-right: 20px;
+                      font-weight: 800;
+                    }
+                    div {
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: flex-start;
+                      position: absolute;
+                      left: 60px;
+                      i {
+                        margin-top: 15px;
+                        font-size: 1.3vw;
+                      }
+                    }
+                  }
+                }
+                div.accordion-collapse {
+                  div.accordion-body {
+                    div.session {
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      div.session-name {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        p {
+                          margin-top: 13px;
+                          margin-right: 10px;
+                          font-size: 1.2vw;
+                        }
+                        i {
+                          font-size: 1.2vw;
+                        }
+                      }
+                      div.session-time {
+                        font-size: 1.2vw;
+                      }
+                      div.session-video-link {
+                        a {
+                          color: black;
+                          padding: 5px 15px;
+                          background-color: rgb(224, 224, 224);
+                          text-decoration: none;
+                          border-radius: 4px;
+                          margin: 5px;
+                          font-size: 1.2vw;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          // session headline
+          div.session-headline {
+            margin-top: 30px;
+            width: 100%;
+            div.headline-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                background-color: $main;
+                font-size: 1.3vw;
+                padding: 10px;
+                margin: 0 20px;
+                border-radius: 4px;
+              }
+              h3 {
+                font-size: 1.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.accordion {
+              margin-top: 30px;
+              div.accordion-item {
+                margin: 15px 0;
+                div.accordion-header {
+                  div.accordion-button {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: black;
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    padding: 5px 15px;
+                    font-family: vazir;
+                    i {
+                      margin: 0 15px;
+                      font-weight: 800;
+                      font-size: 1.2vw;
+                    }
+                    p {
+                      margin-top: 10px;
+                      font-weight: 800;
+                      font-size: 1.2vw;
+                    }
+                  }
+                }
+                div.accordion-collapse{
+                    div.accordion-body{
+                        ul{
+                            li{
+                                font-size: 1vw;
+                            }
+                        }
+                    }
+                }
+              }
+            }
+          }
+          // about course
+          div.about-course {
+            margin-top: 30px;
+            width: 100%;
+            div.about-course-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                background-color: $main;
+                font-size: 1.3vw;
+                padding: 10px;
+                margin: 0 20px;
+                border-radius: 4px;
+              }
+              h3 {
+                font-size: 1.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.about-course-paragraph {
+              font-family: vazir;
+              padding: 30px;
+              box-sizing: border-box;
+              border-radius: 8px;
+              border: 1px solid lightgray;
+              margin-top: 20px;
+              h3 {
+                font-size: 1.2vw;
+                color: $main;
+                font-weight: 600;
+              }
+              ul {
+                margin-top: 15px;
+                li {
+                  font-size: 1vw;
+                  text-align: justify;
+                }
+              }
+            }
+          }
+          // common questions
+          div.common-questions {
+            margin-top: 30px;
+            width: 100%;
+            div.common-questions-title {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              font-family: vazir;
+              i {
+                color: white;
+                background-color: $main;
+                font-size: 1.3vw;
+                padding: 10px 13px;
+                margin: 0 20px;
+                border-radius: 4px;
+              }
+              h3 {
+                font-size: 1.3vw;
+                font-weight: 800;
+                margin-top: 10px;
+              }
+            }
+            div.common-questions-details {
+              div.accordion {
+                div.accordion-item {
+                  margin: 15px 0;
+                  div.accordion-header {
+                    div.accordion-button {
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: center;
+                      color: black;
+                      background-color: white;
+                      border: 1px solid lightgray;
+                      padding: 5px 15px;
+                      font-family: vazir;
+                      i {
+                        font-size: 1.2vw;
+                        font-weight: 800;
+                        margin: 0 15px;
+                      }
+                      p {
+                        font-size: 1.2vw;
+                        font-weight: 800;
+                        margin-top: 13px;
+                      }
+                    }
+                  }
+                  div.accordion-collapse {
+                    div.accordion-body {
+                      font-family: vazir;
+                      p {
+                        font-size: 1vw;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+  
+        // course details
+  
+        div.course-details {
+          width: 30%;
+          order: 2;
+          padding: 20px;
+          box-sizing: border-box;
+          text-align: center;
+          h2 {
+            font-size: 1.5vw;
+            font-family: vazir;
+            font-weight: 600;
+            padding: 15px;
+            display: block;
+            border-bottom: 2px solid $main;
+          }
+          div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            box-sizing: border-box;
+            font-family: vazir;
+            border-bottom: 1px dashed rgb(189, 189, 189);
+            p {
+              font-size: 1vw;
+              margin: 0;
+            }
+            span {
+              font-size: 1vw;
+            }
+          }
+          div.course-price {
+            margin-top: 30px;
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              text-decoration: line-through;
+              font-weight: 800;
+            }
+          }
+          div.discount-percentage {
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              color: red;
+              font-weight: 800;
+            }
+          }
+          div.final-price {
+            border: 0;
+            p {
+              font-weight: 800;
+            }
+            span {
+              font-weight: 800;
+              color: green;
+            }
+          }
+          button.add-to-cart {
+            width: 100%;
+            text-align: center;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            font-weight: 800;
+            color: white;
+            background-color: $main;
+            font-size: 1.2vw;
+            margin-top: 15px;
+            border: 0;
+            font-family: vazir;
+            border-radius: 5px;
+          }
+        }
+      }
+      //   students comments
+      div.students-comments {
+        width: 100%;
+        margin-top: 40px;
+        div.students-comments-title {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-family: vazir;
+          i {
+            color: white;
+            background-color: $main;
+            font-size: 1.3vw;
+            padding: 10px 11px;
+            margin: 0 20px;
+            border-radius: 4px;
+          }
+          h3 {
+            font-size: 1.3vw;
+            font-weight: 800;
+            margin-top: 10px;
+          }
+        }
+        div.students-comments-accordion {
+          margin-top: 30px;
+          div.accordion {
+            div.accordion-item {
+              div.accordion-header {
+                div.accordion-button {
+                  background-color: white;
+                  border-radius: 8px;
+                  font-family: vazir;
+                  border: 1px solid lightgray;
+                  i {
+                    display: inline-block;
+                    font-size: 1.3vw;
+                    color: black;
+                    margin: 0 15px;
+                  }
+                  p {
+                    display: inline-block;
+                    font-size: 1.3vw;
+                    margin-top: 14px;
+                    color: $main;
+                    font-weight: 800;
+                    margin: 0 15px;
+                  }
+                  h6 {
+                    display: block;
+                    margin-top: 8px;
+                    color: black;
+                    font-size: 1.3vw;
+                  }
+                }
+              }
+              div.accordion-collapse {
+                div.accordion-body {
+                  font-family: vazir;
+                  margin-top: 15px;
+                  ul{
+                    li{
+                        h4{
+                            font-size: 1.3vw;
+                        }
+                        p{
+                            font-size: 1vw;
+                        }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      //   sending comment
+      div.comments-inputs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        font-family: vazir;
+        div.inputs {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 80%;
+          padding: 20px;
+          box-sizing: border-box;
+          input {
+            padding: 15px;
+            font-size: 1vw;
+            border-radius: 7px;
+            margin: 15px 0;
+            border: 1px solid lightgray;
+          }
+          input:focus {
+            outline: none;
+          }
+          input.name {
+            width: 29%;
+          }
+          input.email {
+            width: 68%;
+          }
+          input.comment {
+            width: 98%;
+          }
+        }
+        div.send-comment {
+          width: 18%;
+          padding: 20px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          button {
+            color: $main;
+            background-color: white;
+            font-size: 1.3vw;
+            padding: 5px 15px;
+            border: 1px solid $main;
+            transition: 250ms;
+            border-radius: 7px;
+          }
+          button:hover {
+            background-color: $main;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 1200px) {
+  section {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    div.course-title {
+      width: 100%;
+      margin: 20px auto;
+      text-align: center;
+      border-bottom: 1px solid lightgray;
+      h1 {
+        font-family: vazir;
+        font-size: 3vw;
+        color: black;
+        font-weight: 800;
+      }
+      div.course-menu {
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid lightgray;
+        width: 60%;
+        button {
+          color: $secondary;
+          font-size: 1.2vw;
+          font-family: vazir;
+          border: 0;
+          background-color: transparent;
+          padding: 15px;
+          transition: 250ms;
+          font-weight: 600;
+        }
+        button:hover {
+          color: $main;
+        }
+        div {
+          width: 2px;
+          background-color: $main;
+          height: 20px;
+        }
+      }
+    }
+    // course sessions
+    div.course-sessions {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      div.course-video-player {
+        width: 67%;
+        div.video-player {
+          width: 100%;
+          margin-top: 35px;
+        }
+        div.video-links {
+          width: 100%;
+          font-family: vazir;
+          div.video-link-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 30px;
+            i {
+              margin: 0 20px;
+              padding: 10px 12px;
+              border-radius: 4px;
+              background-color: $main;
+              color: white;
+            }
+            h3 {
+              font-size: 1.3vw;
+              font-weight: 800;
+              margin-top: 10px;
+            }
+          }
+          div.accordion {
+            margin-top: 30px;
+            div.accordion-item {
+              margin: 15px 0;
+              div.accordion-header {
+                div.accordion-button {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  color: black;
+                  background-color: white;
+                  border: 1px solid lightgray;
+                  padding: 5px 15px;
+                  position: relative;
+                  span {
+                    color: white;
+                    padding: 7px 15px 5px 15px;
+                    border-radius: 8px;
+                    background-color: rgb(54, 54, 54);
+                  }
+                  p {
+                    font-family: vazir;
+                    margin-top: 12px;
+                    margin-right: 20px;
+                    font-weight: 800;
+                  }
+                  div {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    position: absolute;
+                    left: 60px;
+                    i {
+                      margin-top: 15px;
+                    }
+                  }
+                }
+              }
+              div.accordion-collapse {
+                div.accordion-body {
+                  div.session {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    div.session-name {
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: center;
+                      p {
+                        margin-top: 13px;
+                        margin-right: 10px;
+                        font-size: 1.2vw;
+                      }
+                      i {
+                        font-size: 1.2vw;
+                      }
+                    }
+                    div.session-time {
+                      font-size: 1.2vw;
+                    }
+                    div.session-video-link {
+                      a {
+                        color: black;
+                        padding: 5px 15px;
+                        background-color: rgb(224, 224, 224);
+                        text-decoration: none;
+                        border-radius: 4px;
+                        margin: 5px;
+                        font-size: 1.2vw;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        // session headline
+        div.session-headline {
+          margin-top: 30px;
+          width: 100%;
+          div.headline-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: vazir;
+            i {
+              color: white;
+              background-color: $main;
+              padding: 10px;
+              margin: 0 20px;
+              border-radius: 4px;
+            }
+            h3 {
+              font-size: 1.3vw;
+              font-weight: 800;
+              margin-top: 10px;
+            }
+          }
+          div.accordion {
+            margin-top: 30px;
+            div.accordion-item {
+              margin: 15px 0;
+              div.accordion-header {
+                div.accordion-button {
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  color: black;
+                  background-color: white;
+                  border: 1px solid lightgray;
+                  padding: 5px 15px;
+                  font-family: vazir;
+                  i {
+                    margin: 0 15px;
+                    font-weight: 800;
+                    font-size: 1.2vw;
+                  }
+                  p {
+                    margin-top: 10px;
+                    font-weight: 800;
+                    font-size: 1.2vw;
+                  }
+                }
+              }
+            }
+          }
+        }
+        // about course
+        div.about-course {
+          margin-top: 30px;
+          width: 100%;
+          div.about-course-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: vazir;
+            i {
+              color: white;
+              background-color: $main;
+              padding: 10px;
+              margin: 0 20px;
+              border-radius: 4px;
+            }
+            h3 {
+              font-size: 1.3vw;
+              font-weight: 800;
+              margin-top: 10px;
+            }
+          }
+          div.about-course-paragraph {
+            font-family: vazir;
+            padding: 30px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            border: 1px solid lightgray;
+            margin-top: 20px;
+            h3 {
+              font-size: 1.2vw;
+              color: $main;
+              font-weight: 600;
+            }
+            ul {
+              margin-top: 15px;
+              li {
+                font-size: 1vw;
+                text-align: justify;
+              }
+            }
+          }
+        }
+        // common questions
+        div.common-questions {
+          margin-top: 30px;
+          width: 100%;
+          div.common-questions-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: vazir;
+            i {
+              color: white;
+              background-color: $main;
+              padding: 10px 13px;
+              margin: 0 20px;
+              border-radius: 4px;
+            }
+            h3 {
+              font-size: 1.3vw;
+              font-weight: 800;
+              margin-top: 10px;
+            }
+          }
+          div.common-questions-details {
+            div.accordion {
+              div.accordion-item {
+                margin: 15px 0;
+                div.accordion-header {
+                  div.accordion-button {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: black;
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    padding: 5px 15px;
+                    font-family: vazir;
+                    i {
+                      font-size: 1.2vw;
+                      font-weight: 800;
+                      margin: 0 15px;
+                    }
+                    p {
+                      font-size: 1.2vw;
+                      font-weight: 800;
+                      margin-top: 13px;
+                    }
+                  }
+                }
+                div.accordion-collapse {
+                  div.accordion-body {
+                    font-family: vazir;
+                    p {
+                      font-size: 1vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // course details
+
+      div.course-details {
+        width: 30%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        h2 {
+          font-size: 1.5vw;
+          font-family: vazir;
+          font-weight: 600;
+          padding: 15px;
+          display: block;
+          border-bottom: 2px solid $main;
+        }
+        div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0;
+          box-sizing: border-box;
+          font-family: vazir;
+          border-bottom: 1px dashed rgb(189, 189, 189);
+          p {
+            font-size: 1vw;
+            margin: 0;
+          }
+          span {
+            font-size: 1vw;
+          }
+        }
+        div.course-price {
+          margin-top: 30px;
+          border: 0;
+          p {
+            font-weight: 800;
+          }
+          span {
+            text-decoration: line-through;
+            font-weight: 800;
+          }
+        }
+        div.discount-percentage {
+          border: 0;
+          p {
+            font-weight: 800;
+          }
+          span {
+            color: red;
+            font-weight: 800;
+          }
+        }
+        div.final-price {
+          border: 0;
+          p {
+            font-weight: 800;
+          }
+          span {
+            font-weight: 800;
+            color: green;
+          }
+        }
+        button.add-to-cart {
+          width: 100%;
+          text-align: center;
+          padding: 10px 15px;
+          box-sizing: border-box;
+          font-weight: 800;
+          color: white;
+          background-color: $main;
+          font-size: 1.2vw;
+          margin-top: 15px;
+          border: 0;
+          font-family: vazir;
+          border-radius: 5px;
+        }
+      }
+    }
+    //   students comments
+    div.students-comments {
+      width: 100%;
+      margin-top: 40px;
+      div.students-comments-title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: vazir;
+        i {
+          color: white;
+          background-color: $main;
+          padding: 10px 10px;
+          margin: 0 20px;
+          border-radius: 4px;
+        }
+        h3 {
+          font-size: 1.3vw;
+          font-weight: 800;
+          margin-top: 10px;
+        }
+      }
+      div.students-comments-accordion {
+        margin-top: 30px;
+        div.accordion {
+          div.accordion-item {
+            div.accordion-header {
+              div.accordion-button {
+                background-color: white;
+                border-radius: 8px;
+                font-family: vazir;
+                border: 1px solid lightgray;
+                i {
+                  display: inline-block;
+                  color: black;
+                  margin: 0 15px;
+                }
+                p {
+                  display: inline-block;
+                  margin-top: 14px;
+                  color: $main;
+                  font-weight: 800;
+                  margin: 0 15px;
+                }
+                h6 {
+                  display: block;
+                  margin-top: 8px;
+                  color: black;
+                }
+              }
+            }
+            div.accordion-collapse {
+              div.accordion-body {
+                font-family: vazir;
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    //   sending comment
+    div.comments-inputs {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      font-family: vazir;
+      div.inputs {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+        padding: 20px;
+        box-sizing: border-box;
+        input {
+          padding: 15px;
+          font-size: 1vw;
+          border-radius: 7px;
+          margin: 15px 0;
+          border: 1px solid lightgray;
+        }
+        input:focus {
+          outline: none;
+        }
+        input.name {
+          width: 29%;
+        }
+        input.email {
+          width: 68%;
+        }
+        input.comment {
+          width: 98%;
+        }
+      }
+      div.send-comment {
+        width: 18%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+          color: $main;
+          background-color: white;
+          padding: 5px 15px;
+          border: 1px solid $main;
+          transition: 250ms;
+          border-radius: 7px;
+        }
+        button:hover {
+          background-color: $main;
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,710 @@
+@font-face {
+  font-family: lalezar;
+  src: url(fonts/Lalezar-Regular.woff);
+}
+@font-face {
+  font-family: vazir;
+  src: url(fonts/Vazir-Regular.woff);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 300px) {
+  section {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: vazir;
+  }
+  section div.cart-product {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  section div.cart-product table {
+    width: 100%;
+    text-align: center;
+  }
+  section div.cart-product table tr {
+    border-bottom: 1px solid lightgray;
+  }
+  section div.cart-product table tr th {
+    padding: 15px;
+    font-size: 3.3vw;
+  }
+  section div.cart-product table tr td {
+    font-size: 3vw;
+    padding: 15px;
+    font-weight: 600;
+  }
+  section div.cart-product div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+  section div.cart-product div.container form {
+    margin-right: 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.cart-product div.container form input {
+    border: 1px solid lightgray;
+    width: 77%;
+    font-size: 3vw;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  section div.cart-product div.container form input:focus {
+    outline: 1px solid #F9A135;
+  }
+  section div.cart-product div.container form button {
+    padding: 10px;
+    width: 29%;
+    margin-right: 10px;
+    color: white;
+    background-color: #F9A135;
+    border-radius: 8px;
+    font-size: 3vw;
+    font-weight: 600;
+    border: 1px solid #F9A135;
+  }
+  section div.cart-product div.container div.change-cart {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  section div.cart-product div.container div.change-cart a {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 25px;
+    color: white;
+    font-size: 3.2vw;
+    font-weight: 600;
+    background-color: #F9A135;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  section div.cart-product div.container div.change-cart button {
+    display: block;
+    width: 100%;
+    padding: 10px 25px;
+    color: white;
+    font-size: 3.2vw;
+    font-weight: 600;
+    background-color: red;
+    border-radius: 8px;
+    border: 0;
+    margin: 10px auto;
+  }
+  section div.buy-box {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  section div.buy-box h2 {
+    font-size: 4vw;
+    font-weight: 900;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.buy-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.buy-box div p {
+    font-size: 3vw;
+    font-weight: 900;
+    margin-top: 10px;
+  }
+  section div.buy-box div span {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  section div.buy-box a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: green;
+    padding: 15px;
+    font-size: 3.2vw;
+    font-weight: 600;
+    border: 1px solid green;
+    transition: 500ms;
+  }
+  section div.buy-box a:hover {
+    background-color: white;
+    color: green;
+  }
+}
+@media screen and (min-width: 576px) {
+  section {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: vazir;
+  }
+  section div.cart-product {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  section div.cart-product table {
+    width: 100%;
+    text-align: center;
+  }
+  section div.cart-product table tr {
+    border-bottom: 1px solid lightgray;
+  }
+  section div.cart-product table tr th {
+    padding: 15px;
+    font-size: 2.3vw;
+  }
+  section div.cart-product table tr td {
+    font-size: 2vw;
+    padding: 15px;
+    font-weight: 600;
+  }
+  section div.cart-product div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+  section div.cart-product div.container form {
+    margin-right: 0;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.cart-product div.container form input {
+    border: 1px solid lightgray;
+    padding: 10px;
+    font-size: 2vw;
+    border-radius: 8px;
+  }
+  section div.cart-product div.container form input:focus {
+    outline: 1px solid #F9A135;
+  }
+  section div.cart-product div.container form button {
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+    background-color: #F9A135;
+    border-radius: 8px;
+    font-size: 2.2vw;
+    font-weight: 600;
+    border: 1px solid #F9A135;
+  }
+  section div.cart-product div.container div.change-cart {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  section div.cart-product div.container div.change-cart a {
+    display: block;
+    margin-top: 5px;
+    padding: 10px 25px;
+    color: white;
+    font-size: 2.2vw;
+    font-weight: 600;
+    background-color: #F9A135;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  section div.cart-product div.container div.change-cart button {
+    display: block;
+    width: 100%;
+    padding: 10px 25px;
+    color: white;
+    font-size: 2.2vw;
+    font-weight: 600;
+    background-color: red;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 10px;
+  }
+  section div.buy-box {
+    width: 100%;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  section div.buy-box h2 {
+    font-size: 3vw;
+    font-weight: 900;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.buy-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.buy-box div p {
+    font-size: 2vw;
+    font-weight: 900;
+    margin-top: 10px;
+  }
+  section div.buy-box div span {
+    font-size: 2vw;
+    font-weight: 900;
+  }
+  section div.buy-box a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: green;
+    padding: 15px;
+    font-size: 2.2vw;
+    font-weight: 600;
+    border: 1px solid green;
+    transition: 500ms;
+  }
+  section div.buy-box a:hover {
+    background-color: white;
+    color: green;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: vazir;
+  }
+  section div.cart-product {
+    width: 68%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  section div.cart-product table {
+    width: 100%;
+    text-align: center;
+  }
+  section div.cart-product table tr {
+    border-bottom: 1px solid lightgray;
+  }
+  section div.cart-product table tr th {
+    padding: 15px;
+    font-size: 1.3vw;
+  }
+  section div.cart-product table tr td {
+    font-size: 1vw;
+    padding: 15px;
+    font-weight: 600;
+  }
+  section div.cart-product div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+  section div.cart-product div.container form {
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.cart-product div.container form input {
+    border: 1px solid lightgray;
+    padding: 10px;
+    font-size: 1vw;
+    border-radius: 8px;
+  }
+  section div.cart-product div.container form input:focus {
+    outline: 1px solid #F9A135;
+  }
+  section div.cart-product div.container form button {
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+    background-color: #F9A135;
+    border-radius: 8px;
+    font-size: 1.2vw;
+    font-weight: 600;
+    border: 1px solid #F9A135;
+  }
+  section div.cart-product div.container div.change-cart {
+    text-align: center;
+  }
+  section div.cart-product div.container div.change-cart a {
+    display: block;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    background-color: #F9A135;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  section div.cart-product div.container div.change-cart button {
+    display: block;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    background-color: red;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 10px;
+  }
+  section div.buy-box {
+    width: 29%;
+    margin-top: 0;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  section div.buy-box h2 {
+    font-size: 2vw;
+    font-weight: 900;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.buy-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.buy-box div p {
+    font-size: 1vw;
+    font-weight: 900;
+    margin-top: 10px;
+  }
+  section div.buy-box div span {
+    font-size: 1vw;
+    font-weight: 900;
+  }
+  section div.buy-box a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: green;
+    padding: 15px;
+    font-size: 1.2vw;
+    font-weight: 600;
+    border: 1px solid green;
+    transition: 500ms;
+  }
+  section div.buy-box a:hover {
+    background-color: white;
+    color: green;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: vazir;
+  }
+  section div.cart-product {
+    width: 68%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  section div.cart-product table {
+    width: 100%;
+    text-align: center;
+  }
+  section div.cart-product table tr {
+    border-bottom: 1px solid lightgray;
+  }
+  section div.cart-product table tr th {
+    padding: 15px;
+    font-size: 1.3vw;
+  }
+  section div.cart-product table tr td {
+    font-size: 1vw;
+    padding: 15px;
+    font-weight: 600;
+  }
+  section div.cart-product div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+  section div.cart-product div.container form {
+    margin-right: 0;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.cart-product div.container form input {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  section div.cart-product div.container form input:focus {
+    outline: 1px solid #F9A135;
+  }
+  section div.cart-product div.container form button {
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+    background-color: #F9A135;
+    border-radius: 8px;
+    font-size: 1.2vw;
+    font-weight: 600;
+    border: 1px solid #F9A135;
+  }
+  section div.cart-product div.container div.change-cart {
+    text-align: center;
+    margin-top: 0;
+    width: 35%;
+  }
+  section div.cart-product div.container div.change-cart a {
+    display: block;
+    margin-top: 0;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    background-color: #F9A135;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  section div.cart-product div.container div.change-cart button {
+    display: block;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    background-color: red;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 10px;
+  }
+  section div.buy-box {
+    width: 29%;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  section div.buy-box h2 {
+    font-size: 2vw;
+    font-weight: 900;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.buy-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.buy-box div p {
+    font-size: 1vw;
+    font-weight: 900;
+    margin-top: 10px;
+  }
+  section div.buy-box div span {
+    font-size: 1vw;
+    font-weight: 900;
+  }
+  section div.buy-box a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: green;
+    padding: 15px;
+    font-size: 1.2vw;
+    font-weight: 600;
+    border: 1px solid green;
+    transition: 500ms;
+  }
+  section div.buy-box a:hover {
+    background-color: white;
+    color: green;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: vazir;
+  }
+  section div.cart-product {
+    width: 68%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  section div.cart-product table {
+    width: 100%;
+    text-align: center;
+  }
+  section div.cart-product table tr {
+    border-bottom: 1px solid lightgray;
+  }
+  section div.cart-product table tr th {
+    padding: 15px;
+    font-size: 1.3vw;
+  }
+  section div.cart-product table tr td {
+    font-size: 1vw;
+    padding: 15px;
+    font-weight: 600;
+  }
+  section div.cart-product div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+  section div.cart-product div.container form {
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.cart-product div.container form input {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  section div.cart-product div.container form input:focus {
+    outline: 1px solid #F9A135;
+  }
+  section div.cart-product div.container form button {
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+    background-color: #F9A135;
+    border-radius: 8px;
+    font-size: 1.2vw;
+    font-weight: 600;
+    border: 1px solid #F9A135;
+  }
+  section div.cart-product div.container div.change-cart {
+    text-align: center;
+  }
+  section div.cart-product div.container div.change-cart a {
+    display: block;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    background-color: #F9A135;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  section div.cart-product div.container div.change-cart button {
+    display: block;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    background-color: red;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 10px;
+  }
+  section div.buy-box {
+    width: 29%;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  section div.buy-box h2 {
+    font-size: 2vw;
+    font-weight: 900;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.buy-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.buy-box div p {
+    font-size: 1vw;
+    font-weight: 900;
+    margin-top: 10px;
+  }
+  section div.buy-box div span {
+    font-size: 1vw;
+    font-weight: 900;
+  }
+  section div.buy-box a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: green;
+    padding: 15px;
+    font-size: 1.2vw;
+    font-weight: 600;
+    border: 1px solid green;
+    transition: 500ms;
+  }
+  section div.buy-box a:hover {
+    background-color: white;
+    color: green;
+  }
+}/*# sourceMappingURL=cart-basket.css.map */
