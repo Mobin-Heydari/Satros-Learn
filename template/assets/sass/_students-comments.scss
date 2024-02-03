@@ -1,0 +1,364 @@
+@media screen and (min-width: 300px) {
+  div.students-comments-home {
+    text-align: center;
+    margin-top: 40px;
+    h2 {
+      font-size: 5vw;
+      font-family: vazir;
+      font-weight: 800;
+      color: $secondary;
+    }
+    p.student-comments-title {
+      font-size: 3vw;
+      width: 80%;
+      margin: auto;
+    }
+    div.students-comments-container {
+      background-color: $main;
+      padding: 30px 60px;
+      box-sizing: border-box;
+      margin-top: 25px;
+      position: relative;
+      .students-comments {
+        width: 100%;
+        .swiper-wrapper {
+          .swiper-slide {
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            font-family: vazir;
+            width: 90%;
+            img {
+              width: 30%;
+              border-radius: 50%;
+              border: 3px solid $main;
+              margin: 20px auto;
+            }
+            h4 {
+              font-size: 4vw;
+              color: $secondary;
+              font-weight: 600;
+            }
+            h5 {
+              color: $main;
+              font-size: 3.5vw;
+              margin: 0 0 15px 0;
+              font-weight: 600;
+            }
+            p {
+              font-size: 3vw;
+              margin: 15px 0;
+            }
+          }
+        }
+      }
+      div.swiper-button-next {
+        color: white;
+      }
+      div.swiper-button-next::after {
+        font-size: 1.8vw;
+        font-weight: 900;
+      }
+      div.swiper-button-prev {
+        color: white;
+      }
+      div.swiper-button-prev::after {
+        font-size: 1.8vw;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  div.students-comments-home {
+    text-align: center;
+    margin-top: 40px;
+    h2 {
+      font-size: 4vw;
+      font-family: vazir;
+      font-weight: 800;
+      color: $secondary;
+    }
+    p.student-comments-title {
+      font-size: 2.3vw;
+      width: 80%;
+      margin: auto;
+    }
+    div.students-comments-container {
+      background-color: $main;
+      padding: 30px 60px;
+      box-sizing: border-box;
+      margin-top: 25px;
+      position: relative;
+      .students-comments {
+        width: 100%;
+        .swiper-wrapper {
+          .swiper-slide {
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            font-family: vazir;
+            width: 90%;
+            img {
+              width: 30%;
+              border-radius: 50%;
+              border: 3px solid $main;
+              margin: 20px auto;
+            }
+            h4 {
+              font-size: 3.5vw;
+              color: $secondary;
+              font-weight: 600;
+            }
+            h5 {
+              color: $main;
+              font-size: 3vw;
+              margin: 0 0 15px 0;
+              font-weight: 600;
+            }
+            p {
+              font-size: 2.5vw;
+              margin: 15px 0;
+            }
+          }
+        }
+      }
+      div.swiper-button-next {
+        color: white;
+      }
+      div.swiper-button-next::after {
+        font-size: 1.8vw;
+        font-weight: 900;
+      }
+      div.swiper-button-prev {
+        color: white;
+      }
+      div.swiper-button-prev::after {
+        font-size: 1.8vw;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div.students-comments-home {
+    text-align: center;
+    margin-top: 40px;
+    h2 {
+      font-size: 4vw;
+      font-family: vazir;
+      font-weight: 800;
+      color: $secondary;
+    }
+    p.student-comments-title {
+      font-size: 1.8vw;
+      width: 80%;
+      margin: auto;
+    }
+    div.students-comments-container {
+      background-color: $main;
+      padding: 30px 60px;
+      box-sizing: border-box;
+      margin-top: 25px;
+      position: relative;
+      .students-comments {
+        width: 100%;
+        .swiper-wrapper {
+          .swiper-slide {
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            font-family: vazir;
+            width: 90%;
+            img {
+              width: 30%;
+              border-radius: 50%;
+              border: 3px solid $main;
+              margin: 20px auto;
+            }
+            h4 {
+              font-size: 3vw;
+              color: $secondary;
+              font-weight: 600;
+            }
+            h5 {
+              color: $main;
+              font-size: 2.5vw;
+              margin: 0 0 15px 0;
+              font-weight: 600;
+            }
+            p {
+              font-size: 2vw;
+              margin: 15px 0;
+            }
+          }
+        }
+      }
+      div.swiper-button-next {
+        color: white;
+      }
+      div.swiper-button-next::after {
+        font-size: 1.8vw;
+        font-weight: 900;
+      }
+      div.swiper-button-prev {
+        color: white;
+      }
+      div.swiper-button-prev::after {
+        font-size: 1.8vw;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.students-comments-home {
+    text-align: center;
+    margin-top: 40px;
+    h2 {
+      font-size: 3vw;
+      font-family: vazir;
+      font-weight: 800;
+      color: $secondary;
+    }
+    p.student-comments-title {
+      font-size: 1.3vw;
+      width: 80%;
+      margin: auto;
+    }
+    div.students-comments-container {
+      background-color: $main;
+      padding: 30px 60px;
+      box-sizing: border-box;
+      margin-top: 25px;
+      position: relative;
+      .students-comments {
+        width: 100%;
+        .swiper-wrapper {
+          .swiper-slide {
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            font-family: vazir;
+            width: 90%;
+            img {
+              width: 30%;
+              border-radius: 50%;
+              border: 3px solid $main;
+              margin: 20px auto;
+            }
+            h4 {
+              font-size: 2vw;
+              color: $secondary;
+              font-weight: 600;
+            }
+            h5 {
+              color: $main;
+              font-size: 1.5vw;
+              margin: 0 0 15px 0;
+              font-weight: 600;
+            }
+            p {
+              font-size: 1vw;
+              margin: 15px 0;
+            }
+          }
+        }
+      }
+      div.swiper-button-next {
+        color: white;
+      }
+      div.swiper-button-next::after {
+        font-size: 1.8vw;
+        font-weight: 900;
+      }
+      div.swiper-button-prev {
+        color: white;
+      }
+      div.swiper-button-prev::after {
+        font-size: 1.8vw;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div.students-comments-home {
+    text-align: center;
+    margin-top: 40px;
+    h2 {
+      font-size: 3vw;
+      font-family: vazir;
+      font-weight: 800;
+      color: $secondary;
+    }
+    p.student-comments-title {
+      font-size: 1.3vw;
+      width: 80%;
+      margin: auto;
+    }
+    div.students-comments-container {
+      background-color: $main;
+      padding: 30px 60px;
+      box-sizing: border-box;
+      margin-top: 25px;
+      position: relative;
+      .students-comments {
+        width: 100%;
+        .swiper-wrapper {
+          .swiper-slide {
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            font-family: vazir;
+            width: 90%;
+            img {
+              width: 30%;
+              border-radius: 50%;
+              border: 3px solid $main;
+              margin: 20px auto;
+            }
+            h4 {
+              font-size: 2vw;
+              color: $secondary;
+              font-weight: 600;
+            }
+            h5 {
+              color: $main;
+              font-size: 1.5vw;
+              margin: 0 0 15px 0;
+              font-weight: 600;
+            }
+            p {
+              font-size: 1vw;
+              margin: 15px 0;
+            }
+          }
+        }
+      }
+      div.swiper-button-next {
+        color: white;
+      }
+      div.swiper-button-next::after {
+        font-size: 1.8vw;
+        font-weight: 900;
+      }
+      div.swiper-button-prev {
+        color: white;
+      }
+      div.swiper-button-prev::after {
+        font-size: 1.8vw;
+        font-weight: 900;
+      }
+    }
+  }
+}

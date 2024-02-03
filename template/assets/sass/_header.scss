@@ -1,0 +1,916 @@
+@media screen and (min-width: 300px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vazir;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0;
+    div.logo {
+      width: 35px;
+      margin-right: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-weight: 600;
+        color: $secondary;
+        transition: 500ms;
+        border-radius: 7px;
+        font-size: 1.5vw;
+      }
+      a:hover {
+        color: $main;
+      }
+      div.header-item {
+        position: relative;
+        a {
+          text-decoration: none;
+          cursor: pointer;
+          i {
+            font-size: 1vw;
+          }
+        }
+        div.drop-menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          position: absolute;
+          top: 150%;
+          right: 20%;
+          height: auto;
+          box-sizing: border-box;
+          overflow: hidden;
+          background-color: white;
+          border-radius: 8px;
+          border: 2px solid $main;
+          transition: 500ms;
+          width: 100%;
+          animation-name: show-dropdown;
+          animation-iteration-count: 1;
+          animation-duration: 500ms;
+          a {
+            font-size: 1vw;
+            padding: 15px;
+            display: block;
+            border-radius: 0;
+          }
+        }
+        @keyframes show-dropdown {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 100%;
+          }
+        }
+      }
+    }
+    div.login-icons {
+      margin-left: 13px;
+      margin-top: 0;
+      margin-bottom: 3px;
+      text-align: left;
+      a {
+        text-decoration: none;
+        margin: 5px;
+      }
+      a.cart-icon {
+        color: $secondary;
+        border-radius: 5px;
+        background-color: rgb(238, 236, 236);
+        padding: 10px 15px;
+        transition: 500ms;
+        i {
+          transition: 500ms;
+        }
+      }
+      a.cart-icon:hover {
+        background-color: white;
+        i {
+          color: $main;
+        }
+      }
+      a.search-icon {
+        background-color: $main;
+        border-radius: 4px;
+        padding: 10px 15px 10px 11px;
+        transition: 500ms;
+        color: white;
+      }
+      a.search-icon:hover {
+        background-color: rgb(238, 236, 236);
+        color: black;
+      }
+      a.login-link {
+        color: white;
+        background-color: $main;
+        padding: 10px;
+        border-radius: 4px;
+        margin-right: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        i {
+          color: white;
+          margin: 5px;
+          transition: 500ms;
+        }
+        p {
+          display: inline-block;
+        }
+      }
+    }
+    div.burger-menu {
+      button {
+        background-color: $main;
+        border: 0;
+        padding: 10px 15px;
+        border-radius: 4px;
+        margin-left: 15px;
+        transition: 500ms;
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vazir;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0;
+    div.logo {
+      width: 35px;
+      margin-right: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-weight: 600;
+        color: $secondary;
+        transition: 500ms;
+        border-radius: 7px;
+        font-size: 1.5vw;
+      }
+      a:hover {
+        color: $main;
+      }
+      div.header-item {
+        position: relative;
+        a {
+          text-decoration: none;
+          i {
+            font-size: 1vw;
+          }
+        }
+        div.drop-menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          position: absolute;
+          top: 150%;
+          right: 20%;
+          height: auto;
+          box-sizing: border-box;
+          overflow: hidden;
+          background-color: white;
+          border-radius: 8px;
+          border: 2px solid $main;
+          transition: 500ms;
+          width: 100%;
+          animation-name: show-dropdown;
+          animation-iteration-count: 1;
+          animation-duration: 500ms;
+          a {
+            font-size: 1vw;
+            padding: 15px;
+            display: block;
+            border-radius: 0;
+          }
+        }
+        @keyframes show-dropdown {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 100%;
+          }
+        }
+      }
+    }
+    div.login-icons {
+      margin-left: 13px;
+      margin-top: 15px;
+      text-align: left;
+      a {
+        text-decoration: none;
+        font-size: 1.2vw;
+        margin: 5px;
+        i {
+          font-size: 1.2vw;
+        }
+      }
+      a.cart-icon {
+        color: $secondary;
+        border-radius: 5px;
+        background-color: rgb(238, 236, 236);
+        padding: 10px 15px;
+        transition: 500ms;
+        i {
+          transition: 500ms;
+        }
+      }
+      a.cart-icon:hover {
+        background-color: white;
+        i {
+          color: $main;
+        }
+      }
+      a.search-icon {
+        background-color: $main;
+        border-radius: 4px;
+        padding: 10px 15px 10px 12px;
+        transition: 500ms;
+        color: white;
+      }
+      a.search-icon:hover {
+        background-color: rgb(238, 236, 236);
+        color: black;
+      }
+      a.login-link {
+        color: white;
+        background-color: $main;
+        padding: 10px;
+        border-radius: 4px;
+        margin-right: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        i {
+          color: white;
+          margin: 5px;
+          transition: 500ms;
+        }
+        p {
+          display: inline-block;
+        }
+      }
+    }
+    div.burger-menu {
+      button {
+        background-color: $main;
+        border: 0;
+        padding: 10px 15px;
+        border-radius: 4px;
+        margin-left: 15px;
+        transition: 500ms;
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 300px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid $main;
+    transition: 500ms;
+    div.logo {
+      width: 20%;
+      margin-top: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        padding: 20px 5px;
+        font-size: 2.5vw;
+        font-weight: 600;
+        font-family: vazir;
+        color: $secondary;
+      }
+      div.nav-item {
+        ul {
+          li {
+            a {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  div.search-page {
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border-right: 4px solid $main;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+    div.search-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      img{
+          background-color: $main;
+          padding: 15px;
+          width: 30%;
+          border-radius: 10px;
+          margin: 20px;
+      }
+      h3{
+          font-size: 3vw;
+          margin: 20px;
+          font-family: lalezar;
+      }
+      div.search-input {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin: 20px;
+          width: 100%;
+        input {
+          border-radius: 8px;
+          padding: 10px 15px;
+          margin-left: 10px;
+          border: 1px solid gray;
+          width: 40%;
+          font-family: vazir;
+          width: 80%;
+        }
+        input:focus {
+          outline: none;
+        }
+        button.search-click {
+          border-radius: 8px;
+          padding: 10px 15px;
+          font-family: vazir;
+          border: 1px solid $main;
+          background-color: $main;
+          color: white;
+          font-weight: 600;
+          margin-top: 20px;
+        }
+      }
+      button.search-close-btn {
+        background-color: transparent;
+        border: 0;
+        font-size: 26px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid $main;
+    transition: 500ms;
+    div.logo {
+      width: 20%;
+      margin-top: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        padding: 20px 5px;
+        font-size: 1.5vw;
+        font-weight: 600;
+        font-family: vazir;
+        color: $secondary;
+      }
+      div.nav-item {
+        ul {
+          li {
+            a {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border-right: 4px solid $main;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+    div.search-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      img{
+          background-color: $main;
+          padding: 15px;
+          width: 25%;
+          border-radius: 10px;
+          margin: 20px;
+      }
+      h3{
+          font-size: 3vw;
+          margin: 20px;
+          font-family: lalezar;
+      }
+      div.search-input {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          margin: 20px;
+          width: 100%;
+        input {
+          border-radius: 8px;
+          padding: 10px 15px;
+          margin-left: 10px;
+          border: 1px solid gray;
+          width: 40%;
+          font-family: vazir;
+          width: 50%;
+        }
+        input:focus {
+          outline: none;
+        }
+        button.search-click {
+          border-radius: 8px;
+          padding: 10px 15px;
+          font-family: vazir;
+          border: 1px solid $main;
+          background-color: $main;
+          color: white;
+          font-weight: 600;
+          margin-top: 0;
+        }
+      }
+      button.search-close-btn {
+        background-color: transparent;
+        border: 0;
+        font-size: 26px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid $main;
+    transition: 500ms;
+    div.logo {
+      width: 20%;
+      margin-top: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        padding: 20px 5px;
+        font-size: 1.5vw;
+        font-weight: 600;
+        font-family: vazir;
+        color: $secondary;
+      }
+      div.nav-item {
+        ul {
+          li {
+            a {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-right: 4px solid $main;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+    div.search-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      img{
+          background-color: $main;
+          padding: 15px;
+          width: 20%;
+          border-radius: 10px;
+          margin: 20px;
+      }
+      h3{
+          font-size: 3vw;
+          margin: 20px;
+          font-family: lalezar;
+      }
+      div.search-input {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px;
+          width: 100%;
+        input {
+          border-radius: 8px;
+          padding: 10px 15px;
+          margin-left: 10px;
+          border: 1px solid gray;
+          width: 40%;
+          font-family: vazir;
+          width: 50%;
+        }
+        input:focus {
+          outline: none;
+        }
+        button.search-click {
+          border-radius: 8px;
+          padding: 10px 15px;
+          font-family: vazir;
+          border: 1px solid $main;
+          background-color: $main;
+          color: white;
+          font-weight: 600;
+        }
+      }
+      button.search-close-btn {
+        background-color: transparent;
+        border: 0;
+        font-size: 26px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid $main;
+    transition: 500ms;
+    div.logo {
+      width: 20%;
+      margin-top: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        padding: 20px 5px;
+        font-size: 1.5vw;
+        font-weight: 600;
+        font-family: vazir;
+        color: $secondary;
+      }
+      div.nav-item {
+        ul {
+          li {
+            a {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-right: 4px solid $main;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+    div.search-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      img{
+          background-color: $main;
+          padding: 15px;
+          width: 15%;
+          border-radius: 10px;
+          margin: 20px;
+      }
+      h3{
+          font-size: 3vw;
+          margin: 20px;
+          font-family: lalezar;
+      }
+      div.search-input {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px;
+          width: 100%;
+        input {
+          border-radius: 8px;
+          padding: 10px 15px;
+          margin-left: 10px;
+          border: 1px solid gray;
+          width: 40%;
+          font-family: vazir;
+          width: 50%;
+        }
+        input:focus {
+          outline: none;
+        }
+        button.search-click {
+          border-radius: 8px;
+          padding: 10px 15px;
+          font-family: vazir;
+          border: 1px solid $main;
+          background-color: $main;
+          color: white;
+          font-weight: 600;
+        }
+      }
+      button.search-close-btn {
+        background-color: transparent;
+        border: 0;
+        font-size: 26px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid $main;
+    transition: 500ms;
+    div.logo {
+      width: 20%;
+      margin-top: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        padding: 20px 5px;
+        font-size: 1.5vw;
+        font-weight: 600;
+        font-family: vazir;
+        color: $secondary;
+      }
+      div.nav-item {
+        ul {
+          li {
+            a {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-right: 4px solid $main;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+    div.search-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      img{
+          background-color: $main;
+          padding: 15px;
+          width: 15%;
+          border-radius: 10px;
+          margin: 20px;
+      }
+      h3{
+          font-size: 3vw;
+          margin: 20px;
+          font-family: lalezar;
+      }
+      div.search-input {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px;
+          width: 100%;
+        input {
+          border-radius: 8px;
+          padding: 10px 15px;
+          margin-left: 10px;
+          border: 1px solid gray;
+          width: 40%;
+          font-family: vazir;
+          width: 50%;
+        }
+        input:focus {
+          outline: none;
+        }
+        button.search-click {
+          border-radius: 8px;
+          padding: 10px 15px;
+          font-family: vazir;
+          border: 1px solid $main;
+          background-color: $main;
+          color: white;
+          font-weight: 600;
+        }
+      }
+      button.search-close-btn {
+        background-color: transparent;
+        border: 0;
+        font-size: 26px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+

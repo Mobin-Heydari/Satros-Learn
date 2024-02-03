@@ -1,0 +1,236 @@
+@media screen and (min-width:300px) {
+    div.discount-alert{
+        width: 100%;
+        box-sizing: border-box;
+        background-image: url(img/discount-back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        div.discount-title{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            button.dsicount-btn{
+                border: 0;
+                border-radius: 4px;
+                padding: 0;
+                cursor: pointer;
+                
+    
+            }
+            p{
+                margin-right: 15px;
+                margin-top: 15px;
+                color: white;
+                font-family: vazir;
+                font-size: 2vw;
+            }
+            button.dsicount-btn:focus{
+                outline: none;
+            }
+        }
+        div.discount-link{
+            a{
+                text-decoration: none;
+                color: black;
+                background-color: white;
+                border-radius: 7px;
+                padding: 5px 15px;
+                font-family: vazir;
+                font-size: 2.5vw;
+            }
+        }
+    }
+}
+@media screen and (min-width:576px) {
+    div.discount-alert{
+        width: 100%;
+        box-sizing: border-box;
+        background-image: url(img/discount-back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        div.discount-title{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            button.dsicount-btn{
+                border: 0;
+                border-radius: 4px;
+                padding: 0;
+                cursor: pointer;
+    
+            }
+            p{
+                margin-right: 15px;
+                margin-top: 15px;
+                color: white;
+                font-family: vazir;
+                font-size: 1.8vw;
+            }
+            button.dsicount-btn:focus{
+                outline: none;
+            }
+        }
+        div.discount-link{
+            a{
+                text-decoration: none;
+                color: black;
+                background-color: white;
+                border-radius: 7px;
+                padding: 5px 15px;
+                font-family: vazir;
+                font-size: 1.5vw;
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    div.discount-alert{
+        width: 100%;
+        box-sizing: border-box;
+        background-image: url(img/discount-back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        div.discount-title{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            button.dsicount-btn{
+                border: 0;
+                border-radius: 4px;
+                padding: 0;
+                cursor: pointer;
+    
+            }
+            p{
+                margin-right: 15px;
+                margin-top: 15px;
+                color: white;
+                font-family: vazir;
+                font-size: 2vw;
+            }
+            button.dsicount-btn:focus{
+                outline: none;
+            }
+        }
+        div.discount-link{
+            a{
+                text-decoration: none;
+                color: black;
+                background-color: white;
+                border-radius: 7px;
+                padding: 5px 15px;
+                font-family: vazir;
+                font-size: 1.5vw;
+            }
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    div.discount-alert{
+        width: 100%;
+        box-sizing: border-box;
+        background-image: url(img/discount-back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        div.discount-title{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            button.dsicount-btn{
+                border: 0;
+                border-radius: 4px;
+                padding: 0;
+                cursor: pointer;
+    
+            }
+            p{
+                margin-right: 15px;
+                margin-top: 15px;
+                color: white;
+                font-family: vazir;
+                font-size: 1.2vw;
+            }
+            button.dsicount-btn:focus{
+                outline: none;
+            }
+        }
+        div.discount-link{
+            a{
+                text-decoration: none;
+                color: black;
+                background-color: white;
+                border-radius: 7px;
+                padding: 5px 15px;
+                font-family: vazir;
+                font-size: 1.5vw;
+            }
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    div.discount-alert{
+        width: 100%;
+        box-sizing: border-box;
+        background-image: url(img/discount-back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        div.discount-title{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            button.dsicount-btn{
+                border: 0;
+                border-radius: 4px;
+                padding: 0;
+                cursor: pointer;
+    
+            }
+            p{
+                margin-right: 15px;
+                margin-top: 15px;
+                color: white;
+                font-family: vazir;
+                font-size: 1.2vw;
+            }
+            button.dsicount-btn:focus{
+                outline: none;
+            }
+        }
+        div.discount-link{
+            a{
+                text-decoration: none;
+                color: black;
+                background-color: white;
+                border-radius: 7px;
+                padding: 5px 15px;
+                font-family: vazir;
+                font-size: 1.5vw;
+            }
+        }
+    }
+}

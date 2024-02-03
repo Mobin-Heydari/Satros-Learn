@@ -1,0 +1,960 @@
+@media screen and (min-width: 300px) {
+    section {
+      div.podcasts-title-search {
+        margin-top: 40px;
+        text-align: center;
+        font-family: vazir;
+        padding: 30px;
+        box-sizing: border-box;
+        h1 {
+          font-size: 5vw;
+          font-weight: 800;
+        }
+        p {
+          width: 100%;
+          margin: 30px auto;
+          font-size: 3vw;
+        }
+        div.podcasts-search {
+          width: 100%;
+          margin: 30px auto;
+          position: relative;
+          input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+          }
+          button {
+            border: 0;
+            background-color: $main;
+            padding: 10px 15px 8px 15px;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 7px;
+            i {
+              font-size: 4.2vw;
+              color: white;
+            }
+          }
+        }
+      }
+      div.podcasts {
+        div.podcasts-parts {
+          position: relative;
+          margin-bottom: 30px;
+          font-family: vazir;
+          font-weight: 800;
+          div.podcasts-title {
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            bottom: 0;
+            div.swiper-slide {
+              cursor: pointer;
+              transition: 250ms;
+            }
+            div.swiper-slide:hover {
+              color: $main;
+            }
+          }
+          div.swiper-button-next {
+            position: absolute;
+            color: white !important;
+            text-align: center;
+            margin-right: 15px;
+          }
+          div.swiper-button-next::after {
+            font-size: 3.5vw;
+            background-color: $main;
+            padding: 15px 20px;
+            border-radius: 8px;
+          }
+          div.swiper-button-prev {
+            position: absolute;
+            color: white !important;
+            text-align: center;
+            margin-left: 15px;
+          }
+          div.swiper-button-prev::after {
+            font-size: 3.5vw;
+            background-color: $main;
+            padding: 15px 20px;
+            border-radius: 8px;
+          }
+        }
+      }
+      div.podcasts-cards {
+        font-family: vazir;
+        div.english {
+          text-align: center;
+          animation-name: opacity-part;
+          animation-iteration-count: 1;
+          animation-duration: 250ms;
+          h2 {
+            font-size: 4vw;
+            font-family: 900;
+            margin-top: 40px;
+          }
+          div.podcasts-cards-container {
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            div.card {
+              width: 100%;
+              border-radius: 8px;
+              height: auto;
+              text-align: left;
+              padding: 15px 20px;
+              box-sizing: border-box;
+              margin-top: 20px;
+              img {
+                width: 100%;
+                border-radius: 8px;
+              }
+              div.title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+                h3 {
+                  font-size: 3.3vw;
+                  font-weight: 800;
+                }
+                h5 {
+                  font-size: 3.2vw;
+                  font-weight: 800;
+                }
+              }
+              h4 {
+                font-size: 3.2vw;
+                font-weight: 800;
+                margin-top: 15px;
+              }
+              p {
+                text-align: left;
+                font-size: 3vw;
+              }
+              a {
+                padding: 10px 15px;
+                width: 100%;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                background-color: $main;
+                border-radius: 8px;
+              }
+            }
+          }
+        }
+        @keyframes opacity-part {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 100%;
+          }
+        }
+        div.pagination {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px;
+          i {
+            font-size: 3.3vw;
+            margin: 0 15px;
+          }
+          button {
+            font-size: 3.2vw;
+            font-weight: 800;
+            padding: 10px;
+            color: gray;
+            background-color: rgb(230, 230, 230);
+            border: 0;
+            border-radius: 4px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 576px) {
+    section {
+      div.podcasts-title-search {
+        margin-top: 40px;
+        text-align: center;
+        font-family: vazir;
+        padding: 30px;
+        box-sizing: border-box;
+        h1 {
+          font-size: 4vw;
+          font-weight: 800;
+        }
+        p {
+          width: 100%;
+          margin: 30px auto;
+          font-size: 2vw;
+        }
+        div.podcasts-search {
+          width: 100%;
+          margin: 30px auto;
+          position: relative;
+          input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+          }
+          button {
+            border: 0;
+            background-color: $main;
+            padding: 10px 15px 8px 15px;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 7px;
+            i {
+              font-size: 3.2vw;
+              color: white;
+            }
+          }
+        }
+      }
+      div.podcasts {
+        div.podcasts-parts {
+          position: relative;
+          margin-bottom: 30px;
+          font-family: vazir;
+          font-weight: 800;
+          div.podcasts-title {
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            bottom: 10px;
+            div.swiper-slide {
+              cursor: pointer;
+              transition: 250ms;
+            }
+            div.swiper-slide:hover {
+              color: $main;
+            }
+          }
+          div.swiper-button-next {
+            position: absolute;
+            color: white !important;
+            text-align: center;
+            margin-right: 30px;
+          }
+          div.swiper-button-next::after {
+            font-size: 2.5vw;
+            background-color: $main;
+            padding: 15px 20px;
+            border-radius: 8px;
+          }
+          div.swiper-button-prev {
+            position: absolute;
+            color: white !important;
+            text-align: center;
+            margin-left: 30px;
+          }
+          div.swiper-button-prev::after {
+            font-size: 2.5vw;
+            background-color: $main;
+            padding: 15px 20px;
+            border-radius: 8px;
+          }
+        }
+      }
+      div.podcasts-cards {
+        font-family: vazir;
+        div.english {
+          text-align: center;
+          animation-name: opacity-part;
+          animation-iteration-count: 1;
+          animation-duration: 250ms;
+          h2 {
+            font-size: 4vw;
+            font-family: 900;
+            margin-top: 40px;
+          }
+          div.podcasts-cards-container {
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            div.card {
+              width: 48%;
+              border-radius: 8px;
+              height: auto;
+              text-align: left;
+              padding: 15px 20px;
+              box-sizing: border-box;
+              margin-top: 20px;
+              img {
+                width: 100%;
+                border-radius: 8px;
+              }
+              div.title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+                h3 {
+                  font-size: 2.3vw;
+                  font-weight: 800;
+                }
+                h5 {
+                  font-size: 2.2vw;
+                  font-weight: 800;
+                }
+              }
+              h4 {
+                font-size: 2.2vw;
+                font-weight: 800;
+                margin-top: 15px;
+              }
+              p {
+                text-align: left;
+                font-size: 2vw;
+              }
+              a {
+                padding: 10px 15px;
+                width: 100%;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                background-color: $main;
+                border-radius: 8px;
+              }
+            }
+          }
+        }
+        @keyframes opacity-part {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 100%;
+          }
+        }
+        div.pagination {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px;
+          i {
+            font-size: 2.3vw;
+            margin: 0 15px;
+          }
+          button {
+            font-size: 2.2vw;
+            font-weight: 800;
+            padding: 10px;
+            color: gray;
+            background-color: rgb(230, 230, 230);
+            border: 0;
+            border-radius: 4px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 768px) {
+    section {
+      div.podcasts-title-search {
+        margin-top: 40px;
+        text-align: center;
+        font-family: vazir;
+        padding: 30px;
+        box-sizing: border-box;
+        h1 {
+          font-size: 3vw;
+          font-weight: 800;
+        }
+        p {
+          width: 75%;
+          font-size: 2vw;
+          margin: 30px auto;
+        }
+        div.podcasts-search {
+          width: 70%;
+          margin: 30px auto;
+          position: relative;
+          input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+          }
+          button {
+            border: 0;
+            background-color: $main;
+            padding: 10px 15px 8px 15px;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 7px;
+            i {
+              font-size: 1.2vw;
+              color: white;
+            }
+          }
+        }
+      }
+      div.podcasts {
+        div.podcasts-parts {
+          position: relative;
+          margin-bottom: 30px;
+          font-family: vazir;
+          font-weight: 800;
+          div.podcasts-title {
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            bottom: 0;
+            div.swiper-slide {
+              cursor: pointer;
+              transition: 250ms;
+            }
+            div.swiper-slide:hover {
+              color: $main;
+            }
+          }
+          div.swiper-button-next {
+            position: absolute;
+            color: white !important;
+            text-align: center;
+            margin-right: 60px;
+          }
+          div.swiper-button-next::after {
+            font-size: 1.5vw;
+            background-color: $main;
+            padding: 15px 20px;
+            border-radius: 8px;
+          }
+          div.swiper-button-prev {
+            position: absolute;
+            color: white !important;
+            text-align: center;
+            margin-left: 60px;
+          }
+          div.swiper-button-prev::after {
+            font-size: 1.5vw;
+            background-color: $main;
+            padding: 15px 20px;
+            border-radius: 8px;
+          }
+        }
+      }
+      div.podcasts-cards {
+        font-family: vazir;
+        div.english {
+          text-align: center;
+          animation-name: opacity-part;
+          animation-iteration-count: 1;
+          animation-duration: 250ms;
+          h2 {
+            font-size: 3vw;
+            font-family: 900;
+            margin-top: 40px;
+          }
+          div.podcasts-cards-container {
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            div.card {
+              width: 48%;
+              border-radius: 8px;
+              height: auto;
+              text-align: left;
+              padding: 15px 20px;
+              box-sizing: border-box;
+              margin-top: 20px;
+              img {
+                width: 100%;
+                border-radius: 8px;
+              }
+              div.title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+                h3 {
+                  font-size: 2.3vw;
+                  font-weight: 800;
+                }
+                h5 {
+                  font-size: 2.2vw;
+                  font-weight: 800;
+                }
+              }
+              h4 {
+                font-size: 2.2vw;
+                font-weight: 800;
+                margin-top: 15px;
+              }
+              p {
+                text-align: left;
+                font-size: 2vw;
+              }
+              a {
+                padding: 10px 15px;
+                width: 100%;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                background-color: $main;
+                border-radius: 8px;
+              }
+            }
+          }
+        }
+        @keyframes opacity-part {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 100%;
+          }
+        }
+        div.pagination {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px;
+          i {
+            font-size: 2.3vw;
+            margin: 0 15px;
+          }
+          button {
+            font-size: 2.2vw;
+            font-weight: 800;
+            padding: 10px;
+            color: gray;
+            background-color: rgb(230, 230, 230);
+            border: 0;
+            border-radius: 4px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 1024px) {
+    section {
+      div.podcasts-title-search {
+        margin-top: 40px;
+        text-align: center;
+        font-family: vazir;
+        padding: 30px;
+        box-sizing: border-box;
+        h1 {
+          font-size: 3vw;
+          font-weight: 800;
+        }
+        p {
+          width: 75%;
+          font-size: 1.3vw;
+          margin: 30px auto;
+        }
+        div.podcasts-search {
+          width: 50%;
+          margin: 30px auto;
+          position: relative;
+          input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+          }
+          button {
+            border: 0;
+            background-color: $main;
+            padding: 10px 15px 8px 15px;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 7px;
+            i {
+              font-size: 1.2vw;
+              color: white;
+            }
+          }
+        }
+      }
+      div.podcasts {
+        div.podcasts-parts {
+          position: relative;
+          margin-bottom: 30px;
+          font-family: vazir;
+          font-weight: 800;
+          div.podcasts-title {
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            bottom: 0;
+            div.swiper-slide {
+              cursor: pointer;
+              transition: 250ms;
+            }
+            div.swiper-slide:hover {
+              color: $main;
+            }
+          }
+          div.swiper-button-next {
+            position: absolute;
+            color: white !important;
+            text-align: center;
+            margin-right: 40px;
+          }
+          div.swiper-button-next::after {
+            font-size: 1.5vw;
+            background-color: $main;
+            padding: 15px 20px;
+            border-radius: 8px;
+          }
+          div.swiper-button-prev {
+            position: absolute;
+            color: white !important;
+            text-align: center;
+            margin-left: 60px;
+          }
+          div.swiper-button-prev::after {
+            font-size: 1.5vw;
+            background-color: $main;
+            padding: 15px 20px;
+            border-radius: 8px;
+          }
+        }
+      }
+      div.podcasts-cards {
+        font-family: vazir;
+        div.english {
+          text-align: center;
+          animation-name: opacity-part;
+          animation-iteration-count: 1;
+          animation-duration: 250ms;
+          h2 {
+            font-size: 3vw;
+            font-family: 900;
+            margin-top: 40px;
+          }
+          div.podcasts-cards-container {
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            div.card {
+              width: 30%;
+              border-radius: 8px;
+              height: auto;
+              text-align: left;
+              padding: 15px 20px;
+              box-sizing: border-box;
+              img {
+                width: 100%;
+                border-radius: 8px;
+              }
+              div.title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+                h3 {
+                  font-size: 1.3vw;
+                  font-weight: 800;
+                }
+                h5 {
+                  font-size: 1.2vw;
+                  font-weight: 800;
+                }
+              }
+              h4 {
+                font-size: 1.2vw;
+                font-weight: 800;
+                margin-top: 15px;
+              }
+              p {
+                text-align: left;
+                font-size: 1vw;
+              }
+              a {
+                padding: 10px 15px;
+                width: 100%;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                background-color: $main;
+                border-radius: 8px;
+              }
+            }
+          }
+        }
+        @keyframes opacity-part {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 100%;
+          }
+        }
+        div.pagination {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px;
+          i {
+            font-size: 1.3vw;
+            margin: 0 15px;
+          }
+          button {
+            font-size: 1.2vw;
+            font-weight: 800;
+            padding: 10px;
+            color: gray;
+            background-color: rgb(230, 230, 230);
+            border: 0;
+            border-radius: 4px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 1200px) {
+  section {
+    div.podcasts-title-search {
+      margin-top: 40px;
+      text-align: center;
+      font-family: vazir;
+      padding: 30px;
+      box-sizing: border-box;
+      h1 {
+        font-size: 3vw;
+        font-weight: 800;
+      }
+      p {
+        width: 75%;
+        margin: 30px auto;
+      }
+      div.podcasts-search {
+        width: 50%;
+        margin: 30px auto;
+        position: relative;
+        input {
+          width: 100%;
+          padding: 15px;
+          border: 1px solid lightgray;
+          border-radius: 10px;
+        }
+        button {
+          border: 0;
+          background-color: $main;
+          padding: 10px 15px 8px 15px;
+          position: absolute;
+          left: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+          border-radius: 7px;
+          i {
+            font-size: 1.2vw;
+            color: white;
+          }
+        }
+      }
+    }
+    div.podcasts {
+      div.podcasts-parts {
+        position: relative;
+        margin-bottom: 30px;
+        font-family: vazir;
+        font-weight: 800;
+        div.podcasts-title {
+          border: 1px solid lightgray;
+          border-radius: 10px;
+          text-align: center;
+          width: 80%;
+          margin: auto;
+          padding: 20px;
+          box-sizing: border-box;
+          position: relative;
+          bottom: 0;
+          div.swiper-slide {
+            cursor: pointer;
+            transition: 250ms;
+          }
+          div.swiper-slide:hover {
+            color: $main;
+          }
+        }
+        div.swiper-button-next {
+          position: absolute;
+          color: white !important;
+          text-align: center;
+          margin-right: 40px;
+        }
+        div.swiper-button-next::after {
+          font-size: 1.5vw;
+          background-color: $main;
+          padding: 15px 20px;
+          border-radius: 8px;
+        }
+        div.swiper-button-prev {
+          position: absolute;
+          color: white !important;
+          text-align: center;
+          margin-left: 60px;
+        }
+        div.swiper-button-prev::after {
+          font-size: 1.5vw;
+          background-color: $main;
+          padding: 15px 20px;
+          border-radius: 8px;
+        }
+      }
+    }
+    div.podcasts-cards {
+      font-family: vazir;
+      div.english {
+        text-align: center;
+        animation-name: opacity-part;
+        animation-iteration-count: 1;
+        animation-duration: 250ms;
+        h2 {
+          font-size: 3vw;
+          font-family: 900;
+          margin-top: 40px;
+        }
+        div.podcasts-cards-container {
+          padding: 20px;
+          box-sizing: border-box;
+          width: 100%;
+          margin-top: 30px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+          div.card {
+            width: 30%;
+            border-radius: 8px;
+            height: auto;
+            text-align: left;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            img {
+              width: 100%;
+              border-radius: 8px;
+            }
+            div.title {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 20px;
+              h3 {
+                font-size: 1.3vw;
+                font-weight: 800;
+              }
+              h5 {
+                font-size: 1.2vw;
+                font-weight: 800;
+              }
+            }
+            h4 {
+              font-size: 1.2vw;
+              font-weight: 800;
+              margin-top: 15px;
+            }
+            p {
+              text-align: left;
+            }
+            a {
+              padding: 10px 15px;
+              width: 100%;
+              text-align: center;
+              color: white;
+              text-decoration: none;
+              background-color: $main;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+      @keyframes opacity-part {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 100%;
+        }
+      }
+      div.pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        i {
+          font-size: 1.3vw;
+          margin: 0 15px;
+        }
+        button {
+          font-size: 1.2vw;
+          font-weight: 800;
+          padding: 10px;
+          color: gray;
+          background-color: rgb(230, 230, 230);
+          border: 0;
+          border-radius: 4px;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}

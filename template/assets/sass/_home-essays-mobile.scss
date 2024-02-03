@@ -1,0 +1,75 @@
+div.home-essays-mobile {
+  width: 100%;
+  margin-top: 40px;
+  div.home-essays-mobile-title {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vazir;
+    h2 {
+      color: $secondary;
+      font-size: 5vw;
+      font-family: vazir;
+      font-weight: 800;
+    }
+    a {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: $main;
+      text-decoration: none;
+      font-size: 3.2vw;
+    }
+  }
+  div.home-essays-mobile-container {
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-top: -40px;
+    div.home-essays-mobile-slider {
+      div.swiper-wrapper {
+        div.swiper-slide {
+          width: 100%;
+          border-radius: 8px;
+          font-family: vazir;
+          margin-top: 40px;
+          height: auto;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+          h3 {
+            padding: 15px;
+            font-weight: 600;
+            font-size: 4vw;
+          }
+          p {
+            font-size: 3vw;
+            padding: 0 15px;
+          }
+          div.read-more {
+            display: block;
+            text-align: left;
+            margin: 15px 10px;
+            a {
+              color: $main;
+              padding: 5px 10px;
+              border: 2px solid $main;
+              text-align: left;
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: 600;
+              font-size: 2.5vw;
+              transition: 500ms;
+            }
+            a:hover {
+              background-color: $main;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

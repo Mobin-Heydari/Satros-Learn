@@ -1,0 +1,219 @@
+@media screen and (min-width: 300px) {
+    div.copy-right {
+      background-color: white;
+      width: 100%;
+      padding: 20px 15px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a.phone {
+        background-color: $main;
+        border-radius: 50%;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        i {
+          font-size: 3.5vw;
+        }
+      }
+      div {
+        text-align: center;
+        font-family: vazir;
+        h6 {
+          font-weight: 800;
+          font-size: 3.3vw;
+        }
+        p {
+          font-size: 3vw;
+          color: $main;
+        }
+      }
+      a.refresh {
+        padding: 15px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(209, 209, 209);
+        i {
+          font-size: 3.5vw;
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 576px) {
+    div.copy-right {
+      background-color: white;
+      width: 100%;
+      padding: 20px 15px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a.phone {
+        background-color: $main;
+        border-radius: 50%;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        i {
+          font-size: 2.5vw;
+        }
+      }
+      div {
+        text-align: center;
+        font-family: vazir;
+        h6 {
+          font-weight: 800;
+          font-size: 2.3vw;
+        }
+        p {
+          font-size: 2vw;
+          color: $main;
+        }
+      }
+      a.refresh {
+        padding: 15px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(209, 209, 209);
+        i {
+          font-size: 2.5vw;
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 768px) {
+    div.copy-right {
+      background-color: white;
+      width: 100%;
+      padding: 20px 15px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a.phone {
+        background-color: $main;
+        border-radius: 50%;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        i {
+          font-size: 1.5vw;
+        }
+      }
+      div {
+        text-align: center;
+        font-family: vazir;
+        h6 {
+          font-weight: 800;
+          font-size: 1.3vw;
+        }
+        p {
+          font-size: 1vw;
+          color: $main;
+        }
+      }
+      a.refresh {
+        padding: 15px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(209, 209, 209);
+        i {
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 1024px) {
+    div.copy-right {
+      background-color: white;
+      width: 100%;
+      padding: 20px 15px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a.phone {
+        background-color: $main;
+        border-radius: 50%;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        i {
+          font-size: 1.5vw;
+        }
+      }
+      div {
+        text-align: center;
+        font-family: vazir;
+        h6 {
+          font-weight: 800;
+          font-size: 1.3vw;
+        }
+        p {
+          font-size: 1vw;
+          color: $main;
+        }
+      }
+      a.refresh {
+        padding: 15px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(209, 209, 209);
+        i {
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 1200px) {
+  div.copy-right {
+    background-color: white;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a.phone {
+      background-color: $main;
+      border-radius: 50%;
+      padding: 15px;
+      color: white;
+      text-decoration: none;
+      i {
+        font-size: 1.5vw;
+      }
+    }
+    div {
+      text-align: center;
+      font-family: vazir;
+      h6 {
+        font-weight: 800;
+        font-size: 1.3vw;
+      }
+      p {
+        font-size: 1vw;
+        color: $main;
+      }
+    }
+    a.refresh {
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      color: white;
+      background-color: rgb(209, 209, 209);
+      i {
+        font-size: 1.5vw;
+      }
+    }
+  }
+}

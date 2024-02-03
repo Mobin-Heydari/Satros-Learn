@@ -1,0 +1,1094 @@
+@font-face {
+  font-family: lalezar;
+  src: url(fonts/Lalezar-Regular.woff);
+}
+@font-face {
+  font-family: vazir;
+  src: url(fonts/Vazir-Regular.woff);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 300px) {
+  section {
+    width: 90%;
+    font-family: vazir;
+    margin: 50px auto;
+  }
+  section div.courses-title {
+    text-align: center;
+  }
+  section div.courses-title h1 {
+    font-size: 5vw;
+    font-weight: 900;
+  }
+  section div.courses-title p {
+    font-size: 3.3vw;
+    color: gray;
+    margin: 20px auto;
+    width: 90%;
+  }
+  section div.courses-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  section div.courses-container div.filters {
+    width: 100%;
+  }
+  section div.courses-container div.filters h2 {
+    font-size: 3.5vw;
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #F9A135;
+  }
+  section div.courses-container div.filters button {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    font-size: 3vw;
+    padding: 5px;
+    transition: 250ms;
+    font-weight: 600;
+  }
+  section div.courses-container div.filters button:hover {
+    color: #F9A135;
+  }
+  section div.courses-container div.filters div.price-filter {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 7px gray;
+    margin-top: 30px;
+  }
+  section div.courses-container div.filters div.category-filter {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.filters div.price-range {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.filters div.price-range div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  section div.courses-container div.filters div.price-range div .range {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 226, 226);
+  }
+  section div.courses-container div.filters div.price-range div .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #F9A135;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  section div.courses-container div.filters div.price-range div input {
+    width: 48%;
+    border: 0;
+  }
+  section div.courses-container div.filters div.price-range div p {
+    padding: 10px 20px;
+    margin: 10px;
+    width: 45%;
+    font-size: 3.2vw;
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+  }
+  section div.courses-container div.filters div.price-range button {
+    color: white;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 3.2vw;
+    background-color: #F9A135;
+  }
+  section div.courses-container div.courses-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  section div.courses-container div.courses-cards div.card {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    font-family: vazir;
+    box-sizing: border-box;
+    padding: 15px 15px 0 15px;
+    margin-top: 30px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.courses-cards div.card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  section div.courses-container div.courses-cards div.card h2 {
+    color: #575757;
+    font-size: 3.5vw;
+    text-align: right;
+    margin: 20px 0;
+  }
+  section div.courses-container div.courses-cards div.card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.courses-container div.courses-cards div.card div p {
+    font-size: 3vw;
+  }
+  section div.courses-container div.courses-cards div.card div p i {
+    font-size: 3vw;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card {
+    border-top: 1px dashed gray;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a {
+    color: #575757;
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 3.2vw;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a i {
+    font-size: 2.7vw;
+    transition: 500ms;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a:hover {
+    color: #F9A135;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a:hover i {
+    transform: translateX(-4px);
+  }
+  section div.courses-container div.courses-cards div.card div.price-card p {
+    background-color: #F9A135;
+    font-size: 3.1vw;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  section div.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  section div.pagination button {
+    font-size: 3.3vw;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 13px;
+    color: gray;
+    margin: 10px;
+    background-color: rgb(212, 212, 212);
+    transition: 250ms;
+  }
+  section div.pagination button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+  section div.pagination i {
+    font-size: 3.3vw;
+    cursor: pointer;
+    margin: 25px;
+    transition: 250ms;
+  }
+  section div.pagination i:hover {
+    color: #F9A135;
+  }
+}
+@media screen and (min-width: 576px) {
+  section {
+    width: 90%;
+    font-family: vazir;
+    margin: 50px auto;
+  }
+  section div.courses-title {
+    text-align: center;
+  }
+  section div.courses-title h1 {
+    font-size: 4vw;
+    font-weight: 900;
+  }
+  section div.courses-title p {
+    font-size: 2.3vw;
+    color: gray;
+    margin: 20px auto;
+    width: 80%;
+  }
+  section div.courses-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  section div.courses-container div.filters {
+    width: 100%;
+  }
+  section div.courses-container div.filters h2 {
+    font-size: 2.5vw;
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #F9A135;
+  }
+  section div.courses-container div.filters button {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    font-size: 2vw;
+    padding: 5px;
+    transition: 250ms;
+    font-weight: 600;
+  }
+  section div.courses-container div.filters button:hover {
+    color: #F9A135;
+  }
+  section div.courses-container div.filters div.price-filter {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 7px gray;
+    margin-top: 30px;
+  }
+  section div.courses-container div.filters div.category-filter {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.filters div.price-range {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.filters div.price-range div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  section div.courses-container div.filters div.price-range div .range {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 226, 226);
+  }
+  section div.courses-container div.filters div.price-range div .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #F9A135;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  section div.courses-container div.filters div.price-range div input {
+    width: 48%;
+    border: 0;
+  }
+  section div.courses-container div.filters div.price-range div p {
+    padding: 10px 20px;
+    margin: 10px;
+    width: 45%;
+    font-size: 2.2vw;
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+  }
+  section div.courses-container div.filters div.price-range button {
+    color: white;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 2.2vw;
+    background-color: #F9A135;
+  }
+  section div.courses-container div.courses-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  section div.courses-container div.courses-cards div.card {
+    width: 48%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    font-family: vazir;
+    box-sizing: border-box;
+    padding: 15px 15px 0 15px;
+    margin-top: 30px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.courses-cards div.card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  section div.courses-container div.courses-cards div.card h2 {
+    color: #575757;
+    font-size: 2.5vw;
+    text-align: right;
+    margin: 20px 0;
+  }
+  section div.courses-container div.courses-cards div.card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.courses-container div.courses-cards div.card div p {
+    font-size: 2vw;
+  }
+  section div.courses-container div.courses-cards div.card div p i {
+    font-size: 2vw;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card {
+    border-top: 1px dashed gray;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a {
+    color: #575757;
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 2.2vw;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a i {
+    font-size: 1.7vw;
+    transition: 500ms;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a:hover {
+    color: #F9A135;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a:hover i {
+    transform: translateX(-4px);
+  }
+  section div.courses-container div.courses-cards div.card div.price-card p {
+    background-color: #F9A135;
+    font-size: 2.1vw;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  section div.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  section div.pagination button {
+    font-size: 2.3vw;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 13px;
+    color: gray;
+    margin: 10px;
+    background-color: rgb(212, 212, 212);
+    transition: 250ms;
+  }
+  section div.pagination button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+  section div.pagination i {
+    font-size: 2.3vw;
+    cursor: pointer;
+    margin: 25px;
+    transition: 250ms;
+  }
+  section div.pagination i:hover {
+    color: #F9A135;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    width: 90%;
+    font-family: vazir;
+    margin: 50px auto;
+  }
+  section div.courses-title {
+    text-align: center;
+  }
+  section div.courses-title h1 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  section div.courses-title p {
+    font-size: 1.3vw;
+    color: gray;
+    margin: 20px auto;
+    width: 80%;
+  }
+  section div.courses-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  section div.courses-container div.filters {
+    width: 33%;
+  }
+  section div.courses-container div.filters h2 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #F9A135;
+  }
+  section div.courses-container div.filters button {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    font-size: 1vw;
+    padding: 5px;
+    transition: 250ms;
+    font-weight: 600;
+  }
+  section div.courses-container div.filters button:hover {
+    color: #F9A135;
+  }
+  section div.courses-container div.filters div.price-filter {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 7px gray;
+    margin-top: 30px;
+  }
+  section div.courses-container div.filters div.category-filter {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.filters div.price-range {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.filters div.price-range div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  section div.courses-container div.filters div.price-range div .range {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 226, 226);
+  }
+  section div.courses-container div.filters div.price-range div .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #F9A135;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  section div.courses-container div.filters div.price-range div input {
+    width: 48%;
+    border: 0;
+  }
+  section div.courses-container div.filters div.price-range div p {
+    padding: 10px 20px;
+    margin: 10px;
+    width: 45%;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+  }
+  section div.courses-container div.filters div.price-range button {
+    color: white;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1.2vw;
+    background-color: #F9A135;
+  }
+  section div.courses-container div.courses-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 65%;
+  }
+  section div.courses-container div.courses-cards div.card {
+    width: 48%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    font-family: vazir;
+    box-sizing: border-box;
+    padding: 15px 15px 0 15px;
+    margin-top: 30px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.courses-cards div.card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  section div.courses-container div.courses-cards div.card h2 {
+    color: #575757;
+    font-size: 1.5vw;
+    text-align: right;
+    margin: 20px 0;
+  }
+  section div.courses-container div.courses-cards div.card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.courses-container div.courses-cards div.card div p {
+    font-size: 1vw;
+  }
+  section div.courses-container div.courses-cards div.card div p i {
+    font-size: 1vw;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card {
+    border-top: 1px dashed gray;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a {
+    color: #575757;
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 1.2vw;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a i {
+    font-size: 0.7vw;
+    transition: 500ms;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a:hover {
+    color: #F9A135;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a:hover i {
+    transform: translateX(-4px);
+  }
+  section div.courses-container div.courses-cards div.card div.price-card p {
+    background-color: #F9A135;
+    font-size: 1.1vw;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  section div.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  section div.pagination button {
+    font-size: 1.3vw;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 13px;
+    color: gray;
+    margin: 10px;
+    background-color: rgb(212, 212, 212);
+    transition: 250ms;
+  }
+  section div.pagination button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+  section div.pagination i {
+    font-size: 1.3vw;
+    cursor: pointer;
+    margin: 25px;
+    transition: 250ms;
+  }
+  section div.pagination i:hover {
+    color: #F9A135;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section {
+    width: 90%;
+    font-family: vazir;
+    margin: 50px auto;
+  }
+  section div.courses-title {
+    text-align: center;
+  }
+  section div.courses-title h1 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  section div.courses-title p {
+    font-size: 1.3vw;
+    color: gray;
+    margin: 20px auto;
+    width: 80%;
+  }
+  section div.courses-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  section div.courses-container div.filters {
+    width: 33%;
+  }
+  section div.courses-container div.filters h2 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #F9A135;
+  }
+  section div.courses-container div.filters button {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    font-size: 1vw;
+    padding: 5px;
+    transition: 250ms;
+    font-weight: 600;
+  }
+  section div.courses-container div.filters button:hover {
+    color: #F9A135;
+  }
+  section div.courses-container div.filters div.price-filter {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 7px gray;
+    margin-top: 30px;
+  }
+  section div.courses-container div.filters div.category-filter {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.filters div.price-range {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.filters div.price-range div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  section div.courses-container div.filters div.price-range div .range {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 226, 226);
+  }
+  section div.courses-container div.filters div.price-range div .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #F9A135;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  section div.courses-container div.filters div.price-range div input {
+    width: 48%;
+    border: 0;
+  }
+  section div.courses-container div.filters div.price-range div p {
+    padding: 10px 20px;
+    margin: 10px;
+    width: 45%;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+  }
+  section div.courses-container div.filters div.price-range button {
+    color: white;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1.2vw;
+    background-color: #F9A135;
+  }
+  section div.courses-container div.courses-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 65%;
+  }
+  section div.courses-container div.courses-cards div.card {
+    width: 48%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    font-family: vazir;
+    box-sizing: border-box;
+    padding: 15px 15px 0 15px;
+    margin-top: 30px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.courses-cards div.card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  section div.courses-container div.courses-cards div.card h2 {
+    color: #575757;
+    font-size: 1.5vw;
+    text-align: right;
+    margin: 20px 0;
+  }
+  section div.courses-container div.courses-cards div.card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.courses-container div.courses-cards div.card div p {
+    font-size: 1vw;
+  }
+  section div.courses-container div.courses-cards div.card div p i {
+    font-size: 1vw;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card {
+    border-top: 1px dashed gray;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a {
+    color: #575757;
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 1.2vw;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a i {
+    font-size: 0.7vw;
+    transition: 500ms;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a:hover {
+    color: #F9A135;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a:hover i {
+    transform: translateX(-4px);
+  }
+  section div.courses-container div.courses-cards div.card div.price-card p {
+    background-color: #F9A135;
+    font-size: 1.1vw;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  section div.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  section div.pagination button {
+    font-size: 1.3vw;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 13px;
+    color: gray;
+    margin: 10px;
+    background-color: rgb(212, 212, 212);
+    transition: 250ms;
+  }
+  section div.pagination button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+  section div.pagination i {
+    font-size: 1.3vw;
+    cursor: pointer;
+    margin: 25px;
+    transition: 250ms;
+  }
+  section div.pagination i:hover {
+    color: #F9A135;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    width: 90%;
+    font-family: vazir;
+    margin: 50px auto;
+  }
+  section div.courses-title {
+    text-align: center;
+  }
+  section div.courses-title h1 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  section div.courses-title p {
+    font-size: 1.3vw;
+    color: gray;
+    margin: 20px auto;
+    width: 80%;
+  }
+  section div.courses-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  section div.courses-container div.filters {
+    width: 33%;
+  }
+  section div.courses-container div.filters h2 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #F9A135;
+  }
+  section div.courses-container div.filters button {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    font-size: 1vw;
+    padding: 5px;
+    transition: 250ms;
+    font-weight: 600;
+  }
+  section div.courses-container div.filters button:hover {
+    color: #F9A135;
+  }
+  section div.courses-container div.filters div.price-filter {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 7px gray;
+    margin-top: 30px;
+  }
+  section div.courses-container div.filters div.category-filter {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.filters div.price-range {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.filters div.price-range div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  section div.courses-container div.filters div.price-range div .range {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 226, 226);
+  }
+  section div.courses-container div.filters div.price-range div .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #F9A135;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  section div.courses-container div.filters div.price-range div input {
+    width: 48%;
+    border: 0;
+  }
+  section div.courses-container div.filters div.price-range div p {
+    padding: 10px 20px;
+    margin: 10px;
+    width: 45%;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+  }
+  section div.courses-container div.filters div.price-range button {
+    color: white;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1.2vw;
+    background-color: #F9A135;
+  }
+  section div.courses-container div.courses-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 65%;
+  }
+  section div.courses-container div.courses-cards div.card {
+    width: 48%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    font-family: vazir;
+    box-sizing: border-box;
+    padding: 15px 15px 0 15px;
+    margin-top: 30px;
+    box-shadow: 0 0 7px gray;
+  }
+  section div.courses-container div.courses-cards div.card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  section div.courses-container div.courses-cards div.card h2 {
+    color: #575757;
+    font-size: 1.5vw;
+    text-align: right;
+    margin: 20px 0;
+  }
+  section div.courses-container div.courses-cards div.card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.courses-container div.courses-cards div.card div p {
+    font-size: 1vw;
+  }
+  section div.courses-container div.courses-cards div.card div p i {
+    font-size: 1vw;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card {
+    border-top: 1px dashed gray;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a {
+    color: #575757;
+    text-decoration: none;
+    transition: 500ms;
+    font-size: 1.2vw;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a i {
+    font-size: 0.7vw;
+    transition: 500ms;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a:hover {
+    color: #F9A135;
+  }
+  section div.courses-container div.courses-cards div.card div.price-card a:hover i {
+    transform: translateX(-4px);
+  }
+  section div.courses-container div.courses-cards div.card div.price-card p {
+    background-color: #F9A135;
+    font-size: 1.1vw;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  section div.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  section div.pagination button {
+    font-size: 1.3vw;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 13px;
+    color: gray;
+    margin: 10px;
+    background-color: rgb(212, 212, 212);
+    transition: 250ms;
+  }
+  section div.pagination button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+  section div.pagination i {
+    font-size: 1.3vw;
+    cursor: pointer;
+    margin: 25px;
+    transition: 250ms;
+  }
+  section div.pagination i:hover {
+    color: #F9A135;
+  }
+}/*# sourceMappingURL=courses.css.map */

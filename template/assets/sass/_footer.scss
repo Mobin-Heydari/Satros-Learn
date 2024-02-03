@@ -1,0 +1,652 @@
+
+@media screen and (min-width:300px) {
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 15px;
+        box-sizing: border-box;
+        font-family: vazir;
+        margin-top: 10px;
+        background-color: rgb(238, 238, 238);
+        div.footer-about-satros{
+            width: 100%;
+            text-align: center;
+            h3{
+                color: $main;
+                font-size: 4vw;
+                margin: 15px 0;
+            }
+            p{
+                font-size: 3vw;
+                color: gray;
+                text-align: center;
+            }
+            div.footer-social-media{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 8px;
+                }
+                i{
+                    margin: 5px;
+                    padding: 10px;
+                    color: white;
+                    background-color: $main;
+                    font-size: 3vw;
+                }
+            }
+        }
+        div.footer-links{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 20px;
+            div{
+                width: 47%;
+                margin: 5px;
+                h3{
+                    font-weight: 900;
+                    font-size: 3.2vw;
+                }
+                ul{
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: gray;
+                            font-size: 2.8vw;
+                        }
+                    }
+                }
+            }
+            div.contact-info{
+                width: 47%;
+            }
+        }
+        div.footer-logo{
+            width: 100%;
+            text-align: left;
+            div.logo{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                div.logo-details{
+                    h2{
+                        font-size: 2vw;
+                        font-weight: 800;
+                    }
+                    h3{
+                        font-size: 1.5vw;
+                        font-weight: 800;
+                    }
+                }
+                img{
+                    width: 25%;
+                    padding: 15px;
+                    background-color: $main;
+                    margin: 0 10px;
+                    border-radius: 10px;
+                }
+            }
+            div.trust-logo{
+                width: 100%;
+                text-align: left;
+                margin-top: 15px;
+                img{
+                    width: 25%;
+                }
+            }
+            div.send-email{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 15px;
+                input{
+                    padding: 5px 15px;
+                    border: 1px solid lightgray;
+                    margin: 10px ;
+                    border-radius: 10px;
+                }
+                input:focus{
+                    outline: none;
+                }
+                button{
+                    border: 0;
+                    background-color: $main;
+                    padding: 5px 15px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:576px) {
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 15px;
+        box-sizing: border-box;
+        font-family: vazir;
+        margin-top: 40px;
+        div.footer-about-satros{
+            width: 100%;
+            text-align: center;
+            h3{
+                color: $main;
+                font-size: 3vw;
+                margin: 15px 0;
+            }
+            p{
+                font-size: 2vw;
+                color: gray;
+                text-align: center;
+            }
+            div.footer-social-media{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                i{
+                    margin: 5px;
+                    padding: 10px;
+                    color: white;
+                    background-color: $main;
+                    font-size: 3vw;
+                }
+            }
+        }
+        div.footer-links{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 20px;
+            div{
+                width: 20%;
+                margin: 5px;
+                h3{
+                    font-weight: 900;
+                    font-size: 2.2vw;
+                }
+                ul{
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: gray;
+                            font-size: 1.8vw;
+                        }
+                    }
+                }
+            }
+            div.contact-info{
+                width: 20%;
+            }
+        }
+        div.footer-logo{
+            width: 100%;
+            text-align: left;
+            div.logo{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                div.logo-details{
+                    h2{
+                        font-size: 2vw;
+                        font-weight: 800;
+                    }
+                    h3{
+                        font-size: 1.5vw;
+                        font-weight: 800;
+                    }
+                }
+                img{
+                    width: 25%;
+                    padding: 15px;
+                    background-color: $main;
+                    margin: 0 10px;
+                    border-radius: 10px;
+                }
+            }
+            div.trust-logo{
+                width: 100%;
+                text-align: left;
+                margin-top: 15px;
+                img{
+                    width: 25%;
+                }
+            }
+            div.send-email{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 15px;
+                input{
+                    padding: 5px 15px;
+                    border: 1px solid lightgray;
+                    margin: 10px ;
+                    border-radius: 10px;
+                }
+                input:focus{
+                    outline: none;
+                }
+                button{
+                    border: 0;
+                    background-color: $main;
+                    padding: 5px 15px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 15px;
+        box-sizing: border-box;
+        font-family: vazir;
+        margin-top: 40px;
+        div.footer-about-satros{
+            width: 100%;
+            text-align: center;
+            h3{
+                color: $main;
+                font-size: 3vw;
+                margin: 15px 0;
+            }
+            p{
+                font-size: 2vw;
+                color: gray;
+                text-align: center;
+            }
+            div.footer-social-media{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                i{
+                    margin: 5px;
+                    padding: 10px;
+                    color: white;
+                    background-color: $main;
+                    font-size: 2.5vw;
+                }
+            }
+        }
+        div.footer-links{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 20px;
+            div{
+                width: 20%;
+                margin: 5px;
+                h3{
+                    font-weight: 900;
+                    font-size: 2.2vw;
+                }
+                ul{
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: gray;
+                            font-size: 1.8vw;
+                        }
+                    }
+                }
+            }
+            div.contact-info{
+                width: 20%;
+            }
+        }
+        div.footer-logo{
+            width: 100%;
+            text-align: left;
+            div.logo{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                div.logo-details{
+                    h2{
+                        font-size: 2vw;
+                        font-weight: 800;
+                    }
+                    h3{
+                        font-size: 1.5vw;
+                        font-weight: 800;
+                    }
+                }
+                img{
+                    width: 25%;
+                    padding: 15px;
+                    background-color: $main;
+                    margin: 0 10px;
+                    border-radius: 10px;
+                }
+            }
+            div.trust-logo{
+                width: 100%;
+                text-align: left;
+                margin-top: 15px;
+                img{
+                    width: 25%;
+                }
+            }
+            div.send-email{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 15px;
+                input{
+                    padding: 5px 15px;
+                    border: 1px solid lightgray;
+                    margin: 10px ;
+                    border-radius: 10px;
+                }
+                input:focus{
+                    outline: none;
+                }
+                button{
+                    border: 0;
+                    background-color: $main;
+                    padding: 5px 15px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 15px;
+        box-sizing: border-box;
+        font-family: vazir;
+        margin-top: 40px;
+        div.footer-about-satros{
+            width: 30%;
+            h3{
+                color: $main;
+                font-size: 1.5vw;
+                margin: 15px 0;
+            }
+            p{
+                font-size: 1vw;
+                color: gray;
+                text-align: justify;
+            }
+            div.footer-social-media{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                i{
+                    margin: 5px;
+                    padding: 10px;
+                    color: white;
+                    background-color: $main;
+                    font-size: 1.5vw;
+                }
+            }
+        }
+        div.footer-links{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 35%;
+            div{
+                width: 28%;
+                margin: 5px;
+                h3{
+                    font-weight: 900;
+                    font-size: 1.2vw;
+                }
+                ul{
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: gray;
+                            font-size: 1vw;
+                        }
+                    }
+                }
+            }
+            div.contact-info{
+                width: 80%;
+            }
+        }
+        div.footer-logo{
+            width: 27%;
+            text-align: left;
+            div.logo{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                div.logo-details{
+                    h2{
+                        font-size: 2vw;
+                        font-weight: 800;
+                    }
+                    h3{
+                        font-size: 1.5vw;
+                        font-weight: 800;
+                    }
+                }
+                img{
+                    width: 25%;
+                    padding: 15px;
+                    background-color: $main;
+                    margin: 0 10px;
+                    border-radius: 10px;
+                }
+            }
+            div.trust-logo{
+                width: 100%;
+                text-align: left;
+                margin-top: 15px;
+                img{
+                    width: 25%;
+                }
+            }
+            div.send-email{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 15px;
+                p{
+                    font-size: 1vw;
+                }
+                input{
+                    padding: 5px 15px;
+                    border: 1px solid lightgray;
+                    margin: 10px ;
+                    border-radius: 10px;
+                }
+                input:focus{
+                    outline: none;
+                }
+                button{
+                    border: 0;
+                    background-color: $main;
+                    padding: 5px 15px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 15px;
+        box-sizing: border-box;
+        font-family: vazir;
+        margin-top: 40px;
+        div.footer-about-satros{
+            width: 30%;
+            h3{
+                color: $main;
+                font-size: 1.5vw;
+                margin: 15px 0;
+            }
+            p{
+                font-size: 1vw;
+                color: gray;
+                text-align: justify;
+            }
+            div.footer-social-media{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                i{
+                    margin: 5px;
+                    border-radius: 7px;
+                    padding: 10px;
+                    color: white;
+                    background-color: $main;
+                    font-size: 1.5vw;
+                }
+            }
+        }
+        div.footer-links{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 35%;
+            div{
+                width: 28%;
+                margin: 5px;
+                h3{
+                    font-weight: 900;
+                    font-size: 1.2vw;
+                }
+                ul{
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: gray;
+                            font-size: 1vw;
+                        }
+                        a:hover{
+                            color: $main;
+                        }
+                    }
+                }
+            }
+            div.contact-info{
+                width: 80%;
+            }
+        }
+        div.footer-logo{
+            width: 27%;
+            text-align: left;
+            div.logo{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                div.logo-details{
+                    h2{
+                        font-size: 2vw;
+                        font-weight: 800;
+                    }
+                    h3{
+                        font-size: 1.5vw;
+                        font-weight: 800;
+                    }
+                }
+                img{
+                    width: 25%;
+                    padding: 15px;
+                    background-color: $main;
+                    margin: 0 10px;
+                    border-radius: 10px;
+                }
+            }
+            div.trust-logo{
+                width: 100%;
+                text-align: left;
+                margin-top: 15px;
+                img{
+                    width: 25%;
+                }
+            }
+            div.send-email{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 15px;
+                p{
+                    font-size: 1vw;
+                }
+                input{
+                    padding: 5px 15px;
+                    border: 1px solid lightgray;
+                    margin: 10px ;
+                    border-radius: 10px;
+                }
+                input:focus{
+                    outline: none;
+                }
+                button{
+                    border: 0;
+                    background-color: $main;
+                    padding: 5px 15px;
+                    color: white;
+                    border-radius: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

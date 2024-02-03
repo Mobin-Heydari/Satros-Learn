@@ -1,0 +1,329 @@
+@font-face {
+  font-family: lalezar;
+  src: url(fonts/Lalezar-Regular.woff);
+}
+@font-face {
+  font-family: vazir;
+  src: url(fonts/Vazir-Regular.woff);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 300px) {
+  section {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    font-family: vazir;
+  }
+  section h1 {
+    font-size: 5vw;
+    font-weight: 900;
+  }
+  section p {
+    font-size: 3.3vw;
+    width: 100%;
+  }
+  section div.questions div.questions-title {
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0;
+  }
+  section div.questions div.questions-title i {
+    font-size: 3.5vw;
+    background-color: #F9A135;
+    padding: 15px 18px;
+    color: white;
+    box-shadow: 0 0 7px #F9A135;
+    margin: 10px;
+    border-radius: 7px;
+  }
+  section div.questions div.questions-title h2 {
+    font-size: 3.5vw;
+    font-weight: 900;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item {
+    margin: 15px;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 3.4vw;
+    margin: 15px;
+    color: black;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 3.2vw;
+    font-weight: 600;
+    color: black;
+    margin-top: 15px;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    text-align: right;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 3vw;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 576px) {
+  section {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    font-family: vazir;
+  }
+  section h1 {
+    font-size: 4vw;
+    font-weight: 900;
+  }
+  section p {
+    font-size: 2.3vw;
+    width: 100%;
+  }
+  section div.questions div.questions-title {
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0;
+  }
+  section div.questions div.questions-title i {
+    font-size: 2.5vw;
+    background-color: #F9A135;
+    padding: 15px 18px;
+    color: white;
+    box-shadow: 0 0 7px #F9A135;
+    margin: 10px;
+    border-radius: 7px;
+  }
+  section div.questions div.questions-title h2 {
+    font-size: 2.5vw;
+    font-weight: 900;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item {
+    margin: 15px;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 2.5vw;
+    margin: 15px;
+    color: black;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 2.4vw;
+    font-weight: 600;
+    color: black;
+    margin-top: 15px;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    text-align: right;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 2.2vw;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    font-family: vazir;
+  }
+  section h1 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  section p {
+    font-size: 1.3vw;
+    width: 100%;
+  }
+  section div.questions div.questions-title {
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0;
+  }
+  section div.questions div.questions-title i {
+    font-size: 1.5vw;
+    background-color: #F9A135;
+    padding: 15px 18px;
+    color: white;
+    box-shadow: 0 0 7px #F9A135;
+    margin: 10px;
+    border-radius: 7px;
+  }
+  section div.questions div.questions-title h2 {
+    font-size: 1.5vw;
+    font-weight: 900;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item {
+    margin: 15px;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 1.5vw;
+    margin: 15px;
+    color: black;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: black;
+    margin-top: 15px;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    text-align: right;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 1.2vw;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    font-family: vazir;
+  }
+  section h1 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  section p {
+    font-size: 1.3vw;
+    width: 100%;
+  }
+  section div.questions div.questions-title {
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0;
+  }
+  section div.questions div.questions-title i {
+    font-size: 1.5vw;
+    background-color: #F9A135;
+    padding: 15px 18px;
+    color: white;
+    box-shadow: 0 0 7px #F9A135;
+    margin: 10px;
+    border-radius: 7px;
+  }
+  section div.questions div.questions-title h2 {
+    font-size: 1.5vw;
+    font-weight: 900;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item {
+    margin: 15px;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 1.5vw;
+    margin: 15px;
+    color: black;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: black;
+    margin-top: 15px;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    text-align: right;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 1.2vw;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    font-family: vazir;
+  }
+  section h1 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  section p {
+    font-size: 1.3vw;
+    width: 100%;
+  }
+  section div.questions div.questions-title {
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0;
+  }
+  section div.questions div.questions-title i {
+    font-size: 1.5vw;
+    background-color: #F9A135;
+    padding: 15px 18px;
+    color: white;
+    box-shadow: 0 0 7px #F9A135;
+    margin: 10px;
+    border-radius: 7px;
+  }
+  section div.questions div.questions-title h2 {
+    font-size: 1.5vw;
+    font-weight: 900;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item {
+    margin: 15px;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 1.5vw;
+    margin: 15px;
+    color: black;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: black;
+    margin-top: 15px;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    text-align: right;
+  }
+  section div.questions div.questions-container div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 1.2vw;
+    text-align: justify;
+  }
+}/*# sourceMappingURL=rules.css.map */

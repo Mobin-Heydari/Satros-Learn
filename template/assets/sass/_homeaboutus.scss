@@ -1,0 +1,307 @@
+
+@media screen and (min-width:300px) {
+    div.home-about-us{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 10px;
+        div.home-about-us-right{
+            padding: 15px;
+            box-sizing: border-box;
+            width: 100%;
+            text-align: center;
+            h2{
+                color: $secondary;
+                font-size: 5vw;
+                font-family: lalezar;
+            }
+            p{
+                color: gray;
+                font-family: vazir;
+                text-align: center;
+                font-size: 3vw;
+            }
+            div.about-us-search{
+                width: 100%;
+                position: relative;
+                margin-top: 40px;
+                input{
+                    width: 100%;
+                    padding: 15px;
+                    border: 1px solid gray;
+                    border-radius: 8px;
+                    font-family: vazir;
+                }
+                input:focus{
+                    outline: none;
+                }
+                button{
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: $main;
+                    border: 0;
+                    border-radius: 8px;
+                    padding: 10px 15px;
+                    i{
+                        width: 100%;
+                        color: white;
+                    }
+                }
+            }
+        }
+        div.home-about-us-left{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (min-width:576px) {
+    div.home-about-us{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        div.home-about-us-right{
+            padding: 15px;
+            box-sizing: border-box;
+            width: 100%;
+            text-align: center;
+            h2{
+                color: $secondary;
+                font-size: 5vw;
+                font-family: lalezar;
+            }
+            p{
+                color: gray;
+                font-family: vazir;
+                text-align: center;
+                font-size: 2.5vw;
+            }
+            div.about-us-search{
+                width: 100%;
+                position: relative;
+                margin-top: 40px;
+                input{
+                    width: 100%;
+                    padding: 15px;
+                    border: 1px solid gray;
+                    border-radius: 8px;
+                    font-family: vazir;
+                }
+                input:focus{
+                    outline: none;
+                }
+                button{
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: $main;
+                    border: 0;
+                    border-radius: 8px;
+                    padding: 10px 15px;
+                    i{
+                        width: 100%;
+                        color: white;
+                    }
+                }
+            }
+        }
+        div.home-about-us-left{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    div.home-about-us{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+        div.home-about-us-right{
+            padding: 15px;
+            box-sizing: border-box;
+            width: 40%;
+            text-align: right;
+            h2{
+                color: $secondary;
+                font-size: 3vw;
+                font-family: lalezar;
+            }
+            p{
+                color: gray;
+                font-family: vazir;
+                text-align: justify;
+                font-size: 1.5vw;
+            }
+            div.about-us-search{
+                width: 100%;
+                position: relative;
+                margin-top: 40px;
+                input{
+                    width: 100%;
+                    padding: 15px;
+                    border: 1px solid gray;
+                    border-radius: 8px;
+                    font-family: vazir;
+                }
+                input:focus{
+                    outline: none;
+                }
+                button{
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: $main;
+                    border: 0;
+                    border-radius: 8px;
+                    padding: 10px 15px;
+                    i{
+                        width: 100%;
+                        color: white;
+                    }
+                }
+            }
+        }
+        div.home-about-us-left{
+            width: 57%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    div.home-about-us{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        div.home-about-us-right{
+            padding: 15px;
+            box-sizing: border-box;
+            width: 40%;
+            text-align: right;
+            h2{
+                color: $secondary;
+                font-size: 3vw;
+                font-family: lalezar;
+            }
+            p{
+                color: gray;
+                font-family: vazir;
+                text-align: justify;
+                font-size: 1.5vw;
+            }
+            div.about-us-search{
+                width: 100%;
+                position: relative;
+                margin-top: 40px;
+                input{
+                    width: 100%;
+                    padding: 15px;
+                    border: 1px solid gray;
+                    border-radius: 8px;
+                    font-family: vazir;
+                }
+                input:focus{
+                    outline: none;
+                }
+                button{
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: $main;
+                    border: 0;
+                    border-radius: 8px;
+                    padding: 10px 15px;
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        div.home-about-us-left{
+            width: 57%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    div.home-about-us{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        div.home-about-us-right{
+            padding: 15px;
+            box-sizing: border-box;
+            width: 40%;
+            text-align: right;
+            h2{
+                color: $secondary;
+                font-size: 3vw;
+                font-family: lalezar;
+            }
+            p{
+                color: gray;
+                font-family: vazir;
+                text-align: justify;
+                font-size: 1.5vw;
+            }
+            div.about-us-search{
+                width: 100%;
+                position: relative;
+                margin-top: 40px;
+                input{
+                    width: 100%;
+                    padding: 15px;
+                    border: 1px solid gray;
+                    border-radius: 8px;
+                    font-family: vazir;
+                }
+                input:focus{
+                    outline: none;
+                }
+                button{
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: $main;
+                    border: 0;
+                    border-radius: 8px;
+                    padding: 10px 15px;
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        div.home-about-us-left{
+            width: 57%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

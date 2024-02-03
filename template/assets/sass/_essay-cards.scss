@@ -1,0 +1,106 @@
+div.essay-cards {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  div.essay-language-chart {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    border-bottom: 1px solid lightgray;
+    div.essay-chart-btn {
+      width: 50%;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 15px;
+      box-sizing: border-box;
+      border: 1px solid lightgray;
+      border-radius: 8px;
+      button {
+        font-family: vazir;
+        font-size: 1.3vw;
+        color: $secondary;
+        background-color: white;
+        border: 0;
+        transition: 250ms;
+      }
+      button:hover {
+        color: $main;
+      }
+      div {
+        height: 20px;
+        width: 4px;
+        background-color: $main;
+      }
+    }
+  }
+  div.essay-cards-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 15px;
+      box-sizing: border-box;
+      animation-name: entry-essays;
+      animation-iteration-count: 1;
+      animation-duration: 1000ms;
+      h2 {
+        font-family: lalezar;
+        font-size: 2.5vw;
+        color: $secondary;
+        margin: 30px auto;
+        text-align: center;
+        width: 100%;
+      }
+    div.essay-card {
+      width: 30%;
+      border-radius: 8px;
+      font-family: vazir;
+      margin-top: 40px;
+      height: auto;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+      h3 {
+        padding: 15px;
+        font-weight: 600;
+        font-size: 1.5vw;
+      }
+      p {
+        font-size: 1vw;
+        padding: 0 15px;
+      }
+      div.read-more {
+        display: block;
+        text-align: left;
+        margin: 15px 10px;
+        a {
+          color: $main;
+          padding: 5px 10px;
+          border: 2px solid $main;
+          text-align: left;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: 600;
+          font-size: 1vw;
+          transition: 500ms;
+        }
+        a:hover {
+          background-color: $main;
+          color: white;
+        }
+      }
+    }
+  }
+  @keyframes entry-essays {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+  }
+}

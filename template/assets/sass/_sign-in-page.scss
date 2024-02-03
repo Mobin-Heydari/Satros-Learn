@@ -1,0 +1,526 @@
+
+@media screen and (min-width: 300px) {
+    div.sign-in-page {
+      width: 100%;
+      height: 100%;
+      padding: 40px;
+      box-sizing: border-box;
+      background-color: $main;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div.sign-in-card {
+        width: 90%;
+        height: auto;
+        background-color: white;
+        border: 1px solid lightgray;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-family: vazir;
+        text-align: center;
+        img {
+          width: 80%;
+          margin: auto;
+        }
+        h3 {
+          font-size: 3.5vw;
+          font-weight: 900;
+          margin: auto;
+          color: $secondary;
+        }
+        p {
+          font-size: 3.2vw;
+          color: gray;
+          margin: 10px auto;
+        }
+        form {
+          width: 80%;
+          margin: auto;
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input {
+              margin: 15px;
+              width: 30px;
+              height: 30px;
+              border: 1px solid lightgray;
+              border-radius: 5px;
+              text-align: center;
+            }
+            input:focus {
+              outline: 1px solid $main;
+            }
+          }
+          a.sending-code {
+            margin: 20px auto;
+            font-size: 3vw;
+            display: block;
+            color: $main;
+            text-align: center;
+            transition: 500ms;
+          }
+          a.sending-code:hover {
+            transform: scale(1.1);
+          }
+          h6{
+            font-size: 1vw;
+            color: gray;
+            margin: 10px auto;
+          }
+          button.continue {
+            border: 1px solid $main;
+            padding: 10px 15px;
+            background-color: $main;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            font-family: vazir;
+            font-weight: 900;
+            transition: 500ms;
+            font-size: 3.3vw;
+          }
+          button.continue:hover {
+            background-color: white;
+            color: $main;
+          }
+        }
+        button.change-phone {
+          border: 0;
+          background-color: transparent;
+          color: $main;
+          margin: 10px auto;
+          font-size: 3.2vw;
+          i {
+            margin: 20px 15px 0 15px;
+            color: black;
+            font-size: 3.3vw;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 576px) {
+    div.sign-in-page {
+      width: 100%;
+      padding: 40px;
+      box-sizing: border-box;
+      background-color: $main;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div.sign-in-card {
+        width: 70%;
+        height: auto;
+        background-color: white;
+        border: 1px solid lightgray;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-family: vazir;
+        text-align: center;
+        img {
+          width: 80%;
+          margin: auto;
+        }
+        h3 {
+          font-size: 2.5vw;
+          font-weight: 900;
+          margin: auto;
+          color: $secondary;
+        }
+        p {
+          font-size: 2.2vw;
+          color: gray;
+          margin: 10px auto;
+        }
+        form {
+          width: 80%;
+          margin: auto;
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input {
+              margin: 15px;
+              width: 50px;
+              border: 1px solid lightgray;
+              height: 50px;
+              border-radius: 5px;
+              text-align: center;
+            }
+            input:focus {
+              outline: 1px solid $main;
+            }
+          }
+          a.sending-code {
+            margin: 20px auto;
+            font-size: 2vw;
+            display: block;
+            color: $main;
+            text-align: center;
+            transition: 500ms;
+          }
+          a.sending-code:hover {
+            transform: scale(1.1);
+          }
+          h6{
+            font-size: 1vw;
+            color: gray;
+            margin: 10px auto;
+          }
+          button.continue {
+            border: 1px solid $main;
+            padding: 10px 15px;
+            background-color: $main;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            font-family: vazir;
+            font-weight: 900;
+            transition: 500ms;
+            font-size: 2.3vw;
+          }
+          button.continue:hover {
+            background-color: white;
+            color: $main;
+          }
+        }
+        button.change-phone {
+          border: 0;
+          background-color: transparent;
+          color: $main;
+          margin: 10px auto;
+          font-size: 2.2vw;
+          i {
+            margin: 20px 15px 0 15px;
+            color: black;
+            font-size: 1.3vw;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 768px) {
+    div.sign-in-page {
+      width: 100%;
+      padding: 40px;
+      box-sizing: border-box;
+      background-color: $main;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div.sign-in-card {
+        width: 50%;
+        height: auto;
+        background-color: white;
+        border: 1px solid lightgray;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-family: vazir;
+        text-align: center;
+        img {
+          width: 80%;
+          margin: auto;
+        }
+        h3 {
+          font-size: 1.5vw;
+          font-weight: 900;
+          margin: auto;
+          color: $secondary;
+        }
+        p {
+          font-size: 1.2vw;
+          color: gray;
+          margin: 10px auto;
+        }
+        form {
+          width: 80%;
+          margin: auto;
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input {
+              margin: 15px;
+              width: 50px;
+              border: 1px solid lightgray;
+              height: 50px;
+              border-radius: 5px;
+              text-align: center;
+            }
+            input:focus {
+              outline: 1px solid $main;
+            }
+          }
+          a.sending-code {
+            margin: 20px auto;
+            font-size: 1vw;
+            display: block;
+            color: $main;
+            text-align: center;
+            transition: 500ms;
+          }
+          a.sending-code:hover {
+            transform: scale(1.1);
+          }
+          h6{
+            font-size: 1vw;
+            color: gray;
+            margin: 10px auto;
+          }
+          button.continue {
+            border: 1px solid $main;
+            padding: 10px 15px;
+            background-color: $main;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            font-family: vazir;
+            font-weight: 900;
+            transition: 500ms;
+            font-size: 1.3vw;
+          }
+          button.continue:hover {
+            background-color: white;
+            color: $main;
+          }
+        }
+        button.change-phone {
+          border: 0;
+          background-color: transparent;
+          color: $main;
+          margin: 10px auto;
+          font-size: 1.2vw;
+          i {
+            margin: 20px 15px 0 15px;
+            color: black;
+            font-size: 1.3vw;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 1024px) {
+    div.sign-in-page {
+      width: 100%;
+      padding: 40px;
+      box-sizing: border-box;
+      background-color: $main;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div.sign-in-card {
+        width: 35%;
+        height: auto;
+        background-color: white;
+        border: 1px solid lightgray;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-family: vazir;
+        text-align: center;
+        img {
+          width: 80%;
+          margin: auto;
+        }
+        h3 {
+          font-size: 1.5vw;
+          font-weight: 900;
+          margin: auto;
+          color: $secondary;
+        }
+        p {
+          font-size: 1.2vw;
+          color: gray;
+          margin: 10px auto;
+        }
+        form {
+          width: 80%;
+          margin: auto;
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input {
+              margin: 15px;
+              width: 50px;
+              border: 1px solid lightgray;
+              height: 50px;
+              border-radius: 5px;
+              text-align: center;
+            }
+            input:focus {
+              outline: 1px solid $main;
+            }
+          }
+          a.sending-code {
+            margin: 20px auto;
+            font-size: 1vw;
+            display: block;
+            color: $main;
+            text-align: center;
+            transition: 500ms;
+          }
+          a.sending-code:hover {
+            transform: scale(1.1);
+          }
+          h6{
+            font-size: 1vw;
+            color: gray;
+            margin: 10px auto;
+          }
+          button.continue {
+            border: 1px solid $main;
+            padding: 10px 15px;
+            background-color: $main;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            font-family: vazir;
+            font-weight: 900;
+            transition: 500ms;
+            font-size: 1.3vw;
+          }
+          button.continue:hover {
+            background-color: white;
+            color: $main;
+          }
+        }
+        button.change-phone {
+          border: 0;
+          background-color: transparent;
+          color: $main;
+          margin: 10px auto;
+          font-size: 1.2vw;
+          i {
+            margin: 20px 15px 0 15px;
+            color: black;
+            font-size: 1.3vw;
+          }
+        }
+      }
+    }
+  }
+  
+@media screen and (min-width: 1200px) {
+  div.sign-in-page {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: $main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div.sign-in-card {
+      width: 35%;
+      height: auto;
+      background-color: white;
+      border: 1px solid lightgray;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      font-family: vazir;
+      text-align: center;
+      img {
+        width: 80%;
+        margin: auto;
+      }
+      h3 {
+        font-size: 1.5vw;
+        font-weight: 900;
+        margin: auto;
+        color: $secondary;
+      }
+      p {
+        font-size: 1.2vw;
+        color: gray;
+        margin: 10px auto;
+      }
+      form {
+        width: 80%;
+        margin: auto;
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          input {
+            margin: 15px;
+            width: 50px;
+            border: 1px solid lightgray;
+            height: 50px;
+            border-radius: 5px;
+            text-align: center;
+          }
+          input:focus {
+            outline: 1px solid $main;
+          }
+        }
+        a.sending-code {
+          margin: 20px auto;
+          font-size: 1vw;
+          display: block;
+          color: $main;
+          text-align: center;
+          transition: 500ms;
+        }
+        h6{
+            font-size: 1vw;
+            color: gray;
+            margin: 10px auto;
+        }
+        a.sending-code:hover {
+          transform: scale(1.1);
+        }
+        button.continue {
+          border: 1px solid $main;
+          padding: 10px 15px;
+          background-color: $main;
+          border-radius: 5px;
+          color: white;
+          display: block;
+          width: 80%;
+          text-align: center;
+          margin: auto;
+          font-family: vazir;
+          font-weight: 900;
+          transition: 500ms;
+          font-size: 1.3vw;
+        }
+        button.continue:hover {
+          background-color: white;
+          color: $main;
+        }
+      }
+      button.change-phone {
+        border: 0;
+        background-color: transparent;
+        color: $main;
+        margin: 10px auto;
+        font-size: 1.2vw;
+        i {
+          margin: 20px 15px 0 15px;
+          color: black;
+          font-size: 1.3vw;
+        }
+      }
+    }
+  }
+}

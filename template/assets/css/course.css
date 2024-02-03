@@ -1,0 +1,4214 @@
+@font-face {
+  font-family: lalezar;
+  src: url(fonts/Lalezar-Regular.woff);
+}
+@font-face {
+  font-family: vazir;
+  src: url(fonts/Vazir-Regular.woff);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 300px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vazir;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0;
+  }
+  header div.logo {
+    width: 35px;
+    margin-right: 20px;
+  }
+  header div.logo img {
+    width: 100%;
+  }
+  header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #575757;
+    transition: 500ms;
+    border-radius: 7px;
+    font-size: 1.5vw;
+  }
+  header nav a:hover {
+    color: #F9A135;
+  }
+  header nav div.header-item {
+    position: relative;
+  }
+  header nav div.header-item a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  header nav div.header-item a i {
+    font-size: 1vw;
+  }
+  header nav div.header-item div.drop-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: absolute;
+    top: 150%;
+    right: 20%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #F9A135;
+    transition: 500ms;
+    width: 100%;
+    animation-name: show-dropdown;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  header nav div.header-item div.drop-menu a {
+    font-size: 1vw;
+    padding: 15px;
+    display: block;
+    border-radius: 0;
+  }
+  @keyframes show-dropdown {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  header div.login-icons {
+    margin-left: 13px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  header div.login-icons a {
+    text-decoration: none;
+    margin: 5px;
+  }
+  header div.login-icons a.cart-icon {
+    color: #575757;
+    border-radius: 5px;
+    background-color: rgb(238, 236, 236);
+    padding: 10px 15px;
+    transition: 500ms;
+  }
+  header div.login-icons a.cart-icon i {
+    transition: 500ms;
+  }
+  header div.login-icons a.cart-icon:hover {
+    background-color: white;
+  }
+  header div.login-icons a.cart-icon:hover i {
+    color: #F9A135;
+  }
+  header div.login-icons a.search-icon {
+    background-color: #F9A135;
+    border-radius: 4px;
+    padding: 10px 15px 10px 11px;
+    transition: 500ms;
+    color: white;
+  }
+  header div.login-icons a.search-icon:hover {
+    background-color: rgb(238, 236, 236);
+    color: black;
+  }
+  header div.login-icons a.login-link {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  header div.login-icons a.login-link i {
+    color: white;
+    margin: 5px;
+    transition: 500ms;
+  }
+  header div.login-icons a.login-link p {
+    display: inline-block;
+  }
+  header div.burger-menu button {
+    background-color: #F9A135;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-left: 15px;
+    transition: 500ms;
+  }
+  header div.burger-menu button i {
+    color: white;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: vazir;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0;
+  }
+  header div.logo {
+    width: 35px;
+    margin-right: 20px;
+  }
+  header div.logo img {
+    width: 100%;
+  }
+  header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #575757;
+    transition: 500ms;
+    border-radius: 7px;
+    font-size: 1.5vw;
+  }
+  header nav a:hover {
+    color: #F9A135;
+  }
+  header nav div.header-item {
+    position: relative;
+  }
+  header nav div.header-item a {
+    text-decoration: none;
+  }
+  header nav div.header-item a i {
+    font-size: 1vw;
+  }
+  header nav div.header-item div.drop-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: absolute;
+    top: 150%;
+    right: 20%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #F9A135;
+    transition: 500ms;
+    width: 100%;
+    animation-name: show-dropdown;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  header nav div.header-item div.drop-menu a {
+    font-size: 1vw;
+    padding: 15px;
+    display: block;
+    border-radius: 0;
+  }
+  @keyframes show-dropdown {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  header div.login-icons {
+    margin-left: 13px;
+    margin-top: 15px;
+    text-align: left;
+  }
+  header div.login-icons a {
+    text-decoration: none;
+    font-size: 1.2vw;
+    margin: 5px;
+  }
+  header div.login-icons a i {
+    font-size: 1.2vw;
+  }
+  header div.login-icons a.cart-icon {
+    color: #575757;
+    border-radius: 5px;
+    background-color: rgb(238, 236, 236);
+    padding: 10px 15px;
+    transition: 500ms;
+  }
+  header div.login-icons a.cart-icon i {
+    transition: 500ms;
+  }
+  header div.login-icons a.cart-icon:hover {
+    background-color: white;
+  }
+  header div.login-icons a.cart-icon:hover i {
+    color: #F9A135;
+  }
+  header div.login-icons a.search-icon {
+    background-color: #F9A135;
+    border-radius: 4px;
+    padding: 10px 15px 10px 12px;
+    transition: 500ms;
+    color: white;
+  }
+  header div.login-icons a.search-icon:hover {
+    background-color: rgb(238, 236, 236);
+    color: black;
+  }
+  header div.login-icons a.login-link {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  header div.login-icons a.login-link i {
+    color: white;
+    margin: 5px;
+    transition: 500ms;
+  }
+  header div.login-icons a.login-link p {
+    display: inline-block;
+  }
+  header div.burger-menu button {
+    background-color: #F9A135;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-left: 15px;
+    transition: 500ms;
+  }
+  header div.burger-menu button i {
+    color: white;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid #F9A135;
+    transition: 500ms;
+  }
+  div.mobile-menu div.logo {
+    width: 20%;
+    margin-top: 20px;
+  }
+  div.mobile-menu div.logo img {
+    width: 100%;
+  }
+  div.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.mobile-menu nav a {
+    padding: 20px 5px;
+    font-size: 2.5vw;
+    font-weight: 600;
+    font-family: vazir;
+    color: #575757;
+  }
+  div.mobile-menu nav div.nav-item ul li a {
+    padding: 10px;
+  }
+  div.search-page {
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border-right: 4px solid #F9A135;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.search-page div.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  div.search-page div.search-container img {
+    background-color: #F9A135;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  div.search-page div.search-container h3 {
+    font-size: 3vw;
+    margin: 20px;
+    font-family: lalezar;
+  }
+  div.search-page div.search-container div.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+  }
+  div.search-page div.search-container div.search-input input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    width: 40%;
+    font-family: vazir;
+    width: 80%;
+  }
+  div.search-page div.search-container div.search-input input:focus {
+    outline: none;
+  }
+  div.search-page div.search-container div.search-input button.search-click {
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    background-color: #F9A135;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  div.search-page div.search-container button.search-close-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid #F9A135;
+    transition: 500ms;
+  }
+  div.mobile-menu div.logo {
+    width: 20%;
+    margin-top: 20px;
+  }
+  div.mobile-menu div.logo img {
+    width: 100%;
+  }
+  div.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.mobile-menu nav a {
+    padding: 20px 5px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: vazir;
+    color: #575757;
+  }
+  div.mobile-menu nav div.nav-item ul li a {
+    padding: 10px;
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border-right: 4px solid #F9A135;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.search-page div.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  div.search-page div.search-container img {
+    background-color: #F9A135;
+    padding: 15px;
+    width: 25%;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  div.search-page div.search-container h3 {
+    font-size: 3vw;
+    margin: 20px;
+    font-family: lalezar;
+  }
+  div.search-page div.search-container div.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+    width: 100%;
+  }
+  div.search-page div.search-container div.search-input input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    width: 40%;
+    font-family: vazir;
+    width: 50%;
+  }
+  div.search-page div.search-container div.search-input input:focus {
+    outline: none;
+  }
+  div.search-page div.search-container div.search-input button.search-click {
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    background-color: #F9A135;
+    color: white;
+    font-weight: 600;
+    margin-top: 0;
+  }
+  div.search-page div.search-container button.search-close-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid #F9A135;
+    transition: 500ms;
+  }
+  div.mobile-menu div.logo {
+    width: 20%;
+    margin-top: 20px;
+  }
+  div.mobile-menu div.logo img {
+    width: 100%;
+  }
+  div.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.mobile-menu nav a {
+    padding: 20px 5px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: vazir;
+    color: #575757;
+  }
+  div.mobile-menu nav div.nav-item ul li a {
+    padding: 10px;
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-right: 4px solid #F9A135;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.search-page div.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  div.search-page div.search-container img {
+    background-color: #F9A135;
+    padding: 15px;
+    width: 20%;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  div.search-page div.search-container h3 {
+    font-size: 3vw;
+    margin: 20px;
+    font-family: lalezar;
+  }
+  div.search-page div.search-container div.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+  }
+  div.search-page div.search-container div.search-input input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    width: 40%;
+    font-family: vazir;
+    width: 50%;
+  }
+  div.search-page div.search-container div.search-input input:focus {
+    outline: none;
+  }
+  div.search-page div.search-container div.search-input button.search-click {
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    background-color: #F9A135;
+    color: white;
+    font-weight: 600;
+  }
+  div.search-page div.search-container button.search-close-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid #F9A135;
+    transition: 500ms;
+  }
+  div.mobile-menu div.logo {
+    width: 20%;
+    margin-top: 20px;
+  }
+  div.mobile-menu div.logo img {
+    width: 100%;
+  }
+  div.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.mobile-menu nav a {
+    padding: 20px 5px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: vazir;
+    color: #575757;
+  }
+  div.mobile-menu nav div.nav-item ul li a {
+    padding: 10px;
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-right: 4px solid #F9A135;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.search-page div.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  div.search-page div.search-container img {
+    background-color: #F9A135;
+    padding: 15px;
+    width: 15%;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  div.search-page div.search-container h3 {
+    font-size: 3vw;
+    margin: 20px;
+    font-family: lalezar;
+  }
+  div.search-page div.search-container div.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+  }
+  div.search-page div.search-container div.search-input input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    width: 40%;
+    font-family: vazir;
+    width: 50%;
+  }
+  div.search-page div.search-container div.search-input input:focus {
+    outline: none;
+  }
+  div.search-page div.search-container div.search-input button.search-click {
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    background-color: #F9A135;
+    color: white;
+    font-weight: 600;
+  }
+  div.search-page div.search-container button.search-close-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    border-left: 4px solid #F9A135;
+    transition: 500ms;
+  }
+  div.mobile-menu div.logo {
+    width: 20%;
+    margin-top: 20px;
+  }
+  div.mobile-menu div.logo img {
+    width: 100%;
+  }
+  div.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.mobile-menu nav a {
+    padding: 20px 5px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: vazir;
+    color: #575757;
+  }
+  div.mobile-menu nav div.nav-item ul li a {
+    padding: 10px;
+  }
+  div.search-page {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-right: 4px solid #F9A135;
+    animation-name: show-search;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+  }
+  div.search-page div.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  div.search-page div.search-container img {
+    background-color: #F9A135;
+    padding: 15px;
+    width: 15%;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  div.search-page div.search-container h3 {
+    font-size: 3vw;
+    margin: 20px;
+    font-family: lalezar;
+  }
+  div.search-page div.search-container div.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+  }
+  div.search-page div.search-container div.search-input input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    width: 40%;
+    font-family: vazir;
+    width: 50%;
+  }
+  div.search-page div.search-container div.search-input input:focus {
+    outline: none;
+  }
+  div.search-page div.search-container div.search-input button.search-click {
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: vazir;
+    border: 1px solid #F9A135;
+    background-color: #F9A135;
+    color: white;
+    font-weight: 600;
+  }
+  div.search-page div.search-container button.search-close-btn {
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  @keyframes show-search {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media screen and (min-width: 300px) {
+  section {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  section div.course-title {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.course-title h1 {
+    font-family: vazir;
+    font-size: 4vw;
+    color: black;
+    font-weight: 800;
+  }
+  section div.course-title div.course-menu {
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    width: 100%;
+  }
+  section div.course-title div.course-menu button {
+    color: #575757;
+    font-size: 3.2vw;
+    font-family: vazir;
+    border: 0;
+    background-color: transparent;
+    padding: 15px;
+    transition: 250ms;
+    font-weight: 600;
+  }
+  section div.course-title div.course-menu button:hover {
+    color: #F9A135;
+  }
+  section div.course-title div.course-menu div {
+    width: 4px;
+    background-color: #F9A135;
+    height: 20px;
+  }
+  section div.course-sessions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  section div.course-sessions div.course-video-player {
+    width: 100%;
+    order: 2;
+  }
+  section div.course-sessions div.course-video-player div.video-player {
+    width: 100%;
+    margin-top: 35px;
+  }
+  section div.course-sessions div.course-video-player div.video-player .video-js {
+    width: 100% !important;
+    height: 250px;
+  }
+  section div.course-sessions div.course-video-player div.video-links {
+    width: 100%;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title i {
+    margin: 0 20px;
+    font-size: 3vw;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background-color: #F9A135;
+    color: white;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title h3 {
+    font-size: 3.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion {
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    position: relative;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button span {
+    color: white;
+    font-size: 3.2vw;
+    padding: 7px 15px 5px 15px;
+    border-radius: 8px;
+    background-color: rgb(54, 54, 54);
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-family: vazir;
+    font-size: 3.2vw;
+    margin-top: 12px;
+    margin-right: 20px;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 60px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button div i {
+    margin-top: 15px;
+    font-size: 3.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name p {
+    margin-top: 13px;
+    margin-right: 10px;
+    font-size: 2.5vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name i {
+    font-size: 2.5vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-time {
+    font-size: 2.5vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-video-link a {
+    color: black;
+    padding: 5px 15px;
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 5px;
+    font-size: 2.7vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title i {
+    color: white;
+    font-size: 3vw;
+    background-color: #F9A135;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title h3 {
+    font-size: 3.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion {
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    margin: 0 15px;
+    font-weight: 800;
+    font-size: 3.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 3.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li {
+    font-size: 3vw;
+  }
+  section div.course-sessions div.course-video-player div.about-course {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title i {
+    color: white;
+    background-color: #F9A135;
+    font-size: 3vw;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title h3 {
+    font-size: 3.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph {
+    font-family: vazir;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph h3 {
+    font-size: 3.2vw;
+    color: #F9A135;
+    font-weight: 600;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph ul {
+    margin-top: 15px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph ul li {
+    font-size: 3vw;
+    text-align: justify;
+  }
+  section div.course-sessions div.course-video-player div.common-questions {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title i {
+    color: white;
+    background-color: #F9A135;
+    font-size: 3vw;
+    padding: 10px 13px;
+    margin: 0 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title h3 {
+    font-size: 3.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 3.2vw;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 2.8vw;
+    font-weight: 800;
+    margin-top: 13px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 3vw;
+  }
+  section div.course-sessions div.course-details {
+    width: 100%;
+    order: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  section div.course-sessions div.course-details h2 {
+    font-size: 3.5vw;
+    font-family: vazir;
+    font-weight: 600;
+    padding: 15px;
+    display: block;
+    border-bottom: 2px solid #F9A135;
+  }
+  section div.course-sessions div.course-details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: vazir;
+    border-bottom: 1px dashed rgb(189, 189, 189);
+  }
+  section div.course-sessions div.course-details div p {
+    font-size: 3vw;
+    margin: 0;
+  }
+  section div.course-sessions div.course-details div span {
+    font-size: 3vw;
+  }
+  section div.course-sessions div.course-details div.course-price {
+    margin-top: 30px;
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.course-price p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.course-price span {
+    text-decoration: line-through;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.discount-percentage {
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.discount-percentage p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.discount-percentage span {
+    color: red;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.final-price {
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.final-price p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.final-price span {
+    font-weight: 800;
+    color: green;
+  }
+  section div.course-sessions div.course-details button.add-to-cart {
+    width: 100%;
+    text-align: center;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: white;
+    background-color: #F9A135;
+    font-size: 3.2vw;
+    margin-top: 15px;
+    border: 0;
+    font-family: vazir;
+    border-radius: 5px;
+  }
+  section div.students-comments {
+    width: 100%;
+    margin-top: 40px;
+  }
+  section div.students-comments div.students-comments-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.students-comments div.students-comments-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px 13px;
+    font-size: 3vw;
+    margin: 0 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  section div.students-comments div.students-comments-title h3 {
+    font-size: 3.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.students-comments div.students-comments-accordion {
+    margin-top: 30px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    background-color: white;
+    border-radius: 8px;
+    font-family: vazir;
+    border: 1px solid lightgray;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    display: inline-block;
+    font-size: 3vw;
+    color: black;
+    margin: 0 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    display: inline-block;
+    font-size: 3.2vw;
+    margin-top: 14px;
+    color: #F9A135;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button h6 {
+    display: block;
+    font-size: 3.2vw;
+    margin-top: 8px;
+    color: black;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+    margin-top: 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li h4 {
+    font-size: 3.3vw;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li p {
+    font-size: 3vw;
+  }
+  section div.comments-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    font-family: vazir;
+  }
+  section div.comments-inputs div.inputs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  section div.comments-inputs div.inputs input {
+    padding: 15px;
+    font-size: 3vw;
+    border-radius: 7px;
+    margin: 15px 0;
+    border: 1px solid lightgray;
+  }
+  section div.comments-inputs div.inputs input:focus {
+    outline: none;
+  }
+  section div.comments-inputs div.inputs input.name {
+    width: 29%;
+  }
+  section div.comments-inputs div.inputs input.email {
+    width: 68%;
+  }
+  section div.comments-inputs div.inputs input.comment {
+    width: 98%;
+  }
+  section div.comments-inputs div.send-comment {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  section div.comments-inputs div.send-comment button {
+    color: #F9A135;
+    background-color: white;
+    padding: 5px 15px;
+    border: 1px solid #F9A135;
+    transition: 250ms;
+    border-radius: 7px;
+    font-size: 3vw;
+  }
+  section div.comments-inputs div.send-comment button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+}
+@media screen and (min-width: 576px) {
+  section {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 40px;
+  }
+  section div.course-title {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.course-title h1 {
+    font-family: vazir;
+    font-size: 3vw;
+    color: black;
+    font-weight: 800;
+  }
+  section div.course-title div.course-menu {
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    width: 80%;
+  }
+  section div.course-title div.course-menu button {
+    color: #575757;
+    font-size: 2.2vw;
+    font-family: vazir;
+    border: 0;
+    background-color: transparent;
+    padding: 15px;
+    transition: 250ms;
+    font-weight: 600;
+  }
+  section div.course-title div.course-menu button:hover {
+    color: #F9A135;
+  }
+  section div.course-title div.course-menu div {
+    width: 2px;
+    background-color: #F9A135;
+    height: 20px;
+  }
+  section div.course-sessions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  section div.course-sessions div.course-video-player {
+    width: 100%;
+    order: 2;
+  }
+  section div.course-sessions div.course-video-player div.video-player {
+    width: 100%;
+    margin-top: 35px;
+  }
+  section div.course-sessions div.course-video-player div.video-player .video-js {
+    width: 100% !important;
+    height: 380px;
+  }
+  section div.course-sessions div.course-video-player div.video-links {
+    width: 100%;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title i {
+    margin: 0 20px;
+    font-size: 2vw;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background-color: #F9A135;
+    color: white;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title h3 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion {
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    position: relative;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button span {
+    color: white;
+    font-size: 2.2vw;
+    padding: 7px 15px 5px 15px;
+    border-radius: 8px;
+    background-color: rgb(54, 54, 54);
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-family: vazir;
+    font-size: 2.2vw;
+    margin-top: 12px;
+    margin-right: 20px;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 60px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button div i {
+    margin-top: 15px;
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name p {
+    margin-top: 13px;
+    margin-right: 10px;
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name i {
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-time {
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-video-link a {
+    color: black;
+    padding: 5px 15px;
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 5px;
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title i {
+    color: white;
+    font-size: 2vw;
+    background-color: #F9A135;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title h3 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion {
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    margin: 0 15px;
+    font-weight: 800;
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li {
+    font-size: 2vw;
+  }
+  section div.course-sessions div.course-video-player div.about-course {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title i {
+    color: white;
+    background-color: #F9A135;
+    font-size: 2vw;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title h3 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph {
+    font-family: vazir;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph h3 {
+    font-size: 2.2vw;
+    color: #F9A135;
+    font-weight: 600;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph ul {
+    margin-top: 15px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph ul li {
+    font-size: 2vw;
+    text-align: justify;
+  }
+  section div.course-sessions div.course-video-player div.common-questions {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title i {
+    color: white;
+    background-color: #F9A135;
+    font-size: 2vw;
+    padding: 10px 13px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title h3 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 2.2vw;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 2.2vw;
+    font-weight: 800;
+    margin-top: 13px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 2vw;
+  }
+  section div.course-sessions div.course-details {
+    width: 100%;
+    order: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  section div.course-sessions div.course-details h2 {
+    font-size: 2.5vw;
+    font-family: vazir;
+    font-weight: 600;
+    padding: 15px;
+    display: block;
+    border-bottom: 2px solid #F9A135;
+  }
+  section div.course-sessions div.course-details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: vazir;
+    border-bottom: 1px dashed rgb(189, 189, 189);
+  }
+  section div.course-sessions div.course-details div p {
+    font-size: 2vw;
+    margin: 0;
+  }
+  section div.course-sessions div.course-details div span {
+    font-size: 2vw;
+  }
+  section div.course-sessions div.course-details div.course-price {
+    margin-top: 30px;
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.course-price p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.course-price span {
+    text-decoration: line-through;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.discount-percentage {
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.discount-percentage p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.discount-percentage span {
+    color: red;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.final-price {
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.final-price p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.final-price span {
+    font-weight: 800;
+    color: green;
+  }
+  section div.course-sessions div.course-details button.add-to-cart {
+    width: 100%;
+    text-align: center;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: white;
+    background-color: #F9A135;
+    font-size: 2.2vw;
+    margin-top: 15px;
+    border: 0;
+    font-family: vazir;
+    border-radius: 5px;
+  }
+  section div.students-comments {
+    width: 100%;
+    margin-top: 40px;
+  }
+  section div.students-comments div.students-comments-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.students-comments div.students-comments-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px 13px;
+    font-size: 2vw;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.students-comments div.students-comments-title h3 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.students-comments div.students-comments-accordion {
+    margin-top: 30px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    background-color: white;
+    border-radius: 8px;
+    font-family: vazir;
+    border: 1px solid lightgray;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    display: inline-block;
+    font-size: 2vw;
+    color: black;
+    margin: 0 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    display: inline-block;
+    font-size: 2.2vw;
+    margin-top: 14px;
+    color: #F9A135;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button h6 {
+    display: block;
+    font-size: 2.2vw;
+    margin-top: 8px;
+    color: black;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+    margin-top: 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li h4 {
+    font-size: 2.3vw;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li p {
+    font-size: 2vw;
+  }
+  section div.comments-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    font-family: vazir;
+  }
+  section div.comments-inputs div.inputs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  section div.comments-inputs div.inputs input {
+    padding: 15px;
+    font-size: 2vw;
+    border-radius: 7px;
+    margin: 15px 0;
+    border: 1px solid lightgray;
+  }
+  section div.comments-inputs div.inputs input:focus {
+    outline: none;
+  }
+  section div.comments-inputs div.inputs input.name {
+    width: 29%;
+  }
+  section div.comments-inputs div.inputs input.email {
+    width: 68%;
+  }
+  section div.comments-inputs div.inputs input.comment {
+    width: 98%;
+  }
+  section div.comments-inputs div.send-comment {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.comments-inputs div.send-comment button {
+    color: #F9A135;
+    background-color: white;
+    padding: 5px 15px;
+    border: 1px solid #F9A135;
+    transition: 250ms;
+    border-radius: 7px;
+    font-size: 2vw;
+  }
+  section div.comments-inputs div.send-comment button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 40px;
+  }
+  section div.course-title {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.course-title h1 {
+    font-family: vazir;
+    font-size: 3vw;
+    color: black;
+    font-weight: 800;
+  }
+  section div.course-title div.course-menu {
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    width: 80%;
+  }
+  section div.course-title div.course-menu button {
+    color: #575757;
+    font-size: 2.2vw;
+    font-family: vazir;
+    border: 0;
+    background-color: transparent;
+    padding: 15px;
+    transition: 250ms;
+    font-weight: 600;
+  }
+  section div.course-title div.course-menu button:hover {
+    color: #F9A135;
+  }
+  section div.course-title div.course-menu div {
+    width: 2px;
+    background-color: #F9A135;
+    height: 20px;
+  }
+  section div.course-sessions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  section div.course-sessions div.course-video-player {
+    width: 100%;
+    order: 2;
+  }
+  section div.course-sessions div.course-video-player div.video-player {
+    width: 100%;
+    margin-top: 35px;
+  }
+  section div.course-sessions div.course-video-player div.video-player .video-js {
+    width: 100% !important;
+    height: 400px;
+  }
+  section div.course-sessions div.course-video-player div.video-links {
+    width: 100%;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title i {
+    margin: 0 20px;
+    font-size: 2vw;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background-color: #F9A135;
+    color: white;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title h3 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion {
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    position: relative;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button span {
+    color: white;
+    font-size: 2.2vw;
+    padding: 7px 15px 5px 15px;
+    border-radius: 8px;
+    background-color: rgb(54, 54, 54);
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-family: vazir;
+    font-size: 2.2vw;
+    margin-top: 12px;
+    margin-right: 20px;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 60px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button div i {
+    margin-top: 15px;
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name p {
+    margin-top: 13px;
+    margin-right: 10px;
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name i {
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-time {
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-video-link a {
+    color: black;
+    padding: 5px 15px;
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 5px;
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title i {
+    color: white;
+    font-size: 2vw;
+    background-color: #F9A135;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title h3 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion {
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    margin: 0 15px;
+    font-weight: 800;
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 2.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li {
+    font-size: 2vw;
+  }
+  section div.course-sessions div.course-video-player div.about-course {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title i {
+    color: white;
+    background-color: #F9A135;
+    font-size: 2vw;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title h3 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph {
+    font-family: vazir;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph h3 {
+    font-size: 2.2vw;
+    color: #F9A135;
+    font-weight: 600;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph ul {
+    margin-top: 15px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph ul li {
+    font-size: 2vw;
+    text-align: justify;
+  }
+  section div.course-sessions div.course-video-player div.common-questions {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title i {
+    color: white;
+    background-color: #F9A135;
+    font-size: 2vw;
+    padding: 10px 13px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title h3 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 2.2vw;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 2.2vw;
+    font-weight: 800;
+    margin-top: 13px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 2vw;
+  }
+  section div.course-sessions div.course-details {
+    width: 100%;
+    order: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  section div.course-sessions div.course-details h2 {
+    font-size: 2.5vw;
+    font-family: vazir;
+    font-weight: 600;
+    padding: 15px;
+    display: block;
+    border-bottom: 2px solid #F9A135;
+  }
+  section div.course-sessions div.course-details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: vazir;
+    border-bottom: 1px dashed rgb(189, 189, 189);
+  }
+  section div.course-sessions div.course-details div p {
+    font-size: 2vw;
+    margin: 0;
+  }
+  section div.course-sessions div.course-details div span {
+    font-size: 2vw;
+  }
+  section div.course-sessions div.course-details div.course-price {
+    margin-top: 30px;
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.course-price p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.course-price span {
+    text-decoration: line-through;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.discount-percentage {
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.discount-percentage p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.discount-percentage span {
+    color: red;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.final-price {
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.final-price p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.final-price span {
+    font-weight: 800;
+    color: green;
+  }
+  section div.course-sessions div.course-details button.add-to-cart {
+    width: 100%;
+    text-align: center;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: white;
+    background-color: #F9A135;
+    font-size: 2.2vw;
+    margin-top: 15px;
+    border: 0;
+    font-family: vazir;
+    border-radius: 5px;
+  }
+  section div.students-comments {
+    width: 100%;
+    margin-top: 40px;
+  }
+  section div.students-comments div.students-comments-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.students-comments div.students-comments-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px 13px;
+    font-size: 2vw;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.students-comments div.students-comments-title h3 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.students-comments div.students-comments-accordion {
+    margin-top: 30px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    background-color: white;
+    border-radius: 8px;
+    font-family: vazir;
+    border: 1px solid lightgray;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    display: inline-block;
+    font-size: 2vw;
+    color: black;
+    margin: 0 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    display: inline-block;
+    font-size: 2.2vw;
+    margin-top: 14px;
+    color: #F9A135;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button h6 {
+    display: block;
+    font-size: 2.2vw;
+    margin-top: 8px;
+    color: black;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+    margin-top: 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li h4 {
+    font-size: 2.3vw;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li p {
+    font-size: 2vw;
+  }
+  section div.comments-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    font-family: vazir;
+  }
+  section div.comments-inputs div.inputs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  section div.comments-inputs div.inputs input {
+    padding: 15px;
+    font-size: 2vw;
+    border-radius: 7px;
+    margin: 15px 0;
+    border: 1px solid lightgray;
+  }
+  section div.comments-inputs div.inputs input:focus {
+    outline: none;
+  }
+  section div.comments-inputs div.inputs input.name {
+    width: 29%;
+  }
+  section div.comments-inputs div.inputs input.email {
+    width: 68%;
+  }
+  section div.comments-inputs div.inputs input.comment {
+    width: 98%;
+  }
+  section div.comments-inputs div.send-comment {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.comments-inputs div.send-comment button {
+    color: #F9A135;
+    background-color: white;
+    padding: 5px 15px;
+    border: 1px solid #F9A135;
+    transition: 250ms;
+    border-radius: 7px;
+    font-size: 2vw;
+  }
+  section div.comments-inputs div.send-comment button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 40px;
+  }
+  section div.course-title {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.course-title h1 {
+    font-family: vazir;
+    font-size: 3vw;
+    color: black;
+    font-weight: 800;
+  }
+  section div.course-title div.course-menu {
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    width: 60%;
+  }
+  section div.course-title div.course-menu button {
+    color: #575757;
+    font-size: 1.2vw;
+    font-family: vazir;
+    border: 0;
+    background-color: transparent;
+    padding: 15px;
+    transition: 250ms;
+    font-weight: 600;
+  }
+  section div.course-title div.course-menu button:hover {
+    color: #F9A135;
+  }
+  section div.course-title div.course-menu div {
+    width: 2px;
+    background-color: #F9A135;
+    height: 20px;
+  }
+  section div.course-sessions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  section div.course-sessions div.course-video-player {
+    width: 67%;
+    order: 1;
+  }
+  section div.course-sessions div.course-video-player div.video-player {
+    width: 100%;
+    margin-top: 35px;
+  }
+  section div.course-sessions div.course-video-player div.video-player .video-js {
+    width: 100% !important;
+  }
+  section div.course-sessions div.course-video-player div.video-links {
+    width: 100%;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title i {
+    margin: 0 20px;
+    padding: 10px 12px;
+    font-size: 1.2vw;
+    border-radius: 4px;
+    background-color: #F9A135;
+    color: white;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title h3 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion {
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    position: relative;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button span {
+    color: white;
+    font-size: 1.3vw;
+    padding: 7px 15px 5px 15px;
+    border-radius: 8px;
+    background-color: rgb(54, 54, 54);
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-family: vazir;
+    font-size: 1.3vw;
+    margin-top: 12px;
+    margin-right: 20px;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 60px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button div i {
+    margin-top: 15px;
+    font-size: 1.3vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name p {
+    margin-top: 13px;
+    margin-right: 10px;
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name i {
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-time {
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-video-link a {
+    color: black;
+    padding: 5px 15px;
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 5px;
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title i {
+    color: white;
+    background-color: #F9A135;
+    font-size: 1.3vw;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title h3 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion {
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    margin: 0 15px;
+    font-weight: 800;
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li {
+    font-size: 1vw;
+  }
+  section div.course-sessions div.course-video-player div.about-course {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title i {
+    color: white;
+    background-color: #F9A135;
+    font-size: 1.3vw;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title h3 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph {
+    font-family: vazir;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph h3 {
+    font-size: 1.2vw;
+    color: #F9A135;
+    font-weight: 600;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph ul {
+    margin-top: 15px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph ul li {
+    font-size: 1vw;
+    text-align: justify;
+  }
+  section div.course-sessions div.course-video-player div.common-questions {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title i {
+    color: white;
+    background-color: #F9A135;
+    font-size: 1.3vw;
+    padding: 10px 13px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title h3 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 1.2vw;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 1.2vw;
+    font-weight: 800;
+    margin-top: 13px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 1vw;
+  }
+  section div.course-sessions div.course-details {
+    width: 30%;
+    order: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  section div.course-sessions div.course-details h2 {
+    font-size: 1.5vw;
+    font-family: vazir;
+    font-weight: 600;
+    padding: 15px;
+    display: block;
+    border-bottom: 2px solid #F9A135;
+  }
+  section div.course-sessions div.course-details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: vazir;
+    border-bottom: 1px dashed rgb(189, 189, 189);
+  }
+  section div.course-sessions div.course-details div p {
+    font-size: 1vw;
+    margin: 0;
+  }
+  section div.course-sessions div.course-details div span {
+    font-size: 1vw;
+  }
+  section div.course-sessions div.course-details div.course-price {
+    margin-top: 30px;
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.course-price p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.course-price span {
+    text-decoration: line-through;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.discount-percentage {
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.discount-percentage p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.discount-percentage span {
+    color: red;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.final-price {
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.final-price p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.final-price span {
+    font-weight: 800;
+    color: green;
+  }
+  section div.course-sessions div.course-details button.add-to-cart {
+    width: 100%;
+    text-align: center;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: white;
+    background-color: #F9A135;
+    font-size: 1.2vw;
+    margin-top: 15px;
+    border: 0;
+    font-family: vazir;
+    border-radius: 5px;
+  }
+  section div.students-comments {
+    width: 100%;
+    margin-top: 40px;
+  }
+  section div.students-comments div.students-comments-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.students-comments div.students-comments-title i {
+    color: white;
+    background-color: #F9A135;
+    font-size: 1.3vw;
+    padding: 10px 11px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.students-comments div.students-comments-title h3 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.students-comments div.students-comments-accordion {
+    margin-top: 30px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    background-color: white;
+    border-radius: 8px;
+    font-family: vazir;
+    border: 1px solid lightgray;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    display: inline-block;
+    font-size: 1.3vw;
+    color: black;
+    margin: 0 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    display: inline-block;
+    font-size: 1.3vw;
+    margin-top: 14px;
+    color: #F9A135;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button h6 {
+    display: block;
+    margin-top: 8px;
+    color: black;
+    font-size: 1.3vw;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+    margin-top: 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li h4 {
+    font-size: 1.3vw;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body ul li p {
+    font-size: 1vw;
+  }
+  section div.comments-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-family: vazir;
+  }
+  section div.comments-inputs div.inputs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  section div.comments-inputs div.inputs input {
+    padding: 15px;
+    font-size: 1vw;
+    border-radius: 7px;
+    margin: 15px 0;
+    border: 1px solid lightgray;
+  }
+  section div.comments-inputs div.inputs input:focus {
+    outline: none;
+  }
+  section div.comments-inputs div.inputs input.name {
+    width: 29%;
+  }
+  section div.comments-inputs div.inputs input.email {
+    width: 68%;
+  }
+  section div.comments-inputs div.inputs input.comment {
+    width: 98%;
+  }
+  section div.comments-inputs div.send-comment {
+    width: 18%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section div.comments-inputs div.send-comment button {
+    color: #F9A135;
+    background-color: white;
+    font-size: 1.3vw;
+    padding: 5px 15px;
+    border: 1px solid #F9A135;
+    transition: 250ms;
+    border-radius: 7px;
+  }
+  section div.comments-inputs div.send-comment button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 40px;
+  }
+  section div.course-title {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+  }
+  section div.course-title h1 {
+    font-family: vazir;
+    font-size: 3vw;
+    color: black;
+    font-weight: 800;
+  }
+  section div.course-title div.course-menu {
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    width: 60%;
+  }
+  section div.course-title div.course-menu button {
+    color: #575757;
+    font-size: 1.2vw;
+    font-family: vazir;
+    border: 0;
+    background-color: transparent;
+    padding: 15px;
+    transition: 250ms;
+    font-weight: 600;
+  }
+  section div.course-title div.course-menu button:hover {
+    color: #F9A135;
+  }
+  section div.course-title div.course-menu div {
+    width: 2px;
+    background-color: #F9A135;
+    height: 20px;
+  }
+  section div.course-sessions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  section div.course-sessions div.course-video-player {
+    width: 67%;
+  }
+  section div.course-sessions div.course-video-player div.video-player {
+    width: 100%;
+    margin-top: 35px;
+  }
+  section div.course-sessions div.course-video-player div.video-links {
+    width: 100%;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title i {
+    margin: 0 20px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background-color: #F9A135;
+    color: white;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.video-link-title h3 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion {
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    position: relative;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button span {
+    color: white;
+    padding: 7px 15px 5px 15px;
+    border-radius: 8px;
+    background-color: rgb(54, 54, 54);
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-family: vazir;
+    margin-top: 12px;
+    margin-right: 20px;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 60px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-header div.accordion-button div i {
+    margin-top: 15px;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name p {
+    margin-top: 13px;
+    margin-right: 10px;
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-name i {
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-time {
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.video-links div.accordion div.accordion-item div.accordion-collapse div.accordion-body div.session div.session-video-link a {
+    color: black;
+    padding: 5px 15px;
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 5px;
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.headline-title h3 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion {
+    margin-top: 30px;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    margin: 0 15px;
+    font-weight: 800;
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.session-headline div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 1.2vw;
+  }
+  section div.course-sessions div.course-video-player div.about-course {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-title h3 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph {
+    font-family: vazir;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph h3 {
+    font-size: 1.2vw;
+    color: #F9A135;
+    font-weight: 600;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph ul {
+    margin-top: 15px;
+  }
+  section div.course-sessions div.course-video-player div.about-course div.about-course-paragraph ul li {
+    font-size: 1vw;
+    text-align: justify;
+  }
+  section div.course-sessions div.course-video-player div.common-questions {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px 13px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-title h3 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 1.2vw;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 1.2vw;
+    font-weight: 800;
+    margin-top: 13px;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+  }
+  section div.course-sessions div.course-video-player div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 1vw;
+  }
+  section div.course-sessions div.course-details {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  section div.course-sessions div.course-details h2 {
+    font-size: 1.5vw;
+    font-family: vazir;
+    font-weight: 600;
+    padding: 15px;
+    display: block;
+    border-bottom: 2px solid #F9A135;
+  }
+  section div.course-sessions div.course-details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: vazir;
+    border-bottom: 1px dashed rgb(189, 189, 189);
+  }
+  section div.course-sessions div.course-details div p {
+    font-size: 1vw;
+    margin: 0;
+  }
+  section div.course-sessions div.course-details div span {
+    font-size: 1vw;
+  }
+  section div.course-sessions div.course-details div.course-price {
+    margin-top: 30px;
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.course-price p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.course-price span {
+    text-decoration: line-through;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.discount-percentage {
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.discount-percentage p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.discount-percentage span {
+    color: red;
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.final-price {
+    border: 0;
+  }
+  section div.course-sessions div.course-details div.final-price p {
+    font-weight: 800;
+  }
+  section div.course-sessions div.course-details div.final-price span {
+    font-weight: 800;
+    color: green;
+  }
+  section div.course-sessions div.course-details button.add-to-cart {
+    width: 100%;
+    text-align: center;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: white;
+    background-color: #F9A135;
+    font-size: 1.2vw;
+    margin-top: 15px;
+    border: 0;
+    font-family: vazir;
+    border-radius: 5px;
+  }
+  section div.students-comments {
+    width: 100%;
+    margin-top: 40px;
+  }
+  section div.students-comments div.students-comments-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  section div.students-comments div.students-comments-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  section div.students-comments div.students-comments-title h3 {
+    font-size: 1.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  section div.students-comments div.students-comments-accordion {
+    margin-top: 30px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    background-color: white;
+    border-radius: 8px;
+    font-family: vazir;
+    border: 1px solid lightgray;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    display: inline-block;
+    color: black;
+    margin: 0 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    display: inline-block;
+    margin-top: 14px;
+    color: #F9A135;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-header div.accordion-button h6 {
+    display: block;
+    margin-top: 8px;
+    color: black;
+  }
+  section div.students-comments div.students-comments-accordion div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+    margin-top: 15px;
+  }
+  section div.comments-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-family: vazir;
+  }
+  section div.comments-inputs div.inputs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  section div.comments-inputs div.inputs input {
+    padding: 15px;
+    font-size: 1vw;
+    border-radius: 7px;
+    margin: 15px 0;
+    border: 1px solid lightgray;
+  }
+  section div.comments-inputs div.inputs input:focus {
+    outline: none;
+  }
+  section div.comments-inputs div.inputs input.name {
+    width: 29%;
+  }
+  section div.comments-inputs div.inputs input.email {
+    width: 68%;
+  }
+  section div.comments-inputs div.inputs input.comment {
+    width: 98%;
+  }
+  section div.comments-inputs div.send-comment {
+    width: 18%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section div.comments-inputs div.send-comment button {
+    color: #F9A135;
+    background-color: white;
+    padding: 5px 15px;
+    border: 1px solid #F9A135;
+    transition: 250ms;
+    border-radius: 7px;
+  }
+  section div.comments-inputs div.send-comment button:hover {
+    background-color: #F9A135;
+    color: white;
+  }
+}
+@media screen and (min-width: 300px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    margin-top: 10px;
+    background-color: rgb(238, 238, 238);
+  }
+  footer div.footer-about-satros {
+    width: 100%;
+    text-align: center;
+  }
+  footer div.footer-about-satros h3 {
+    color: #F9A135;
+    font-size: 4vw;
+    margin: 15px 0;
+  }
+  footer div.footer-about-satros p {
+    font-size: 3vw;
+    color: gray;
+    text-align: center;
+  }
+  footer div.footer-about-satros div.footer-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.footer-about-satros div.footer-social-media a {
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+  }
+  footer div.footer-about-satros div.footer-social-media i {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #F9A135;
+    font-size: 3vw;
+  }
+  footer div.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer div.footer-links div {
+    width: 47%;
+    margin: 5px;
+  }
+  footer div.footer-links div h3 {
+    font-weight: 900;
+    font-size: 3.2vw;
+  }
+  footer div.footer-links div ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 2.8vw;
+  }
+  footer div.footer-links div.contact-info {
+    width: 47%;
+  }
+  footer div.footer-logo {
+    width: 100%;
+    text-align: left;
+  }
+  footer div.footer-logo div.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  footer div.footer-logo div.logo div.logo-details h2 {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo div.logo-details h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo img {
+    width: 25%;
+    padding: 15px;
+    background-color: #F9A135;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.trust-logo {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.trust-logo img {
+    width: 25%;
+  }
+  footer div.footer-logo div.send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.send-email input {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.send-email input:focus {
+    outline: none;
+  }
+  footer div.footer-logo div.send-email button {
+    border: 0;
+    background-color: #F9A135;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 576px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    margin-top: 40px;
+  }
+  footer div.footer-about-satros {
+    width: 100%;
+    text-align: center;
+  }
+  footer div.footer-about-satros h3 {
+    color: #F9A135;
+    font-size: 3vw;
+    margin: 15px 0;
+  }
+  footer div.footer-about-satros p {
+    font-size: 2vw;
+    color: gray;
+    text-align: center;
+  }
+  footer div.footer-about-satros div.footer-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.footer-about-satros div.footer-social-media a {
+    text-decoration: none;
+    color: white;
+  }
+  footer div.footer-about-satros div.footer-social-media i {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #F9A135;
+    font-size: 3vw;
+  }
+  footer div.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer div.footer-links div {
+    width: 20%;
+    margin: 5px;
+  }
+  footer div.footer-links div h3 {
+    font-weight: 900;
+    font-size: 2.2vw;
+  }
+  footer div.footer-links div ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.8vw;
+  }
+  footer div.footer-links div.contact-info {
+    width: 20%;
+  }
+  footer div.footer-logo {
+    width: 100%;
+    text-align: left;
+  }
+  footer div.footer-logo div.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  footer div.footer-logo div.logo div.logo-details h2 {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo div.logo-details h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo img {
+    width: 25%;
+    padding: 15px;
+    background-color: #F9A135;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.trust-logo {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.trust-logo img {
+    width: 25%;
+  }
+  footer div.footer-logo div.send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.send-email input {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.send-email input:focus {
+    outline: none;
+  }
+  footer div.footer-logo div.send-email button {
+    border: 0;
+    background-color: #F9A135;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    margin-top: 40px;
+  }
+  footer div.footer-about-satros {
+    width: 100%;
+    text-align: center;
+  }
+  footer div.footer-about-satros h3 {
+    color: #F9A135;
+    font-size: 3vw;
+    margin: 15px 0;
+  }
+  footer div.footer-about-satros p {
+    font-size: 2vw;
+    color: gray;
+    text-align: center;
+  }
+  footer div.footer-about-satros div.footer-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.footer-about-satros div.footer-social-media a {
+    text-decoration: none;
+    color: white;
+  }
+  footer div.footer-about-satros div.footer-social-media i {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #F9A135;
+    font-size: 2.5vw;
+  }
+  footer div.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer div.footer-links div {
+    width: 20%;
+    margin: 5px;
+  }
+  footer div.footer-links div h3 {
+    font-weight: 900;
+    font-size: 2.2vw;
+  }
+  footer div.footer-links div ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.8vw;
+  }
+  footer div.footer-links div.contact-info {
+    width: 20%;
+  }
+  footer div.footer-logo {
+    width: 100%;
+    text-align: left;
+  }
+  footer div.footer-logo div.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  footer div.footer-logo div.logo div.logo-details h2 {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo div.logo-details h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo img {
+    width: 25%;
+    padding: 15px;
+    background-color: #F9A135;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.trust-logo {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.trust-logo img {
+    width: 25%;
+  }
+  footer div.footer-logo div.send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.send-email input {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.send-email input:focus {
+    outline: none;
+  }
+  footer div.footer-logo div.send-email button {
+    border: 0;
+    background-color: #F9A135;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    margin-top: 40px;
+  }
+  footer div.footer-about-satros {
+    width: 30%;
+  }
+  footer div.footer-about-satros h3 {
+    color: #F9A135;
+    font-size: 1.5vw;
+    margin: 15px 0;
+  }
+  footer div.footer-about-satros p {
+    font-size: 1vw;
+    color: gray;
+    text-align: justify;
+  }
+  footer div.footer-about-satros div.footer-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.footer-about-satros div.footer-social-media a {
+    text-decoration: none;
+    color: white;
+  }
+  footer div.footer-about-satros div.footer-social-media i {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #F9A135;
+    font-size: 1.5vw;
+  }
+  footer div.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 35%;
+  }
+  footer div.footer-links div {
+    width: 28%;
+    margin: 5px;
+  }
+  footer div.footer-links div h3 {
+    font-weight: 900;
+    font-size: 1.2vw;
+  }
+  footer div.footer-links div ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1vw;
+  }
+  footer div.footer-links div.contact-info {
+    width: 80%;
+  }
+  footer div.footer-logo {
+    width: 27%;
+    text-align: left;
+  }
+  footer div.footer-logo div.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  footer div.footer-logo div.logo div.logo-details h2 {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo div.logo-details h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo img {
+    width: 25%;
+    padding: 15px;
+    background-color: #F9A135;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.trust-logo {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.trust-logo img {
+    width: 25%;
+  }
+  footer div.footer-logo div.send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.send-email p {
+    font-size: 1vw;
+  }
+  footer div.footer-logo div.send-email input {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.send-email input:focus {
+    outline: none;
+  }
+  footer div.footer-logo div.send-email button {
+    border: 0;
+    background-color: #F9A135;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: vazir;
+    margin-top: 40px;
+  }
+  footer div.footer-about-satros {
+    width: 30%;
+  }
+  footer div.footer-about-satros h3 {
+    color: #F9A135;
+    font-size: 1.5vw;
+    margin: 15px 0;
+  }
+  footer div.footer-about-satros p {
+    font-size: 1vw;
+    color: gray;
+    text-align: justify;
+  }
+  footer div.footer-about-satros div.footer-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div.footer-about-satros div.footer-social-media a {
+    text-decoration: none;
+    color: white;
+  }
+  footer div.footer-about-satros div.footer-social-media i {
+    margin: 5px;
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    background-color: #F9A135;
+    font-size: 1.5vw;
+  }
+  footer div.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 35%;
+  }
+  footer div.footer-links div {
+    width: 28%;
+    margin: 5px;
+  }
+  footer div.footer-links div h3 {
+    font-weight: 900;
+    font-size: 1.2vw;
+  }
+  footer div.footer-links div ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1vw;
+  }
+  footer div.footer-links div ul li a:hover {
+    color: #F9A135;
+  }
+  footer div.footer-links div.contact-info {
+    width: 80%;
+  }
+  footer div.footer-logo {
+    width: 27%;
+    text-align: left;
+  }
+  footer div.footer-logo div.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  footer div.footer-logo div.logo div.logo-details h2 {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo div.logo-details h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+  }
+  footer div.footer-logo div.logo img {
+    width: 25%;
+    padding: 15px;
+    background-color: #F9A135;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.trust-logo {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.trust-logo img {
+    width: 25%;
+  }
+  footer div.footer-logo div.send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  footer div.footer-logo div.send-email p {
+    font-size: 1vw;
+  }
+  footer div.footer-logo div.send-email input {
+    padding: 5px 15px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  footer div.footer-logo div.send-email input:focus {
+    outline: none;
+  }
+  footer div.footer-logo div.send-email button {
+    border: 0;
+    background-color: #F9A135;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.copy-right {
+    background-color: white;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.copy-right a.phone {
+    background-color: #F9A135;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  div.copy-right a.phone i {
+    font-size: 3.5vw;
+  }
+  div.copy-right div {
+    text-align: center;
+    font-family: vazir;
+  }
+  div.copy-right div h6 {
+    font-weight: 800;
+    font-size: 3.3vw;
+  }
+  div.copy-right div p {
+    font-size: 3vw;
+    color: #F9A135;
+  }
+  div.copy-right a.refresh {
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(209, 209, 209);
+  }
+  div.copy-right a.refresh i {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (min-width: 576px) {
+  div.copy-right {
+    background-color: white;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.copy-right a.phone {
+    background-color: #F9A135;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  div.copy-right a.phone i {
+    font-size: 2.5vw;
+  }
+  div.copy-right div {
+    text-align: center;
+    font-family: vazir;
+  }
+  div.copy-right div h6 {
+    font-weight: 800;
+    font-size: 2.3vw;
+  }
+  div.copy-right div p {
+    font-size: 2vw;
+    color: #F9A135;
+  }
+  div.copy-right a.refresh {
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(209, 209, 209);
+  }
+  div.copy-right a.refresh i {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.copy-right {
+    background-color: white;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.copy-right a.phone {
+    background-color: #F9A135;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  div.copy-right a.phone i {
+    font-size: 1.5vw;
+  }
+  div.copy-right div {
+    text-align: center;
+    font-family: vazir;
+  }
+  div.copy-right div h6 {
+    font-weight: 800;
+    font-size: 1.3vw;
+  }
+  div.copy-right div p {
+    font-size: 1vw;
+    color: #F9A135;
+  }
+  div.copy-right a.refresh {
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(209, 209, 209);
+  }
+  div.copy-right a.refresh i {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.copy-right {
+    background-color: white;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.copy-right a.phone {
+    background-color: #F9A135;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  div.copy-right a.phone i {
+    font-size: 1.5vw;
+  }
+  div.copy-right div {
+    text-align: center;
+    font-family: vazir;
+  }
+  div.copy-right div h6 {
+    font-weight: 800;
+    font-size: 1.3vw;
+  }
+  div.copy-right div p {
+    font-size: 1vw;
+    color: #F9A135;
+  }
+  div.copy-right a.refresh {
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(209, 209, 209);
+  }
+  div.copy-right a.refresh i {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.copy-right {
+    background-color: white;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.copy-right a.phone {
+    background-color: #F9A135;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  div.copy-right a.phone i {
+    font-size: 1.5vw;
+  }
+  div.copy-right div {
+    text-align: center;
+    font-family: vazir;
+  }
+  div.copy-right div h6 {
+    font-weight: 800;
+    font-size: 1.3vw;
+  }
+  div.copy-right div p {
+    font-size: 1vw;
+    color: #F9A135;
+  }
+  div.copy-right a.refresh {
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(209, 209, 209);
+  }
+  div.copy-right a.refresh i {
+    font-size: 1.5vw;
+  }
+}/*# sourceMappingURL=course.css.map */

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>receipts</title>
+    <link rel="stylesheet" href="assets/css/recipts.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <!-- dashboard menu -->
+      <div class="dashboard-menu">
+        <div class="logo">
+          <img src="assets/img/white-logo.png" />
+          <h1>Satros Web</h1>
+        </div>
+        <div class="menu">
+          <div>
+            <i class="fa-solid fa-table-columns d-none d-md-inline-block"></i>
+            <a href="dashboard.html">پیشخوان</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-user d-none d-md-inline-block"></i>
+            <a href="user-info.html">اطلاعات کاربری</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-graduation-cap d-none d-md-inline-block"></i>
+            <a href="user-courses.html">دوره های من</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-receipt d-none d-md-inline-block"></i>
+            <a class="active" href="recipts.html">مشاهده فاکتور ها</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-ticket d-none d-md-inline-block"></i>
+            <a href="tickets.html">ارسال تیکت</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-comment d-none d-md-inline-block"></i>
+            <a href="record-comment.html">ثبت نظر</a>
+          </div>
+        </div>
+        <div class="logout">
+          <h3>پرهام رحیمی</h3>
+          <p>satrosweb@gmail.com</p>
+          <button>خروج از حساب</button>
+        </div>
+      </div>
+      <!-- recipt page -->
+      <div class="recipts-page">
+        <!-- welcome -->
+        <div class="welcome">
+          <p>پرهام رحیمی عزیز خوش آمدی!</p>
+          <div class="nav-links">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="cart-basket.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+              <button
+              onclick="showMenu()"
+              class="burger d-inline-block d-md-none"
+              >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <!-- recpit title -->
+        <div class="recipt-tilte">
+          <i class="fa-solid fa-receipt"></i>
+          <h3>لیست فاکتور دوره های خریداری شده</h3>
+        </div>
+        <!-- receipts -->
+        <table>
+          <tr class="head">
+            <th>تاریخ</th>
+            <th>محصول</th>
+            <th>مبلغ کل</th>
+            <th>مبلغ نهایی با کوپن</th>
+            <th>وضعیت</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>1402/12/02</td>
+            <td>آموزش زبان فرانسه speaking</td>
+            <td>3,000,000 تومان</td>
+            <td>3,000,000 تومان</td>
+            <td>پرداخت با موفقیت</td>
+            <td><a href="#">دانلود فاکتور</a></td>
+          </tr>
+        </table>
+        <table>
+          <tr class="head">
+            <th>تاریخ</th>
+            <th>محصول</th>
+            <th>مبلغ کل</th>
+            <th>مبلغ نهایی با کوپن</th>
+            <th>وضعیت</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>1402/12/02</td>
+            <td>آموزش زبان فرانسه speaking</td>
+            <td>3,000,000 تومان</td>
+            <td>3,000,000 تومان</td>
+            <td>پرداخت با موفقیت</td>
+            <td><a href="#">دانلود فاکتور</a></td>
+          </tr>
+        </table>
+        <table>
+          <tr class="head">
+                <th>تاریخ</th>
+                <th>محصول</th>
+                <th>مبلغ کل</th>
+                <th>مبلغ نهایی با کوپن</th>
+                <th>وضعیت</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>1402/12/02</td>
+                <td>آموزش زبان فرانسه speaking</td>
+                <td>3,000,000 تومان</td>
+                <td>3,000,000 تومان</td>
+                <td>پرداخت با موفقیت</td>
+                <td><a href="#">دانلود فاکتور</a></td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        
+        <script src="assets/js/dashboard.js" defer></script>
+        <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+      </body>
+      </html>
+      

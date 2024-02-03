@@ -1,0 +1,1275 @@
+@font-face {
+  font-family: lalezar;
+  src: url(fonts/Lalezar-Regular.woff);
+}
+@font-face {
+  font-family: vazir;
+  src: url(fonts/Vazir-Regular.woff);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 300px) {
+  section {
+    font-family: vazir;
+    width: 100%;
+    padding: 0;
+  }
+  section h1 {
+    font-size: 5vw;
+    text-align: center;
+    margin: 40px auto 60px auto;
+    font-weight: 900;
+  }
+  section div.success-step {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    position: relative;
+  }
+  section div.success-step img {
+    width: 90%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  section div.success-step div.seccess-step-details {
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 90%;
+    margin-top: 25px;
+  }
+  section div.success-step div.seccess-step-details h2 {
+    font-size: 4vw;
+    font-weight: 900;
+  }
+  section div.success-step div.seccess-step-details p {
+    font-size: 3.5vw;
+    text-align: justify;
+  }
+  section div.introduce {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 70px auto;
+    position: relative;
+  }
+  section div.introduce div.introduce-details {
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 90%;
+    order: 2;
+    margin-top: 25px;
+  }
+  section div.introduce div.introduce-details h2 {
+    font-size: 4vw;
+    font-weight: 900;
+  }
+  section div.introduce div.introduce-details p {
+    font-size: 3.5vw;
+    text-align: justify;
+  }
+  section div.introduce img {
+    width: 90%;
+    order: 1;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 576px) {
+  section {
+    font-family: vazir;
+    width: 100%;
+    padding: 0;
+  }
+  section h1 {
+    font-size: 3vw;
+    text-align: center;
+    margin: 40px auto 60px auto;
+    font-weight: 900;
+  }
+  section div.success-step {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    position: relative;
+  }
+  section div.success-step img {
+    width: 90%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  section div.success-step div.seccess-step-details {
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 90%;
+  }
+  section div.success-step div.seccess-step-details h2 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  section div.success-step div.seccess-step-details p {
+    font-size: 2.5vw;
+    text-align: justify;
+  }
+  section div.introduce {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 70px 0;
+    position: relative;
+  }
+  section div.introduce div.introduce-details {
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 90%;
+  }
+  section div.introduce div.introduce-details h2 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  section div.introduce div.introduce-details p {
+    font-size: 2.5vw;
+    text-align: justify;
+  }
+  section div.introduce img {
+    width: 90%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  section div.introduce div.four {
+    background-color: #F9A135;
+    width: 60px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    border-radius: 0 5px 5px 0;
+  }
+  section div.introduce div.five {
+    background-color: #F9A135;
+    width: 90px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 55%;
+    border-radius: 0 5px 5px 0;
+  }
+  section div.introduce div.six {
+    background-color: #F9A135;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 85%;
+    border-radius: 0 5px 5px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    font-family: vazir;
+    width: 100%;
+    padding: 0;
+  }
+  section h1 {
+    font-size: 3vw;
+    text-align: center;
+    margin: 40px auto 60px auto;
+    font-weight: 900;
+  }
+  section div.success-step {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 0;
+    position: relative;
+  }
+  section div.success-step img {
+    width: 21%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  section div.success-step div.seccess-step-details {
+    text-align: right;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 60%;
+    margin-top: 0;
+  }
+  section div.success-step div.seccess-step-details h2 {
+    font-size: 2vw;
+    font-weight: 900;
+  }
+  section div.success-step div.seccess-step-details p {
+    font-size: 1.5vw;
+  }
+  section div.introduce {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px 0;
+    position: relative;
+  }
+  section div.introduce div.introduce-details {
+    text-align: right;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 60%;
+    order: 1;
+    margin-top: 0;
+  }
+  section div.introduce div.introduce-details h2 {
+    font-size: 2vw;
+    font-weight: 900;
+  }
+  section div.introduce div.introduce-details p {
+    font-size: 1.5vw;
+  }
+  section div.introduce img {
+    width: 21%;
+    order: 2;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section {
+    font-family: vazir;
+    width: 100%;
+    padding: 0;
+  }
+  section h1 {
+    font-size: 3vw;
+    text-align: center;
+    margin: 40px auto 60px auto;
+    font-weight: 900;
+  }
+  section div.success-step {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 0;
+    position: relative;
+  }
+  section div.success-step img {
+    width: 21%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  section div.success-step div.seccess-step-details {
+    text-align: right;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 60%;
+  }
+  section div.success-step div.seccess-step-details h2 {
+    font-size: 2vw;
+    font-weight: 900;
+  }
+  section div.success-step div.seccess-step-details p {
+    font-size: 1.5vw;
+  }
+  section div.success-step div.one {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    bottom: 5%;
+    background-color: #F9A135;
+    border-radius: 5px 0 0 5px;
+  }
+  section div.success-step div.two {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    right: 0;
+    bottom: 35%;
+    background-color: #F9A135;
+    border-radius: 5px 0 0 5px;
+  }
+  section div.success-step div.three {
+    position: absolute;
+    width: 60px;
+    height: 130px;
+    right: 0;
+    bottom: 65%;
+    background-color: #F9A135;
+    border-radius: 5px 0 0 5px;
+  }
+  section div.introduce {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 70px 0;
+    position: relative;
+  }
+  section div.introduce div.introduce-details {
+    text-align: right;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 60%;
+  }
+  section div.introduce div.introduce-details h2 {
+    font-size: 2vw;
+    font-weight: 900;
+  }
+  section div.introduce div.introduce-details p {
+    font-size: 1.5vw;
+  }
+  section div.introduce img {
+    width: 21%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: 20px;
+  }
+  section div.introduce div.four {
+    background-color: #F9A135;
+    width: 60px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    border-radius: 0 5px 5px 0;
+  }
+  section div.introduce div.five {
+    background-color: #F9A135;
+    width: 90px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 55%;
+    border-radius: 0 5px 5px 0;
+  }
+  section div.introduce div.six {
+    background-color: #F9A135;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 85%;
+    border-radius: 0 5px 5px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    font-family: vazir;
+    width: 100%;
+    padding: 0;
+  }
+  section h1 {
+    font-size: 3vw;
+    text-align: center;
+    margin: 40px auto 60px auto;
+    font-weight: 900;
+  }
+  section div.success-step {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 0;
+    position: relative;
+  }
+  section div.success-step img {
+    width: 21%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  section div.success-step div.seccess-step-details {
+    text-align: right;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 60%;
+  }
+  section div.success-step div.seccess-step-details h2 {
+    font-size: 2vw;
+    font-weight: 900;
+  }
+  section div.success-step div.seccess-step-details p {
+    font-size: 1.5vw;
+  }
+  section div.success-step div.one {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    bottom: 5%;
+    background-color: #F9A135;
+    border-radius: 5px 0 0 5px;
+  }
+  section div.success-step div.two {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    right: 0;
+    bottom: 35%;
+    background-color: #F9A135;
+    border-radius: 5px 0 0 5px;
+  }
+  section div.success-step div.three {
+    position: absolute;
+    width: 60px;
+    height: 130px;
+    right: 0;
+    bottom: 65%;
+    background-color: #F9A135;
+    border-radius: 5px 0 0 5px;
+  }
+  section div.introduce {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 70px 0;
+    position: relative;
+  }
+  section div.introduce div.introduce-details {
+    text-align: right;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 60%;
+  }
+  section div.introduce div.introduce-details h2 {
+    font-size: 2vw;
+    font-weight: 900;
+  }
+  section div.introduce div.introduce-details p {
+    font-size: 1.5vw;
+  }
+  section div.introduce img {
+    width: 21%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: 20px;
+  }
+  section div.introduce div.four {
+    background-color: #F9A135;
+    width: 60px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    border-radius: 0 5px 5px 0;
+  }
+  section div.introduce div.five {
+    background-color: #F9A135;
+    width: 90px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 55%;
+    border-radius: 0 5px 5px 0;
+  }
+  section div.introduce div.six {
+    background-color: #F9A135;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 85%;
+    border-radius: 0 5px 5px 0;
+  }
+}
+@media screen and (min-width: 300px) {
+  div.satros-services {
+    font-family: vazir;
+  }
+  div.satros-services h2 {
+    font-size: 5vw;
+    font-weight: 900;
+    margin: 40px auto 15px auto;
+    text-align: center;
+  }
+  div.satros-services p {
+    text-align: center;
+    font-size: 3vw;
+    width: 81%;
+    margin: auto;
+  }
+  div.satros-services div.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 81%;
+    margin: 30px auto;
+  }
+  div.satros-services div.services div.services-details {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  div.satros-services div.services div.services-details div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 18px 0;
+  }
+  div.satros-services div.services div.services-details div i {
+    font-size: 4vw;
+    padding: 20px 23px;
+    color: white;
+    border-radius: 10px;
+    background-color: #F9A135;
+    margin-left: -60px;
+    z-index: 3;
+  }
+  div.satros-services div.services div.services-details div p {
+    font-size: 3.5vw;
+    padding: 30px 30px;
+    border-radius: 10px;
+    z-index: 2;
+    color: white;
+    background-color: rgb(49, 49, 49);
+  }
+  div.satros-services div.services div.services-img {
+    width: 46%;
+    text-align: left;
+  }
+  div.satros-services div.services div.services-img img {
+    width: 80%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+  }
+  div.explanations {
+    width: 81%;
+    margin: 60px auto;
+    font-family: vazir;
+  }
+  div.explanations div.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  div.explanations div.container span {
+    padding: 10px 12px;
+    font-size: 3.3vw;
+    background-color: #F9A135;
+    border-radius: 8px;
+    color: white;
+    font-weight: 900;
+    margin: 0 15px;
+    margin-top: 18px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  div.explanations div.container div {
+    margin-top: 30px;
+  }
+  div.explanations div.container div h3 {
+    font-weight: 900;
+    font-size: 3.3vw;
+  }
+  div.explanations div.container div p {
+    font-size: 3vw;
+    text-align: justify;
+  }
+  div.common-questions {
+    margin: 30px auto;
+    width: 81%;
+  }
+  div.common-questions div.common-questions-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px 13px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  div.common-questions div.common-questions-title h3 {
+    font-size: 3.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 3.2vw;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 3.2vw;
+    font-weight: 800;
+    margin-top: 13px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 3vw;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 576px) {
+  div.satros-services {
+    font-family: vazir;
+  }
+  div.satros-services h2 {
+    font-size: 4vw;
+    font-weight: 900;
+    margin: 40px auto 15px auto;
+    text-align: center;
+  }
+  div.satros-services p {
+    text-align: center;
+    font-size: 2vw;
+    width: 81%;
+    margin: auto;
+  }
+  div.satros-services div.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 81%;
+    margin: 30px auto;
+  }
+  div.satros-services div.services div.services-details {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  div.satros-services div.services div.services-details div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 18px 0;
+  }
+  div.satros-services div.services div.services-details div i {
+    font-size: 3vw;
+    padding: 20px 23px;
+    color: white;
+    border-radius: 10px;
+    background-color: #F9A135;
+    margin-left: -90px;
+    z-index: 3;
+  }
+  div.satros-services div.services div.services-details div p {
+    font-size: 2.5vw;
+    padding: 30px 30px;
+    border-radius: 10px;
+    z-index: 2;
+    color: white;
+    background-color: rgb(49, 49, 49);
+  }
+  div.satros-services div.services div.services-img {
+    width: 46%;
+    text-align: left;
+  }
+  div.satros-services div.services div.services-img img {
+    width: 80%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+  }
+  div.explanations {
+    width: 81%;
+    margin: 60px auto;
+    font-family: vazir;
+  }
+  div.explanations div.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  div.explanations div.container span {
+    padding: 10px 13px;
+    font-size: 3vw;
+    background-color: #F9A135;
+    border-radius: 8px;
+    color: white;
+    font-weight: 900;
+    margin: 0 15px;
+    margin-top: 18px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  div.explanations div.container div {
+    margin-top: 30px;
+  }
+  div.explanations div.container div h3 {
+    font-weight: 900;
+    font-size: 3vw;
+  }
+  div.explanations div.container div p {
+    font-size: 2.5vw;
+    text-align: justify;
+  }
+  div.common-questions {
+    margin: 30px auto;
+    width: 81%;
+  }
+  div.common-questions div.common-questions-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px 13px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  div.common-questions div.common-questions-title h3 {
+    font-size: 3.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 3vw;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 2.5vw;
+    font-weight: 800;
+    margin-top: 13px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 2.5vw;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.satros-services {
+    font-family: vazir;
+  }
+  div.satros-services h2 {
+    font-size: 3vw;
+    font-weight: 900;
+    margin: 40px auto 15px auto;
+    text-align: center;
+  }
+  div.satros-services p {
+    text-align: center;
+    font-size: 1.5vw;
+    width: 81%;
+    margin: auto;
+  }
+  div.satros-services div.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 81%;
+    margin: 30px auto;
+  }
+  div.satros-services div.services div.services-details {
+    width: 42%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  div.satros-services div.services div.services-details div {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 18px 0;
+  }
+  div.satros-services div.services div.services-details div i {
+    font-size: 2vw;
+    padding: 20px 23px;
+    color: white;
+    border-radius: 10px;
+    background-color: #F9A135;
+    margin-left: -60px;
+    z-index: 3;
+  }
+  div.satros-services div.services div.services-details div p {
+    font-size: 1.5vw;
+    padding: 30px 30px;
+    border-radius: 10px;
+    z-index: 2;
+    color: white;
+    background-color: rgb(49, 49, 49);
+  }
+  div.satros-services div.services div.services-img {
+    width: 55%;
+    text-align: left;
+  }
+  div.satros-services div.services div.services-img img {
+    width: 100%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+  }
+  div.explanations {
+    width: 81%;
+    margin: 60px auto;
+    font-family: vazir;
+  }
+  div.explanations div.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  div.explanations div.container span {
+    padding: 10px 13px;
+    font-size: 2vw;
+    background-color: #F9A135;
+    border-radius: 8px;
+    color: white;
+    font-weight: 900;
+    margin: 0 15px;
+    margin-top: 18px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  div.explanations div.container div {
+    margin-top: 30px;
+  }
+  div.explanations div.container div h3 {
+    font-weight: 900;
+    font-size: 2.3vw;
+  }
+  div.explanations div.container div p {
+    font-size: 2vw;
+    text-align: justify;
+  }
+  div.common-questions {
+    margin: 30px auto;
+    width: 81%;
+  }
+  div.common-questions div.common-questions-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px 13px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  div.common-questions div.common-questions-title h3 {
+    font-size: 2.3vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 2.2vw;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 2.2vw;
+    font-weight: 800;
+    margin-top: 13px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 2vw;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.satros-services {
+    font-family: vazir;
+  }
+  div.satros-services h2 {
+    font-size: 3vw;
+    font-weight: 900;
+    margin: 40px auto 15px auto;
+    text-align: center;
+  }
+  div.satros-services p {
+    text-align: center;
+    font-size: 1.5vw;
+    width: 81%;
+    margin: auto;
+  }
+  div.satros-services div.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 81%;
+    margin: 30px auto;
+  }
+  div.satros-services div.services div.services-details {
+    width: 46%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  div.satros-services div.services div.services-details div {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 18px 0;
+  }
+  div.satros-services div.services div.services-details div i {
+    font-size: 2vw;
+    padding: 20px 23px;
+    color: white;
+    border-radius: 10px;
+    background-color: #F9A135;
+    margin-left: -90px;
+    z-index: 3;
+  }
+  div.satros-services div.services div.services-details div p {
+    font-size: 1.5vw;
+    padding: 30px 30px;
+    border-radius: 10px;
+    z-index: 2;
+    color: white;
+    background-color: rgb(49, 49, 49);
+  }
+  div.satros-services div.services div.services-img {
+    width: 54%;
+    text-align: left;
+  }
+  div.satros-services div.services div.services-img img {
+    width: 80%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+  }
+  div.explanations {
+    width: 81%;
+    margin: 60px auto;
+    font-family: vazir;
+  }
+  div.explanations div.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  div.explanations div.container span {
+    padding: 10px 13px;
+    font-size: 1.5vw;
+    background-color: #F9A135;
+    border-radius: 8px;
+    color: white;
+    font-weight: 900;
+    margin: 0 15px;
+    margin-top: 18px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  div.explanations div.container div {
+    margin-top: 30px;
+  }
+  div.explanations div.container div h3 {
+    font-weight: 900;
+    font-size: 2vw;
+  }
+  div.explanations div.container div p {
+    font-size: 1.5vw;
+    text-align: justify;
+  }
+  div.common-questions {
+    margin: 30px auto;
+    width: 81%;
+  }
+  div.common-questions div.common-questions-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px 13px;
+    margin: 0 20px;
+    border-radius: 4px;
+  }
+  div.common-questions div.common-questions-title h3 {
+    font-size: 2vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 2vw;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 2vw;
+    font-weight: 800;
+    margin-top: 13px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 1.8vw;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.satros-services {
+    font-family: vazir;
+  }
+  div.satros-services h2 {
+    font-size: 3vw;
+    font-weight: 900;
+    margin: 40px auto 15px auto;
+    text-align: center;
+  }
+  div.satros-services p {
+    text-align: center;
+    width: 81%;
+    margin: auto;
+  }
+  div.satros-services div.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 81%;
+    margin: 30px auto;
+  }
+  div.satros-services div.services div.services-details {
+    width: 46%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  div.satros-services div.services div.services-details div {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 18px 0;
+  }
+  div.satros-services div.services div.services-details div i {
+    font-size: 2vw;
+    padding: 20px 23px;
+    color: white;
+    border-radius: 10px;
+    background-color: #F9A135;
+    margin-left: -90px;
+    z-index: 3;
+  }
+  div.satros-services div.services div.services-details div p {
+    font-size: 1.5vw;
+    padding: 30px 30px;
+    border-radius: 10px;
+    z-index: 2;
+    color: white;
+    background-color: rgb(49, 49, 49);
+  }
+  div.satros-services div.services div.services-img {
+    width: 46%;
+    text-align: left;
+  }
+  div.satros-services div.services div.services-img img {
+    width: 80%;
+    border: 15px solid white;
+    box-shadow: 0 0 0 4px #F9A135;
+    border-radius: 10px;
+  }
+  div.explanations {
+    width: 81%;
+    margin: 60px auto;
+    font-family: vazir;
+  }
+  div.explanations div.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  div.explanations div.container span {
+    padding: 10px 13px;
+    font-size: 1.3vw;
+    background-color: #F9A135;
+    border-radius: 8px;
+    color: white;
+    font-weight: 900;
+    margin: 0 15px;
+    margin-top: 18px;
+    box-shadow: 0 0 7px #F9A135;
+  }
+  div.explanations div.container div {
+    margin-top: 30px;
+  }
+  div.explanations div.container div h3 {
+    font-weight: 900;
+    font-size: 1.8vw;
+  }
+  div.explanations div.container div p {
+    font-size: 1.5vw;
+    text-align: justify;
+  }
+  div.common-questions {
+    margin: 30px auto;
+    width: 81%;
+  }
+  div.common-questions div.common-questions-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-title i {
+    color: white;
+    background-color: #F9A135;
+    padding: 10px 13px;
+    margin: 0 20px;
+    font-size: 2vw;
+    border-radius: 4px;
+  }
+  div.common-questions div.common-questions-title h3 {
+    font-size: 2vw;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item {
+    margin: 15px 0;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button i {
+    font-size: 1.2vw;
+    font-weight: 800;
+    margin: 0 15px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-header div.accordion-button p {
+    font-size: 1.2vw;
+    font-weight: 800;
+    margin-top: 13px;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body {
+    font-family: vazir;
+  }
+  div.common-questions div.common-questions-details div.accordion div.accordion-item div.accordion-collapse div.accordion-body p {
+    font-size: 1vw;
+    text-align: justify;
+  }
+}/*# sourceMappingURL=about-us.css.map */
